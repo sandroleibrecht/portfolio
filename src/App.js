@@ -1,8 +1,13 @@
 import React from "react";
+// Theme
+import { ThemeProvider } from '@material-ui/core';
+import theme from './Theme';
 
 function App() {
   return (
-    <div>Cleanup</div>
+    <ThemeProvider theme={theme}>
+      <div>Cleanup</div>
+    </ThemeProvider>
   );
 };
 

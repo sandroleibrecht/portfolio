@@ -1,13 +1,17 @@
 import React from "react";
-// Theme
-import { ThemeProvider } from '@material-ui/core';
-import theme from './Theme';
+import Homepage from "./pages/Homepage";
+import ProjectDetails from "./pages/ProjectDetails";
+import ReactPlayground from "./pages/ReactPlayground";
+import ContactPage from "./pages/ContactPage";
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <div>Cleanup</div>
-    </ThemeProvider>
+    <div>
+      <Homepage/>
+      <ProjectDetails/>
+      <ReactPlayground/>
+      <ContactPage/>
+    </div>
   );
 };
 

@@ -1,16 +1,16 @@
 import React from "react";
-import Homepage from "./pages/Homepage";
-import ProjectDetails from "./pages/ProjectDetails";
-import ReactPlayground from "./pages/ReactPlayground";
+import AboutPage from "./pages/AboutPage";
+import ProjectsPage from "./pages/ProjectsPage";
 import ContactPage from "./pages/ContactPage";
+import ProjectDetails from "./pages/ProjectDetails";
 
 function App() {
   return (
     <div>
-      <Homepage/>
-      <ProjectDetails/>
-      <ReactPlayground/>
+      <AboutPage/>
+      <ProjectsPage/>
       <ContactPage/>
+      <ProjectDetails/>
     </div>
   );
 };

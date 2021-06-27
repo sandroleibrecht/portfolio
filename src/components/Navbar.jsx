@@ -9,12 +9,23 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 // Components
 import NavInline from './NavInline';
 import NavSide from './NavSide';
+// Redux
+import { setNavOpen } from '../state/navbarState';
+import { useDispatch } from 'react-redux';
 
 function Navbar() {
+
+  const dispatch = useDispatch();
+
+  // Functions
+  const handleMenuOpen = () => {
+    dispatch(setNavOpen());
+  };
+
   return (
     <StyledNavbar>
       <Logo src={logoImage} alt="Page Logo" />
-      <MenuIcon icon={faBars}/>
+      <MenuIcon icon={faBars} onClick={ handleMenuOpen }/>
       <NavInline/>
       <NavSide/>
     </StyledNavbar>
@@ -46,6 +57,7 @@ const MenuIcon = styled(FontAwesomeIcon)`
   }
   color: #4D8DF7;
   font-size: 2rem;
+  cursor: pointer;
 `;
 
 export default Navbar;

@@ -9,6 +9,10 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     font-family: Quicksand, sans-serif;
   }
+
+  body, html{
+    overflow-x: hidden;
+  }
 `;
 
 export default GlobalStyles;

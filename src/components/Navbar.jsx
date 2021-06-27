@@ -51,8 +51,6 @@ const StyledNavbar = styled.nav`
 const Logo = styled.img`
   width: 35px;
   height: 35px;
-  opacity: ${ props => props.menuOpen ? 0.5 : 1 };
-  transition: opacity 1s;
   cursor: pointer;
 
   &:hover{

@@ -8,16 +8,31 @@ import ContactPage from "./pages/ContactPage";
 import ProjectDetails from "./pages/ProjectDetails";
 // Components
 import Navbar from "./components/Navbar";
+// ROUTER
+import { Switch, Route, useLocation } from 'react-router-dom';
 
 function App() {
+
+  const location = useLocation();
+
   return (
     <>
       <GlobalStyles/>
       <Navbar/>
-      <AboutPage/>
-      <ProjectsPage/>
-      <ContactPage/>
-      <ProjectDetails/>
+      <Switch location={location}>
+        <Route path='/' exact >
+          <AboutPage/>
+        </Route>
+        <Route path='/projects' exact >
+          <ProjectsPage/>
+        </Route>
+        <Route path='/projects/:id' >
+          <ProjectDetails/>
+        </Route>
+        <Route path='/contact'>
+          <ContactPage/>
+        </Route>
+      </Switch>
     </>
   );
 };

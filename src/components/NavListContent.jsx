@@ -1,6 +1,8 @@
 import React from 'react';
 // Styling
 import styled from 'styled-components';
+// Router
+import {Link} from 'react-router-dom';
 // Redux
 import { setLanguage } from '../state/languageState';
 import { useDispatch, useSelector } from 'react-redux';
@@ -17,25 +19,24 @@ function NavListContent() {
 
   return (
     <>
-      <ListItem>About</ListItem>  
-      <ListItem>Projects</ListItem>  
-      <ListItem>Contact</ListItem>
-      <ListItem onClick={handleLanguageChange}>
-        <LanguageSwitch>
-          <h6>DE</h6>
-          <h6>EN</h6>
-          <ControlSwitch language={selectedLanguage} ></ControlSwitch>
-        </LanguageSwitch>
-      </ListItem>
+      <ListItem to='/'>About</ListItem>
+      <ListItem to='/projects'>Projects</ListItem>
+      <ListItem to='/contact'>Contact</ListItem>
+      <LanguageSwitch onClick={handleLanguageChange}>
+        <h6>DE</h6>
+        <h6>EN</h6>
+        <ControlSwitch language={selectedLanguage} ></ControlSwitch>
+      </LanguageSwitch>
     </>
   )
 };
 
-const ListItem = styled.li`
+const ListItem = styled(Link)`
   cursor: pointer;
   border-bottom: 2px solid transparent;
   padding: 5px 0;
   transition: border-color .4s;
+  color: #000;
 
   &:hover{
     border-color: #4D8DF7;
@@ -46,6 +47,7 @@ const ListItem = styled.li`
 `;
 
 const LanguageSwitch = styled.div`
+  margin: 0 2rem;
   width: 45px;
   height: 20px;
   padding: 2px;
@@ -55,6 +57,7 @@ const LanguageSwitch = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 
   h6{
     font-weight: 400;
@@ -70,7 +73,7 @@ const ControlSwitch = styled.div`
   position: absolute;
   top: 1px;
   left: ${ props => props.language === 'en' ? '1px' : '50%' };
-  transition: left .5s;
+  transition: left .35s;
 `;
 
 export default NavListContent;

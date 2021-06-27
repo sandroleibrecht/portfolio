@@ -35,6 +35,9 @@ function NavSide() {
 };
 
 const MenuShadow = styled.div`
+  @media (min-width: 571px){
+    display: none;
+  }
   z-index: ${ props => props.menuOpen ? '900' : '-900' };
   position: absolute;
   top: 0;
@@ -68,8 +71,15 @@ const List = styled.div`
   justify-content: center;
   align-items: center;
 
-  li{
+  a{
     margin: 1rem 0;
+  }
+
+  div:first-of-type{
+    margin-top: 1rem;
+    div{
+      margin-top: 0;
+    }
   }
 `;
 

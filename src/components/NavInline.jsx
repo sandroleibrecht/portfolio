@@ -21,7 +21,7 @@ const List = styled.div`
   justify-content: space-evenly;
   align-items: center;
 
-  li{
+  a{
     margin: 0 2rem;
   }
 `;

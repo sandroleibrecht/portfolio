@@ -36,7 +36,6 @@ const ListItem = styled(Link)`
   border-bottom: 2px solid transparent;
   padding: 5px 0;
   transition: border-color .4s;
-  color: #000;
 
   &:hover{
     border-color: #4D8DF7;

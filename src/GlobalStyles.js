@@ -13,6 +13,10 @@ const GlobalStyles = createGlobalStyle`
   body, html{
     overflow-x: hidden;
   }
+
+  a, p{
+    color: #383838;
+  } 
 `;
 
 export default GlobalStyles;

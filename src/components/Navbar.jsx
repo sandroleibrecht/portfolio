@@ -2,7 +2,7 @@ import React from 'react';
 // Styling
 import styled from 'styled-components';
 // Logo
-import logoImage from '../assets/SmallLogo.png';
+import logoImage from '../assets/AppLogo.png';
 // Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -11,11 +11,13 @@ import NavInline from './NavInline';
 import NavSide from './NavSide';
 // Redux
 import { setNavOpen } from '../state/navbarState';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 function Navbar() {
 
   const dispatch = useDispatch();
+
+  const { menuOpen } = useSelector( state => state.navbar );
 
   // Functions
   const handleMenuOpen = () => {
@@ -24,7 +26,7 @@ function Navbar() {
 
   return (
     <StyledNavbar>
-      <Logo src={logoImage} alt="Page Logo" />
+      <Logo src={logoImage} menuOpen={menuOpen} alt="Page Logo" />
       <MenuIcon icon={faBars} onClick={ handleMenuOpen }/>
       <NavInline/>
       <NavSide/>
@@ -49,6 +51,8 @@ const StyledNavbar = styled.nav`
 const Logo = styled.img`
   width: 35px;
   height: 35px;
+  opacity: ${ props => props.menuOpen ? 0.5 : 1 };
+  transition: opacity 1s;
 `;
 
 const MenuIcon = styled(FontAwesomeIcon)`

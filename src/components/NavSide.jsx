@@ -22,21 +22,35 @@ function NavSide() {
   };
 
   return (
+    <>
+    <MenuShadow menuOpen={menuOpen} />
     <MenuContainer menuOpen={menuOpen} >
       <List>
         <CloseIcon icon={faTimes} onClick={ handleMenuClose } />
         <NavListContent/>
       </List>
     </MenuContainer>
+    </>
   )
 };
+
+const MenuShadow = styled.div`
+  z-index: ${ props => props.menuOpen ? '900' : '-900' };
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: ${ props => props.menuOpen ?'#000000b7' : 'transparent' };
+  transition: background-color .55s;
+`;
 
 const MenuContainer = styled.nav`
   @media (min-width: 571px){
     display: none;
   }
   padding-top: 1rem;
-  z-index: 1000;
+  z-index: 1000 !important;
   background-color: #fff;
   position: absolute;
   top: 0;
@@ -44,9 +58,8 @@ const MenuContainer = styled.nav`
   max-width: 100%;
   width: 9.5rem;
   height: 100%;
-  border: 1px solid #ccc;
   transform: ${ props => props.menuOpen ? 'translate(0)' : 'translate(100%)' };
-  transition: transform .7s;
+  transition: transform .55s;
 `;
 
 const List = styled.div`

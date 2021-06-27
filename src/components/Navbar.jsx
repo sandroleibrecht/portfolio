@@ -13,6 +13,8 @@ function Navbar() {
         <li>Projects</li>  
         <li>Contact</li>
         <LanguageSwitch>
+          <h6>DE</h6>
+          <h6>EN</h6>
           <div></div>
         </LanguageSwitch>
       </NavList>
@@ -48,17 +50,26 @@ const LanguageSwitch = styled.div`
   width: 45px;
   height: 20px;
   padding: 2px;
-  border: 1px solid #ccc;
+  border: 2px solid #d8d8d8;
   border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   div{
-    height: 100%;
-    width: 50%;
-    border: 1px solid #4D8DF7;
+    height: calc(100% - 2px);
+    width: calc(50% - 2px);
     background-color: #4D8DF7;
     border-radius: 10px;
-    position: relative;
-    top: 0;
-    left: 0;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+  }
+
+  h6{
+    font-weight: 400;
+    margin: 0 .15rem;
   }
 `;
 

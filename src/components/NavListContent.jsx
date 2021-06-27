@@ -20,7 +20,17 @@ function NavListContent() {
 };
 
 const ListItem = styled.li`
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  padding: 5px 0;
+  transition: border-color .4s;
 
+  &:hover{
+    border-color: #4D8DF7;
+  }
+  &:last-child:hover{
+    border-color: transparent;
+  }
 `;
 
 const LanguageSwitch = styled.div`

@@ -44,7 +44,6 @@ const MenuIcon = styled(FontAwesomeIcon)`
   @media (min-width: 571px){
     display: none;
   }
-  z-index: 1000;
   color: #4D8DF7;
   font-size: 2rem;
 `;

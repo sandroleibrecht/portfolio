@@ -53,6 +53,17 @@ const Logo = styled.img`
   height: 35px;
   opacity: ${ props => props.menuOpen ? 0.5 : 1 };
   transition: opacity 1s;
+  cursor: pointer;
+
+  &:hover{
+    animation: zoomInOut .7s 1;
+  }
+
+  @keyframes zoomInOut{
+    0%{transform: scale(1)}
+    50%{transform: scale(1.1)}
+    100%{transform: scale(1)}
+  }
 `;
 
 const MenuIcon = styled(FontAwesomeIcon)`

@@ -1,6 +1,7 @@
 import React from 'react';
-// Styling
+// Styling & Animations
 import styled from 'styled-components';
+import { fadeInRightAnimation, fadeInLeftAnimation } from '../GlobalStyles';
 // Logo
 import logoImage from '../assets/AppLogo.png';
 // Font Awesome
@@ -55,16 +56,8 @@ const Logo = styled.img`
   width: 35px;
   height: 35px;
   cursor: pointer;
-
-  &:hover{
-    animation: zoomInOut .7s 1;
-  }
-
-  @keyframes zoomInOut{
-    0%{transform: scale(1)}
-    50%{transform: scale(1.1)}
-    100%{transform: scale(1)}
-  }
+  opacity: 0;
+  animation: ${fadeInLeftAnimation} 1s 1 forwards;
 `;
 
 const MenuIcon = styled(FontAwesomeIcon)`
@@ -74,6 +67,8 @@ const MenuIcon = styled(FontAwesomeIcon)`
   color: #4D8DF7;
   font-size: 2rem;
   cursor: pointer;
+  opacity: 0;
+  animation: ${fadeInRightAnimation} 1s 1 forwards;
 `;
 
 export default Navbar;

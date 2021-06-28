@@ -103,7 +103,7 @@ const LanguageSwitch = styled.div`
   cursor: pointer;
   opacity: 0;
   animation: ${fadeInRightAnimation} 1s 1 forwards;
-  animation-delay: 1.1s;
+  animation-delay: .5s;
 
   h6{
     font-weight: 300;

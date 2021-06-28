@@ -8,15 +8,12 @@ const GlobalStyles = createGlobalStyle`
     list-style-type: none;
     box-sizing: border-box;
     font-family: Quicksand, sans-serif;
+    color: #383838;
   }
 
   body, html{
     overflow-x: hidden;
   }
-
-  a, p{
-    color: #383838;
-  } 
 `;
 
 export default GlobalStyles;

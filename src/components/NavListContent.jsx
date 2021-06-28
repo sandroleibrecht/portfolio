@@ -50,8 +50,8 @@ const ListItem = styled(Link)`
   transition: color .25s;
   @media (hover: hover){
     &:hover{
-    color: #4D8DF7;
-  }
+      color: #4D8DF7;
+    }
   }
 `;
 

@@ -53,8 +53,8 @@ const StyledNavbar = styled.nav`
 `;
 
 const Logo = styled.img`
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
   opacity: 0;
   animation: ${fadeInLeftAnimation} 1s 1 forwards;

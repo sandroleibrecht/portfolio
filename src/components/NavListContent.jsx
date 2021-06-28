@@ -1,8 +1,9 @@
 import React from 'react';
-// Styling
+// Styling & Animation
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 // Router
-import {Link} from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 // Redux
 import { setLanguage } from '../state/languageState';
 import { useDispatch, useSelector } from 'react-redux';
@@ -12,6 +13,8 @@ function NavListContent() {
   const dispatch = useDispatch();
   const { selectedLanguage } = useSelector( state => state.language );
 
+  const { pathname } = useLocation();
+
   // Functions
   const handleLanguageChange = () => {
     selectedLanguage === 'en' ? dispatch(setLanguage('de')) : dispatch(setLanguage('en'));
@@ -19,9 +22,18 @@ function NavListContent() {
 
   return (
     <>
-      <ListItem to='/'>About</ListItem>
-      <ListItem to='/projects'>Projects</ListItem>
-      <ListItem to='/contact'>Contact</ListItem>
+      <ListItem to='/'>
+        About
+        <Line transition={{ duration: 0.7 }} initial={{ width: 0 }} animate={{ width: pathname === '/' ? '100%' : '0' }}/>
+      </ListItem>
+      <ListItem to='/projects'>
+        Projects
+        <Line transition={{ duration: 0.7 }} initial={{ width: 0 }} animate={{ width: pathname === '/projects' ? '100%' : '0' }}/>
+      </ListItem>
+      <ListItem to='/contact'>
+        Contact
+        <Line transition={{ duration: 0.7 }} initial={{ width: 0 }} animate={{ width: pathname === '/contact' ? '100%' : '0' }}/>
+      </ListItem>
       <LanguageSwitch onClick={handleLanguageChange}>
         <h6>DE</h6>
         <h6>EN</h6>
@@ -33,16 +45,24 @@ function NavListContent() {
 
 const ListItem = styled(Link)`
   cursor: pointer;
-  border-bottom: 2px solid transparent;
   padding: 5px 0;
-  transition: border-color .4s;
+  position: relative;
+  transition: color .25s;
+  @media (hover: hover){
+    &:hover{
+    color: #4D8DF7;
+  }
+  }
+`;
 
-  &:hover{
-    border-color: #4D8DF7;
-  }
-  &:last-child:hover{
-    border-color: transparent;
-  }
+const Line = styled(motion.div)`
+  height: .22rem;
+  border-radius: 70px;
+  background: #4D8DF7;
+  width: 0;
+  position: absolute;
+  bottom: -15%;
+  left: 0%;
 `;
 
 const LanguageSwitch = styled.div`

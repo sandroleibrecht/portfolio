@@ -1,10 +1,11 @@
 import React from 'react';
+import AboutHeader from '../components/AboutHeader';
 
 function AboutPage() {
   return (
-    <div>
-      Home / About Page
-    </div>
+    <>
+      <AboutHeader/>
+    </>
   )
 };
 

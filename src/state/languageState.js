@@ -7,7 +7,9 @@ export const setLanguage = ( language ) => {
 };
 
 // Reducer
-const initialState = { selectedLanguage: 'en' }
+const localStoreLanguage = localStorage.getItem('spReactPortfolio_Language') || 'en';
+const initialState = { selectedLanguage: localStoreLanguage };
+
 const LanguageReducer = ( state = initialState, action ) => {
   switch( action.type ){
     case 'SET_LANGUAGE':

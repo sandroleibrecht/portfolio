@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 // Styling & Animation
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
@@ -26,12 +26,6 @@ function NavListContent() {
       localStorage.setItem('spReactPortfolio_Language', 'en');
     }
   };
-
-  // Update LocalStorage Language
-  useEffect( () => {
-    const localLanguage = localStorage.getItem('spReactPortfolio_Language');
-    dispatch( setLanguage(localLanguage) );
-  }, [dispatch]);
 
   return (
     <>

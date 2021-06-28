@@ -48,6 +48,7 @@ const ListItem = styled(Link)`
   padding: 5px 0;
   position: relative;
   transition: color .25s;
+  font-weight: 100;
   @media (hover: hover){
     &:hover{
       color: #4D8DF7;
@@ -56,12 +57,12 @@ const ListItem = styled(Link)`
 `;
 
 const Line = styled(motion.div)`
-  height: .22rem;
-  border-radius: 70px;
-  background: #4D8DF7;
+  height: 2px;
+  border-radius: 100px;
+  background: #4d8ef7c1;
   width: 0;
   position: absolute;
-  bottom: -15%;
+  bottom: -2px;
   left: 0%;
 `;
 
@@ -79,7 +80,7 @@ const LanguageSwitch = styled.div`
   cursor: pointer;
 
   h6{
-    font-weight: 400;
+    font-weight: 300;
     margin: 0 .15rem;
   }
 `;

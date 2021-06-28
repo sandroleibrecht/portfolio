@@ -57,7 +57,7 @@ const ListItem = styled(Link)`
   transition: color .25s;
   font-weight: 100;
   transform: scale(0);
-  animation: ${spinInAnimation} 1s 1 forwards;
+  animation: ${spinInAnimation} 1.5s 1 forwards;
 
   &:nth-child(2){
     animation-delay: .1s;

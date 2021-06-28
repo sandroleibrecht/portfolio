@@ -9,6 +9,8 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 // Components
 import NavInline from './NavInline';
 import NavSide from './NavSide';
+// Router
+import { Link } from 'react-router-dom';
 // Redux
 import { setNavOpen } from '../state/navbarState';
 import { useDispatch, useSelector } from 'react-redux';
@@ -16,7 +18,6 @@ import { useDispatch, useSelector } from 'react-redux';
 function Navbar() {
 
   const dispatch = useDispatch();
-
   const { menuOpen } = useSelector( state => state.navbar );
 
   // Functions
@@ -26,7 +27,9 @@ function Navbar() {
 
   return (
     <StyledNavbar>
-      <Logo src={logoImage} menuOpen={menuOpen} alt="Page Logo" />
+      <Link to='/'>
+        <Logo src={logoImage} menuOpen={menuOpen} alt="Page Logo" />
+      </Link>
       <MenuIcon icon={faBars} onClick={ handleMenuOpen }/>
       <NavInline/>
       <NavSide/>

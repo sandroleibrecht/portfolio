@@ -44,6 +44,7 @@ const StyledNavbar = styled.nav`
   justify-content: space-around;
   align-items: center;
   padding: 1rem 0 1rem 2rem;
+  width: 100vw;
 
   @media (max-width: 570px){
     justify-content: space-between;

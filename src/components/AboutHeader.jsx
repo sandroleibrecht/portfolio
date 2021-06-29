@@ -5,11 +5,13 @@ import { Icon } from '@material-ui/core';
 import { GitHub, LinkedIn } from '@material-ui/icons';
 // Image
 import headerImage from '../assets/headerImage.svg';
+// Material UI
+import Grid from '@material-ui/core/Grid';
 
 function AboutHeader() {
   return (
-    <HeaderContainer>
-      <InfoContainer>
+    <HeaderContainer container spacing={0} component="header">
+      <InfoContainer item xs={12} sm={12} md={6} lg={6}>
         <div>
           <h3>Hello !</h3>
           <h2>I'm Sandro</h2>
@@ -18,7 +20,7 @@ function AboutHeader() {
           <Icon><LinkedIn/></Icon>
         </div>
       </InfoContainer>
-      <DesignContainer>
+      <DesignContainer item xs={12} sm={12} md={6} lg={6}>
           <img src={headerImage} alt="code window"/>
       </DesignContainer>
     </HeaderContainer>
@@ -28,19 +30,14 @@ function AboutHeader() {
 export default AboutHeader;
 
 // Styled Components
-const HeaderContainer = styled.header`
+const HeaderContainer = styled(Grid)`
   background-color: #f7f7f7c1;
   padding: calc(10% + 1vh);
   width: 100vw;
   min-height: calc(100vh - 66px);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
 `;
 
-const InfoContainer = styled.div`
-  flex: 1;
+const InfoContainer = styled(Grid)`
   width: 100%;
   display: flex;
   justify-content: center;
@@ -63,8 +60,7 @@ const InfoContainer = styled.div`
   }
 `;
 
-const DesignContainer = styled.div`
-  flex: 1;
+const DesignContainer = styled(Grid)`
   display: flex;
   justify-content: center;
   align-items: center;

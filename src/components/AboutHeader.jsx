@@ -3,6 +3,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { Icon } from '@material-ui/core';
 import { GitHub, LinkedIn } from '@material-ui/icons';
+// Image
+import headerImage from '../assets/headerImage.svg';
 
 function AboutHeader() {
   return (
@@ -17,7 +19,7 @@ function AboutHeader() {
         </div>
       </InfoContainer>
       <DesignContainer>
-        <div></div>
+          <img src={headerImage} alt="code window"/>
       </DesignContainer>
     </HeaderContainer>
   );
@@ -66,9 +68,9 @@ const DesignContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  div{
-    width: 30rem;
-    height: 120px;
-    border: 1px solid #333;
-  }
+
+    img{
+      width: 100%;
+      height: auto;
+    }
 `;

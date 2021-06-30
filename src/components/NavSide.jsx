@@ -23,7 +23,7 @@ function NavSide() {
 
   return (
     <>
-    <MenuShadow menuOpen={menuOpen} />
+    <MenuShadow menuOpen={menuOpen} onClick={ handleMenuClose }/>
     <MenuContainer menuOpen={menuOpen} >
       <List>
         <CloseIcon icon={faTimes} onClick={ handleMenuClose } />

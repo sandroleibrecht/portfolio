@@ -4,7 +4,7 @@ import styled from 'styled-components';
 // Image
 import headerImage from '../assets/headerImage.svg';
 // Material UI
-import { GitHub } from '@material-ui/icons';
+import { GitHub, LinkedIn } from '@material-ui/icons';
 import Grid from '@material-ui/core/Grid';
 
 function AboutHeader() {
@@ -12,10 +12,11 @@ function AboutHeader() {
     <HeaderContainer container spacing={0} component="header">
       <InfoContainer item xs={12} sm={12} md={6} lg={6}>
         <div>
-          <h3>Hello !</h3>
-          <h2>Ich bin Sandro</h2>
-          <h4>A passionate <span>Web Developer</span> with a desire to learn</h4>
+          <h3>Hello ,</h3>
+          <h2>i'm Sandro !</h2>
+          <h4>A passionate <span>Web Developer</span> with a desire to learn .</h4>
           <GitHub onClick={ () => window.open('https://github.com/sandropernerstorfer', '_blank')}/>
+          <LinkedIn onClick={ () => window.open('https://www.linkedin.com/in/sandro-pernerstorfer-3153b31ab/', '_blank')}/>
         </div>
       </InfoContainer>
       <DesignContainer item xs={12} sm={12} md={6} lg={6}>
@@ -29,9 +30,11 @@ export default AboutHeader;
 
 // Styled Components
 const HeaderContainer = styled(Grid)`
-  /* background-color: #f7f7f7c1; */
   padding: 5vw calc(9% + 1vh);
   width: 100vw;
+  -webkit-box-shadow: inset 0px -15px 26px -12px #E3E3E3; 
+  box-shadow: inset 0px -11px 30px -12px #E3E3E3;
+
   @media (max-width: 959px){
     padding-left: 4vw;
     padding-right: 4vw;
@@ -44,6 +47,10 @@ const InfoContainer = styled(Grid)`
   justify-content: center;
   align-items: center;
 
+  h2,h3,h4{
+    color: #464444;
+  }
+
   h3{
     font-size: 2.5rem;
   }
@@ -54,7 +61,7 @@ const InfoContainer = styled(Grid)`
     font-weight: 400;
     font-size: 1.1rem;
     margin: .5rem 0 1rem .25rem;
-    color: #b3b3b3;
+    color: #999898;
     span{
       color: var(--primary);
     }
@@ -63,7 +70,8 @@ const InfoContainer = styled(Grid)`
     color: #fff;
     font-size: 2rem;
     border-radius: 15px;
-    padding: 3px;
+    margin: 1rem 1.5rem 1rem .2rem;
+    padding: 4px;
     background-color: var(--primaryLight);
     cursor: pointer;
   }
@@ -79,7 +87,7 @@ const InfoContainer = styled(Grid)`
     h3  { font-size: 5vw;   }
     h2  { font-size: 8vw;  }
     h4  { font-size: 2.5vw; }
-    svg { font-size: 2rem;  }
+    svg { font-size: 2rem; margin-left: 1.5rem; }
     text-align: center;
   }
 

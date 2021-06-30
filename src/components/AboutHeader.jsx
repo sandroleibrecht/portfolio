@@ -74,6 +74,13 @@ const InfoContainer = styled(Grid)`
     padding: 4px;
     background-color: var(--primaryLight);
     cursor: pointer;
+    transition: transform .2s;
+
+    @media (hover: hover){
+      &:hover{
+        transform: scale(1.2);
+      }
+    }
   }
 
   @media (max-width: 1370px){

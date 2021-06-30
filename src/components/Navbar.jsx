@@ -41,13 +41,12 @@ function Navbar() {
 // Styled Components
 const StyledNavbar = styled.nav`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 1rem 0 1rem 2rem;
+  padding: 1rem 10%;
   width: 100vw;
 
   @media (max-width: 570px){
-    justify-content: space-between;
     padding-left: 2.3rem;
     padding-right: 3rem;
   }
@@ -56,6 +55,7 @@ const StyledNavbar = styled.nav`
 const Logo = styled.img`
   width: 30px;
   height: 30px;
+  margin-right: 1.5rem;
   cursor: pointer;
   opacity: 0;
   animation: ${fadeInLeftAnimation} 1s 1 forwards;
@@ -65,8 +65,8 @@ const MenuIcon = styled(FontAwesomeIcon)`
   @media (min-width: 571px){
     display: none;
   }
-  color: var(--primary);
-  font-size: 2rem;
+  color: var(--primaryLight);
+  font-size: 2.2rem;
   cursor: pointer;
   opacity: 0;
   animation: ${fadeInRightAnimation} 1s 1 forwards;

@@ -56,3 +56,20 @@ export const fadeInLeftAnimation = keyframes`
     transform: translateX(0);
   }
 `;
+
+// Framer Motion Sets
+export const pageAnimation = {
+  hidden: {
+    opacity: 0,
+    y: 300
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 1, ease: 'easeOut'}
+  },
+  exit: {
+    opacity: 0,
+    transition: { duration: 0.6 }
+  }
+};

@@ -1,15 +1,13 @@
 import React from 'react';
-// Theme
-import { ThemeProvider } from '@material-ui/core';
-import lightTheme from '../Theme';
-// Material UI Components
-import Typography from '@material-ui/core/Typography';
+// Framer Motion
+import { motion } from 'framer-motion';
+import { pageAnimation } from '../GlobalStyles';
 
 function ProjectDetails() {
   return (
-    <ThemeProvider theme={lightTheme}>
-      <Typography variant="h3">Project Details</Typography>
-    </ThemeProvider>
+    <motion.div variants={pageAnimation} initial="hidden" animate="show" exit="exit">
+      Project Details
+    </motion.div>
   );
 };
 

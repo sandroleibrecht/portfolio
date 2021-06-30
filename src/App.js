@@ -1,4 +1,6 @@
 import React from "react";
+// Framer Motion
+import { AnimatePresence } from "framer-motion";
 // Global Styling
 import styled from "styled-components";
 import GlobalStyles from './GlobalStyles';
@@ -20,20 +22,22 @@ function App() {
     <AppWrapper>
       <GlobalStyles/>
       <Navbar/>
-      <Switch location={location}>
-        <Route path='/' exact >
-          <AboutPage/>
-        </Route>
-        <Route path='/projects' exact >
-          <ProjectsPage/>
-        </Route>
-        <Route path='/projects/:id' >
-          <ProjectDetails/>
-        </Route>
-        <Route path='/contact'>
-          <ContactPage/>
-        </Route>
-      </Switch>
+      <AnimatePresence exitBeforeEnter>
+        <Switch location={location} key={location.pathname}>
+          <Route path='/' exact >
+            <AboutPage/>
+          </Route>
+          <Route path='/projects' exact >
+            <ProjectsPage/>
+          </Route>
+          <Route path='/projects/:id' >
+            <ProjectDetails/>
+          </Route>
+          <Route path='/contact'>
+            <ContactPage/>
+          </Route>
+        </Switch>
+        </AnimatePresence>
     </AppWrapper>
   );
 };

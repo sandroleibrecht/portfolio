@@ -1,4 +1,7 @@
 import React from 'react';
+// Translations
+import german from '../translations/about/header_de.json';
+import english from '../translations/about/header_en.json';
 // Styling & Animations
 import styled from 'styled-components';
 // Image
@@ -6,15 +9,21 @@ import headerImage from '../assets/headerImage.svg';
 // Material UI
 import { GitHub, LinkedIn } from '@material-ui/icons';
 import Grid from '@material-ui/core/Grid';
+// Redux
+import { useSelector } from 'react-redux';
 
 function AboutHeader() {
+
+  const { selectedLanguage } = useSelector( state => state.language );
+  const translation = selectedLanguage === 'en' ? english : german;
+
   return (
     <HeaderContainer container spacing={0} component="header">
       <InfoContainer item xs={12} sm={12} md={6} lg={6}>
         <div>
-          <h3>Hello ,</h3>
-          <h2>i'm Sandro !</h2>
-          <h4>A passionate <span>Web Developer</span> with a desire to learn .</h4>
+          <h3>{translation.greeting}</h3>
+          <h2>{translation.name}</h2>
+          <h4>{translation.quote1}<span>{translation.title}</span>{translation.quote2}</h4>
           <GitHub onClick={ () => window.open('https://github.com/sandropernerstorfer', '_blank')}/>
           <LinkedIn onClick={ () => window.open('https://www.linkedin.com/in/sandro-pernerstorfer-3153b31ab/', '_blank')}/>
         </div>

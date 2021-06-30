@@ -1,7 +1,7 @@
 import React from 'react';
 // Translations
-import german from '../translations/nav_de.json';
-import english from '../translations/nav_en.json';
+import german from '../translations/navbar/links_de.json';
+import english from '../translations/navbar/links_en.json';
 // Styling & Animation
 import styled from 'styled-components';
 import { motion } from 'framer-motion';

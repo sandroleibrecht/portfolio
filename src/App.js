@@ -1,5 +1,6 @@
 import React from "react";
 // Global Styling
+import styled from "styled-components";
 import GlobalStyles from './GlobalStyles';
 // Pages
 import AboutPage from "./pages/AboutPage";
@@ -16,7 +17,7 @@ function App() {
   const location = useLocation();
 
   return (
-    <>
+    <AppWrapper>
       <GlobalStyles/>
       <Navbar/>
       <Switch location={location}>
@@ -33,8 +34,16 @@ function App() {
           <ContactPage/>
         </Route>
       </Switch>
-    </>
+    </AppWrapper>
   );
 };
+
+const AppWrapper = styled.div`
+  min-height: 100vh;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+`;
 
 export default App;

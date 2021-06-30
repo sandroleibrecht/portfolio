@@ -45,14 +45,14 @@ const InfoContainer = styled(Grid)`
   align-items: center;
 
   h3{
-    font-size: 2.5vw;
+    font-size: 2.5rem;
   }
   h2{
-    font-size: 5vw;
+    font-size: 5rem;
   }
   h4{
     font-weight: 400;
-    font-size: 1.4vw;
+    font-size: 1.1rem;
     margin: .5rem 0 1rem .25rem;
     color: #b3b3b3;
     span{
@@ -62,16 +62,15 @@ const InfoContainer = styled(Grid)`
   svg{
     color: var(--primaryLight);
     margin-left: .25rem;
-    font-size: 2.5vw;
+    font-size: 2rem;
   }
 
-  @media (min-width: 1370px){
-    h3  { font-size: 2.5rem;  }
-    h2  { font-size: 5rem;    }
-    h4  { font-size: 1.1rem;  }
+  @media (max-width: 1370px){
+    h3  { font-size: 2.5vw;  }
+    h2  { font-size: 5vw;    }
+    h4  { font-size: 1.4vw;  }
     svg { font-size: 2rem;    }
   }
-
 
   @media (max-width: 959px){
     h3  { font-size: 5vw;   }

@@ -1,6 +1,14 @@
 import { createGlobalStyle, keyframes } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
+
+  :root{
+    --primary: #4D8DF7;
+    --primaryLight: #68a0fa;
+    --primaryDark: #256cdd;
+    --secondary: #F7B74D;
+  }
+
   *{
     margin: 0;
     padding: 0;
@@ -14,7 +22,7 @@ const GlobalStyles = createGlobalStyle`
     overflow-x: hidden;
   }
 
-  p, a, h1{
+  p, a, h1, h2, h3{
     color: #383838;
   }
 `;

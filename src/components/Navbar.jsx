@@ -65,7 +65,7 @@ const MenuIcon = styled(FontAwesomeIcon)`
   @media (min-width: 571px){
     display: none;
   }
-  color: #4D8DF7;
+  color: var(--primary);
   font-size: 2rem;
   cursor: pointer;
   opacity: 0;

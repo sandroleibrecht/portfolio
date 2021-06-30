@@ -42,7 +42,7 @@ const InfoContainer = styled(Grid)`
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   h3{
     font-size: 2.5rem;
   }
@@ -55,7 +55,7 @@ const InfoContainer = styled(Grid)`
     margin-left: .25rem;
     color: #b3b3b3;
     span{
-      color: #4D8DF7;
+      color: var(--primary);
     }
   }
 `;

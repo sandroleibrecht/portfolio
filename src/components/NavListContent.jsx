@@ -68,7 +68,7 @@ const ListItem = styled(Link)`
 
   @media (hover: hover){
     &:hover{
-      color: #4D8DF7;
+      color: var(--primary);
     }
   }
 `;
@@ -76,7 +76,7 @@ const ListItem = styled(Link)`
 const Line = styled(motion.div)`
   height: 2px;
   border-radius: 100px;
-  background: #4d8ef7c1;
+  background: var(--primaryLight);
   width: 0;
   position: absolute;
   bottom: -2px;
@@ -108,8 +108,8 @@ const LanguageSwitch = styled.div`
 const ControlSwitch = styled.div`
   height: calc(100% - 2px);
   width: calc(50% - 2px);
-  background-color: #4D8DF7;
-  border: 2px solid #256cdd;
+  background-color: var(--primary);
+  border: 2px solid var(--primaryDark);
   border-radius: 10px;
   position: absolute;
   top: 1px;

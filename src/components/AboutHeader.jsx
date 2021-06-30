@@ -60,9 +60,12 @@ const InfoContainer = styled(Grid)`
     }
   }
   svg{
-    color: var(--primaryLight);
-    margin-left: .25rem;
+    color: #fff;
     font-size: 2rem;
+    border-radius: 15px;
+    padding: 3px;
+    background-color: var(--primaryLight);
+    cursor: pointer;
   }
 
   @media (max-width: 1370px){
@@ -74,7 +77,7 @@ const InfoContainer = styled(Grid)`
 
   @media (max-width: 959px){
     h3  { font-size: 5vw;   }
-    h2  { font-size: 10vw;  }
+    h2  { font-size: 8vw;  }
     h4  { font-size: 2.5vw; }
     svg { font-size: 2rem;  }
     text-align: center;

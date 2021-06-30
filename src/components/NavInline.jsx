@@ -14,7 +14,7 @@ function NavInline() {
 
 const List = styled.div`
 
-  @media (max-width: 570px){
+  @media (max-width: 630px){
     display: none;
   }
   display: flex;

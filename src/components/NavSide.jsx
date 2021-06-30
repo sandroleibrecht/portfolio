@@ -35,7 +35,7 @@ function NavSide() {
 };
 
 const MenuShadow = styled.div`
-  @media (min-width: 571px){
+  @media (min-width: 631px){
     display: none;
   }
   z-index: ${ props => props.menuOpen ? '900' : '-900' };
@@ -49,7 +49,7 @@ const MenuShadow = styled.div`
 `;
 
 const MenuContainer = styled.nav`
-  @media (min-width: 571px){
+  @media (min-width: 631px){
     display: none;
   }
   padding-top: 1rem;

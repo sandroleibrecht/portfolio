@@ -1,4 +1,7 @@
 import React from 'react';
+// Translations
+import german from '../translations/nav_de.json';
+import english from '../translations/nav_en.json';
 // Styling & Animation
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
@@ -15,6 +18,8 @@ function NavListContent() {
   const { selectedLanguage } = useSelector( state => state.language );
   const { pathname } = useLocation();
 
+  const translation = selectedLanguage === 'en' ? english : german;
+
   // Functions
   const handleLanguageChange = () => {
     if( selectedLanguage === 'en' ){
@@ -30,15 +35,15 @@ function NavListContent() {
   return (
     <>
       <ListItem to='/'>
-        About
+        {translation.about}
         <Line transition={{ duration: 0.7 }} initial={{ width: 0 }} animate={{ width: pathname === '/' ? '100%' : '0' }}/>
       </ListItem>
       <ListItem to='/projects'>
-        Projects
+        {translation.projects}
         <Line transition={{ duration: 0.7 }} initial={{ width: 0 }} animate={{ width: pathname === '/projects' ? '100%' : '0' }}/>
       </ListItem>
       <ListItem to='/contact'>
-        Contact
+        {translation.contact}
         <Line transition={{ duration: 0.7 }} initial={{ width: 0 }} animate={{ width: pathname === '/contact' ? '100%' : '0' }}/>
       </ListItem>
       <LanguageSwitch onClick={handleLanguageChange}>
@@ -55,6 +60,7 @@ const ListItem = styled(Link)`
   padding: 5px 0;
   position: relative;
   transition: color .25s;
+  white-space: nowrap;
   font-weight: 100;
   transform: scale(0);
   animation: ${spinInAnimation} 1.5s 1 forwards;

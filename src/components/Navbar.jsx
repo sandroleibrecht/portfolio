@@ -46,7 +46,7 @@ const StyledNavbar = styled.nav`
   padding: 1rem 9.5vw;
   width: 100vw;
 
-  @media (max-width: 570px){
+  @media (max-width: 630px){
     padding-left: 2.3rem;
     padding-right: 3rem;
   }
@@ -62,7 +62,7 @@ const Logo = styled.img`
 `;
 
 const MenuIcon = styled(FontAwesomeIcon)`
-  @media (min-width: 571px){
+  @media (min-width: 631px){
     display: none;
   }
   color: var(--primaryLight);

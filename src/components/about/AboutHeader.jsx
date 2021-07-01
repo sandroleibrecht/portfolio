@@ -41,10 +41,10 @@ export default AboutHeader;
 const HeaderContainer = styled(Grid)`
   padding: 5vw calc(9% + 1vh);
   width: 100vw;
-  -webkit-box-shadow: inset 0px -15px 26px -12px #E3E3E3; 
   box-shadow: inset 0px -11px 30px -12px #E3E3E3;
 
   @media (max-width: 959px){
+    padding-top: 4rem;
     padding-left: 4vw;
     padding-right: 4vw;
   }

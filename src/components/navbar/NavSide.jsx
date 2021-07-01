@@ -43,7 +43,7 @@ const MenuShadow = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: ${ props => props.menuOpen ?'#000000b7' : 'transparent' };
   transition: background-color .55s;
 `;
@@ -68,8 +68,10 @@ const MenuContainer = styled.nav`
 const List = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  background-color: #fff;
+  height: 100vh;
 
   a{
     margin: 1rem 0;

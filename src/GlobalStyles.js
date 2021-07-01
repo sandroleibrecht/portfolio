@@ -61,7 +61,7 @@ export const fadeInLeftAnimation = keyframes`
 export const pageAnimation = {
   hidden: {
     opacity: 0,
-    y: 300
+    y: 100
   },
   show: {
     opacity: 1,

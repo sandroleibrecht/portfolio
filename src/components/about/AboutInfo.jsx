@@ -26,7 +26,7 @@ function AboutInfo() {
         <Card>
           <FontAwesomeIcon icon={faBook} />
           <h4>Improvement</h4>
-          <p>Texttexttext</p>
+          <p>I especially enjoy learning and improving myself, to make life easier for myself and everyone around me</p>
         </Card>
       </CardContainer>
     </InfoContainer>
@@ -55,23 +55,32 @@ const CardContainer = styled.div`
 
 const Card = styled.div`
   max-width: 20rem;
-  min-width: 275px;
+  min-width: 260px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #ccc;
   border-radius: 12px;
   text-align: center;
-
-  h4{}
-
-  p{}
+  padding: 1rem;
+  box-shadow: 0 0 14px -5px #a39f9fa9;
 
   svg{
     font-size: 5rem;
-    color: #444242;
+    color: #fff;
+    padding: .7rem;
+    border-radius: 20px;
+    background-color: var(--primary);
+  }
+
+  h4{
     margin: 1rem 0;
+  }
+
+  p{
+    line-height: 1.5rem;
+    font-weight: 400;
   }
 `;
 

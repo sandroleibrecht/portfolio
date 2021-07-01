@@ -47,7 +47,7 @@ const AppWrapper = styled.div`
   position: relative;
   top: 0;
   left: 0;
-  overflow-x: hidden;
+  overflow: hidden;
 `;
 
 export default App;

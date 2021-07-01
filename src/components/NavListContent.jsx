@@ -64,12 +64,13 @@ const ListItem = styled(Link)`
   font-weight: 100;
   transform: scale(0);
   animation: ${spinInAnimation} 1.5s 1 forwards;
+  animation-delay: .4s;
 
   &:nth-child(2){
-    animation-delay: .1s;
+    animation-delay: .6s;
   }
   &:nth-child(3){
-    animation-delay: .3s;
+    animation-delay: .8s;
   }
 
   @media (hover: hover){
@@ -103,7 +104,7 @@ const LanguageSwitch = styled.div`
   cursor: pointer;
   opacity: 0;
   animation: ${fadeInRightAnimation} 1s 1 forwards;
-  animation-delay: .5s;
+  animation-delay: 1s;
 
   h6{
     font-weight: 300;

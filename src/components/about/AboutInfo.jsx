@@ -1,28 +1,36 @@
 import React from 'react';
+// Translations
+import english from '../../translations/about/info_en.json';
+import german from '../../translations/about/info_de.json';
 // Styling & Animations
 import styled from 'styled-components';
 // Font Awesome
 import { faLaptopCode, faServer, faBook } from '@fortawesome/free-solid-svg-icons';
 // Card Component
 import AboutCard from './AboutCard';
+// Redux
+import { useSelector } from 'react-redux';
 
 function AboutInfo() {
+
+  const { selectedLanguage } = useSelector( state => state.language );
+  const translation = selectedLanguage === 'en' ? english : german;
 
   const cardContent = [
     {
       icon: faLaptopCode,
-      heading: 'Frontend',
-      body: 'Focused on Frontend Development and primarily working with JavaScript and React'
+      heading: translation[0].heading,
+      body: translation[0].body
     },
     {
       icon: faServer,
-      heading: 'Backend',
-      body: 'While building out Full Stack Applications i gained good knowledge of working with API\'s and Databases'
+      heading: translation[1].heading,
+      body: translation[1].body
     },
     {
       icon: faBook,
-      heading: 'Improvement',
-      body: 'I especially enjoy learning and improving myself, to make life easier for myself and everyone around me'
+      heading: translation[2].heading,
+      body: translation[2].body
     }
   ]
 
@@ -45,7 +53,7 @@ const InfoContainer = styled.section`
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  padding: 2vw;
+  padding: 5vw 2vw;
 `;
 
 const CardContainer = styled.div`
@@ -55,6 +63,25 @@ const CardContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 1rem;
+
+  &:nth-child(1){
+    svg{
+      color: var(--primary);
+      background-color: #ecececba;
+    }
+  }
+  &:nth-child(2){
+    svg{
+      color: #F4B400;
+      background-color: #ecececba;
+    }
+  }
+  &:nth-child(3){
+    svg{
+      color: #42b426;
+      background-color: #ecececba;
+    }
+  }
 `;
 
 export default AboutInfo;

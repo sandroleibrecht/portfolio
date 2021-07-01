@@ -14,20 +14,18 @@ function AboutCard({ icon, heading, body }) {
   )
 };
 
-//! Fix line height bug
-
 // Styled Components
 const Card = styled.div`
   max-width: 20rem;
   min-width: 260px;
-  height: 300px;
+  height: 290px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   border-radius: 12px;
   text-align: center;
-  padding: 1rem;
+  padding: 2rem 1rem;
   box-shadow: 0 0 14px -5px #a39f9fa9;
 
   svg{
@@ -40,11 +38,14 @@ const Card = styled.div`
 
   h4{
     margin: 1rem 0;
+    font-weight: 500;
+    color: var(--primaryLight);
   }
 
   p{
     line-height: 1.5rem;
     font-weight: 400;
+    font-size: 0.9rem;
   }
 `;
 

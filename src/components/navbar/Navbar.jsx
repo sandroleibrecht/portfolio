@@ -1,9 +1,9 @@
 import React from 'react';
 // Styling & Animations
 import styled from 'styled-components';
-import { fadeInRightAnimation, fadeInLeftAnimation } from '../GlobalStyles';
+import { fadeInRightAnimation, fadeInLeftAnimation } from '../../GlobalStyles';
 // Logo
-import logoImage from '../assets/AppLogo.png';
+import logoImage from '../../assets/AppLogo.png';
 // Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -13,7 +13,7 @@ import NavSide from './NavSide';
 // Router
 import { Link } from 'react-router-dom';
 // Redux
-import { setNavOpen } from '../state/navbarState';
+import { setNavOpen } from '../../state/navbarState';
 import { useDispatch, useSelector } from 'react-redux';
 
 function Navbar() {

@@ -7,7 +7,7 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 // Components
 import NavListContent from './NavListContent';
 // Redux
-import { setNavClose } from '../state/navbarState';
+import { setNavClose } from '../../state/navbarState';
 import { useDispatch, useSelector } from 'react-redux';
 
 function NavSide() {

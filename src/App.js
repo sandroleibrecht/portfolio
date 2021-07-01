@@ -10,7 +10,7 @@ import ProjectsPage from "./pages/ProjectsPage";
 import ContactPage from "./pages/ContactPage";
 import ProjectDetails from "./pages/ProjectDetails";
 // Components
-import Navbar from "./components/Navbar";
+import Navbar from "./components/navbar/Navbar";
 // ROUTER
 import { Switch, Route, useLocation } from 'react-router-dom';
 

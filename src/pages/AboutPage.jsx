@@ -3,8 +3,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../GlobalStyles';
 // Components
-import AboutHeader from '../components/AboutHeader';
-import AboutInfo from '../components/AboutInfo';
+import AboutHeader from '../components/about/AboutHeader';
+import AboutInfo from '../components/about/AboutInfo';
 
 function AboutPage() {
   return (

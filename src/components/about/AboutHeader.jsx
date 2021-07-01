@@ -1,11 +1,11 @@
 import React from 'react';
 // Translations
-import german from '../translations/about/header_de.json';
-import english from '../translations/about/header_en.json';
+import german from '../../translations/about/header_de.json';
+import english from '../../translations/about/header_en.json';
 // Styling & Animations
 import styled from 'styled-components';
 // Image
-import headerImage from '../assets/headerImage.svg';
+import headerImage from '../../assets/headerImage.svg';
 // Material UI
 import { GitHub, LinkedIn } from '@material-ui/icons';
 import Grid from '@material-ui/core/Grid';
@@ -22,7 +22,7 @@ function AboutHeader() {
       <InfoContainer item xs={12} sm={12} md={6} lg={6}>
         <div>
           <h3>{translation.greeting}</h3>
-          <h2>{translation.name}</h2>
+          <h2>{translation.name}&nbsp;!</h2>
           <h4>{translation.quote1}<span>{translation.title}</span>{translation.quote2}</h4>
           <GitHub onClick={ () => window.open('https://github.com/sandropernerstorfer', '_blank')}/>
           <LinkedIn onClick={ () => window.open('https://www.linkedin.com/in/sandro-pernerstorfer-3153b31ab/', '_blank')}/>

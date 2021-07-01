@@ -41,6 +41,9 @@ function AboutInfo() {
           <AboutCard icon={card.icon} heading={card.heading} body={card.body}/>
         </CardContainer>
       ))}
+      <AboutDescription>
+        <p>Hey, my name is Sandro Pernerstorfer and i'm a Web Developer from Austria, Vienna</p>
+      </AboutDescription>
     </InfoContainer>
   );
 };
@@ -82,6 +85,12 @@ const CardContainer = styled.div`
       background-color: #ecececba;
     }
   }
+`;
+
+const AboutDescription = styled.section`
+  min-width: 100%;
+  margin-top: 5vw;
+  border: 1px solid #ccc;
 `;
 
 export default AboutInfo;

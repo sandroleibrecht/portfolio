@@ -69,20 +69,17 @@ const CardContainer = styled.div`
 
   &:nth-child(1){
     svg{
-      color: var(--primary);
-      background-color: #ecececba;
+      color: #6295f3;
     }
   }
   &:nth-child(2){
     svg{
       color: #F4B400;
-      background-color: #ecececba;
     }
   }
   &:nth-child(3){
     svg{
       color: #42b426;
-      background-color: #ecececba;
     }
   }
 `;

@@ -7,9 +7,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function AboutCard({ icon, heading, body }) {
   return (
     <Card>
-        <FontAwesomeIcon icon={icon} />
-        <h4>{heading}</h4>
-        <p>{body}</p>
+      <FontAwesomeIcon icon={icon} />
+      <h4>{heading}</h4>
+      <p>{body}</p>
     </Card>
   )
 };
@@ -33,7 +33,8 @@ const Card = styled.div`
     color: #fff;
     padding: .7rem;
     border-radius: 20px;
-    background-color: var(--primary);
+    background-color: #f7f7f7ac;
+    box-shadow: inset -4px -5px 0 0 #00000026;
   }
 
   h4{

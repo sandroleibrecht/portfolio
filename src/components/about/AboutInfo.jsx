@@ -5,7 +5,8 @@ import german from '../../translations/about/info_de.json';
 // Styling & Animations
 import styled from 'styled-components';
 // Font Awesome
-import { faLaptopCode, faServer, faBook } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLaptopCode, faServer, faBook, faBolt, faAtom, faCodeBranch } from '@fortawesome/free-solid-svg-icons';
 // Card Component
 import AboutCard from './AboutCard';
 // Redux
@@ -42,7 +43,14 @@ function AboutInfo() {
         </CardContainer>
       ))}
       <AboutDescription>
-        <p>Hey, my name is Sandro Pernerstorfer and i'm a Web Developer from Austria, Vienna</p>
+        <div>
+          <p>Hey, my name is Sandro Pernerstorfer and i'm a Web Developer from Austria, Vienna</p>
+        </div>
+        <div>  
+          <FontAwesomeIcon icon={faBolt}></FontAwesomeIcon>
+          <FontAwesomeIcon icon={faAtom}></FontAwesomeIcon>
+          <FontAwesomeIcon icon={faCodeBranch}></FontAwesomeIcon>
+        </div>
       </AboutDescription>
     </InfoContainer>
   );
@@ -87,7 +95,35 @@ const CardContainer = styled.div`
 const AboutDescription = styled.section`
   min-width: 100%;
   margin-top: 5vw;
-  border: 1px solid #ccc;
+
+  div{
+    width: 100%;
+    text-align: center;
+  }
+
+  svg{
+    font-size: 5rem;
+    margin: 0 1rem;
+
+    &:nth-child(1){
+      color: #fae20b;
+    }
+    &:nth-child(2){
+      color: #34c6eb;
+      position: relative;
+      top: 4rem;
+    }
+    &:nth-child(3){
+      color: #42b426;
+    }
+  }
+
+  div:nth-child(1){
+    margin-bottom: 2rem;
+  }
+  div:nth-child(2){
+    height: 9.1rem;
+  }
 `;
 
 export default AboutInfo;

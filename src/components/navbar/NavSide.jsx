@@ -42,7 +42,7 @@ const MenuShadow = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: ${ props => props.menuOpen ? '100%' : '0' };
   height: 100vh;
   background-color: ${ props => props.menuOpen ?'#000000b7' : 'transparent' };
   transition: background-color .55s;

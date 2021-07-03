@@ -16,6 +16,8 @@ const GlobalStyles = createGlobalStyle`
     list-style-type: none;
     box-sizing: border-box;
     font-family: Quicksand, sans-serif;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
   }
 
   body, html{

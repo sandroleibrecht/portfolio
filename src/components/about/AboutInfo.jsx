@@ -55,7 +55,7 @@ function AboutInfo() {
         </div>
         <div>  
           <FontAwesomeIcon icon={faBolt}></FontAwesomeIcon>
-          <FontAwesomeIcon spin icon={faAtom}></FontAwesomeIcon>
+          <FontAwesomeIcon icon={faAtom}></FontAwesomeIcon>
           <FontAwesomeIcon icon={faCodeBranch}></FontAwesomeIcon>
         </div>
       </AboutDescription>
@@ -101,7 +101,8 @@ const CardContainer = styled.div`
 `;
 
 const Line = styled.div`
-  width: 60%;
+  margin-top: 2rem;
+  width: 100%;
   height: 2px;
   background-color: #cccccc6c;
 `;
@@ -109,13 +110,6 @@ const Line = styled.div`
 const AboutDescription = styled.section`
   min-width: 100%;
   margin-top: 5vw;
-
-  div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
 
   p{
     font-size: 1rem;
@@ -142,6 +136,9 @@ const AboutDescription = styled.section`
   div:nth-child(2){
     margin-bottom: 4rem;
     margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   div:nth-child(3){
     display: flex;

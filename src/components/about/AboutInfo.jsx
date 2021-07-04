@@ -46,11 +46,11 @@ function AboutInfo() {
         <Line/>
         <div>
           <p>
-            My name is Sandro Pernerstorfer and i'm a Web Developer from Austria, Vienna.<br/>
-            Curious and driven by everything logical and technical whilst appreciating creativity and freedom to create magical things.<br/>
-            I started my journey in the Electrical Engineering field, working and solving problems in various environments and situations.<br/>
-            Since i always enjoyed programming electrical solutions the inevitable happened and i fell in love with Software Development.<br/>
-            Learning the ins and outs of the web, and using modern web technologies to solve problems and create solutions.
+            {translation.personalText[0]}<br/>
+            {translation.personalText[1]}<br/>
+            {translation.personalText[2]}<br/>
+            {translation.personalText[3]}<br/>
+            {translation.personalText[4]}
           </p>
         </div>
         <div>  

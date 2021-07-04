@@ -141,7 +141,7 @@ const AboutDescription = styled.section`
 
   div:nth-child(2){
     margin-bottom: 4rem;
-    margin-top: 4rem;
+    margin-top: 5rem;
   }
   div:nth-child(3){
     display: flex;

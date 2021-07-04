@@ -134,7 +134,7 @@ const AboutDescription = styled.section`
   }
 
   div:nth-child(2){
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
     margin-top: 5rem;
     display: flex;
     justify-content: center;

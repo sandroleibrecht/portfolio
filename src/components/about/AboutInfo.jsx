@@ -20,18 +20,18 @@ function AboutInfo() {
   const cardContent = [
     {
       icon: faLaptopCode,
-      heading: translation[0].heading,
-      body: translation[0].body
+      heading: translation.cardContent[0].heading,
+      body: translation.cardContent[0].body
     },
     {
       icon: faServer,
-      heading: translation[1].heading,
-      body: translation[1].body
+      heading: translation.cardContent[1].heading,
+      body: translation.cardContent[1].body
     },
     {
       icon: faBook,
-      heading: translation[2].heading,
-      body: translation[2].body
+      heading: translation.cardContent[2].heading,
+      body: translation.cardContent[2].body
     }
   ]
 

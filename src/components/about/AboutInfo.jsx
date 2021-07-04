@@ -43,16 +43,19 @@ function AboutInfo() {
         </CardContainer>
       ))}
       <AboutDescription>
+        <Line/>
         <div>
           <p>
-            <b>Hi! </b>
             My name is Sandro Pernerstorfer and i'm a Web Developer from Austria, Vienna.<br/>
-            TEXTTEXT
+            Curious and driven by everything logical and technical whilst appreciating creativity and freedom to create magical things.<br/>
+            I started my journey in the Electrical Engineering field, working and solving problems in various environments and situations.<br/>
+            Since i always enjoyed programming electrical solutions the inevitable happened and i fell in love with Software Development.<br/>
+            Learning the ins and outs of the web, and using modern web technologies to solve problems and create solutions.
           </p>
         </div>
         <div>  
           <FontAwesomeIcon icon={faBolt}></FontAwesomeIcon>
-          <FontAwesomeIcon icon={faAtom}></FontAwesomeIcon>
+          <FontAwesomeIcon spin icon={faAtom}></FontAwesomeIcon>
           <FontAwesomeIcon icon={faCodeBranch}></FontAwesomeIcon>
         </div>
       </AboutDescription>
@@ -68,7 +71,7 @@ const InfoContainer = styled.section`
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  padding: 5vw 2vw;
+  padding: 5.5rem 2vw;
   box-shadow: inset 0px -11px 30px -12px #E3E3E3;
 `;
 
@@ -97,17 +100,27 @@ const CardContainer = styled.div`
   }
 `;
 
+const Line = styled.div`
+  width: 60%;
+  height: 2px;
+  background-color: #cccccc6c;
+`;
+
 const AboutDescription = styled.section`
   min-width: 100%;
   margin-top: 5vw;
 
   div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    text-align: center;
   }
 
   p{
-    letter-spacing: 0.03rem;
+    font-size: 1rem;
+    line-height: 1.85rem;
+    padding: 0 1rem;
   }
 
   svg{
@@ -126,10 +139,11 @@ const AboutDescription = styled.section`
     }
   }
 
-  div:nth-child(1){
-    margin-bottom: 3rem;
-  }
   div:nth-child(2){
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+  }
+  div:nth-child(3){
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;

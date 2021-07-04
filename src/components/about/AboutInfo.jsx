@@ -44,7 +44,11 @@ function AboutInfo() {
       ))}
       <AboutDescription>
         <div>
-          <p>Hey, my name is Sandro Pernerstorfer and i'm a Web Developer from Austria, Vienna</p>
+          <p>
+            <b>Hi! </b>
+            My name is Sandro Pernerstorfer and i'm a Web Developer from Austria, Vienna.<br/>
+            TEXTTEXT
+          </p>
         </div>
         <div>  
           <FontAwesomeIcon icon={faBolt}></FontAwesomeIcon>
@@ -65,6 +69,7 @@ const InfoContainer = styled.section`
   justify-content: space-evenly;
   align-items: center;
   padding: 5vw 2vw;
+  box-shadow: inset 0px -11px 30px -12px #E3E3E3;
 `;
 
 const CardContainer = styled.div`
@@ -101,6 +106,10 @@ const AboutDescription = styled.section`
     text-align: center;
   }
 
+  p{
+    letter-spacing: 0.03rem;
+  }
+
   svg{
     font-size: 5rem;
     margin: 0 1rem;
@@ -110,8 +119,7 @@ const AboutDescription = styled.section`
     }
     &:nth-child(2){
       color: #34c6eb;
-      position: relative;
-      top: 4rem;
+      margin-top: 3rem;
     }
     &:nth-child(3){
       color: #42b426;
@@ -119,10 +127,12 @@ const AboutDescription = styled.section`
   }
 
   div:nth-child(1){
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
   div:nth-child(2){
-    height: 9.1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
   }
 `;
 

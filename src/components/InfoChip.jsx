@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import Avatar from '@material-ui/core/Avatar';
 import Chip from '@material-ui/core/Chip';
 
-function SkillChip({ image, text, color }) {
+function InfoChip({ image, text, color }) {
   return (
     <StyledChip avatar={<StyledAvatar src={image} />} label={text} customcolor={color} />
   );
@@ -16,7 +16,7 @@ const StyledChip = styled(Chip)`
   background-color: ${ props => props.customcolor } !important;
   color: #fff !important;
   font-weight: 600;
-  margin: 0.2rem;
+  margin: 0.25rem;
 `;
 
 const StyledAvatar = styled(Avatar)`
@@ -24,4 +24,4 @@ const StyledAvatar = styled(Avatar)`
   padding: 4px;
 `;
 
-export default SkillChip;
+export default InfoChip;

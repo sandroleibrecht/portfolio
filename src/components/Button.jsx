@@ -15,20 +15,21 @@ function Button({ text, icon }) {
 
 // Styled Components
 const StyledButton = styled.button`
-  color: #fff;
+  color: var(--primary);
   border: 2px solid var(--primary);
-  background-color: var(--primary);
+  background-color: #fff;
   padding: 0.4rem 0.3rem;
   border-radius: 3px;
   font-size: 1rem;
+  font-weight: 500;
   cursor: pointer;
   transition: all .1s;
 
   @media (hover: hover){
     &:hover{
-      background-color: #fff;
-      border-color: var(--primaryLight);
-      color: var(--primary);
+      background-color: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
       box-shadow: 0 0 20px 1px #d4d3d39e;
     }
   }

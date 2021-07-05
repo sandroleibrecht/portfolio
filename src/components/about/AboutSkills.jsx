@@ -1,8 +1,11 @@
 import React from 'react';
 // Styling & Animations
 import styled from 'styled-components';
-// Chip Component
+// Components
 import InfoChip from '../InfoChip';
+import Button from '../Button';
+// Font Awesome Icons
+import { faEnvelope, faWrench, faChevronCircleUp } from '@fortawesome/free-solid-svg-icons';
 // Skill List
 import skillList from '../../SkillList.js';
 
@@ -18,8 +21,9 @@ function AboutSkills() {
         </div>
       </div>
       <div className='buttonContainer'>
-        <button>Projekte</button>
-        <button>Contact Me</button>
+        <Button text='Projects' icon={faWrench} />
+        <Button text='Contact' icon={faEnvelope} />
+        <Button icon={faChevronCircleUp} />
       </div>
     </SkillSection>
   );
@@ -28,7 +32,7 @@ function AboutSkills() {
 // Styled Components
 const SkillSection = styled.section`
   width: 100%;
-  padding: 5rem 0;
+  padding: 6rem 0 8rem 0;
   flex: 1;
   display: flex;
   flex-wrap: wrap;
@@ -46,14 +50,36 @@ const SkillSection = styled.section`
     padding: 1rem 0;
     box-shadow: 0 0 14px -5px #aca9a9a9;
     max-width: 388px;
+    margin: 0 .5rem;
   }
 
   .buttonContainer{
-    padding: 2rem;
+    margin-top: 2rem;
+    padding: 0.5rem;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+
+    @media ( max-width: 851px ){
+      margin-top: 4rem;
+    }
+    
+    button{
+      margin: .5rem;
+      max-width: 8rem;
+      min-width: 8rem;
+      height: 2.5rem;
+      flex: 1;
+
+      &:nth-child(3){
+        min-width: 3rem;
+        width: 3rem;
+        @media ( max-width: 851px ){
+          min-width: 8rem;
+        }
+      }
+    }
   }
 `;
 

@@ -11,7 +11,7 @@ import Button from '../Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faWrench, faChevronCircleUp, faToolbox } from '@fortawesome/free-solid-svg-icons';
 // Skill List
-import skillList from '../../SkillList.js';
+import skillList from '../../skillList.js';
 // Redux
 import { useSelector } from 'react-redux';
 
@@ -56,9 +56,7 @@ const SkillSection = styled.section`
     font-weight: 500;
     font-size: 1.3rem;
     padding: 5px 0;
-    color: #fafafa;
-    box-shadow: 0 0 12px -2px #858383eb;
-    background-color: var(--primary);
+    box-shadow: inset 0 0 5px -2px #a19f9fc8;
 
     svg{
       margin-right: 10px;
@@ -67,9 +65,11 @@ const SkillSection = styled.section`
 
   .skillContainer{
     padding: 1rem 0;
-    box-shadow: 0 0 14px -5px #aca9a9a9;
+    border: 2px solid #e6e4e46f;
+    border-radius: 7px;
     max-width: 388px;
     margin: 0 .5rem;
+    opacity: .93;
   }
 
   .buttonContainer{

@@ -44,7 +44,7 @@ function AboutInfo() {
       ))}
       <AboutDescription>
         <Line/>
-        <div>
+        <div className="textContainer">
           <p>
             {translation.personalText[0]}<br/>
             {translation.personalText[1]}<br/>
@@ -53,10 +53,10 @@ function AboutInfo() {
             {translation.personalText[4]}
           </p>
         </div>
-        <div>  
-          <FontAwesomeIcon icon={faBolt}></FontAwesomeIcon>
-          <FontAwesomeIcon icon={faAtom}></FontAwesomeIcon>
-          <FontAwesomeIcon icon={faCodeBranch}></FontAwesomeIcon>
+        <div className="iconContainer">  
+          <FontAwesomeIcon icon={faBolt} />
+          <FontAwesomeIcon icon={faAtom} />
+          <FontAwesomeIcon icon={faCodeBranch} />
         </div>
       </AboutDescription>
     </InfoContainer>
@@ -84,19 +84,13 @@ const CardContainer = styled.div`
   padding: 1rem;
 
   &:nth-child(1){
-    svg{
-      color: #6295f3;
-    }
+    svg{ color: #6295f3 }
   }
   &:nth-child(2){
-    svg{
-      color: #F4B400;
-    }
+    svg{ color: #F4B400 }
   }
   &:nth-child(3){
-    svg{
-      color: #42b426;
-    }
+    svg{ color: #42b426 }
   }
 `;
 
@@ -111,39 +105,34 @@ const AboutDescription = styled.section`
   min-width: 100%;
   margin-top: 5vw;
 
-  p{
-    font-size: 1rem;
-    line-height: 1.85rem;
-    padding: 0 1rem;
-  }
-
-  svg{
-    font-size: 5rem;
-    margin: 0 1rem;
-
-    &:nth-child(1){
-      color: #fae20b;
-    }
-    &:nth-child(2){
-      color: #34c6eb;
-      margin-top: 3rem;
-    }
-    &:nth-child(3){
-      color: #42b426;
-    }
-  }
-
-  div:nth-child(2){
+  .textContainer{
     margin-bottom: 5rem;
     margin-top: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    p{
+      font-size: 1rem;
+      line-height: 1.85rem;
+      padding: 0 1rem;
+    }
   }
-  div:nth-child(3){
+
+  .iconContainer{
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
+
+    svg{
+      font-size: 5rem;
+      width: 70px;
+
+      margin: 0 1rem;
+      &:nth-child(1){ color: #fae20b }
+      &:nth-child(2){ color: #34c6eb; margin-top: 3rem; }
+      &:nth-child(3){ color: #42b426 }
+    }
   }
 `;
 

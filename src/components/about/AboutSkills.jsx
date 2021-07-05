@@ -1,28 +1,38 @@
 import React from 'react';
+// Translations
+import english from '../../translations/about/skills_en.json';
+import german from '../../translations/about/skills_de.json';
 // Styling & Animations
 import styled from 'styled-components';
 // Components
 import InfoChip from '../InfoChip';
 import Button from '../Button';
 // Font Awesome Icons
-import { faEnvelope, faWrench, faChevronCircleUp } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faWrench, faChevronCircleUp, faToolbox } from '@fortawesome/free-solid-svg-icons';
 // Skill List
 import skillList from '../../SkillList.js';
+// Redux
+import { useSelector } from 'react-redux';
 
 function AboutSkills() {
+
+  const { selectedLanguage } = useSelector( state => state.language );
+  const translation = selectedLanguage === 'en' ? english : german;
+
   return (
     <SkillSection>
       <div>
-        <h2>Tools I Use And Improve On</h2>
         <div className='skillContainer'>
+        <h2><FontAwesomeIcon icon={faToolbox} />Skills & Tools</h2>
           {skillList.map(( skill, i ) => (
             <InfoChip image={skill.image} text={skill.name} color={skill.color} key={skill.name + i} />
           ))}
         </div>
       </div>
       <div className='buttonContainer'>
-        <Button text='Projects' icon={faWrench} />
-        <Button text='Contact' icon={faEnvelope} />
+        <Button text={translation.button_1} icon={faWrench} />
+        <Button text={translation.button_2} icon={faEnvelope} />
         <Button icon={faChevronCircleUp} />
       </div>
     </SkillSection>
@@ -42,8 +52,17 @@ const SkillSection = styled.section`
   margin: 0 auto;
 
   h2{
-    margin-bottom: 1.5rem;
-    font-weight: 400;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 1.3rem;
+    padding: 5px 0;
+    color: #fafafa;
+    box-shadow: 0 0 12px -2px #858383eb;
+    background-color: var(--primary);
+
+    svg{
+      margin-right: 10px;
+    }
   }
 
   .skillContainer{
@@ -54,7 +73,6 @@ const SkillSection = styled.section`
   }
 
   .buttonContainer{
-    margin-top: 2rem;
     padding: 0.5rem;
     display: flex;
     justify-content: center;

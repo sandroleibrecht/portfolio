@@ -6,18 +6,19 @@ import styled from 'styled-components';
 // Material UI Icons
 import { GitHub, LinkedIn, Email } from '@material-ui/icons';
 // Router
-import { useHistory } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router-dom';
 
 function Footer() {
 
   const history = useHistory();
+  const { pathname } = useLocation();
 
   return (
     <StyledFooter>
       <IconContainer>
         <GitHub onClick={ () => openNewTab('https://github.com/sandropernerstorfer') }/>
         <LinkedIn onClick={ () => openNewTab('https://www.linkedin.com/in/sandro-pernerstorfer-3153b31ab/') }/>
-        <Email onClick={ () => history.push('/contact') } />
+        { pathname === '/contact' || <Email onClick={ () => history.push('/contact') } /> }
       </IconContainer>
       <TextContainer>
         &copy; Sandro Pernerstorfer 2021 - Made with 🤍

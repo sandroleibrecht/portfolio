@@ -5,14 +5,14 @@ import styled from 'styled-components';
 import Avatar from '@material-ui/core/Avatar';
 import Chip from '@material-ui/core/Chip';
 
-function InfoChip({ image, text, color }) {
+function Pill({ image, text, color }) {
   return (
-    <StyledChip avatar={<StyledAvatar src={image} />} label={text} customcolor={color} />
+    <StyledPill avatar={<StyledAvatar src={image} />} label={text} customcolor={color} />
   );
 };
 
 // Styled Components
-const StyledChip = styled(Chip)`
+const StyledPill = styled(Chip)`
   background-color: ${ props => props.customcolor } !important;
   color: #fff !important;
   font-weight: 600;
@@ -24,4 +24,4 @@ const StyledAvatar = styled(Avatar)`
   padding: 4px;
 `;
 
-export default InfoChip;
+export default Pill;

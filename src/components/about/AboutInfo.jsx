@@ -9,7 +9,7 @@ import { faLaptopCode, faServer, faBook } from '@fortawesome/free-solid-svg-icon
 // Components
 // import AboutCard from './AboutCard';
 import Card from '../Card';
-import InfoChip from '../InfoChip';
+import Pill from '../Pill';
 // Skill List
 import skillList from '../../SkillList.js';
 // Redux
@@ -61,7 +61,7 @@ function AboutInfo() {
         </div>
         <div className='skillContainer'>
           {skillList.map(( skill, i ) => (
-            <InfoChip image={skill.image} text={skill.name} color={skill.color} key={skill.name + i} />
+            <Pill image={skill.image} text={skill.name} color={skill.color} key={skill.name + i} />
           ))}
         </div>
       </AboutDescription>

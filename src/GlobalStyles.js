@@ -5,8 +5,8 @@ const GlobalStyles = createGlobalStyle`
   :root{
     // App Colors
     --blue: #4D8DF7;
-    --primaryLight: #68a0fa;
-    --primaryDark: #256cdd;
+    --blueLight: #68a0fa;
+    --blueDark: #256cdd;
     --orange: #F4B400;
     --green: #42b426;
     // Tech Colors

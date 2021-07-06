@@ -57,7 +57,7 @@ const IconContainer = styled.div`
     }
 
     &:nth-child(1){ font-size: 1.5rem; color: #585454; position: relative; top: -1px;}
-    &:nth-child(2){ color: var(--primaryLight) }
+    &:nth-child(2){ color: var(--blueLight) }
     &:nth-child(3){ color: #41c520 }
   }
 `;

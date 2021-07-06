@@ -39,7 +39,7 @@ const CardContainer = styled.div`
   h4{
     margin: 1rem 0;
     font-weight: 500;
-    color: var(--primaryLight);
+    color: var(--blue);
   }
 
   p{

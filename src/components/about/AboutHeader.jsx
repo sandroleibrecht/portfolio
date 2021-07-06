@@ -83,7 +83,7 @@ const InfoContainer = styled(Grid)`
     border-radius: 15px;
     margin: 1rem 1.5rem 1rem .2rem;
     padding: 4px;
-    background-color: var(--primaryLight);
+    background-color: var(--blueLight);
     cursor: pointer;
     transition: transform .2s;
 

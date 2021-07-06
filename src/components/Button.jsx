@@ -29,8 +29,8 @@ const StyledButton = styled.button`
 
   @media (hover: hover){
     &:hover{
-      background-color: var(--primaryDark);
-      border-color: var(--primaryDark);
+      background-color: var(--blueDark);
+      border-color: var(--blueDark);
       box-shadow: 0 0 20px 1px #d4d3d39e;
     }
   }

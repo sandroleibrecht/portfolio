@@ -83,7 +83,7 @@ const ListItem = styled(Link)`
 const Line = styled(motion.div)`
   height: 2px;
   border-radius: 100px;
-  background: var(--primaryLight);
+  background: var(--blueLight);
   width: 0;
   position: absolute;
   bottom: -2px;
@@ -116,7 +116,7 @@ const ControlSwitch = styled.div`
   height: calc(100% - 2px);
   width: calc(50% - 2px);
   background-color: var(--blue);
-  border: 2px solid var(--primaryDark);
+  border: 2px solid var(--blueDark);
   border-radius: 10px;
   position: absolute;
   top: 1px;

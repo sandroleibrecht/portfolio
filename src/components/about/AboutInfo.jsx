@@ -5,8 +5,7 @@ import german from '../../translations/about/info_de.json';
 // Styling & Animations
 import styled from 'styled-components';
 // Font Awesome
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLaptopCode, faServer, faBook, faBolt, faAtom, faCodeBranch, faToolbox } from '@fortawesome/free-solid-svg-icons';
+import { faLaptopCode, faServer, faBook } from '@fortawesome/free-solid-svg-icons';
 // Components
 import AboutCard from './AboutCard';
 import InfoChip from '../InfoChip';
@@ -57,15 +56,9 @@ function AboutInfo() {
           </p>
         </div>
         <div className='skillContainer'>
-          <h2><FontAwesomeIcon icon={faToolbox} />Skills & Tools</h2>
           {skillList.map(( skill, i ) => (
             <InfoChip image={skill.image} text={skill.name} color={skill.color} key={skill.name + i} />
           ))}
-        </div>
-        <div className="iconContainer">  
-          <FontAwesomeIcon icon={faBolt} />
-          <FontAwesomeIcon icon={faAtom} />
-          <FontAwesomeIcon icon={faCodeBranch} />
         </div>
       </AboutDescription>
     </InfoContainer>
@@ -130,41 +123,15 @@ const AboutDescription = styled.section`
 
   .skillContainer{
     padding: 1rem 0;
-    border: 2px solid #e6e4e46f;
-    border-radius: 7px;
-    max-width: 388px;
+    border-width: 2px 0;
+    border-style: solid;
+    border-color: #e6e4e46f;
+    max-width: 700px;
     margin: 0 auto;
     margin-bottom: 4rem;
     opacity: .93;
     text-align: center;
-
-    h2{
-      margin-bottom: 20px;
-      font-weight: 500;
-      font-size: 1.3rem;
-      padding: 5px 0;
-      box-shadow: inset 0 0 5px -2px #a19f9fc8;
-
-      svg{
-        margin-right: 10px;
-      }
-    }
-  }
-
-  .iconContainer{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-
-    svg{
-      font-size: 5rem;
-      width: 70px;
-
-      margin: 0 1rem;
-      &:nth-child(1){ color: #fae20b }
-      &:nth-child(2){ color: #34c6eb; margin-top: 3rem; }
-      &:nth-child(3){ color: #42b426 }
-    }
+    position: relative;
   }
 `;
 

@@ -8,6 +8,8 @@ import CardSection from '../components/about/CardSection';
 import Line from '../components/Line';
 import PersonalSection from '../components/about/PersonalSection';
 import Footer from '../components/footer/Footer';
+// Scroll Top
+import ScrollTop from '../assets/util/ScrollTop';
 
 function AboutPage() {
   return (
@@ -17,6 +19,7 @@ function AboutPage() {
       <Line/>
       <PersonalSection/>
       <Footer/>
+      <ScrollTop/>
     </motion.div>
   )
 };

@@ -118,6 +118,7 @@ const AboutDescription = styled.section`
       font-size: 1rem;
       line-height: 1.85rem;
       padding: 0 1rem;
+      text-align: center;
     }
   }
 

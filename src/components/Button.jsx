@@ -15,21 +15,22 @@ function Button({ text, icon }) {
 
 // Styled Components
 const StyledButton = styled.button`
-  color: var(--primary);
-  border: 2px solid var(--primary);
-  background-color: #fff;
-  padding: 0.4rem 0.3rem;
-  border-radius: 3px;
+  color: #fff;
+  background-color: var(--primary);
+  border-color: var(--primary);
+  border-width: 2px;
+  border-style: solid;
+  padding: 0.3rem;
+  border-radius: 5px;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   cursor: pointer;
-  transition: all .1s;
+  transition: all .08s;
 
   @media (hover: hover){
     &:hover{
-      background-color: var(--primary);
-      border-color: var(--primary);
-      color: #fff;
+      background-color: var(--primaryDark);
+      border-color: var(--primaryDark);
       box-shadow: 0 0 20px 1px #d4d3d39e;
     }
   }

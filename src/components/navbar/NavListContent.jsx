@@ -75,7 +75,7 @@ const ListItem = styled(Link)`
 
   @media (hover: hover){
     &:hover{
-      color: var(--primary);
+      color: var(--blue);
     }
   }
 `;
@@ -115,7 +115,7 @@ const LanguageSwitch = styled.div`
 const ControlSwitch = styled.div`
   height: calc(100% - 2px);
   width: calc(50% - 2px);
-  background-color: var(--primary);
+  background-color: var(--blue);
   border: 2px solid var(--primaryDark);
   border-radius: 10px;
   position: absolute;

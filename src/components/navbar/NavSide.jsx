@@ -86,7 +86,7 @@ const List = styled.div`
 `;
 
 const CloseIcon = styled(FontAwesomeIcon)`
-  color: var(--primary);
+  color: var(--blue);
   font-size: 2rem;
   margin-bottom: 1rem;
   cursor: pointer;

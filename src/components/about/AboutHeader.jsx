@@ -74,7 +74,7 @@ const InfoContainer = styled(Grid)`
     margin: .5rem 0 1rem .25rem;
     color: #999898;
     span{
-      color: var(--primary);
+      color: var(--blue);
     }
   }
   svg{

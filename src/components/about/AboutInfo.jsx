@@ -25,7 +25,7 @@ function AboutInfo() {
       icon: faLaptopCode,
       heading: translation.cardContent[0].heading,
       body: translation.cardContent[0].body,
-      iconColor: 'var(--primary)'
+      iconColor: 'var(--blue)'
     },
     {
       icon: faServer,

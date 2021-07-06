@@ -16,8 +16,8 @@ function Button({ text, icon }) {
 // Styled Components
 const StyledButton = styled.button`
   color: #fff;
-  background-color: var(--primary);
-  border-color: var(--primary);
+  background-color: var(--blue);
+  border-color: var(--blue);
   border-width: 2px;
   border-style: solid;
   padding: 0.3rem;

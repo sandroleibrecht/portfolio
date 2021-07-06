@@ -6,9 +6,12 @@ import german from '../../translations/about/info_de.json';
 import styled from 'styled-components';
 // Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLaptopCode, faServer, faBook, faBolt, faAtom, faCodeBranch } from '@fortawesome/free-solid-svg-icons';
-// Card Component
+import { faLaptopCode, faServer, faBook, faBolt, faAtom, faCodeBranch, faToolbox } from '@fortawesome/free-solid-svg-icons';
+// Components
 import AboutCard from './AboutCard';
+import InfoChip from '../InfoChip';
+// Skill List
+import skillList from '../../SkillList.js';
 // Redux
 import { useSelector } from 'react-redux';
 
@@ -52,6 +55,12 @@ function AboutInfo() {
             {translation.personalText[3]}<br/>
             {translation.personalText[4]}
           </p>
+        </div>
+        <div className='skillContainer'>
+          <h2><FontAwesomeIcon icon={faToolbox} />Skills & Tools</h2>
+          {skillList.map(( skill, i ) => (
+            <InfoChip image={skill.image} text={skill.name} color={skill.color} key={skill.name + i} />
+          ))}
         </div>
         <div className="iconContainer">  
           <FontAwesomeIcon icon={faBolt} />
@@ -106,7 +115,7 @@ const AboutDescription = styled.section`
   margin-top: 5vw;
 
   .textContainer{
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     margin-top: 5rem;
     display: flex;
     justify-content: center;
@@ -116,6 +125,29 @@ const AboutDescription = styled.section`
       font-size: 1rem;
       line-height: 1.85rem;
       padding: 0 1rem;
+    }
+  }
+
+  .skillContainer{
+    padding: 1rem 0;
+    border: 2px solid #e6e4e46f;
+    border-radius: 7px;
+    max-width: 388px;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    opacity: .93;
+    text-align: center;
+
+    h2{
+      margin-bottom: 20px;
+      font-weight: 500;
+      font-size: 1.3rem;
+      padding: 5px 0;
+      box-shadow: inset 0 0 5px -2px #a19f9fc8;
+
+      svg{
+        margin-right: 10px;
+      }
     }
   }
 

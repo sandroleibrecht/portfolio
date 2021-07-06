@@ -7,7 +7,8 @@ import styled from 'styled-components';
 // Font Awesome
 import { faLaptopCode, faServer, faBook } from '@fortawesome/free-solid-svg-icons';
 // Components
-import AboutCard from './AboutCard';
+// import AboutCard from './AboutCard';
+import Card from '../Card';
 import InfoChip from '../InfoChip';
 // Skill List
 import skillList from '../../SkillList.js';
@@ -41,7 +42,7 @@ function AboutInfo() {
     <InfoContainer>
       {cardContent.map( (card, i) => (
         <CardContainer key={card.heading+i}>
-          <AboutCard icon={card.icon} heading={card.heading} body={card.body}/>
+          <Card icon={card.icon} heading={card.heading} body={card.body}/>
         </CardContainer>
       ))}
       <AboutDescription>

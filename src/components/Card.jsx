@@ -4,18 +4,18 @@ import styled from 'styled-components';
 // FontAwesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-function AboutCard({ icon, heading, body }) {
+function Card({ icon, heading, body }) {
   return (
-    <Card>
+    <CardContainer>
       <FontAwesomeIcon icon={icon} />
       <h4>{heading}</h4>
       <p>{body}</p>
-    </Card>
+    </CardContainer>
   )
 };
 
 // Styled Components
-const Card = styled.div`
+const CardContainer = styled.div`
   max-width: 20rem;
   min-width: 260px;
   height: 290px;
@@ -50,4 +50,4 @@ const Card = styled.div`
   }
 `;
 
-export default AboutCard;
+export default Card;

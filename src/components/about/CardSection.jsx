@@ -38,17 +38,27 @@ function CardSection() {
   ];
 
   return (
-    <>
+    <Cards>
       {cardContent.map( (card, i) => (
         <CardContainer key={card.heading+i}>
           <Card icon={card.icon} heading={card.heading} body={card.body} iconColor={card.iconColor} />
         </CardContainer>
       ))}
-    </>
+    </Cards>
   )
 }
 
 // Styled Components
+const Cards = styled.section`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5.5rem 2vw;
+`;
+
 const CardContainer = styled.div`
   width: 100%;
   display: flex;

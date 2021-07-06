@@ -18,7 +18,6 @@ function PersonalSection() {
 
   return (
     <AboutDescription>
-      <Line/>
       <div className="textContainer">
         <p>
           {translation.personalText[0]}<br/>
@@ -38,21 +37,12 @@ function PersonalSection() {
 };
 
 // Styled Components
-
-const Line = styled.div`
-  margin-top: 2rem;
-  width: 100%;
-  height: 2px;
-  background-color: #cccccc6c;
-`;
-
 const AboutDescription = styled.section`
-  min-width: 100%;
-  margin-top: 5vw;
+  width: 100%;
+  padding: 8rem 2vw;
 
   .textContainer{
     margin-bottom: 4rem;
-    margin-top: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,7 +62,6 @@ const AboutDescription = styled.section`
     border-color: #e6e4e46f;
     max-width: 700px;
     margin: 0 auto;
-    margin-bottom: 4rem;
     opacity: .93;
     text-align: center;
     position: relative;

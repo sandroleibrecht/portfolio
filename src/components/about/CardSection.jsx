@@ -1,7 +1,7 @@
 import React from 'react';
 // Translations
-import english from '../../translations/about/cards_en.json';
-import german from '../../translations/about/cards_de.json';
+import english from '../../assets/translations/about/cards_en.json';
+import german from '../../assets/translations/about/cards_de.json';
 // Styling
 import styled from 'styled-components';
 // Font Awesome

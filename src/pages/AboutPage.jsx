@@ -1,7 +1,7 @@
 import React from 'react';
 // Framer Motion
 import { motion } from 'framer-motion';
-import { pageAnimation } from '../GlobalStyles';
+import { pageAnimation } from '../assets/styling/GlobalStyles';
 // Components
 import AboutHeader from '../components/about/AboutHeader';
 import AboutInfo from '../components/about/AboutInfo';

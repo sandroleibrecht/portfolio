@@ -3,7 +3,7 @@ import React from "react";
 import { AnimatePresence } from "framer-motion";
 // Global Styling
 import styled from "styled-components";
-import GlobalStyles from './GlobalStyles';
+import GlobalStyles from './assets/styling/GlobalStyles';
 // Pages
 import AboutPage from "./pages/AboutPage";
 import ProjectsPage from "./pages/ProjectsPage";

@@ -1,9 +1,9 @@
 import React from 'react';
 // Styling & Animations
 import styled from 'styled-components';
-import { fadeInRightAnimation, fadeInLeftAnimation } from '../../GlobalStyles';
+import { fadeInRightAnimation, fadeInLeftAnimation } from '../../assets/styling/GlobalStyles';
 // Logo
-import logoImage from '../../assets/AppLogo.png';
+import logoImage from '../../assets/img/AppLogo.png';
 // Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';

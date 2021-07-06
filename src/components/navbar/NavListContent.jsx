@@ -1,11 +1,11 @@
 import React from 'react';
 // Translations
-import german from '../../translations/navbar/links_de.json';
-import english from '../../translations/navbar/links_en.json';
+import german from '../../assets/translations/navbar/links_de.json';
+import english from '../../assets/translations/navbar/links_en.json';
 // Styling & Animation
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { spinInAnimation, fadeInRightAnimation } from '../../GlobalStyles';
+import { spinInAnimation, fadeInRightAnimation } from '../../assets/styling/GlobalStyles';
 // Router
 import { Link, useLocation } from 'react-router-dom';
 // Redux

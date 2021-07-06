@@ -1,11 +1,11 @@
 import React from 'react';
 // Translations
-import english from '../../translations/about/personal_en.json';
-import german from '../../translations/about/personal_de.json';
+import english from '../../assets/translations/about/personal_en.json';
+import german from '../../assets/translations/about/personal_de.json';
 // Styling
 import styled from 'styled-components';
 // Skill List
-import skillList from '../../SkillList.js';
+import skillList from '../../assets/data/SkillList.js';
 // Components
 import Pill from '../Pill';
 // Redux

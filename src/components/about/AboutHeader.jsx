@@ -1,13 +1,13 @@
 import React from 'react';
 // Translations
-import german from '../../translations/about/header_de.json';
-import english from '../../translations/about/header_en.json';
+import german from '../../assets/translations/about/header_de.json';
+import english from '../../assets/translations/about/header_en.json';
 // Util Functions
-import { openNewTab } from '../../Util';
+import { openNewTab } from '../../assets/util/Util';
 // Styling & Animations
 import styled from 'styled-components';
 // Image
-import headerImage from '../../assets/headerImage.svg';
+import headerImage from '../../assets/img/headerImage.svg';
 // Material UI
 import { GitHub, LinkedIn } from '@material-ui/icons';
 import Grid from '@material-ui/core/Grid';

@@ -1,13 +1,13 @@
-import html_img from './assets/techs/html5.png';
-import css_img from './assets/techs/css3.png';
-import js_img from './assets/techs/javascript.png';
-import react_img from './assets/techs/react.png';
-import scss_img from './assets/techs/scss.png';
-import git_img from './assets/techs/git.png';
-import github_img from './assets/techs/github.png';
-import node_img from './assets/techs/node.png';
-import express_img from './assets/techs/express.png';
-import mongodb_img from './assets/techs/mongodb.png';
+import html_img from '../img/techs/html5.png';
+import css_img from '../img/techs/css3.png';
+import js_img from '../img/techs/javascript.png';
+import react_img from '../img/techs/react.png';
+import scss_img from '../img/techs/scss.png';
+import git_img from '../img/techs/git.png';
+import github_img from '../img/techs/github.png';
+import node_img from '../img/techs/node.png';
+import express_img from '../img/techs/express.png';
+import mongodb_img from '../img/techs/mongodb.png';
 
 const skillList = [
   {

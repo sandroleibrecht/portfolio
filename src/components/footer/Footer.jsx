@@ -1,72 +1,73 @@
 import React from 'react';
-// Translations
-import english from '../../translations/about/skills_en.json';
-import german from '../../translations/about/skills_de.json';
+// Util Functions
+import { openNewTab } from '../../Util';
 // Styled & Animation
 import styled from 'styled-components';
 // Material UI Icons
-import { GitHub, LinkedIn } from '@material-ui/icons';
-// Components
-import Button from '../Button';
-// Font Awesome Icons
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faWrench, faChevronCircleUp } from '@fortawesome/free-solid-svg-icons';
-// Redux
-import { useSelector } from 'react-redux';
-
+import { GitHub, LinkedIn, Email } from '@material-ui/icons';
+// Router
+import { useHistory } from 'react-router-dom';
 
 function Footer() {
 
-  const { selectedLanguage } = useSelector( state => state.language );
-  const translation = selectedLanguage === 'en' ? english : german;
+  const history = useHistory();
 
   return (
     <StyledFooter>
-      <ButtonContainer>
-        <Button text={translation.button_1} icon={faWrench} />
-        <Button text={translation.button_2} icon={faEnvelope} />
-        <Button icon={faChevronCircleUp} />
-      </ButtonContainer>
-      <div className="iconContainer">
-        <GitHub/>
-        <LinkedIn/>
-      </div>
-      <span>By Sandro Pernerstorfer</span>
+      <IconContainer>
+        <GitHub onClick={ () => openNewTab('https://github.com/sandropernerstorfer') }/>
+        <LinkedIn onClick={ () => openNewTab('https://www.linkedin.com/in/sandro-pernerstorfer-3153b31ab/') }/>
+        <Email onClick={ () => history.push('/contact') } />
+      </IconContainer>
+      <TextContainer>
+        &copy; Sandro Pernerstorfer 2021 - Made with 🤍
+      </TextContainer>
     </StyledFooter>
   )
 }
 
 // Styled Components
 const StyledFooter = styled.footer`
-  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 8rem;
+  width: 100%;
 `;
 
-const ButtonContainer = styled.div`
-    padding: 0.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+const IconContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
 
-    @media ( max-width: 851px ){
-      margin-top: 4rem;
-    }
-    
-    button{
-      margin: .5rem;
-      max-width: 8rem;
-      min-width: 8rem;
-      height: 2.5rem;
-      flex: 1;
+  svg{
+    font-size: 1.8rem;
+    margin: 0 0.6rem;
+    cursor: pointer;
+    transition: transform .2s;
 
-      &:nth-child(3){
-        min-width: 3rem;
-        width: 3rem;
-        @media ( max-width: 851px ){
-          min-width: 8rem;
-        }
+    @media (hover: hover){
+      &:hover{
+        transform: scale(1.2);
       }
     }
+
+    &:nth-child(1){ font-size: 1.5rem; color: #585454; position: relative; top: -1px;}
+    &:nth-child(2){ color: var(--primaryLight) }
+    &:nth-child(3){ color: #41c520 }
+  }
+`;
+
+const TextContainer = styled.div`
+  margin: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: .8rem;
+  color: #777;
 `;
 
 export default Footer;

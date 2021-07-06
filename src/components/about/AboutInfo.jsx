@@ -78,7 +78,6 @@ const InfoContainer = styled.section`
   justify-content: space-evenly;
   align-items: center;
   padding: 5.5rem 2vw;
-  box-shadow: inset 0px -11px 30px -12px #E3E3E3;
 `;
 
 const CardContainer = styled.div`

@@ -4,10 +4,10 @@ import styled from 'styled-components';
 // FontAwesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-function Card({ icon, heading, body }) {
+function Card({ icon, heading, body, iconColor }) {
   return (
     <CardContainer>
-      <FontAwesomeIcon icon={icon} />
+      <FontAwesomeIcon icon={icon} color={iconColor}/>
       <h4>{heading}</h4>
       <p>{body}</p>
     </CardContainer>
@@ -30,7 +30,6 @@ const CardContainer = styled.div`
 
   svg{
     font-size: 5rem;
-    color: #fff;
     padding: .7rem;
     border-radius: 20px;
     background-color: #f7f7f7ac;

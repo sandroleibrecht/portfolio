@@ -3,10 +3,13 @@ import { createGlobalStyle, keyframes } from 'styled-components';
 const GlobalStyles = createGlobalStyle`
 
   :root{
+    // App Colors
     --primary: #4D8DF7;
     --primaryLight: #68a0fa;
     --primaryDark: #256cdd;
-    --secondary: #F7B74D;
+    --orange: #F4B400;
+    --green: #42b426;
+    // Tech Colors
   }
 
   *{

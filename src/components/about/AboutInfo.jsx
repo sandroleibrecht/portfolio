@@ -24,17 +24,20 @@ function AboutInfo() {
     {
       icon: faLaptopCode,
       heading: translation.cardContent[0].heading,
-      body: translation.cardContent[0].body
+      body: translation.cardContent[0].body,
+      iconColor: 'var(--primary)'
     },
     {
       icon: faServer,
       heading: translation.cardContent[1].heading,
-      body: translation.cardContent[1].body
+      body: translation.cardContent[1].body,
+      iconColor: 'var(--orange)'
     },
     {
       icon: faBook,
       heading: translation.cardContent[2].heading,
-      body: translation.cardContent[2].body
+      body: translation.cardContent[2].body,
+      iconColor: 'var(--green)'
     }
   ]
 
@@ -42,7 +45,7 @@ function AboutInfo() {
     <InfoContainer>
       {cardContent.map( (card, i) => (
         <CardContainer key={card.heading+i}>
-          <Card icon={card.icon} heading={card.heading} body={card.body}/>
+          <Card icon={card.icon} heading={card.heading} body={card.body} iconColor={card.iconColor} />
         </CardContainer>
       ))}
       <AboutDescription>
@@ -85,16 +88,6 @@ const CardContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 1rem;
-
-  &:nth-child(1){
-    svg{ color: #6295f3 }
-  }
-  &:nth-child(2){
-    svg{ color: #F4B400 }
-  }
-  &:nth-child(3){
-    svg{ color: #42b426 }
-  }
 `;
 
 const Line = styled.div`

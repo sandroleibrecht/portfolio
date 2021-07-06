@@ -10,6 +10,16 @@ const GlobalStyles = createGlobalStyle`
     --orange: #F4B400;
     --green: #42b426;
     // Tech Colors
+    --html: #E5622A;
+    --css: #3595CF;
+    --js: #F9C305;
+    --react: #43C6EB;
+    --scss: #CF72A1;
+    --git: #E5622A;
+    --github: #444;
+    --node: #69B84D;
+    --express: #444;
+    --mongodb: #2B964C;
   }
 
   *{

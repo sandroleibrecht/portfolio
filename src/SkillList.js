@@ -13,52 +13,52 @@ const skillList = [
   {
     name: 'HTML5',
     image: html_img,
-    color: '#E5622A'
+    color: 'var(--html)'
   },
   {
     name: 'CSS3',
     image: css_img,
-    color: '#3595CF'
+    color: 'var(--css)'
   },
   {
     name: 'JavaScript',
     image: js_img,
-    color: '#F9C305'
+    color: 'var(--js)'
   },
   {
     name: 'React',
     image: react_img,
-    color: '#43C6EB'
+    color: 'var(--react)'
   },
   {
     name: 'SCSS',
     image: scss_img,
-    color: '#CF72A1'
+    color: 'var(--scss)'
   },
   {
     name: 'Git',
     image: git_img,
-    color: '#E5622A'
+    color: 'var(--git)'
   },
   {
     name: 'GitHub',
     image: github_img,
-    color: '#444'
+    color: 'var(--github)'
   },
   {
     name: 'NodeJS',
     image: node_img,
-    color: '#69B84D'
+    color: 'var(--node)'
   },
   {
     name: 'ExpressJS',
     image: express_img,
-    color: '#444'
+    color: 'var(--express)'
   },
   {
     name: 'MongoDB',
     image: mongodb_img,
-    color: '#2B964C'
+    color: 'var(--mongodb)'
   }
 ];
 

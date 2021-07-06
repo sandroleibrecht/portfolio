@@ -11,7 +11,7 @@ import Button from '../Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faWrench, faChevronCircleUp, faToolbox } from '@fortawesome/free-solid-svg-icons';
 // Skill List
-import skillList from '../../skillList.js';
+import skillList from '../../SkillList.js';
 // Redux
 import { useSelector } from 'react-redux';
 

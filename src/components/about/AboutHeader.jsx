@@ -1,7 +1,4 @@
 import React from 'react';
-// Translations
-import german from '../../assets/translations/about/header_de.json';
-import english from '../../assets/translations/about/header_en.json';
 // Util Functions
 import { openNewTab } from '../../assets/util/Util';
 // Styling & Animations
@@ -11,21 +8,16 @@ import headerImage from '../../assets/img/headerImage.svg';
 // Material UI
 import { GitHub, LinkedIn } from '@material-ui/icons';
 import Grid from '@material-ui/core/Grid';
-// Redux
-import { useSelector } from 'react-redux';
 
-function AboutHeader() {
-
-  const { selectedLanguage } = useSelector( state => state.language );
-  const translation = selectedLanguage === 'en' ? english : german;
+function AboutHeader({ textContent }) {
 
   return (
     <HeaderContainer container spacing={0} component="header">
       <InfoContainer item xs={12} sm={12} md={6} lg={6}>
         <div>
-          <h3>{translation.greeting}</h3>
-          <h2>{translation.name}&nbsp;!</h2>
-          <h4>{translation.quote1}<span>{translation.title}</span>{translation.quote2}</h4>
+          <h3>{textContent.greeting}</h3>
+          <h2>{textContent.name}&nbsp;!</h2>
+          <h4>{textContent.quote1}<span>{textContent.title}</span>{textContent.quote2}</h4>
           <GitHub onClick={ () => openNewTab('https://github.com/sandropernerstorfer') }/>
           <LinkedIn onClick={ () => openNewTab('https://www.linkedin.com/in/sandro-pernerstorfer-3153b31ab/') }/>
         </div>

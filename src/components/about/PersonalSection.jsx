@@ -1,30 +1,21 @@
 import React from 'react';
-// Translations
-import english from '../../assets/translations/about/personal_en.json';
-import german from '../../assets/translations/about/personal_de.json';
 // Styling
 import styled from 'styled-components';
 // Skill List
 import skillList from '../../assets/data/SkillList.js';
 // Components
 import Pill from '../Pill';
-// Redux
-import { useSelector } from 'react-redux';
 
-function PersonalSection() {
-
-  const { selectedLanguage } = useSelector( state => state.language );
-  const translation = selectedLanguage === 'en' ? english : german;
-
+function PersonalSection({ textContent }) {
   return (
     <AboutDescription>
       <div className="textContainer">
         <p>
-          {translation.personalText[0]}<br/>
-          {translation.personalText[1]}<br/>
-          {translation.personalText[2]}<br/>
-          {translation.personalText[3]}<br/>
-          {translation.personalText[4]}
+          {textContent[0]}<br/>
+          {textContent[1]}<br/>
+          {textContent[2]}<br/>
+          {textContent[3]}<br/>
+          {textContent[4]}
         </p>
       </div>
       <div className='skillContainer'>

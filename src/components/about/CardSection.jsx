@@ -1,38 +1,30 @@
 import React from 'react';
-// Translations
-import english from '../../assets/translations/about/cards_en.json';
-import german from '../../assets/translations/about/cards_de.json';
 // Styling
 import styled from 'styled-components';
 // Font Awesome
 import { faLaptopCode, faServer, faBook } from '@fortawesome/free-solid-svg-icons';
 // Components
 import Card from '../Card';
-// Redux
-import { useSelector } from 'react-redux';
 
-function CardSection() {
-
-  const { selectedLanguage } = useSelector( state => state.language );
-  const translation = selectedLanguage === 'en' ? english : german;
+function CardSection({ textContent }) {
 
   const cardContent = [
     {
       icon: faLaptopCode,
-      heading: translation.cardContent[0].heading,
-      body: translation.cardContent[0].body,
+      heading: textContent[0].heading,
+      body: textContent[0].body,
       iconColor: 'var(--blue)'
     },
     {
       icon: faServer,
-      heading: translation.cardContent[1].heading,
-      body: translation.cardContent[1].body,
+      heading: textContent[1].heading,
+      body: textContent[1].body,
       iconColor: 'var(--orange)'
     },
     {
       icon: faBook,
-      heading: translation.cardContent[2].heading,
-      body: translation.cardContent[2].body,
+      heading: textContent[2].heading,
+      body: textContent[2].body,
       iconColor: 'var(--green)'
     }
   ];

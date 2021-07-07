@@ -8,8 +8,10 @@ import ContactForm from './ContactForm';
 function ContactWrapper({ infoText, formText }) {
   return (
     <ContactSection>
-      <ContactInfo infoText={infoText} />
-      <ContactForm formText={formText} />
+      <div className='formWrapper'>
+        <ContactInfo infoText={infoText} />
+        <ContactForm formText={formText} />
+      </div>
     </ContactSection>
   );
 };
@@ -20,6 +22,11 @@ const ContactSection = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  .formWrapper{
+    border: 1px solid #ccc;
+    padding: 1rem;
+  }
 `;
 
 export default ContactWrapper;

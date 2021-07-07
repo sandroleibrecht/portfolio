@@ -1,7 +1,6 @@
 import React from 'react';
-// Translations
-import german from '../../assets/translations/navbar/links_de.json';
-import english from '../../assets/translations/navbar/links_en.json';
+// Text Content
+import navbarText from '../../assets/translations/navbar.json';
 // Styling & Animation
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
@@ -18,7 +17,7 @@ function NavListContent() {
   const { selectedLanguage } = useSelector( state => state.language );
   const { pathname } = useLocation();
 
-  const translation = selectedLanguage === 'en' ? english : german;
+  const { links } = navbarText[selectedLanguage];
 
   // Functions
   const handleLanguageChange = () => {
@@ -35,15 +34,15 @@ function NavListContent() {
   return (
     <>
       <ListItem to='/'>
-        {translation.about}
+        {links.about}
         <Line transition={{ duration: 0.7 }} initial={{ width: 0 }} animate={{ width: pathname === '/' ? '100%' : '0' }}/>
       </ListItem>
       <ListItem to='/projects'>
-        {translation.projects}
+        {links.projects}
         <Line transition={{ duration: 0.7 }} initial={{ width: 0 }} animate={{ width: pathname === '/projects' ? '100%' : '0' }}/>
       </ListItem>
       <ListItem to='/contact'>
-        {translation.contact}
+        {links.contact}
         <Line transition={{ duration: 0.7 }} initial={{ width: 0 }} animate={{ width: pathname === '/contact' ? '100%' : '0' }}/>
       </ListItem>
       <LanguageSwitch onClick={handleLanguageChange}>

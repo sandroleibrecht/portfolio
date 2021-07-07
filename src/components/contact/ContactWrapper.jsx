@@ -19,13 +19,19 @@ function ContactWrapper({ infoText, formText }) {
 // Styled Components
 const ContactSection = styled.section`
   min-height: calc(100vh - 66px - 128px);
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 
   .formWrapper{
-    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
     padding: 1rem;
+    width: 70%;
+    max-width: 900px;
   }
 `;
 

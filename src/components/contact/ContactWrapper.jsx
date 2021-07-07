@@ -2,12 +2,14 @@ import React from 'react';
 // Styling
 import styled from 'styled-components';
 // Components
+import ContactInfo from './ContactInfo';
 import ContactForm from './ContactForm';
 
-function ContactWrapper() {
+function ContactWrapper({ infoText, formText }) {
   return (
     <ContactSection>
-      <ContactForm/>
+      <ContactInfo infoText={infoText} />
+      <ContactForm formText={formText} />
     </ContactSection>
   );
 };

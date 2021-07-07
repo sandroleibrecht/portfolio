@@ -22,7 +22,7 @@ const StyledButton = styled.button`
   border-style: solid;
   padding: 0.3rem;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: .8rem;
   font-weight: 400;
   cursor: pointer;
   transition: all .08s;

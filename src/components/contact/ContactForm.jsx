@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 // Styling
 import styled from 'styled-components';
 // Components
@@ -17,6 +17,12 @@ function ContactForm({ formText }) {
   const { formFocusing } = useSelector( state => state.contact );
   const dispatch = useDispatch();
 
+  const [nameError, setNameError] = useState(false);
+  const [mailError, setMailError] = useState(false);
+  const [messageError, setMessageError] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState({message: '', error: null});
+  const [isSending, setIsSending] = useState(false);
+
   // Element Reference
   const nameInput = useRef(null);
 
@@ -25,39 +31,78 @@ function ContactForm({ formText }) {
     dispatch( setFocus( false ) );
   }, [formFocusing, dispatch])
 
+  // Submit Function
   const handleSubmit = e => {
     e.preventDefault();
 
-    // Validation....
+    const nameValue = e.target.name.value.trim();
+    const mailValue = e.target.mail.value.trim();
+    const messageValue = e.target.message.value.trim();
 
+    setNameError( nameValue.length === 0 ? true : false );
+
+    let nameOk, mailOk, messageOk;
+    if( nameValue.length > 0 ){
+      setNameError(false);
+      nameOk = true;
+    }
+    else{
+      setNameError(true);
+      nameOk = false;
+    };
+    if( mailValue.includes('@') && mailValue.includes('.') && mailValue.length > 7 ){
+      setMailError(false);
+      mailOk = true;
+    }
+    else{
+      setMailError(true);
+      mailOk = false;
+    };
+    if( messageValue.length > 0 ){
+      setMessageError(false);
+      messageOk = true;
+    }
+    else{
+      setMessageError(true);
+      messageOk = false;
+    };
+
+    if( !nameOk || !mailOk || !messageOk ) return;
+
+    setIsSending(true);
     const templateID = process.env.REACT_APP_EMAIL_TEMPLATEID;
     const userID = process.env.REACT_APP_EMAIL_USERID;
     emailjs.sendForm('default_service', templateID, e.target, userID)
     .then( res => {
-      console.log(res)
+      setSubmitMessage({ message: 'Thanks for the message.', error: false });
+      setIsSending(false);
     })
     .catch( err => {
-      console.log('ERROR', err);
+      setSubmitMessage({ message: 'An error occured.', error: true });
+      setIsSending(false);
     })
   };
 
   return (
     <Form onSubmit={ handleSubmit }>
-      <label htmlFor="name">Name</label>
+      <label htmlFor="name" className={nameError ? 'error': 'noerror' }>Name</label>
       <div className="inputWrapper">
-        <input type="text" name="name" id="name" spellCheck="false" ref={nameInput}/>
+        <input type="text" name="name" id="name" spellCheck="false" ref={nameInput} className={ nameError ? 'error' : null }/>
         <FontAwesomeIcon icon={faSignature} />
       </div>
-      <label htmlFor="mail">Mail</label>
+      <label htmlFor="mail" className={mailError ? 'error': null }>Mail</label>
       <div className="inputWrapper">
-        <input type="text" name="mail" id="mail" spellCheck="false"/>
+        <input type="text" name="mail" id="mail" spellCheck="false" className={mailError ? 'error': null }/>
         <FontAwesomeIcon icon={faAt} />
       </div>
       <div className="textareaWrapper" >
-        <label htmlFor="message">{formText.message}</label>
-        <textarea name="message" id="message"/>
+        <label htmlFor="message" className={messageError ? 'error': null }>{formText.message}</label>
+        <textarea name="message" id="message" className={messageError ? 'error' : null }/>
       </div>
-      <Button type="submit" text={formText.submit} icon={faPaperPlane} />
+      <div className="formBottomContainer">
+        <span>{submitMessage.message}</span>
+        <Button type="submit" text={formText.submit} icon={faPaperPlane} />
+      </div>
     </Form>
   );
 };
@@ -70,6 +115,7 @@ const Form = styled.form`
   align-items: flex-start;
   background-color: #fff;
   padding: 1rem;
+  padding-bottom: .7rem;
   border-radius: 10px;
   margin: 0 .5rem;
   width: 100%;
@@ -104,6 +150,9 @@ const Form = styled.form`
     font-size: 0.85rem;
     color: #6b6868;
     font-weight: 600;
+    &.error{
+      color: #e71313c3;
+    }
   }
 
   input, textarea{
@@ -144,8 +193,15 @@ const Form = styled.form`
     }
   }
 
-  button{
-    align-self: flex-end;
+  .formBottomContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    span{
+      font-size: 0.7rem;
+    }
   }
 `;
 

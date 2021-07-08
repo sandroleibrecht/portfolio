@@ -70,10 +70,10 @@ const InfoWrapper = styled.div`
 
     @media ( max-width: 310px){
       flex-direction: column;
+      button:nth-child(2){ padding-right: 14px }
     }
 
     button{ margin-top: .5rem }
-    button:nth-child(2){ padding-right: 14px }
   }
 `;
 

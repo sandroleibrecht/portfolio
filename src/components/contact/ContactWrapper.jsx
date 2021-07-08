@@ -23,7 +23,7 @@ const ContactSection = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0b0b3d;
+  background-color: #0b0b3de2;
 
   .formWrapper{
     display: flex;

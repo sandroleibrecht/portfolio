@@ -21,7 +21,7 @@ function ContactForm({ formText }) {
   useEffect(() => {
     if ( formFocusing ) nameInput.current.focus();
     dispatch( setFocus( false ) );
-  }, [formFocusing])
+  }, [formFocusing, dispatch])
 
   return (
     <Form>

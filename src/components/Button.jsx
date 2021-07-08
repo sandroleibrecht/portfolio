@@ -4,10 +4,10 @@ import styled from 'styled-components';
 // Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-function Button({ text, icon }) {
+function Button({ text, icon, iconSpin = false }) {
   return (
     <StyledButton iconMargin={ text ? true : false }>
-      { icon ? <FontAwesomeIcon icon={icon} /> : null }
+      { icon ? <FontAwesomeIcon icon={icon} spin={iconSpin} /> : null }
       { text ? text : null }
     </StyledButton>
   );

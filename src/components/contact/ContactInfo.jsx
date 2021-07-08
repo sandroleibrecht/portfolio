@@ -10,12 +10,12 @@ function ContactInfo({ infoText }) {
   return (
     <InfoWrapper>
       <div className="textSection">
-        <h1>Kontakt</h1>
-        <p>schick mir eine Nachricht über das Kontakt Formular,</p>
-        <p>oder direkt an meine Email Adresse.</p>
+        <h1>{infoText.heading}</h1>
+        <p>{infoText.info1}</p>
+        <p>{infoText.info2}</p>
       </div>
-      <Button icon={faPenSquare} text="Contact Form" />
-      <Button icon={faEnvelope} text="Direct Email" />
+      <Button icon={faPenSquare} text={infoText.button1} />
+      <Button icon={faEnvelope} text={infoText.button2} />
     </InfoWrapper>
   );
 };
@@ -41,7 +41,7 @@ const InfoWrapper = styled.div`
     button{
       margin-top: .5rem;
       &:nth-child(3){
-        padding-right: 13px;
+        padding-right: 14px;
       }
     }
 

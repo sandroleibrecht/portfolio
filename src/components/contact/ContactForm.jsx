@@ -24,8 +24,7 @@ function ContactForm({ formText }) {
   }, [formFocusing, dispatch])
 
   return (
-    <Form name="contact-form" method="POST" data-netlify="true">
-      <input type="hidden" name="form-name" value="contact-form"/>
+    <Form>
       <label htmlFor="name">Name</label>
       <div className="inputWrapper">
         <input type="text" name="name" id="name" spellCheck="false" ref={nameInput}/>

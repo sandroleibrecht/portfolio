@@ -54,7 +54,7 @@ const StyledNavbar = styled.nav`
   padding: 1rem 9.5vw;
   width: 100vw;
   background-color: #fff;
-  box-shadow: 0px 12px 16px -10px #dad8d8be;
+  box-shadow: 0px 12px 30px -25px #979696;
   z-index: 10000;
   position: fixed;
   top: 0;

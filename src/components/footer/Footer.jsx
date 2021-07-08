@@ -35,7 +35,7 @@ const StyledFooter = styled.footer`
   flex-wrap: wrap;
   min-height: 8rem;
   width: 100%;
-  box-shadow: 0px -11px 30px -12px #E3E3E3;
+  box-shadow: 0px -11px 30px -23px #979696;
 `;
 
 const IconContainer = styled.div`

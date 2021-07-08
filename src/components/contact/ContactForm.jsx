@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 // Styling
 import styled from 'styled-components';
 // Components
@@ -6,13 +6,28 @@ import Button from '../Button';
 // Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane, faAt, faSignature } from '@fortawesome/free-solid-svg-icons';
+// Redux
+import { useSelector, useDispatch } from 'react-redux';
+import { setFocus } from '../../state/contactState';
 
 function ContactForm({ formText }) {
+
+  const { formFocusing } = useSelector( state => state.contact );
+  const dispatch = useDispatch();
+
+  // Element Reference
+  const nameInput = useRef(null);
+
+  useEffect(() => {
+    if ( formFocusing ) nameInput.current.focus();
+    dispatch( setFocus( false ) );
+  }, [formFocusing])
+
   return (
     <Form>
       <label htmlFor="name">Name</label>
       <div className="inputWrapper">
-        <input type="text" name="name" id="name" spellCheck="false"/>
+        <input type="text" name="name" id="name" spellCheck="false" ref={nameInput}/>
         <FontAwesomeIcon icon={faSignature} />
       </div>
       <label htmlFor="mail">Mail</label>

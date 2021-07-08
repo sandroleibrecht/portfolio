@@ -7,7 +7,10 @@
       "button1": "Contact Form",
       "button2": "Direct Email"
     },
-    "form": {}
+    "form": {
+      "message": "Message",
+      "submit": "Send" 
+    }
   },
   "de": {
     "info": {
@@ -17,6 +20,9 @@
       "button1": "Kontakt Form",
       "button2": "Direkte Mail"
     },
-    "form": {}
+    "form": {
+      "message": "Nachricht",
+      "submit": "Senden" 
+    }
   }
 }

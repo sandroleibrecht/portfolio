@@ -21,10 +21,10 @@ function ContactForm({ formText }) {
         <FontAwesomeIcon icon={faAt} />
       </div>
       <div className="textareaWrapper" >
-        <label htmlFor="message">Message</label>
+        <label htmlFor="message">{formText.message}</label>
         <textarea name="message" id="message"/>
       </div>
-      <Button type="submit" text="Send" icon={faPaperPlane} />
+      <Button type="submit" text={formText.submit} icon={faPaperPlane} />
     </Form>
   );
 };

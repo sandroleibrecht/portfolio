@@ -43,7 +43,7 @@ const InfoWrapper = styled.div`
   .textSection{
     margin-bottom: 2rem;
     h1{
-      margin-bottom: .2rem;
+      margin-bottom: 1.2rem;
       font-weight: 600;
       color: #556;
     }

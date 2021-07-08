@@ -6,6 +6,8 @@ import Button from '../Button';
 // Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane, faAt, faSignature } from '@fortawesome/free-solid-svg-icons';
+// Email Service
+import emailjs from 'emailjs-com';
 // Redux
 import { useSelector, useDispatch } from 'react-redux';
 import { setFocus } from '../../state/contactState';
@@ -23,8 +25,24 @@ function ContactForm({ formText }) {
     dispatch( setFocus( false ) );
   }, [formFocusing, dispatch])
 
+  const handleSubmit = e => {
+    e.preventDefault();
+
+    // Validation....
+
+    const templateID = process.env.REACT_APP_EMAIL_TEMPLATEID;
+    const userID = process.env.REACT_APP_EMAIL_USERID;
+    emailjs.sendForm('default_service', templateID, e.target, userID)
+    .then( res => {
+      console.log(res)
+    })
+    .catch( err => {
+      console.log('ERROR', err);
+    })
+  };
+
   return (
-    <Form>
+    <Form onSubmit={ handleSubmit }>
       <label htmlFor="name">Name</label>
       <div className="inputWrapper">
         <input type="text" name="name" id="name" spellCheck="false" ref={nameInput}/>

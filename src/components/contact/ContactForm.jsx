@@ -38,9 +38,13 @@ const Form = styled.form`
   background-color: #fff;
   padding: 1rem;
   border-radius: 10px;
+  margin: 0 .5rem;
   width: 100%;
-  max-width: 350px;
-  box-shadow: 0 0 12px -1px #bbb9b9;
+  max-width: 400px;
+
+  @media ( max-width: 836px){
+    max-width: 500px;
+  }
 
   .inputWrapper{
     width: 100%;
@@ -94,6 +98,7 @@ const Form = styled.form`
   .textareaWrapper{
     width: 100%;
     textarea{
+      margin-bottom: 8px;
       resize: none;
       border-color: transparent;
       background-color: #f7f7f7;

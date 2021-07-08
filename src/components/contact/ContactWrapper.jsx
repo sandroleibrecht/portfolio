@@ -23,15 +23,17 @@ const ContactSection = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #0b0b3d;
 
   .formWrapper{
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
     flex-wrap: wrap;
-    padding: 1rem;
-    width: 70%;
+    padding: 5rem 0;
+    width: 100%;
     max-width: 900px;
+    height: 100%;
   }
 `;
 

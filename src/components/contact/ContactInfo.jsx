@@ -34,9 +34,9 @@ const InfoWrapper = styled.div`
   padding-bottom: 2rem;
   margin: 0 .5rem;
   margin-bottom: 2rem;
-
+  text-align: center;
+  
   @media ( max-width: 836px){
-    text-align: center;
     align-items: center;
   }
 

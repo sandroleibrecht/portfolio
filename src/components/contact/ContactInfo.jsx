@@ -5,8 +5,14 @@ import styled from 'styled-components';
 import { faEnvelope, faPenSquare } from '@fortawesome/free-solid-svg-icons';
 // Components
 import Button from '../Button';
+// Redux
+import { useDispatch } from 'react-redux';
+import { setFocus } from '../../state/contactState';
 
 function ContactInfo({ infoText }) {
+
+  const dispatch = useDispatch();
+
   return (
     <InfoWrapper>
       <div className="textSection">
@@ -15,7 +21,9 @@ function ContactInfo({ infoText }) {
         <p>{infoText.info2}</p>
       </div>
       <div className="buttonContainer">
-        <Button icon={faPenSquare} text={infoText.button1} />
+        <div onClick={ () => dispatch( setFocus(true) ) }>
+          <Button icon={faPenSquare} text={infoText.button1} />
+        </div>
         <Button icon={faEnvelope} text={infoText.button2} />
       </div>
     </InfoWrapper>

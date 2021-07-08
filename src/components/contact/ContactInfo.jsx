@@ -14,8 +14,10 @@ function ContactInfo({ infoText }) {
         <p>{infoText.info1}</p>
         <p>{infoText.info2}</p>
       </div>
-      <Button icon={faPenSquare} text={infoText.button1} />
-      <Button icon={faEnvelope} text={infoText.button2} />
+      <div className="buttonContainer">
+        <Button icon={faPenSquare} text={infoText.button1} />
+        <Button icon={faEnvelope} text={infoText.button2} />
+      </div>
     </InfoWrapper>
   );
 };
@@ -38,18 +40,11 @@ const InfoWrapper = styled.div`
     align-items: center;
   }
 
-    button{
-      margin-top: .5rem;
-      &:nth-child(3){
-        padding-right: 14px;
-      }
-    }
-
   .textSection{
     margin-bottom: 2rem;
     h1{
-      margin-bottom: .5rem;
-      font-size: 2rem;
+      margin-bottom: .2rem;
+      font-weight: 600;
       color: #556;
     }
 
@@ -57,6 +52,20 @@ const InfoWrapper = styled.div`
       color: #706e6e;
       font-size: .95rem;
     }
+  }
+
+  .buttonContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @media ( max-width: 310px){
+      flex-direction: column;
+    }
+
+    button{ margin-top: .5rem }
+    button:nth-child(2){ padding-right: 14px }
   }
 `;
 

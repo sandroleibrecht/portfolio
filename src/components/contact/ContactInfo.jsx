@@ -2,7 +2,7 @@ import React from 'react';
 // Styling
 import styled from 'styled-components';
 // Font Awesome
-import { faEnvelope, faPenSquare } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPenAlt } from '@fortawesome/free-solid-svg-icons';
 // Components
 import Button from '../Button';
 // Redux
@@ -22,7 +22,7 @@ function ContactInfo({ infoText }) {
       </div>
       <div className="buttonContainer">
         <div onClick={ () => dispatch( setFocus(true) ) }>
-          <Button icon={faPenSquare} text={infoText.button1} />
+          <Button icon={faPenAlt} text={infoText.button1} />
         </div>
         <div onClick={ () => window.open('mailto:sandro.pernerstorfer@hotmail.com') } >
           <Button icon={faEnvelope} text={infoText.button2} />

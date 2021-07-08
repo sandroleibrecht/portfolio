@@ -9,7 +9,9 @@
     },
     "form": {
       "message": "Message",
-      "submit": "Send" 
+      "submit": "Send",
+      "noError": "Thank you for your message!",
+      "error": "Sorry, it seems like an error occured with the Mail Service."
     }
   },
   "de": {
@@ -22,7 +24,9 @@
     },
     "form": {
       "message": "Nachricht",
-      "submit": "Senden" 
+      "submit": "Senden",
+      "noError": "Vielen Dank für die Nachricht!",
+      "error": "Entschuldige, es scheint ein Problem beim Mail Service zu geben."
     }
   }
 }

@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import Button from '../Button';
 // Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPaperPlane, faAt, faSignature } from '@fortawesome/free-solid-svg-icons';
+import { faPaperPlane, faAt, faSignature, faSpinner } from '@fortawesome/free-solid-svg-icons';
 // Email Service
 import emailjs from 'emailjs-com';
 // Redux
@@ -74,11 +74,11 @@ function ContactForm({ formText }) {
     const userID = process.env.REACT_APP_EMAIL_USERID;
     emailjs.sendForm('default_service', templateID, e.target, userID)
     .then( res => {
-      setSubmitMessage({ message: 'Thanks for the message.', error: false });
+      setSubmitMessage({ message: formText.noError, error: false });
       setIsSending(false);
     })
     .catch( err => {
-      setSubmitMessage({ message: 'An error occured.', error: true });
+      setSubmitMessage({ message: formText.error, error: true });
       setIsSending(false);
     })
   };
@@ -100,8 +100,8 @@ function ContactForm({ formText }) {
         <textarea name="message" id="message" className={messageError ? 'error' : null }/>
       </div>
       <div className="formBottomContainer">
-        <span>{submitMessage.message}</span>
-        <Button type="submit" text={formText.submit} icon={faPaperPlane} />
+        <span className={ submitMessage.error ? 'error' : null } >{submitMessage.message}</span>
+        <Button type="submit" text={formText.submit} icon={ isSending ? faSpinner : faPaperPlane } iconSpin={isSending} />
       </div>
     </Form>
   );
@@ -199,8 +199,18 @@ const Form = styled.form`
     align-items: center;
     width: 100%;
 
+    button{
+      min-width: 5rem;
+      margin-left: 5px;
+    }
+
     span{
-      font-size: 0.7rem;
+      font-size: 0.8rem;
+      color: #299129;
+
+      &.error{
+        color: #e71313c3;
+      }
     }
   }
 `;

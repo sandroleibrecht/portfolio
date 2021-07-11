@@ -7,10 +7,12 @@ import Button from '../Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane, faAt, faSignature, faSpinner } from '@fortawesome/free-solid-svg-icons';
 // Email Service
-import emailjs from 'emailjs-com';
+import emailjs, { init } from 'emailjs-com';
 // Redux
 import { useSelector, useDispatch } from 'react-redux';
 import { setFocus } from '../../state/contactState';
+
+init(process.env.REACT_APP_EMAIL_USERID);
 
 function ContactForm({ formText }) {
 

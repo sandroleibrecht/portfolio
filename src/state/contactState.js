@@ -12,6 +12,12 @@ export const setValue = ( prop, value ) => {
     payload: { prop, value }
   }
 };
+export const setErrors = ( errors ) => {
+  return{
+    type: 'SET_ERRORS',
+    payload: { errors }
+  }
+};
 export const resetValues = () => {
   return { type: 'RESET_VALUES' };
 };
@@ -23,6 +29,11 @@ const initialState = {
     name: '',
     mail: '',
     message: ''
+  },
+  errors: {
+    name: false,
+    mail: false,
+    message: false
   }
 };
 const ContactReducer = ( state = initialState, action ) => {
@@ -32,6 +43,8 @@ const ContactReducer = ( state = initialState, action ) => {
       return { ...state, formFocusing: data.status };
     case 'SET_VALUE':
       return { ...state, values: { ...state.values, [data.prop]: data.value }};
+    case 'SET_ERRORS':
+      return { ...state, errors: data.errors };
     case 'RESET_VALUES':
       return { ...state, values: initialState.values };
     default:

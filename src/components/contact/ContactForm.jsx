@@ -12,16 +12,15 @@ import { validateInputs } from '../../assets/util/ContactForm';
 import emailjs, { init } from 'emailjs-com';
 // Redux
 import { useSelector, useDispatch } from 'react-redux';
-import { setFocus, setValue, resetValues }  from '../../state/contactState';
+import { setFocus, setValue, setErrors, resetValues }  from '../../state/contactState';
 
 init(process.env.REACT_APP_EMAIL_USERID);
 
 function ContactForm({ formText }) {
 
-  const { formFocusing, values } = useSelector( state => state.contact );
+  const { formFocusing, values, errors } = useSelector( state => state.contact );
   const dispatch = useDispatch();
 
-  const [formErrors, setFormErrors] = useState({name: false, mail: false, message: false});
   const [submitMessage, setSubmitMessage] = useState({message: '', error: null});
   const [isSending, setIsSending] = useState(false);
 
@@ -37,10 +36,10 @@ function ContactForm({ formText }) {
   const handleSubmit = e => {
     e.preventDefault();
 
-    const errors = validateInputs(values);
-    setFormErrors(errors);
+    const validationErrors = validateInputs(values);
+    dispatch(setErrors(validationErrors));
 
-    if (Object.values(errors).some( error => error === true )) return;
+    if (Object.values(validationErrors).some( error => error === true )) return;
 
     setIsSending(true);
     const templateID = process.env.REACT_APP_EMAIL_TEMPLATEID;
@@ -59,7 +58,7 @@ function ContactForm({ formText }) {
 
   return (
     <Form onSubmit={ handleSubmit }>
-      <label htmlFor="name" className={formErrors.name ? 'error': 'noerror' }>Name</label>
+      <label htmlFor="name" className={errors.name ? 'error': 'noerror' }>Name</label>
       <div className="inputWrapper">
         <input 
           onChange={ e => dispatch(setValue('name', e.target.value))}
@@ -69,7 +68,7 @@ function ContactForm({ formText }) {
         />
         <FontAwesomeIcon icon={faSignature} />
       </div>
-      <label htmlFor="mail" className={formErrors.mail ? 'error': null }>Mail</label>
+      <label htmlFor="mail" className={errors.mail ? 'error': null }>Mail</label>
       <div className="inputWrapper">
         <input
           onChange={ e => dispatch(setValue('mail', e.target.value))}
@@ -79,7 +78,7 @@ function ContactForm({ formText }) {
         <FontAwesomeIcon icon={faAt} />
       </div>
       <div className="textareaWrapper" >
-        <label htmlFor="message" className={formErrors.message ? 'error': null }>{formText.message}</label>
+        <label htmlFor="message" className={errors.message ? 'error': null }>{formText.message}</label>
         <textarea
           onChange={ e => dispatch(setValue('message', e.target.value))}
           value={values.message}

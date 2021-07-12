@@ -1,6 +1,6 @@
 import React from 'react';
 // Util Functions
-import { openNewTab } from '../../assets/util/Util';
+import openNewTab from '../../assets/util/OpenNewTab';
 // Styled & Animation
 import styled from 'styled-components';
 // Material UI Icons

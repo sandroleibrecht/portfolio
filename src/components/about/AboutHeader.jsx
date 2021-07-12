@@ -1,6 +1,6 @@
 import React from 'react';
 // Util Functions
-import { openNewTab } from '../../assets/util/Util';
+import openNewTab from '../../assets/util/OpenNewTab';
 // Styling & Animations
 import styled from 'styled-components';
 // Image

@@ -15,15 +15,15 @@ export const validateInputs = ({ name, mail, message }) => {
   return errors;
 };
 
-export const sendEmail = formData => {
+export const sendEmail = (formData, { errorMsg, noErrorMsg }) => {
   store.dispatch(setSubmitStatus(true));
   emailjs.sendForm('default_service', templateID, formData, userID)
   .then( res => {
-    store.dispatch(setSubmitMessage({ message: 'no error', isError: false }));
+    store.dispatch(setSubmitMessage({ message: noErrorMsg, isError: false }));
     store.dispatch(resetValues());
   })
   .catch( err => {
-    store.dispatch(setSubmitMessage({ message: 'error', isError: true }));
+    store.dispatch(setSubmitMessage({ message: errorMsg, isError: true }));
   })
   .finally(() => {
     store.dispatch(setSubmitStatus(false));

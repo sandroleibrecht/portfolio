@@ -6,22 +6,22 @@ import Button from '../Button';
 // Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane, faAt, faSignature, faSpinner } from '@fortawesome/free-solid-svg-icons';
+// Utils
+import { validateInputs } from '../../assets/util/ContactForm';
 // Email Service
 import emailjs, { init } from 'emailjs-com';
 // Redux
 import { useSelector, useDispatch } from 'react-redux';
-import { setFocus } from '../../state/contactState';
+import { setFocus, setValue, resetValues }  from '../../state/contactState';
 
 init(process.env.REACT_APP_EMAIL_USERID);
 
 function ContactForm({ formText }) {
 
-  const { formFocusing } = useSelector( state => state.contact );
+  const { formFocusing, values } = useSelector( state => state.contact );
   const dispatch = useDispatch();
 
-  const [nameError, setNameError] = useState(false);
-  const [mailError, setMailError] = useState(false);
-  const [messageError, setMessageError] = useState(false);
+  const [formErrors, setFormErrors] = useState({name: false, mail: false, message: false});
   const [submitMessage, setSubmitMessage] = useState({message: '', error: null});
   const [isSending, setIsSending] = useState(false);
 
@@ -37,39 +37,10 @@ function ContactForm({ formText }) {
   const handleSubmit = e => {
     e.preventDefault();
 
-    const nameValue = e.target.name.value.trim();
-    const mailValue = e.target.mail.value.trim();
-    const messageValue = e.target.message.value.trim();
+    const errors = validateInputs(values);
+    setFormErrors(errors);
 
-    setNameError( nameValue.length === 0 ? true : false );
-
-    let nameOk, mailOk, messageOk;
-    if( nameValue.length > 0 ){
-      setNameError(false);
-      nameOk = true;
-    }
-    else{
-      setNameError(true);
-      nameOk = false;
-    };
-    if( mailValue.includes('@') && mailValue.includes('.') && mailValue.length > 7 ){
-      setMailError(false);
-      mailOk = true;
-    }
-    else{
-      setMailError(true);
-      mailOk = false;
-    };
-    if( messageValue.length > 0 ){
-      setMessageError(false);
-      messageOk = true;
-    }
-    else{
-      setMessageError(true);
-      messageOk = false;
-    };
-
-    if( !nameOk || !mailOk || !messageOk ) return;
+    if (Object.values(errors).some( error => error === true )) return;
 
     setIsSending(true);
     const templateID = process.env.REACT_APP_EMAIL_TEMPLATEID;
@@ -78,6 +49,7 @@ function ContactForm({ formText }) {
     .then( res => {
       setSubmitMessage({ message: formText.noError, error: false });
       setIsSending(false);
+      dispatch(resetValues());
     })
     .catch( err => {
       setSubmitMessage({ message: formText.error, error: true });
@@ -87,23 +59,41 @@ function ContactForm({ formText }) {
 
   return (
     <Form onSubmit={ handleSubmit }>
-      <label htmlFor="name" className={nameError ? 'error': 'noerror' }>Name</label>
+      <label htmlFor="name" className={formErrors.name ? 'error': 'noerror' }>Name</label>
       <div className="inputWrapper">
-        <input type="text" name="name" id="name" spellCheck="false" ref={nameInput} className={ nameError ? 'error' : null }/>
+        <input 
+          onChange={ e => dispatch(setValue('name', e.target.value))}
+          value={values.name}
+          ref={nameInput}
+          type="text" name="name" id="name" spellCheck="false"
+        />
         <FontAwesomeIcon icon={faSignature} />
       </div>
-      <label htmlFor="mail" className={mailError ? 'error': null }>Mail</label>
+      <label htmlFor="mail" className={formErrors.mail ? 'error': null }>Mail</label>
       <div className="inputWrapper">
-        <input type="text" name="mail" id="mail" spellCheck="false" className={mailError ? 'error': null }/>
+        <input
+          onChange={ e => dispatch(setValue('mail', e.target.value))}
+          value={values.mail}
+          type="text" name="mail" id="mail" spellCheck="false"
+        />
         <FontAwesomeIcon icon={faAt} />
       </div>
       <div className="textareaWrapper" >
-        <label htmlFor="message" className={messageError ? 'error': null }>{formText.message}</label>
-        <textarea name="message" id="message" className={messageError ? 'error' : null }/>
+        <label htmlFor="message" className={formErrors.message ? 'error': null }>{formText.message}</label>
+        <textarea
+          onChange={ e => dispatch(setValue('message', e.target.value))}
+          value={values.message}
+          name="message" id="message" 
+        />
       </div>
       <div className="formBottomContainer">
         <span className={ submitMessage.error ? 'error' : null } >{submitMessage.message}</span>
-        <Button type="submit" text={formText.submit} icon={ isSending ? faSpinner : faPaperPlane } iconSpin={isSending} />
+        <Button
+          type="submit"
+          text={formText.submit}
+          icon={ isSending ? faSpinner : faPaperPlane }
+          iconSpin={isSending}
+        />
       </div>
     </Form>
   );

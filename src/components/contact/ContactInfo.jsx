@@ -38,9 +38,11 @@ const InfoWrapper = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  background-color:#f1f1f1;
+  background-color:hsl(0, 0%, 99%);
+  box-shadow: inset 0 0 5px 1px #e6e6e6;
   border-radius: 12px;
   padding: 1rem;
+  padding-top: 1.5rem;
   padding-bottom: 2rem;
   margin: 0 .5rem;
   margin-bottom: 2rem;

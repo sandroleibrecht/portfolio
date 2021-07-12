@@ -92,6 +92,7 @@ const Form = styled.form`
   justify-content: center;
   align-items: flex-start;
   background-color: #fff;
+  box-shadow: 0 0 14px 1px #e4e4e4;
   padding: 1rem;
   padding-bottom: .7rem;
   border-radius: 10px;

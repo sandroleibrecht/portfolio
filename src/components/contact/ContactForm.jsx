@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect } from 'react';
 // Styling
 import styled from 'styled-components';
 // Components
@@ -12,7 +12,7 @@ import { validateInputs } from '../../assets/util/ContactForm';
 import emailjs, { init } from 'emailjs-com';
 // Redux
 import { useSelector, useDispatch } from 'react-redux';
-import { setFocus, setValue, setErrors, setSubmitStatus, setSubmitMessage, resetValues }  from '../../state/contactState';
+import { setFocus, setValue, setErrors, setSubmitStatus, setSubmitMessage, resetValues, resetForm }  from '../../state/contactState';
 
 init(process.env.REACT_APP_EMAIL_USERID);
 
@@ -28,6 +28,10 @@ function ContactForm({ formText }) {
     if ( formFocusing ) nameInput.current.focus();
     dispatch( setFocus( false ) );
   }, [formFocusing, dispatch])
+
+  useEffect(() => {
+    dispatch(resetForm());
+  }, [dispatch])
 
   // Submit Function
   const handleSubmit = e => {

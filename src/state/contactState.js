@@ -33,6 +33,9 @@ export const setSubmitMessage = ( messageData ) => {
 export const resetValues = () => {
   return { type: 'RESET_VALUES' };
 };
+export const resetForm = () => {
+  return { type: 'RESET_FORM' };
+};
 
 // Reducer
 const initialState = {
@@ -68,6 +71,8 @@ const ContactReducer = ( state = initialState, action ) => {
       return { ...state, submitMessage: data.messageData };
     case 'RESET_VALUES':
       return { ...state, values: initialState.values };
+    case 'RESET_FORM':
+      return { ...state, errors: initialState.errors, submitMessage: initialState.submitMessage };
     default:
       return { ...state };
   }

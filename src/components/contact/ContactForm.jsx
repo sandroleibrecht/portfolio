@@ -7,14 +7,10 @@ import Button from '../Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane, faAt, faSignature, faSpinner } from '@fortawesome/free-solid-svg-icons';
 // Utils
-import { validateInputs } from '../../assets/util/ContactForm';
-// Email Service
-import emailjs, { init } from 'emailjs-com';
+import { validateInputs, sendEmail } from '../../assets/util/ContactForm';
 // Redux
 import { useSelector, useDispatch } from 'react-redux';
-import { setFocus, setValue, setErrors, setSubmitStatus, setSubmitMessage, resetValues, resetForm }  from '../../state/contactState';
-
-init(process.env.REACT_APP_EMAIL_USERID);
+import { setFocus, setValue, setErrors, resetForm }  from '../../state/contactState';
 
 function ContactForm({ formText }) {
 
@@ -43,20 +39,8 @@ function ContactForm({ formText }) {
     dispatch(setErrors(validationErrors));
 
     if (Object.values(validationErrors).some( error => error === true )) return;
-
-    dispatch(setSubmitStatus(true));
-    const templateID = process.env.REACT_APP_EMAIL_TEMPLATEID;
-    const userID = process.env.REACT_APP_EMAIL_USERID;
-    emailjs.sendForm('default_service', templateID, e.target, userID)
-    .then( res => {
-      dispatch(setSubmitMessage({ message: formText.noError, isError: false }));
-      dispatch(setSubmitStatus(false));
-      dispatch(resetValues());
-    })
-    .catch( err => {
-      dispatch(setSubmitMessage({ message: formText.error, isError: true }));
-      dispatch(setSubmitStatus(false));
-    })
+    
+    sendEmail(e.target);
   };
 
   return (

@@ -12,17 +12,14 @@ import { validateInputs } from '../../assets/util/ContactForm';
 import emailjs, { init } from 'emailjs-com';
 // Redux
 import { useSelector, useDispatch } from 'react-redux';
-import { setFocus, setValue, setErrors, resetValues }  from '../../state/contactState';
+import { setFocus, setValue, setErrors, setSubmitStatus, setSubmitMessage, resetValues }  from '../../state/contactState';
 
 init(process.env.REACT_APP_EMAIL_USERID);
 
 function ContactForm({ formText }) {
 
-  const { formFocusing, values, errors } = useSelector( state => state.contact );
+  const { formFocusing, values, errors, isSubmitting, submitMessage } = useSelector( state => state.contact );
   const dispatch = useDispatch();
-
-  const [submitMessage, setSubmitMessage] = useState({message: '', error: null});
-  const [isSending, setIsSending] = useState(false);
 
   // Element Reference
   const nameInput = useRef(null);
@@ -41,18 +38,18 @@ function ContactForm({ formText }) {
 
     if (Object.values(validationErrors).some( error => error === true )) return;
 
-    setIsSending(true);
+    dispatch(setSubmitStatus(true));
     const templateID = process.env.REACT_APP_EMAIL_TEMPLATEID;
     const userID = process.env.REACT_APP_EMAIL_USERID;
     emailjs.sendForm('default_service', templateID, e.target, userID)
     .then( res => {
-      setSubmitMessage({ message: formText.noError, error: false });
-      setIsSending(false);
+      dispatch(setSubmitMessage({ message: formText.noError, isError: false }));
+      dispatch(setSubmitStatus(false));
       dispatch(resetValues());
     })
     .catch( err => {
-      setSubmitMessage({ message: formText.error, error: true });
-      setIsSending(false);
+      dispatch(setSubmitMessage({ message: formText.error, isError: true }));
+      dispatch(setSubmitStatus(false));
     })
   };
 
@@ -86,12 +83,12 @@ function ContactForm({ formText }) {
         />
       </div>
       <div className="formBottomContainer">
-        <span className={ submitMessage.error ? 'error' : null } >{submitMessage.message}</span>
+        <span className={ submitMessage.isError ? 'error' : null } >{submitMessage.message}</span>
         <Button
           type="submit"
           text={formText.submit}
-          icon={ isSending ? faSpinner : faPaperPlane }
-          iconSpin={isSending}
+          icon={ isSubmitting ? faSpinner : faPaperPlane }
+          iconSpin={ isSubmitting }
         />
       </div>
     </Form>

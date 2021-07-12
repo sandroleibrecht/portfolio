@@ -18,6 +18,18 @@ export const setErrors = ( errors ) => {
     payload: { errors }
   }
 };
+export const setSubmitStatus = ( status ) => {
+  return{
+    type: 'SET_SUBMISSION',
+    payload: { status }
+  }
+};
+export const setSubmitMessage = ( messageData ) => {
+  return{
+    type: 'SET_MESSAGE',
+    payload: { messageData }
+  }
+};
 export const resetValues = () => {
   return { type: 'RESET_VALUES' };
 };
@@ -34,6 +46,11 @@ const initialState = {
     name: false,
     mail: false,
     message: false
+  },
+  isSubmitting: false,
+  submitMessage: {
+    message: '',
+    isError: false
   }
 };
 const ContactReducer = ( state = initialState, action ) => {
@@ -45,6 +62,10 @@ const ContactReducer = ( state = initialState, action ) => {
       return { ...state, values: { ...state.values, [data.prop]: data.value }};
     case 'SET_ERRORS':
       return { ...state, errors: data.errors };
+    case 'SET_SUBMISSION':
+      return { ...state, isSubmitting: data.status };
+    case 'SET_MESSAGE':
+      return { ...state, submitMessage: data.messageData };
     case 'RESET_VALUES':
       return { ...state, values: initialState.values };
     default:

@@ -18,22 +18,24 @@ init(process.env.REACT_APP_EMAIL_USERID);
 
 function ContactForm({ formText }) {
 
+  // Redux
   const { formFocusing, values, errors, isSubmitting, submitMessage } = useSelector( state => state.contact );
   const dispatch = useDispatch();
 
-  // Element Reference
+  // Name Input Reference
   const nameInput = useRef(null);
 
+  // Effects
   useEffect(() => {
-    if ( formFocusing ) nameInput.current.focus();
-    dispatch( setFocus( false ) );
-  }, [formFocusing, dispatch])
+    if (formFocusing) nameInput.current.focus();
+    dispatch(setFocus(false));
+  }, [formFocusing, dispatch]);
 
   useEffect(() => {
     dispatch(resetForm());
-  }, [dispatch])
+  }, [dispatch]);
 
-  // Submit Function
+  // Handle Submission
   const handleSubmit = e => {
     e.preventDefault();
 

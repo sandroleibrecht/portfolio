@@ -185,7 +185,8 @@ const Form = styled.form`
 
     span{
       font-size: 0.8rem;
-      color: #299129;
+      font-weight: 500;
+      color: #26be26;
 
       &.error{
         color: #e71313c3;

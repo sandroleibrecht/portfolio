@@ -24,7 +24,7 @@ function ContactInfo({ infoText }) {
         <div onClick={ () => dispatch( setFocus(true) ) }>
           <Button icon={faPenAlt} text={infoText.button1} />
         </div>
-        <div onClick={ () => window.open('mailto:sandro.pernerstorfer@hotmail.com') } >
+        <div onClick={ () => window.open('mailto:sandro.pernerstorfer@gmail.com') } >
           <Button icon={faEnvelope} text={infoText.button2} />
         </div>
       </div>

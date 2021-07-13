@@ -5,6 +5,7 @@ import pageText from '../assets/translations/projects.json';
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../assets/styling/GlobalStyles';
 // Components
+import ProjectsWrapper from '../components/projects/ProjectsWrapper';
 import Footer from '../components/footer/Footer';
 // Scroll Top
 import ScrollTop from '../assets/util/ScrollTop';
@@ -18,7 +19,7 @@ function ProjectsPage() {
 
   return (
     <motion.div variants={pageAnimation} initial="hidden" animate="show" exit="exit">
-      Projects Page
+      <ProjectsWrapper text={text}/>
       <Footer/>
       <ScrollTop/>
     </motion.div>

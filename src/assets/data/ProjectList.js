@@ -1,16 +1,19 @@
+import task_1 from '../img/projects/task-manager-1.png';
+import task_2 from '../img/projects/task-manager-2.png';
+import task_3 from '../img/projects/task-manager-3.png';
+import task_4 from '../img/projects/task-manager-4.png';
+
 const projects = [
   {
     id: 'task-manager',
     name : "Collaborative Task Management",
-    image: '',
+    image: task_1,
     techs : "HTML, SCSS, JavaScript, NodeJS, Express, MongoDB",
     github : "https://github.com/sandropernerstorfer/task-app/tree/main",
     live : "https://sandi-task.herokuapp.com/",
-    details: {
-      route: "/projects/task-manager",
-      desc: "Task Manager Desc",
-      screenshots: [],
-    }
+    route: "/projects/task-manager",
+    desc: "Task Manager Desc",
+    screenshots: [task_2, task_3, task_4]
   },
   {
     id: 'ghostwriter',
@@ -19,11 +22,9 @@ const projects = [
     techs : "HTML, SCSS, JavaScript",
     githubLink : "https://github.com/sandropernerstorfer/ghostwriter-app/tree/master",
     liveLink : "https://ghostwriter-js.netlify.app/",
-    details: {
-      route: "/projects/ghostwriter",
-      desc: "Ghostwriter Desc",
-      screenshots: []
-    }
+    route: "/projects/ghostwriter",
+    desc: "Ghostwriter Desc",
+    screenshots: []
   },
   {
     id: 'deep-check-function',
@@ -32,11 +33,9 @@ const projects = [
     techs : "JavaScript",
     githubLink : "https://github.com/sandropernerstorfer/deep-check-function",
     liveLink : "",
-    details: {
-      route: "/projects/deep-check-function",
-      desc: 'deep check desc',
-      screenshots: []
-    }
+    route: "/projects/deep-check-function",
+    desc: 'deep check desc',
+    screenshots: []
   },
   {
     id: 'express-user-manager',
@@ -45,11 +44,9 @@ const projects = [
     techs : "NodeJS, ExpressJS",
     githubLink : "https://github.com/sandropernerstorfer/Node-Express-UserManager",
     liveLink : "https://node-express-user-manager.herokuapp.com/",
-    details: {
-      route: "/projects/express-user-manager",
-      desc: 'user manager desc',
-      screenshots: []
-    }
+    route: "/projects/express-user-manager",
+    desc: 'user manager desc',
+    screenshots: []
   }
 ];
 

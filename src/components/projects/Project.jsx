@@ -2,7 +2,8 @@ import React from 'react';
 // Styling
 import styled from 'styled-components';
 
-function Project() {
+function Project( project ) {
+  // Klick auf details speichert project prop in state ( muss implementiert werden )
   return (
     <ProjectContainer>
       project

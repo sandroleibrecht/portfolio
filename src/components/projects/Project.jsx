@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 function Project( project ) {
-  // Klick auf details speichert project prop in state ( muss implementiert werden )
+  // Klick auf details icon öffnet route
   return (
     <ProjectContainer>
       project

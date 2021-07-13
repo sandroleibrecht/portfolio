@@ -8,6 +8,7 @@ import github_img from '../img/techs/github.png';
 import node_img from '../img/techs/node.png';
 import express_img from '../img/techs/express.png';
 import mongodb_img from '../img/techs/mongodb.png';
+import socket_img from '../img/techs/socketio.png';
 
 const skillList = [
   {
@@ -59,6 +60,11 @@ const skillList = [
     name: 'MongoDB',
     image: mongodb_img,
     color: 'var(--mongodb)'
+  },
+  {
+    name: 'SocketIO',
+    image: socket_img,
+    color: '#777'
   }
 ];
 

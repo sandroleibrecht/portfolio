@@ -39,4 +39,6 @@ const projects = [
 //     liveLink : "https://node-express-user-manager.herokuapp.com/",
 //     details: "/projects/express-user-manager"
 //   }
-]
+];
+
+export default projects;

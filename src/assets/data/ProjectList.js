@@ -5,6 +5,8 @@ import task_4 from '../img/projects/task-manager-4.png';
 import ghost_1 from '../img/projects/ghostwriter-1.png';
 import ghost_2 from '../img/projects/ghostwriter-2.png';
 import ghost_3 from '../img/projects/ghostwriter-3.png';
+import deep_check_1 from '../img/projects/deep-check-1.png';
+import deep_check_2 from '../img/projects/deep-check-2.png';
 
 const projects = [
   {
@@ -32,13 +34,13 @@ const projects = [
   {
     id: 'deep-check-function',
     name : "Deep-Check Function",
-    image: '',
+    image: deep_check_1,
     techs : "JavaScript",
     githubLink : "https://github.com/sandropernerstorfer/deep-check-function",
     liveLink : "",
     route: "/projects/deep-check-function",
     desc: 'deep check desc',
-    screenshots: []
+    screenshots: [deep_check_2]
   },
   {
     id: 'express-user-manager',

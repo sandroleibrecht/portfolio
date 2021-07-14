@@ -7,6 +7,9 @@ import ghost_2 from '../img/projects/ghostwriter-2.png';
 import ghost_3 from '../img/projects/ghostwriter-3.png';
 import deep_check_1 from '../img/projects/deep-check-1.png';
 import deep_check_2 from '../img/projects/deep-check-2.png';
+import user_manager_1 from '../img/projects/user-manager-1.png';
+import user_manager_2 from '../img/projects/user-manager-2.png';
+import user_manager_3 from '../img/projects/user-manager-3.png';
 
 const projects = [
   {
@@ -45,13 +48,13 @@ const projects = [
   {
     id: 'express-user-manager',
     name : "Express User-Manager",
-    image: '',
+    image: user_manager_1,
     techs : "NodeJS, ExpressJS",
     githubLink : "https://github.com/sandropernerstorfer/Node-Express-UserManager",
     liveLink : "https://node-express-user-manager.herokuapp.com/",
     route: "/projects/express-user-manager",
     desc: 'user manager desc',
-    screenshots: []
+    screenshots: [user_manager_2, user_manager_3]
   }
 ];
 

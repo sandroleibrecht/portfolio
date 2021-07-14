@@ -11,7 +11,7 @@ function ProjectList() {
   return (
     <List>
       <Project {...projectList[0]} key={projectList[0].id} />
-      {/* {projects.map( project => <Project {...project} key={project.id} /> )} */}
+      {/* {projectList.map( project => <Project {...project} key={project.id} /> )} */}
     </List>
   )
 };

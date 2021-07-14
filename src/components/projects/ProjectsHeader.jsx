@@ -6,9 +6,9 @@ function ProjectsHeader({ text }) {
   return (
     <HeaderSection>
       <h1>{text.heading}</h1>
-      <span>{text.info1}</span>
-      <span>{text.info2}</span>
-      <span>{text.info3}</span>
+      <span>Details</span>
+      <span>Codebase</span>
+      <span>Live</span>
     </HeaderSection>
   )
 };

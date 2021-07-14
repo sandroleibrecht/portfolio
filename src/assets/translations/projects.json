@@ -1,18 +1,8 @@
 {
   "en": {
-    "header": {
-      "heading": "Projects",
-      "info1": "info1 en",
-      "info2": "info2 en",
-      "info3": "info3 en"
-    }
+    "header": { "heading": "Projects" }
   },
   "de": {
-    "header": {
-      "heading": "Projekte",
-      "info1": "info1 de",
-      "info2": "info2 de",
-      "info3": "info3 de"
-    }
+    "header": { "heading": "Projekte" }
   }
 }

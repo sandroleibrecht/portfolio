@@ -3,8 +3,6 @@ import React from 'react';
 import openNewTab from '../../assets/util/OpenNewTab';
 // Styling & Animations
 import styled from 'styled-components';
-// Image
-import headerImage from '../../assets/img/headerImage.svg';
 // Material UI
 import { GitHub, LinkedIn } from '@material-ui/icons';
 import Grid from '@material-ui/core/Grid';
@@ -23,7 +21,7 @@ function AboutHeader({ textContent }) {
         </div>
       </InfoContainer>
       <DesignContainer item xs={12} sm={12} md={6} lg={6}>
-          <img src={headerImage} alt="code window"/>
+          <img src={process.env.PUBLIC_URL+'/img/app/headerImage.svg'} alt="code window"/>
       </DesignContainer>
     </HeaderContainer>
   );

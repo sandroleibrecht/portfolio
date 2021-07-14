@@ -2,8 +2,6 @@ import React from 'react';
 // Styling & Animations
 import styled from 'styled-components';
 import { fadeInRightAnimation, fadeInLeftAnimation } from '../../assets/styling/GlobalStyles';
-// Logo
-import logoImage from '../../assets/img/AppLogo.png';
 // Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -31,7 +29,7 @@ function Navbar() {
       <TopSpacing/>
       <StyledNavbar>
         <Link to='/'>
-          <Logo src={logoImage} menuOpen={menuOpen} alt="Page Logo" />
+          <Logo src={process.env.PUBLIC_URL+'/img/app/AppLogo.png'} menuOpen={menuOpen} alt="Page Logo" />
         </Link>
         <MenuIcon icon={faBars} onClick={ handleMenuOpen }/>
         <NavInline/>

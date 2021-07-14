@@ -1,69 +1,57 @@
-import html_img from '../img/techs/html5.png';
-import css_img from '../img/techs/css3.png';
-import js_img from '../img/techs/javascript.png';
-import react_img from '../img/techs/react.png';
-import scss_img from '../img/techs/scss.png';
-import git_img from '../img/techs/git.png';
-import github_img from '../img/techs/github.png';
-import node_img from '../img/techs/node.png';
-import express_img from '../img/techs/express.png';
-import mongodb_img from '../img/techs/mongodb.png';
-import socket_img from '../img/techs/socketio.png';
-
 const skillList = [
   {
     name: 'HTML5',
-    image: html_img,
+    image: '/img/techs/html5.png',
     color: 'var(--html)'
   },
   {
     name: 'CSS3',
-    image: css_img,
+    image: '/img/techs/css3.png',
     color: 'var(--css)'
   },
   {
     name: 'JavaScript',
-    image: js_img,
+    image: '/img/techs/javascript.png',
     color: 'var(--js)'
   },
   {
     name: 'React',
-    image: react_img,
+    image: '/img/techs/react.png',
     color: 'var(--react)'
   },
   {
     name: 'SCSS',
-    image: scss_img,
+    image: '/img/techs/scss.png',
     color: 'var(--scss)'
   },
   {
     name: 'Git',
-    image: git_img,
+    image: '/img/techs/git.png',
     color: 'var(--git)'
   },
   {
     name: 'GitHub',
-    image: github_img,
+    image: '/img/techs/github.png',
     color: 'var(--github)'
   },
   {
     name: 'NodeJS',
-    image: node_img,
+    image: '/img/techs/node.png',
     color: 'var(--node)'
   },
   {
     name: 'ExpressJS',
-    image: express_img,
+    image: '/img/techs/express.png',
     color: 'var(--express)'
   },
   {
     name: 'MongoDB',
-    image: mongodb_img,
+    image: '/img/techs/mongodb.png',
     color: 'var(--mongodb)'
   },
   {
     name: 'SocketIO',
-    image: socket_img,
+    image: '/img/techs/socketio.png',
     color: '#777'
   }
 ];

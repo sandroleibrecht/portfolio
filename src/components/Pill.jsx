@@ -7,7 +7,7 @@ import Chip from '@material-ui/core/Chip';
 
 function Pill({ image, text, color }) {
   return (
-    <StyledPill avatar={<StyledAvatar src={image} />} label={text} customcolor={color} />
+    <StyledPill avatar={<StyledAvatar src={process.env.PUBLIC_URL + image} />} label={text} customcolor={color} />
   );
 };
 

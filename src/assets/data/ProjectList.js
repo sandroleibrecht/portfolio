@@ -2,6 +2,9 @@ import task_1 from '../img/projects/task-manager-1.png';
 import task_2 from '../img/projects/task-manager-2.png';
 import task_3 from '../img/projects/task-manager-3.png';
 import task_4 from '../img/projects/task-manager-4.png';
+import ghost_1 from '../img/projects/ghostwriter-1.png';
+import ghost_2 from '../img/projects/ghostwriter-2.png';
+import ghost_3 from '../img/projects/ghostwriter-3.png';
 
 const projects = [
   {
@@ -18,13 +21,13 @@ const projects = [
   {
     id: 'ghostwriter',
     name : "Ghostwriter.js",
-    image: '',
+    image: ghost_1,
     techs : "HTML, SCSS, JavaScript",
     githubLink : "https://github.com/sandropernerstorfer/ghostwriter-app/tree/master",
     liveLink : "https://ghostwriter-js.netlify.app/",
     route: "/projects/ghostwriter",
     desc: "Ghostwriter Desc",
-    screenshots: []
+    screenshots: [ghost_2, ghost_3]
   },
   {
     id: 'deep-check-function',

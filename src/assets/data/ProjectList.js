@@ -1,9 +1,15 @@
+import skillList from './SkillList';
+const skills = {};
+skillList.forEach( skill => { 
+  skills[skill.name] = {...skill};
+});
+
 const projects = [
   {
     id: 'task-manager',
     name : "Collaborative Task Management",
     image: '/img/projects/task-manager-1.png',
-    techs : "HTML, SCSS, JavaScript, NodeJS, Express, MongoDB",
+    techs : [skills.HTML5, skills.SCSS, skills.JavaScript, skills.NodeJS, skills.ExpressJS, skills.MongoDB, skills.SocketIO],
     github : "https://github.com/sandropernerstorfer/task-app/tree/main",
     live : "https://sandi-task.herokuapp.com/",
     route: "/projects/task-manager",
@@ -14,7 +20,7 @@ const projects = [
     id: 'ghostwriter',
     name : "Ghostwriter.js",
     image: '/img/projects/ghostwriter-1.png',
-    techs : "HTML, SCSS, JavaScript",
+    techs : [skills.HTML5, skills.SCSS, skills.JavaScript],
     githubLink : "https://github.com/sandropernerstorfer/ghostwriter-app/tree/master",
     liveLink : "https://ghostwriter-js.netlify.app/",
     route: "/projects/ghostwriter",
@@ -25,7 +31,7 @@ const projects = [
     id: 'deep-check-function',
     name : "Deep-Check Function",
     image: '/img/projects/deep-check-1.png',
-    techs : "JavaScript",
+    techs : [skills.JavaScript],
     githubLink : "https://github.com/sandropernerstorfer/deep-check-function",
     liveLink : "",
     route: "/projects/deep-check-function",
@@ -36,7 +42,7 @@ const projects = [
     id: 'express-user-manager',
     name : "Express User-Manager",
     image: '/img/projects/user-manager-1.png',
-    techs : "NodeJS, ExpressJS",
+    techs : [skills.HTML5, skills.SCSS, skills.JavaScript, skills.NodeJS, skills.ExpressJS],
     githubLink : "https://github.com/sandropernerstorfer/Node-Express-UserManager",
     liveLink : "https://node-express-user-manager.herokuapp.com/",
     route: "/projects/express-user-manager",

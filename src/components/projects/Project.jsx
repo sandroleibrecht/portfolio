@@ -4,19 +4,29 @@ import styled from 'styled-components';
 // Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInfoCircle, faCode, faPlayCircle } from '@fortawesome/free-solid-svg-icons';
+// Utils
+import OpenNewTab from '../../assets/util/OpenNewTab';
+// Router
+import { useHistory } from 'react-router-dom';
 // Components
 import Pill from '../Pill';
 
 function Project( project ) {
-  // Klick auf details icon öffnet route
+
+  const history = useHistory();
+
   return (
     <ProjectContainer>
       <div className="projectHead">
         <h1>{project.name}</h1>
         <div className="linkContainer">
-          <span><FontAwesomeIcon icon={faInfoCircle}/></span>
-          <span><FontAwesomeIcon icon={faCode}/></span>
-          { project.live ? <span><FontAwesomeIcon icon={faPlayCircle}/></span> : null }
+          <span onClick={() => history.push(project.route)}  ><FontAwesomeIcon icon={faInfoCircle}/></span>
+          <span onClick={() => OpenNewTab(project.github)} ><FontAwesomeIcon icon={faCode}/></span>
+          { project.live ? 
+            <span onClick={() => OpenNewTab(project.live)} ><FontAwesomeIcon icon={faPlayCircle}/></span>
+            :
+            null
+          }
         </div>
       </div>
       <img src={process.env.PUBLIC_URL + project.image} alt={project.name + ' main image'} />

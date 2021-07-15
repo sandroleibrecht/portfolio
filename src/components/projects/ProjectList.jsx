@@ -9,15 +9,21 @@ import { useSelector } from 'react-redux';
 function ProjectList() {
   const {projectList} = useSelector( state => state.projects );
   return (
-    <List>
-      <Project {...projectList[0]} key={projectList[0].id} />
-      {/* {projectList.map( project => <Project {...project} key={project.id} /> )} */}
-    </List>
+    <>
+      <List>
+        {projectList.map( project => <Project {...project} key={project.id} /> )}
+      </List>
+    </>
   )
 };
 
 // Styled Components
 const List = styled.section`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
 `;
 
 export default ProjectList;

@@ -21,8 +21,8 @@ const projects = [
     name : "Ghostwriter.js",
     image: '/img/projects/ghostwriter-1.png',
     techs : [skills.HTML5, skills.SCSS, skills.JavaScript],
-    githubLink : "https://github.com/sandropernerstorfer/ghostwriter-app/tree/master",
-    liveLink : "https://ghostwriter-js.netlify.app/",
+    github : "https://github.com/sandropernerstorfer/ghostwriter-app/tree/master",
+    live : "https://ghostwriter-js.netlify.app/",
     route: "/projects/ghostwriter",
     desc: "Ghostwriter Desc",
     screenshots: ['/img/projects/ghostwriter-2.png', '/img/projects/ghostwriter-3.png']
@@ -32,8 +32,8 @@ const projects = [
     name : "Deep-Check Function",
     image: '/img/projects/deep-check-1.png',
     techs : [skills.JavaScript],
-    githubLink : "https://github.com/sandropernerstorfer/deep-check-function",
-    liveLink : "",
+    github : "https://github.com/sandropernerstorfer/deep-check-function",
+    live : "",
     route: "/projects/deep-check-function",
     desc: 'deep check desc',
     screenshots: ['/img/projects/deep-check-2.png']
@@ -43,8 +43,8 @@ const projects = [
     name : "Express User-Manager",
     image: '/img/projects/user-manager-1.png',
     techs : [skills.HTML5, skills.SCSS, skills.JavaScript, skills.NodeJS, skills.ExpressJS],
-    githubLink : "https://github.com/sandropernerstorfer/Node-Express-UserManager",
-    liveLink : "https://node-express-user-manager.herokuapp.com/",
+    github : "https://github.com/sandropernerstorfer/Node-Express-UserManager",
+    live : "https://node-express-user-manager.herokuapp.com/",
     route: "/projects/express-user-manager",
     desc: 'user manager desc',
     screenshots: ['/img/projects/user-manager-2.png', '/img/projects/user-manager-3.png']

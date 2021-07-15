@@ -16,7 +16,7 @@ function Project( project ) {
         <div className="linkContainer">
           <span><FontAwesomeIcon icon={faInfoCircle}/></span>
           <span><FontAwesomeIcon icon={faCode}/></span>
-          <span><FontAwesomeIcon icon={faPlayCircle}/></span>
+          { project.live ? <span><FontAwesomeIcon icon={faPlayCircle}/></span> : null }
         </div>
       </div>
       <img src={process.env.PUBLIC_URL + project.image} alt={project.name + ' main image'} />

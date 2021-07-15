@@ -52,6 +52,28 @@ const projects = [
     desc: 'user manager desc',
     screenshots: ['/img/projects/user-manager-2.png', '/img/projects/user-manager-3.png'],
     spotlight: true
+  },
+  {
+    id: 'react-portfolio',
+    name : "React Portfolio",
+    image: '',
+    techs : [],
+    github : "",
+    live : "",
+    route: "",
+    desc: 'portfolio desc',
+    screenshots: []
+  },
+  {
+    id: 'js-clocks',
+    name : "JS Clocks",
+    image: '',
+    techs : [],
+    github : "",
+    live : "",
+    route: "",
+    desc: 'js clocks desc',
+    screenshots: []
   }
 ];
 

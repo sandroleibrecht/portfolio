@@ -14,7 +14,8 @@ const projects = [
     live : "https://sandi-task.herokuapp.com/",
     route: "/projects/task-manager",
     desc: "Task Manager Desc",
-    screenshots: ['/img/projects/task-manager-2.png', '/img/projects/task-manager-3.png', '/img/projects/task-manager-4.png']
+    screenshots: ['/img/projects/task-manager-2.png', '/img/projects/task-manager-3.png', '/img/projects/task-manager-4.png'],
+    spotlight: true
   },
   {
     id: 'ghostwriter',
@@ -25,7 +26,8 @@ const projects = [
     live : "https://ghostwriter-js.netlify.app/",
     route: "/projects/ghostwriter",
     desc: "Ghostwriter Desc",
-    screenshots: ['/img/projects/ghostwriter-2.png', '/img/projects/ghostwriter-3.png']
+    screenshots: ['/img/projects/ghostwriter-2.png', '/img/projects/ghostwriter-3.png'],
+    spotlight: true
   },
   {
     id: 'deep-check-function',
@@ -36,7 +38,8 @@ const projects = [
     live : "",
     route: "/projects/deep-check-function",
     desc: 'deep check desc',
-    screenshots: ['/img/projects/deep-check-2.png']
+    screenshots: ['/img/projects/deep-check-2.png'],
+    spotlight: true
   },
   {
     id: 'express-user-manager',
@@ -47,7 +50,8 @@ const projects = [
     live : "https://node-express-user-manager.herokuapp.com/",
     route: "/projects/express-user-manager",
     desc: 'user manager desc',
-    screenshots: ['/img/projects/user-manager-2.png', '/img/projects/user-manager-3.png']
+    screenshots: ['/img/projects/user-manager-2.png', '/img/projects/user-manager-3.png'],
+    spotlight: true
   }
 ];
 

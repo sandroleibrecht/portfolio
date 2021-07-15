@@ -1,18 +1,32 @@
 import React from 'react';
 // Styling
 import styled from 'styled-components';
-// Project Component
+// Components
 import Project from './Project';
+import Line from '../Line';
 // Redux
 import { useSelector } from 'react-redux';
 
 function ProjectList() {
   const {projectList} = useSelector( state => state.projects );
+  
+  // Seperate Projects
+  const spotlightProjects = [];
+  const otherProjects = [];
+  projectList.forEach( project => {
+    project.spotlight ? spotlightProjects.push(project) : otherProjects.push(project);
+  });
+
   return (
     <>
       <List>
-        {projectList.map( project => <Project {...project} key={project.id} /> )}
+        { spotlightProjects.map(project => <Project {...project} key={project.id} />) }
       </List>
+      <Line/>
+      <OtherProjects>
+        <h3>Other Projects</h3>
+        { otherProjects.map(project => <Project {...project} key={project.id} />) }
+      </OtherProjects>
     </>
   )
 };
@@ -24,6 +38,10 @@ const List = styled.section`
   justify-content: space-evenly;
   align-items: center;
   gap: 1rem;
+`;
+
+const OtherProjects = styled.section`
+
 `;
 
 export default ProjectList;

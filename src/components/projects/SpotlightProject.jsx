@@ -39,7 +39,7 @@ function SpotlightProject( project ) {
 
 // Styled Components
 const ProjectContainer = styled.div`
-  margin-bottom: 8rem;
+  margin-bottom: 5rem;
   box-shadow: 0 0 15px 1px #e7e7e7;
   border-radius: 12px;
   padding: 1rem;

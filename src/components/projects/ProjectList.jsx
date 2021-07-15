@@ -2,7 +2,8 @@ import React from 'react';
 // Styling
 import styled from 'styled-components';
 // Components
-import Project from './Project';
+import SpotlightProject from './SpotlightProject';
+import OtherProject from './OtherProject';
 import Line from '../Line';
 // Redux
 import { useSelector } from 'react-redux';
@@ -20,12 +21,12 @@ function ProjectList() {
   return (
     <>
       <List>
-        { spotlightProjects.map(project => <Project {...project} key={project.id} />) }
+        { spotlightProjects.map(project => <SpotlightProject {...project} key={project.id} />) }
       </List>
       <Line/>
       <OtherProjects>
         <h3>Other Projects</h3>
-        { otherProjects.map(project => <Project {...project} key={project.id} />) }
+        { otherProjects.map(project => <OtherProject {...project} key={project.id} />) }
       </OtherProjects>
     </>
   )

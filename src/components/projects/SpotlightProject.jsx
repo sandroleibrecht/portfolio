@@ -11,7 +11,7 @@ import { useHistory } from 'react-router-dom';
 // Components
 import Pill from '../Pill';
 
-function Project( project ) {
+function SpotlightProject( project ) {
 
   const history = useHistory();
 
@@ -117,4 +117,4 @@ const ProjectContainer = styled.div`
   }
 `;
 
-export default Project;
+export default SpotlightProject;

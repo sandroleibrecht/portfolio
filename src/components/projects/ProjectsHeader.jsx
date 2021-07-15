@@ -24,6 +24,7 @@ const HeaderSection = styled.header`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5rem;
 
   h1{
     margin-bottom: 0.7rem;

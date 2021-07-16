@@ -83,7 +83,7 @@ const ProjectContainer = styled.div`
         margin-right: 0px;
       }
       p{
-        background-color: #666;
+        background-color: var(--blue);
         border-radius: 20px;
         padding:7px 10px;
         color: #fff;

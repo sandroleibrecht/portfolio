@@ -25,8 +25,12 @@ function ProjectList() {
       </List>
       <Line/>
       <OtherProjects>
-        <h3>Other Projects</h3>
-        { otherProjects.map(project => <OtherProject {...project} key={project.id} />) }
+        <div>
+          <h3>Other Projects</h3>
+        </div>
+        <div className="projectContainer">
+          { otherProjects.map(project => <OtherProject {...project} key={project.id} />) }
+        </div>
       </OtherProjects>
     </>
   )
@@ -46,6 +50,19 @@ const List = styled.section`
 `;
 
 const OtherProjects = styled.section`
+  width: 100%;
+  h3{
+    text-align: center;
+    margin: 4rem 0;
+  }
+
+  .projectContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
 
 `;
 

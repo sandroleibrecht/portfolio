@@ -7,6 +7,9 @@ import skillList from '../../assets/data/SkillList.js';
 import Pill from '../Pill';
 
 function PersonalSection({ textContent }) {
+
+  const spotlightSkills = skillList.filter( skill => skill.spotlight);
+
   return (
     <AboutDescription>
       <div className="textContainer">
@@ -19,7 +22,7 @@ function PersonalSection({ textContent }) {
         </p>
       </div>
       <div className='skillContainer'>
-        {skillList.map(( skill, i ) => (
+        {spotlightSkills.map(( skill, i ) => (
           <Pill image={skill.image} text={skill.name} color={skill.color} key={skill.name + i} />
         ))}
       </div>

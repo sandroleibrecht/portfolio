@@ -42,27 +42,27 @@ const projects = [
     spotlight: true
   },
   {
+    id: 'react-portfolio',
+    name : "React Portfolio",
+    image: '/img/projects/portfolio-1.png',
+    techs : [skills.JavaScript, skills.React, skills.Redux, skills['Styled Components']],
+    github : "https://github.com/sandropernerstorfer/sandro-react-portfolio",
+    live : "",
+    route: "/projects/react-portfolio",
+    desc: 'portfolio desc',
+    screenshots: ['/img/projects/portfolio-2.png'],
+    spotlight: true
+  },
+  {
     id: 'express-user-manager',
     name : "Express User-Manager",
     image: '/img/projects/user-manager-1.png',
-    techs : [skills.HTML5, skills.SCSS, skills.JavaScript, skills.NodeJS, skills.ExpressJS],
+    techs : [skills.NodeJS, skills.ExpressJS],
     github : "https://github.com/sandropernerstorfer/Node-Express-UserManager",
     live : "https://node-express-user-manager.herokuapp.com/",
     route: "/projects/express-user-manager",
     desc: 'user manager desc',
-    screenshots: ['/img/projects/user-manager-2.png', '/img/projects/user-manager-3.png'],
-    spotlight: true
-  },
-  {
-    id: 'react-portfolio',
-    name : "React Portfolio",
-    image: '/img/projects/portfolio-1.png',
-    techs : [skills.JavaScript, skills.React],
-    github : "https://github.com/sandropernerstorfer/sandro-react-portfolio",
-    live : "https://sandropernerstorfer.netlify.app/",
-    route: "/projects/react-portfolio",
-    desc: 'portfolio desc',
-    screenshots: ['/img/projects/portfolio-2.png']
+    screenshots: ['/img/projects/user-manager-2.png', '/img/projects/user-manager-3.png']
   },
   {
     id: 'js-clocks',

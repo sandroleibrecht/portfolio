@@ -94,13 +94,13 @@ const ProjectContainer = styled.div`
       }
       p{
         background-color: var(--blue);
-        border-radius: 20px;
+        border-radius: 8px;
         padding:7px 10px;
         color: #fff;
       }
       opacity: 0;
       font-weight: 400;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       display: flex;
       justify-content: center;
       align-items: center;

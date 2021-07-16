@@ -26,6 +26,12 @@ const ProjectContainer = styled.div`
   box-shadow: 0 0 15px 1px #e7e7e7;
   border-radius: 12px;
   padding: 1rem;
+  max-width: 40rem;
+  min-width: 40rem;
+
+  @media (max-width: 1350px){
+    min-width: 0;
+  }
 
   .projectHead{
     width: 100%;

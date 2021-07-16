@@ -39,6 +39,10 @@ const List = styled.section`
   justify-content: space-evenly;
   align-items: center;
   gap: 1rem;
+
+  @media (max-width: 1350px){
+    flex-direction: column;
+  }
 `;
 
 const OtherProjects = styled.section`

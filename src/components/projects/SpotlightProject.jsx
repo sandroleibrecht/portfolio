@@ -9,16 +9,26 @@ import LinkContainer from './LinkContainer';
 import Pill from '../Pill';
 // Router
 import {useHistory} from 'react-router-dom';
+// Redux
+import {useDispatch} from 'react-redux';
+import {setScrollPosition} from '../../state/projectsState';
 
 function SpotlightProject( project ) {
   const history = useHistory();
+  const dispatch = useDispatch();
   return (
     <ProjectContainer>
       <div className="projectHead">
         <h1>{project.name}</h1>
         <LinkContainer route={project.route} github={project.github} live={project.live} />
       </div>
-      <div onClick={() => history.push(project.route)} className="imageContainer">
+      <div 
+        onClick={() => {
+          dispatch(setScrollPosition(window.scrollY));
+          history.push(project.route);
+        }
+        }
+        className="imageContainer">
         <img src={process.env.PUBLIC_URL + project.image} alt={project.name + ' main image'} />
         <span><p><FontAwesomeIcon icon={faInfoCircle}/> Details</p></span>
       </div>

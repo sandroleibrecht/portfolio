@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 // Page Text Content
 import pageText from '../assets/translations/about.json';
 // Framer Motion
@@ -13,13 +13,20 @@ import Footer from '../components/footer/Footer';
 // Scroll Top
 import ScrollTop from '../assets/util/ScrollTop';
 // Redux
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import {setScrollPosition} from '../state/projectsState';
 
 function AboutPage() {
+
+  const dispatch = useDispatch();
 
   const { selectedLanguage } = useSelector( state => state.language );
   const { headerText, cardsText, personalText } = pageText[selectedLanguage];
   
+  useEffect( () => {
+    dispatch(setScrollPosition(0));
+  },[]);
+
   return (
     <motion.div variants={pageAnimation} initial="hidden" animate="show" exit="exit">
       <AboutHeader textContent={headerText} />

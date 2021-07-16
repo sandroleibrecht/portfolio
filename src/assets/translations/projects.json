@@ -1,8 +1,10 @@
 {
   "en": {
-    "header": { "heading": "Projects" }
+    "header": { "heading": "Projects" },
+    "other" : { "heading": "Other Projects"}
   },
   "de": {
-    "header": { "heading": "Projekte" }
+    "header": { "heading": "Projekte" },
+    "other" : { "heading": "Sonstige Projekte"}
   }
 }

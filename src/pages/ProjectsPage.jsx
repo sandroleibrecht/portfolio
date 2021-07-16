@@ -15,11 +15,11 @@ import { useSelector } from 'react-redux';
 function ProjectsPage() {
 
   const { selectedLanguage } = useSelector(state => state.language);
-  const { header } = pageText[selectedLanguage];
-
+  const text = pageText[selectedLanguage];
+  
   return (
     <motion.div variants={pageAnimation} initial="hidden" animate="show" exit="exit">
-      <ProjectsWrapper headerText={header}/>
+      <ProjectsWrapper text={text}/>
       <Footer/>
       <ScrollTop/>
     </motion.div>

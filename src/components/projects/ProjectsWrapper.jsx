@@ -5,11 +5,11 @@ import styled from 'styled-components';
 import ProjectsHeader from './ProjectsHeader'
 import ProjectList from './ProjectList';
 
-function ProjectsWrapper({ headerText }) {
+function ProjectsWrapper({ text }) {
   return (
     <ProjectsSection>
-      <ProjectsHeader text={headerText} />
-      <ProjectList/>
+      <ProjectsHeader text={text.header} />
+      <ProjectList text={text.other}/>
     </ProjectsSection>
   )
 };

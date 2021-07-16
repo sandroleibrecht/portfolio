@@ -8,7 +8,7 @@ import Line from '../Line';
 // Redux
 import { useSelector } from 'react-redux';
 
-function ProjectList() {
+function ProjectList({text}) {
   const {projectList} = useSelector( state => state.projects );
   
   // Seperate Projects
@@ -26,7 +26,7 @@ function ProjectList() {
       <Line/>
       <OtherProjects>
         <div>
-          <h3>Other Projects</h3>
+          <h3>{text.heading}</h3>
         </div>
         <div className="projectContainer">
           { otherProjects.map(project => <OtherProject {...project} key={project.id} />) }

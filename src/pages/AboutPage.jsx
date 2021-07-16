@@ -25,7 +25,7 @@ function AboutPage() {
   
   useEffect( () => {
     dispatch(setScrollPosition(0));
-  },[]);
+  },[dispatch]);
 
   return (
     <motion.div variants={pageAnimation} initial="hidden" animate="show" exit="exit">

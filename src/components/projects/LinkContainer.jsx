@@ -8,12 +8,24 @@ import { faInfoCircle, faCode, faPlayCircle } from '@fortawesome/free-solid-svg-
 import OpenNewTab from '../../assets/util/OpenNewTab';
 // Router
 import { useHistory } from 'react-router-dom';
+// Redux
+import { useDispatch } from 'react-redux';
+import { setScrollPosition } from '../../state/projectsState';
 
 function LinkContainer({ route, github, live }) {
+
   const history = useHistory();
+  const dispatch = useDispatch();
+
   return (
     <Container>
-      <span onClick={() => history.push(route)}  ><FontAwesomeIcon icon={faInfoCircle}/></span>
+      <span
+        onClick={() => {
+          history.push(route);
+          dispatch(setScrollPosition(window.scrollY));
+        }}>
+        <FontAwesomeIcon icon={faInfoCircle}/>
+      </span>
       <span onClick={() => OpenNewTab(github)} ><FontAwesomeIcon icon={faCode}/></span>
       {live ? 
         <span onClick={() => OpenNewTab(live)} ><FontAwesomeIcon icon={faPlayCircle}/></span>

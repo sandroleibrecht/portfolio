@@ -3,11 +3,14 @@ import React from 'react';
 import styled from 'styled-components';
 // Components
 import LinkContainer from './LinkContainer';
+// Router
+import {useHistory} from 'react-router-dom';
 
 function OtherProject( project ) {
+  const history = useHistory();
   return (
     <ProjectContainer image={process.env.PUBLIC_URL + project.image}>
-      <div className="imageContainer" image={process.env.PUBLIC_URL + project.image}></div>
+      <div className="imageContainer" image={process.env.PUBLIC_URL + project.image} onClick={() => history.push(project.route)}></div>
       <div className="infoContainer">
         <h4>{project.name}</h4>
         {project.techs.map( tech => <span key={tech.name}>{tech.name}&nbsp;&nbsp;</span>)}
@@ -35,6 +38,7 @@ const ProjectContainer = styled.div`
   }
 
   .imageContainer{
+    cursor: pointer;
     height: 7rem;
     background-image: url(${props => props.image});
     background-repeat: no-repeat;

@@ -1,18 +1,27 @@
 import React from 'react';
 // Styling
 import styled from 'styled-components';
+// Font Awesome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 // Components
 import LinkContainer from './LinkContainer';
 import Pill from '../Pill';
+// Router
+import {useHistory} from 'react-router-dom';
 
 function SpotlightProject( project ) {
+  const history = useHistory();
   return (
     <ProjectContainer>
       <div className="projectHead">
         <h1>{project.name}</h1>
         <LinkContainer route={project.route} github={project.github} live={project.live} />
       </div>
-      <img src={process.env.PUBLIC_URL + project.image} alt={project.name + ' main image'} />
+      <div onClick={() => history.push(project.route)} className="imageContainer">
+        <img src={process.env.PUBLIC_URL + project.image} alt={project.name + ' main image'} />
+        <span><p><FontAwesomeIcon icon={faInfoCircle}/> Details</p></span>
+      </div>
       <div className="techContainer">
           { project.techs.map( tech => <Pill key={tech.name+'_pill'} text={tech.name} color={tech.color}/>) }
       </div>
@@ -57,12 +66,49 @@ const ProjectContainer = styled.div`
     }
   }
   
-  img{
-    max-width: 40rem;
-    width: 100%;
-    height: auto;
-    min-height: 15rem;
-    object-fit: cover;
+  .imageContainer{
+    position: relative;
+    cursor: pointer;
+
+    img{
+      max-width: 40rem;
+      width: 100%;
+      height: auto;
+      min-height: 15rem;
+      object-fit: cover;
+    }
+
+    span{
+      svg{
+        margin-right: 0px;
+      }
+      p{
+        background-color: #666;
+        border-radius: 20px;
+        padding:7px 10px;
+        color: #fff;
+      }
+      opacity: 0;
+      font-weight: 400;
+      font-size: 1.2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffffffd1;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all .2s;
+
+      @media (hover:hover){
+        &:hover{
+          opacity: 1;
+        }
+      }
+    }
   }
 
 

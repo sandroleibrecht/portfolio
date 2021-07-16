@@ -56,24 +56,24 @@ const projects = [
   {
     id: 'react-portfolio',
     name : "React Portfolio",
-    image: '',
-    techs : [],
-    github : "",
-    live : "",
-    route: "",
+    image: '/img/projects/portfolio-1.png',
+    techs : [skills.JavaScript, skills.React],
+    github : "https://github.com/sandropernerstorfer/sandro-react-portfolio",
+    live : "https://sandropernerstorfer.netlify.app/",
+    route: "/projects/react-portfolio",
     desc: 'portfolio desc',
-    screenshots: []
+    screenshots: ['/img/projects/portfolio-2.png']
   },
   {
     id: 'js-clocks',
     name : "JS Clocks",
-    image: '',
-    techs : [],
-    github : "",
-    live : "",
-    route: "",
+    image: '/img/projects/js-clocks-1.png',
+    techs : [skills.HTML5, skills.CSS3, skills.JavaScript],
+    github : "https://github.com/sandropernerstorfer/JS-Clocks",
+    live : "https://js-clocks.netlify.app/",
+    route: "/projects/js-clocks",
     desc: 'js clocks desc',
-    screenshots: []
+    screenshots: ['/img/projects/js-clocks-2.png']
   }
 ];
 

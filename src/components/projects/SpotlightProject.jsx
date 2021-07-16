@@ -1,33 +1,16 @@
 import React from 'react';
 // Styling
 import styled from 'styled-components';
-// Font Awesome
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInfoCircle, faCode, faPlayCircle } from '@fortawesome/free-solid-svg-icons';
-// Utils
-import OpenNewTab from '../../assets/util/OpenNewTab';
-// Router
-import { useHistory } from 'react-router-dom';
 // Components
+import LinkContainer from './LinkContainer';
 import Pill from '../Pill';
 
 function SpotlightProject( project ) {
-
-  const history = useHistory();
-
   return (
     <ProjectContainer>
       <div className="projectHead">
         <h1>{project.name}</h1>
-        <div className="linkContainer">
-          <span onClick={() => history.push(project.route)}  ><FontAwesomeIcon icon={faInfoCircle}/></span>
-          <span onClick={() => OpenNewTab(project.github)} ><FontAwesomeIcon icon={faCode}/></span>
-          { project.live ? 
-            <span onClick={() => OpenNewTab(project.live)} ><FontAwesomeIcon icon={faPlayCircle}/></span>
-            :
-            null
-          }
-        </div>
+        <LinkContainer route={project.route} github={project.github} live={project.live} />
       </div>
       <img src={process.env.PUBLIC_URL + project.image} alt={project.name + ' main image'} />
       <div className="techContainer">
@@ -65,31 +48,6 @@ const ProjectContainer = styled.div`
       font-weight: 600;
       font-size: 1.3rem;
       flex: 1;
-    }
-  }
-  .linkContainer{
-    border-radius: 12px;
-    box-shadow: inset 0 0 5px 1px #e9e9e9;
-    padding: .2rem .5rem;
-
-    span{
-      font-size: 1.15rem;
-      margin: 0 .5rem;
-      cursor: pointer;
-      &:nth-child(1){ color: var(--blueLight);}
-      &:nth-child(2){ color: var(--orange);}
-      &:nth-child(3){ color: var(--green);}
-
-      svg{
-        transition: all .2s;
-        opacity: .75;
-      }
-      @media (hover:hover){
-        & svg:hover{
-          opacity: 1;
-          transform: translateY(-2px);
-        }
-      }
     }
   }
   

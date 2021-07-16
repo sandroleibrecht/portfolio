@@ -20,7 +20,7 @@ const ProjectsSection = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5rem 1rem;
+  padding: 4.5rem 1rem;
 `;
 
 export default ProjectsWrapper;

@@ -81,10 +81,10 @@ export const pageAnimation = {
   show: {
     opacity: 1,
     y: 0,
-    transition: { duration: 1, ease: 'easeOut'}
+    transition: { duration: 0.8, ease: 'easeOut'}
   },
   exit: {
     opacity: 0,
-    transition: { duration: 0.6 }
+    transition: { duration: 0.4 }
   }
 };

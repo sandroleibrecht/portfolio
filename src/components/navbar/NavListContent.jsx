@@ -4,32 +4,20 @@ import navbarText from '../../assets/translations/navbar.json';
 // Styling & Animation
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { spinInAnimation, fadeInRightAnimation } from '../../assets/styling/GlobalStyles';
+import { spinInAnimation } from '../../assets/styling/GlobalStyles';
+// Language Switch
+import LanguageSwitch from '../LanguageSwitch';
 // Router
 import { Link, useLocation } from 'react-router-dom';
 // Redux
-import { setLanguage } from '../../state/languageState';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 function NavListContent() {
 
-  const dispatch = useDispatch();
   const { selectedLanguage } = useSelector( state => state.language );
   const { pathname } = useLocation();
 
   const { links } = navbarText[selectedLanguage];
-
-  // Functions
-  const handleLanguageChange = () => {
-    if( selectedLanguage === 'en' ){
-      dispatch(setLanguage('de'));
-      localStorage.setItem('spReactPortfolio_Language', 'de');
-    }
-    else{
-      dispatch(setLanguage('en'));
-      localStorage.setItem('spReactPortfolio_Language', 'en');
-    }
-  };
 
   return (
     <>
@@ -45,11 +33,7 @@ function NavListContent() {
         {links.contact}
         <Line transition={{ duration: 0.7 }} initial={{ width: 0 }} animate={{ width: pathname === '/contact' ? '100%' : '0' }}/>
       </ListItem>
-      <LanguageSwitch onClick={handleLanguageChange}>
-        <h6>DE</h6>
-        <h6>EN</h6>
-        <ControlSwitch language={selectedLanguage} ></ControlSwitch>
-      </LanguageSwitch>
+      <LanguageSwitch/>
     </>
   )
 };
@@ -87,40 +71,6 @@ const Line = styled(motion.div)`
   position: absolute;
   bottom: -2px;
   left: 0%;
-`;
-
-const LanguageSwitch = styled.div`
-  margin: 0 2rem;
-  width: 45px;
-  height: 20px;
-  padding: 2px;
-  border: 2px solid #e0e0e0;
-  border-radius: 10px;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  opacity: 0;
-  animation: ${fadeInRightAnimation} 1s 1 forwards;
-  animation-delay: 1s;
-
-  h6{
-    font-weight: 300;
-    margin: 0 .15rem;
-  }
-`;
-
-const ControlSwitch = styled.div`
-  height: calc(100% - 2px);
-  width: calc(50% - 2px);
-  background-color: var(--blue);
-  border: 2px solid var(--blueDark);
-  border-radius: 10px;
-  position: absolute;
-  top: 1px;
-  left: ${ props => props.language === 'en' ? '2px' : '50%' };
-  transition: left .35s;
 `;
 
 export default NavListContent;

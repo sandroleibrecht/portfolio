@@ -3,7 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../assets/styling/GlobalStyles';
 // Components
-import Footer from '../components/footer/Footer';
+import TopBar from '../components/projectDetails/TopBar';
 // Scroll Top
 import ScrollTop from '../assets/util/ScrollTop';
 // Router
@@ -17,11 +17,12 @@ function ProjectDetails() {
   const { projectList } = useSelector(state => state.projects);
   const { pathname } = useLocation();
   const currentProject = projectList.find( project => project.id === pathname.split('/')[2]);
+  // wenn project show project wrapper
+  // wenn nicht dann sorry screen
 
   return (
     <motion.div variants={pageAnimation} initial="hidden" animate="show" exit="exit">
-      Project Details
-      <Footer/>
+      <TopBar projectName={currentProject.name}/>
       <ScrollTop/>
     </motion.div>
   );

@@ -59,7 +59,7 @@ const StyledNavbar = styled.nav`
   position: fixed;
   top: ${ props => props.detailsOpen ? '-70px' : '0'};
   left: 0;
-  transition: height 1.2s;
+  transition: top 1.2s;
 
   @media (max-width: 630px){
     padding-left: 2.3rem;

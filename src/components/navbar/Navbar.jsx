@@ -9,13 +9,14 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import NavInline from './NavInline';
 import NavSide from './NavSide';
 // Router
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 // Redux
 import { setNavOpen } from '../../state/navbarState';
 import { useDispatch, useSelector } from 'react-redux';
 
 function Navbar() {
 
+  const { pathname } = useLocation();
   const dispatch = useDispatch();
   const { menuOpen } = useSelector( state => state.navbar );
 
@@ -26,8 +27,8 @@ function Navbar() {
 
   return (
     <>
-      <TopSpacing/>
-      <StyledNavbar>
+      <TopSpacing detailsOpen={ pathname.split('/')[2] ? true : false }/>
+      <StyledNavbar detailsOpen={ pathname.split('/')[2] ? true : false }>
         <Link to='/'>
           <Logo src={process.env.PUBLIC_URL+'/img/app/AppLogo.png'} menuOpen={menuOpen} alt="Page Logo" />
         </Link>
@@ -42,7 +43,8 @@ function Navbar() {
 // Styled Components
 const TopSpacing = styled.div`
   width: 100vw;
-  height: 66px;
+  height: ${ props => props.detailsOpen ? '0px' : '66px'};
+  transition: all 1.2s;
 `;
 
 const StyledNavbar = styled.nav`
@@ -55,8 +57,9 @@ const StyledNavbar = styled.nav`
   box-shadow: 0px 12px 30px -25px #979696;
   z-index: 10000;
   position: fixed;
-  top: 0;
+  top: ${ props => props.detailsOpen ? '-70px' : '0'};
   left: 0;
+  transition: all 1.2s;
 
   @media (max-width: 630px){
     padding-left: 2.3rem;

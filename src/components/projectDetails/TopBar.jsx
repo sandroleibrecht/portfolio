@@ -32,6 +32,7 @@ function TopBar({ projectName, buttonText }) {
 
 // Styled Components
 const NavBar = styled.nav`
+  z-index: 10000;
   position: fixed;
   top: 0;
   left: 0;

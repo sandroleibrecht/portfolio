@@ -117,6 +117,13 @@ const MainWrapper = styled.main`
 
     .description{
       margin-bottom: 4rem;
+      max-width: 900px;
+      line-height: 2rem;
+      font-weight: 400;
+      color: #444;
+      border: 2px solid #eeeeee;
+      padding: 1rem 0;
+      border-width: 2px 0;
     }
 
     .screenshots{

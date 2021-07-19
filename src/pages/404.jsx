@@ -1,12 +1,17 @@
 import React,{useEffect} from 'react';
+import pageText from '../assets/translations/404.json';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../assets/styling/GlobalStyles';
 import Button from '../components/Button';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { useHistory } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 function NotFoundPage() {
+
+  const { selectedLanguage } = useSelector( state => state.language );
+  const { msg } = pageText[selectedLanguage];
 
   const history = useHistory();
 
@@ -18,7 +23,8 @@ function NotFoundPage() {
     <Container404 variants={pageAnimation} initial="hidden" animate="show" exit="exit">
       <div>
         <img src={process.env.PUBLIC_URL + '/img/app/404.svg'} alt="404 Illustration"/>
-        <h1>oops! 404 Error</h1>
+        <h1>Woops!</h1>
+        <h1>{msg}</h1>
         <div className="buttonContainer">
           <span onClick={() => history.push('/')}>
             <Button text='Homepage' icon={faHome}/>
@@ -36,7 +42,6 @@ const Container404 = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding: 0 12vw;
 
   div{
@@ -50,13 +55,15 @@ const Container404 = styled(motion.div)`
     width: 100%;
     max-width: 500px;
     height: auto;
+    margin-bottom: 1.5rem;
   }
 
   h1{
-    margin: 1rem 0;
+    text-align: center;
+    color: #3F3E56;
 
-    @media (max-width: 350px){
-      font-size: 1.4rem;
+    @media (max-width: 420px){
+      font-size: 1.3rem;
     }
   }
 
@@ -68,6 +75,7 @@ const Container404 = styled(motion.div)`
     justify-content: space-evenly;
     align-items: center;
     gap: 1rem;
+    margin-top: 1.5rem;
 
     button{
       font-size: .9rem;

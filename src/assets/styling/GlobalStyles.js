@@ -85,6 +85,6 @@ export const pageAnimation = {
   },
   exit: {
     opacity: 0,
-    transition: { duration: 0.4 }
+    transition: { duration: 0.8 }
   }
 };

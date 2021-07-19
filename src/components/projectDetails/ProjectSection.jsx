@@ -117,7 +117,7 @@ const MainWrapper = styled.main`
 
     .description{
       margin-bottom: 4rem;
-      max-width: 900px;
+      max-width: 950px;
       line-height: 2rem;
       font-weight: 400;
       color: #444;

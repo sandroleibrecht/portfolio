@@ -65,7 +65,7 @@ const projects = [
       Includes 2 Versions: One returns just a Boolean and the other one an Array with Error-Message and Boolean.`,
 
       de: 
-      `Eine coole und nützliche JavaScript Funktion, um zu überprüfen 
+      `Eine nützliche JavaScript Funktion, um zu überprüfen 
       ob zwei Werte identisch sind. Funktioniert mit einzelnen Werten, 
       Arrays, Objekten und all diese beliebig ineinander verschachtelt. 
       Enthält 2 Versionen: Eine gibt nur einen Boolean zurück und die andere ein Array mit Fehlermeldung und Boolean.`
@@ -82,8 +82,15 @@ const projects = [
     live : "",
     route: "/projects/react-portfolio",
     desc: {
-      en: 'Portfolio ENGLISH',
-      de: 'Portfolio DEUTSCH'
+      en: 
+      `My Portfolio Page built with React, Styled Components, Redux 
+      and other useful packages such as framer-motion, react-router-dom and emailjs, 
+      creating a cool overview of me and my projects, and a contact page. Looking forward to read you message !`,
+
+      de: 
+      `Meine Portfolio Seite, erstellt mit React, Styled Components, 
+      Redux und anderen nützliche Tools wie framer-motion, react-router-dom und emailjs, 
+      um einen Überblick von mir und meiner Arbeit zu schaffen. Ich freue mich über jede Nachricht !`
     },
     screenshots: ['/img/projects/portfolio-2.png'],
     spotlight: true
@@ -97,8 +104,12 @@ const projects = [
     live : "https://node-express-user-manager.herokuapp.com/",
     route: "/projects/express-user-manager",
     desc: {
-      en: 'User Manager ENGLISH',
-      de: 'User Manager DEUTSCH'
+      en: 
+      `A small local User-Managment-Tool built with NodeJS and ExpressJS. 
+      Add new users, edit user information, delete users and sort them in the list.`,
+      de: 
+      `Ein kleines User-Management-Tool erstellt mit NodeJS und ExpressJS. 
+      Füge neue User hinzu, bearbeite User Daten, lösche User und sortiere sie in der Liste.`
     },
     screenshots: ['/img/projects/user-manager-2.png', '/img/projects/user-manager-3.png']
   },
@@ -111,8 +122,10 @@ const projects = [
     live : "https://js-clocks.netlify.app/",
     route: "/projects/js-clocks",
     desc: {
-      en: 'JS CLOCKS ENGLISH',
-      de: 'JS CLOCKS DEUTSCH'
+      en: 
+      `Fun little project containing two clocks, analgog and digital, built with HTML, CSS and JavaScript.`,
+      de: 
+      `Lustiges kleines Projekt mit zwei Uhren, analog und digital, erstellt mit HTML, CSS und JavaScript.`
     },
     screenshots: ['/img/projects/js-clocks-2.png']
   }

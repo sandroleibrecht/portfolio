@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import { pageAnimation } from '../assets/styling/GlobalStyles';
 // Components
 import TopBar from '../components/projectDetails/TopBar';
+import Project404 from '../components/projectDetails/404';
 // Scroll Top
 import ScrollTop from '../assets/util/ScrollTop';
 // Router
@@ -27,7 +28,15 @@ function ProjectDetails() {
 
   return (
     <motion.div variants={pageAnimation} initial="hidden" animate="show" exit="exit">
-      <TopBar projectName={currentProject.name} buttonText={topButton}/>
+      { currentProject ?
+        <>
+          <TopBar projectName={currentProject.name} buttonText={topButton}/>
+        </>
+        :
+        <>
+          <Project404/>
+        </>
+      }
       <ScrollTop/>
     </motion.div>
   );

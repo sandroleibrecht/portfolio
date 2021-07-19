@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import { pageAnimation } from '../assets/styling/GlobalStyles';
 // Components
 import TopBar from '../components/projectDetails/TopBar';
-import PageNotFound from '../components/404';
+import PageNotFound from './404';
 // Scroll Top
 import ScrollTop from '../assets/util/ScrollTop';
 // Router

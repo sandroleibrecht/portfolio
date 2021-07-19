@@ -1,16 +1,28 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import styled from 'styled-components';
-import Button from './Button';
+import { motion } from 'framer-motion';
+import { pageAnimation } from '../assets/styling/GlobalStyles';
+import Button from '../components/Button';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
+import { useHistory } from 'react-router-dom';
 
-function NotFoundPage({ buttonText, buttonIcon }) {
+function NotFoundPage() {
+
+  const history = useHistory();
+
+  useEffect(() => {
+    history.replace('/404')
+  },[history]);
+  
   return (
-    <Container404>
+    <Container404 variants={pageAnimation} initial="hidden" animate="show" exit="exit">
       <div>
         <img src={process.env.PUBLIC_URL + '/img/app/404.svg'} alt="404 Illustration"/>
         <h1>oops! 404 Error</h1>
-        <div>
-          <Button text={ buttonText || 'Homepage' } icon={ buttonIcon || faHome }/>
+        <div className="buttonContainer">
+          <span onClick={() => history.push('/')}>
+            <Button text='Homepage' icon={faHome}/>
+          </span>
         </div>
       </div>
     </Container404>
@@ -18,9 +30,9 @@ function NotFoundPage({ buttonText, buttonIcon }) {
 };
 
 // Styled Components
-const Container404 = styled.div`
+const Container404 = styled(motion.div)`
   width: 100vw;
-  min-height: 100vh;
+  min-height: calc(100vh - 66px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,10 +60,14 @@ const Container404 = styled.div`
     }
   }
 
-  div > div{
+  .buttonContainer{
     width: 100%;
     border-top: 2px solid #dddddd;
     padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
 
     button{
       font-size: .9rem;

@@ -9,7 +9,7 @@ import AboutPage from "./pages/AboutPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ContactPage from "./pages/ContactPage";
 import ProjectDetails from "./pages/ProjectDetails";
-import PageNotFound from './components/404';
+import PageNotFound from './pages/404';
 // Components
 import Navbar from "./components/navbar/Navbar";
 // ROUTER

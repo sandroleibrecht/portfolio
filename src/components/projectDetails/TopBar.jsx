@@ -39,7 +39,8 @@ const NavBar = styled.nav`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  box-shadow: 0 20px 15px -15px #e4e4e4;
+  box-shadow: 0 20px 15px -15px #7977773b;
+  background-color: #fff;
   height: 66px;
   padding: 0 2vw;
   gap: 1rem;

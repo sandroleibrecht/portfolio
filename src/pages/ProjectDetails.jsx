@@ -1,4 +1,6 @@
 import React from 'react';
+// Text Content
+import pageText from '../assets/translations/details.json';
 // Framer Motion
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../assets/styling/GlobalStyles';
@@ -12,6 +14,9 @@ import { useLocation } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 function ProjectDetails() {
+  
+  const { selectedLanguage } = useSelector(state => state.language);
+  const { topButton } = pageText[selectedLanguage];
 
   // Get Project
   const { projectList } = useSelector(state => state.projects);
@@ -22,7 +27,7 @@ function ProjectDetails() {
 
   return (
     <motion.div variants={pageAnimation} initial="hidden" animate="show" exit="exit">
-      <TopBar projectName={currentProject.name}/>
+      <TopBar projectName={currentProject.name} buttonText={topButton}/>
       <ScrollTop/>
     </motion.div>
   );

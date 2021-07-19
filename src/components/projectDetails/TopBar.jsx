@@ -9,14 +9,14 @@ import { faChevronCircleLeft } from '@fortawesome/free-solid-svg-icons';
 // Router
 import { useHistory } from 'react-router-dom';
 
-function TopBar({ projectName }) {
+function TopBar({ projectName, buttonText }) {
 
   const history = useHistory();
 
   return (
     <NavBar>
       <div className="leftBarContainer">
-        <div onClick={() => history.push('/projects')}><Button text='Projects' icon={faChevronCircleLeft} /></div>
+        <div onClick={() => history.push('/projects')}><Button text={buttonText} icon={faChevronCircleLeft} /></div>
         <h3>{projectName}</h3>
       </div>
       <LanguageSwitch/>

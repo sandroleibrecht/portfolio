@@ -9,6 +9,7 @@ import AboutPage from "./pages/AboutPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ContactPage from "./pages/ContactPage";
 import ProjectDetails from "./pages/ProjectDetails";
+import PageNotFound from './components/404';
 // Components
 import Navbar from "./components/navbar/Navbar";
 // ROUTER
@@ -30,11 +31,14 @@ function App() {
           <Route path='/projects' exact >
             <ProjectsPage/>
           </Route>
-          <Route path='/projects/:id' >
+          <Route path='/projects/:id' exact>
             <ProjectDetails/>
           </Route>
           <Route path='/contact'>
             <ContactPage/>
+          </Route>
+          <Route>
+            <PageNotFound/>
           </Route>
         </Switch>
       </AnimatePresence>

@@ -73,7 +73,8 @@ const NavBar = styled.nav`
     animation-delay: .5s;
     
     button{
-      width: 5.6rem;
+      width: 6rem;
+      height: 2rem;
     }
   }
 `;

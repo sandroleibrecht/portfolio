@@ -23,7 +23,12 @@ function ProjectSection( project ) {  // name, desc, techs, image, screenshots, 
         </div>
       </div>
       <div className="projectDetails">
-        {project.desc}
+        <div className="description">
+          {project.desc}
+        </div>
+        <div className="screenshots">
+          {project.screenshots.map( image => <img src={image} alt={image} key={image}/>)}
+        </div>
       </div>
     </MainWrapper>
   )
@@ -63,7 +68,7 @@ const MainWrapper = styled.main`
     justify-content: space-evenly;
     align-items: center;
     gap: 1.5vw;
-    margin-top: 1.5rem;
+    margin-top: 3.5rem;
 
     span{
       border: 1px solid #e6e6e6;
@@ -89,7 +94,30 @@ const MainWrapper = styled.main`
 
   .projectDetails{
     box-shadow: 0px -9px 15px -7px #d1cfcf;
+    padding: 4rem 1rem;
+    margin-bottom: 3rem;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .description{
+      margin-bottom: 4rem;
+    }
+
+    .screenshots{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 2rem;
+
+      img{
+        max-width: 600px;
+        height: auto;
+        box-shadow: 0 0 20px -7px #ccc;
+      }
+    }
   }
 `;
 

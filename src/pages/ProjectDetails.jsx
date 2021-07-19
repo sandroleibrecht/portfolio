@@ -7,6 +7,7 @@ import { pageAnimation } from '../assets/styling/GlobalStyles';
 // Components
 import TopBar from '../components/projectDetails/TopBar';
 import ProjectsSection from '../components/projectDetails/ProjectSection';
+import Footer from '../components/footer/Footer';
 import PageNotFound from './404';
 // Scroll Top
 import ScrollTop from '../assets/util/ScrollTop';
@@ -37,6 +38,7 @@ function ProjectDetails() {
           <PageNotFound/>
         </>
       }
+      <Footer/>
       <ScrollTop/>
     </motion.div>
   );

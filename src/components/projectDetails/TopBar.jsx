@@ -45,6 +45,12 @@ const NavBar = styled.nav`
   padding: 0 2vw;
   gap: 1rem;
 
+  @media (max-width: 700px){
+    div:nth-child(2){
+      margin-right: 1vw;
+    }
+  }
+
   .leftBarContainer{
     display: flex;
     align-items: center;
@@ -53,6 +59,10 @@ const NavBar = styled.nav`
     h3{
       color: #444;
       font-weight: 500;
+
+      @media (max-width: 700px){
+        display: none;
+      }
     }
   }
 

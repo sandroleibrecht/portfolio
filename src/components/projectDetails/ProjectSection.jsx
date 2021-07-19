@@ -13,6 +13,7 @@ function ProjectSection( project ) {  // name, desc, techs, image, screenshots, 
   return (
     <MainWrapper>
       <div className="headWrapper">
+        <h3>{project.name}</h3>
         <img src={project.image} alt={project.name} className="mainImage"/>
         <div className="techsContainer">
           {project.techs.map( tech => <Pill image={tech.image} text={tech.name} color={tech.color} key={tech.name}/>)}
@@ -47,6 +48,18 @@ const MainWrapper = styled.main`
     width: 100%;
     max-width: 600px;
     padding: 1rem;
+
+    h3{
+      display: none;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #444;
+      font-weight: 500;
+
+      @media (max-width: 700px){
+        display: block;
+      }
+    }
   }
 
   .mainImage{
@@ -110,10 +123,13 @@ const MainWrapper = styled.main`
       display: flex;
       align-items: center;
       justify-content: space-evenly;
+      flex-wrap: wrap;
       gap: 2rem;
+      width: 100%;
 
       img{
-        max-width: 600px;
+        max-width: 400px;
+        width: 100%;
         height: auto;
         box-shadow: 0 0 20px -7px #ccc;
       }

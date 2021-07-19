@@ -13,7 +13,10 @@ const projects = [
     github : "https://github.com/sandropernerstorfer/task-app/tree/main",
     live : "https://sandi-task.herokuapp.com/",
     route: "/projects/task-manager",
-    desc: "Task Manager Desc",
+    desc: {
+      en: 'Task Manager ENGLISH',
+      de: 'Task Manager DEUTSCH'
+    },
     screenshots: ['/img/projects/task-manager-2.png', '/img/projects/task-manager-3.png', '/img/projects/task-manager-4.png'],
     spotlight: true
   },
@@ -25,7 +28,10 @@ const projects = [
     github : "https://github.com/sandropernerstorfer/ghostwriter-app/tree/master",
     live : "https://ghostwriter-js.netlify.app/",
     route: "/projects/ghostwriter",
-    desc: "Ghostwriter Desc",
+    desc: {
+      en: 'Ghostwriter ENGLISH',
+      de: 'Ghostwriter DEUTSCH'
+    },
     screenshots: ['/img/projects/ghostwriter-2.png', '/img/projects/ghostwriter-3.png'],
     spotlight: true
   },
@@ -37,7 +43,10 @@ const projects = [
     github : "https://github.com/sandropernerstorfer/deep-check-function",
     live : "",
     route: "/projects/deep-check-function",
-    desc: 'deep check desc',
+    desc: {
+      en: 'Deep Check ENGLISH',
+      de: 'Deep Check DEUTSCH'
+    },
     screenshots: ['/img/projects/deep-check-2.png'],
     spotlight: true
   },
@@ -49,7 +58,10 @@ const projects = [
     github : "https://github.com/sandropernerstorfer/sandro-react-portfolio",
     live : "",
     route: "/projects/react-portfolio",
-    desc: 'portfolio desc',
+    desc: {
+      en: 'Portfolio ENGLISH',
+      de: 'Portfolio DEUTSCH'
+    },
     screenshots: ['/img/projects/portfolio-2.png'],
     spotlight: true
   },
@@ -61,7 +73,10 @@ const projects = [
     github : "https://github.com/sandropernerstorfer/Node-Express-UserManager",
     live : "https://node-express-user-manager.herokuapp.com/",
     route: "/projects/express-user-manager",
-    desc: 'user manager desc',
+    desc: {
+      en: 'User Manager ENGLISH',
+      de: 'User Manager DEUTSCH'
+    },
     screenshots: ['/img/projects/user-manager-2.png', '/img/projects/user-manager-3.png']
   },
   {
@@ -72,7 +87,10 @@ const projects = [
     github : "https://github.com/sandropernerstorfer/JS-Clocks",
     live : "https://js-clocks.netlify.app/",
     route: "/projects/js-clocks",
-    desc: 'js clocks desc',
+    desc: {
+      en: 'JS CLOCKS ENGLISH',
+      de: 'JS CLOCKS DEUTSCH'
+    },
     screenshots: ['/img/projects/js-clocks-2.png']
   }
 ];

@@ -14,8 +14,14 @@ const projects = [
     live : "https://sandi-task.herokuapp.com/",
     route: "/projects/task-manager",
     desc: {
-      en: 'Task Manager ENGLISH',
-      de: 'Task Manager DEUTSCH'
+      en: 
+      `This Collaborative Task Management Full Stack Application covers many useful features in the realm of managing tasks and working together, 
+      such as: Login/SignUp, Session Management, Profile customization, Customizable Desk & Task creation, Drag & Drop, Live Team-Chat, Websockets, 
+      and assigning Members to Tasks. Project-, Code- Documentation and general App information can be found in the DOCS Folder on Github.`,
+
+      de: `Diese Collaborative Task Management Full Stack Anwendung deckt viele nützliche Funktionen im Bereich der Aufgabenverwaltung und Zusammenarbeit ab.
+      Wie zum Beispiel: Login/SignUp, Session Management, Profilanpassung, Anpassbare Desk- und Aufgabenerstellung, Drag & Drop, Live Team-Chat, Websockets,
+      und das Zuweisen von Mitgliedern zu Aufgaben. Projekt-, Code-Dokumentation und allgemeine App-Informationen befinden sich im DOCS-Ordner auf Github.`
     },
     screenshots: ['/img/projects/task-manager-2.png', '/img/projects/task-manager-3.png', '/img/projects/task-manager-4.png'],
     spotlight: true
@@ -29,8 +35,17 @@ const projects = [
     live : "https://ghostwriter-js.netlify.app/",
     route: "/projects/ghostwriter",
     desc: {
-      en: 'Ghostwriter ENGLISH',
-      de: 'Ghostwriter DEUTSCH'
+      en: 
+      `Ghostwriter is a small & fun Frontend Tool that will take two user inputs : 
+      Text and Milliseconds. In the Preview Window you will then see your text being 
+      displayed letter after letter for the wanted duration. 
+      Below you can copy the already generated code with one click to use wherever you want.`,
+
+      de: 
+      `Ghostwriter ist ein kleines Frontend Tool welches zwei Inputs annimmt: 
+      Text und Millisekunden. Im Vorschaufenster wird dann der Text 
+      Buchstabe für Buchstabe für die gewünschte Dauer angezeigt. 
+      Unten kann der bereits generierte Code mit einem Klick kopiert und verwendet werden.`
     },
     screenshots: ['/img/projects/ghostwriter-2.png', '/img/projects/ghostwriter-3.png'],
     spotlight: true
@@ -44,8 +59,16 @@ const projects = [
     live : "",
     route: "/projects/deep-check-function",
     desc: {
-      en: 'Deep Check ENGLISH',
-      de: 'Deep Check DEUTSCH'
+      en: 
+      `A cool and useful JavaScript function to check if two values are equal. 
+      Works on single Values, Arrays, Objects and all of those nested inside each other. 
+      Includes 2 Versions: One returns just a Boolean and the other one an Array with Error-Message and Boolean.`,
+
+      de: 
+      `Eine coole und nützliche JavaScript Funktion, um zu überprüfen 
+      ob zwei Werte identisch sind. Funktioniert mit einzelnen Werten, 
+      Arrays, Objekten und all diese beliebig ineinander verschachtelt. 
+      Enthält 2 Versionen: Eine gibt nur einen Boolean zurück und die andere ein Array mit Fehlermeldung und Boolean.`
     },
     screenshots: ['/img/projects/deep-check-2.png'],
     spotlight: true

@@ -59,6 +59,10 @@ const NavBar = styled.nav`
     opacity: 0;
     animation: ${fadeInLeftAnimation} 1s 1 forwards;
     animation-delay: .5s;
+    
+    button{
+      width: 5.6rem;
+    }
   }
 `;
 

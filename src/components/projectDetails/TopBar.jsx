@@ -1,6 +1,7 @@
 import React from 'react';
 // Style
 import styled from 'styled-components';
+import { fadeInLeftAnimation } from '../../assets/styling/GlobalStyles';
 // Components
 import LanguageSwitch from '../LanguageSwitch';
 import Button from '../Button';
@@ -16,7 +17,12 @@ function TopBar({ projectName, buttonText }) {
   return (
     <NavBar>
       <div className="leftBarContainer">
-        <div onClick={() => history.push('/projects')}><Button text={buttonText} icon={faChevronCircleLeft} /></div>
+        <div
+          onClick={() => history.push('/projects')}
+          className="buttonContainer"
+        >
+          <Button text={buttonText} icon={faChevronCircleLeft} />
+        </div>
         <h3>{projectName}</h3>
       </div>
       <LanguageSwitch/>
@@ -47,6 +53,12 @@ const NavBar = styled.nav`
       color: #444;
       font-weight: 500;
     }
+  }
+
+  .buttonContainer{
+    opacity: 0;
+    animation: ${fadeInLeftAnimation} 1s 1 forwards;
+    animation-delay: .5s;
   }
 `;
 

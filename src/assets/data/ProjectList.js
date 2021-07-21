@@ -51,26 +51,27 @@ const projects = [
     spotlight: true
   },
   {
-    id: 'deep-check-function',
-    name : "Deep-Check Function",
-    image: '/img/projects/deep-check-1.png',
+    id: 'equal-checker-npm',
+    name : "NPM Package: equal-checker",
+    image: '/img/projects/equal-checker-1.png',
     techs : [skills.JavaScript],
-    github : "https://github.com/sandropernerstorfer/deep-check-function",
-    live : "",
-    route: "/projects/deep-check-function",
+    github : "https://github.com/sandropernerstorfer/equal-checker-npm",
+    live : "https://www.npmjs.com/package/equal-checker",
+    route: "/projects/equal-checker-npm",
     desc: {
       en: 
-      `A cool and useful JavaScript function to check if two values are equal. 
-      Works on single Values, Arrays, Objects and all of those nested inside each other. 
-      Includes 2 Versions: One returns just a Boolean and the other one an Array with Error-Message and Boolean.`,
+      `A small and useful NPM Package written in JavaScript. Checks if two values are equal. 
+      Works on single Values, Arrays, Objects. 
+      Uses Recursion to also check any combination and level of Nesting. 
+      Optional Type-Checking, and optional returning of Error Messages.`,
 
       de: 
-      `Eine nützliche JavaScript Funktion, um zu überprüfen 
-      ob zwei Werte identisch sind. Funktioniert mit einzelnen Werten, 
-      Arrays, Objekten und all diese beliebig ineinander verschachtelt. 
-      Enthält 2 Versionen: Eine gibt nur einen Boolean zurück und die andere ein Array mit Fehlermeldung und Boolean.`
+      `Ein kleines und nützliches NPM Package geschrieben in JavaScript. Überprüft ob zwei Werte identisch sind. 
+      Funktioniert mit einzelnen Werten, Arrays, und Objekten. 
+      Benutzt Rekursion um jede Art und Tiefe von Verschachtelungen zu überprüfen. 
+      Optionales Type-Checking, und optionale rückgabe von Fehler Meldungen.`
     },
-    screenshots: ['/img/projects/deep-check-2.png'],
+    screenshots: ['/img/projects/equal-checker-2.png', '/img/projects/equal-checker-3.png'],
     spotlight: true
   },
   {

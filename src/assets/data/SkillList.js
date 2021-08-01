@@ -18,6 +18,12 @@ const skillList = [
     spotlight: true
   },
   {
+    name: 'TypeScript',
+    image: '/img/techs/typescript.png',
+    color: '#2F74BF',
+    spotlight: true
+  },
+  {
     name: 'React',
     image: '/img/techs/react.png',
     color: 'var(--react)',

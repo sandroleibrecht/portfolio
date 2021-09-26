@@ -1,7 +1,8 @@
-# Portfolio built with React
+# Personal Portfolio Page
 
-Thank you for visiting my Profile! The following link will redirect you to my Portfolio Page.
+*_Built using React & Redux_*
 
-#### [...Portfolio Link](https://sandropernerstorfer.netlify.com)
+***
+Thank you for checking out my repo !
 
-Feel free to send me a message using my contact page !
+Feel free to send me a message using the contact form on my [Portfolio Page](https://sandropernerstorfer.netlify.com).

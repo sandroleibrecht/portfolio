@@ -1,5 +1,23 @@
 const skillList = [
   {
+    name: 'Git',
+    image: '/img/techs/git.png',
+    color: 'var(--git)',
+    spotlight: true
+  },
+  {
+    name: 'GitHub',
+    image: '/img/techs/github.png',
+    color: 'var(--github)',
+    spotlight: true
+  },
+  {
+    name: 'JavaScript',
+    image: '/img/techs/javascript.png',
+    color: 'var(--js)',
+    spotlight: true
+  },
+  {
     name: 'HTML5',
     image: '/img/techs/html5.png',
     color: 'var(--html)',
@@ -9,12 +27,6 @@ const skillList = [
     name: 'CSS3',
     image: '/img/techs/css3.png',
     color: 'var(--css)',
-    spotlight: true
-  },
-  {
-    name: 'JavaScript',
-    image: '/img/techs/javascript.png',
-    color: 'var(--js)',
     spotlight: true
   },
   {
@@ -33,18 +45,6 @@ const skillList = [
     name: 'SCSS',
     image: '/img/techs/scss.png',
     color: 'var(--scss)',
-    spotlight: true
-  },
-  {
-    name: 'Git',
-    image: '/img/techs/git.png',
-    color: 'var(--git)',
-    spotlight: true
-  },
-  {
-    name: 'GitHub',
-    image: '/img/techs/github.png',
-    color: 'var(--github)',
     spotlight: true
   },
   {
@@ -69,6 +69,12 @@ const skillList = [
     name: 'SocketIO',
     image: '/img/techs/socketio.png',
     color: '#666',
+    spotlight: true
+  },
+  {
+    name: 'PLC',
+    image: '/img/techs/plc.png',
+    color: '#1a8e88',
     spotlight: true
   },
   {

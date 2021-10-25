@@ -75,6 +75,30 @@ const projects = [
     spotlight: true
   },
   {
+    id: 'python-excel-script',
+    name : "Python Excel Script",
+    image: '/img/projects/python-excel-1.png',
+    techs : [skills.Python],
+    github : "https://github.com/sandropernerstorfer/python-filter-excel",
+    live : "",
+    route: "/projects/python-excel-script",
+    desc: {
+      en: 
+      `This Script got created for a company to automate a special kind of excel task. 
+      It will take the Master Instrument Excel File, and filter the data based on the user input: P&ID and Typicals. 
+      For each given Typical the data will be processed and saved controlled by the corresponding Typical Filter Logic. 
+      Output will then be stored on the desktop as new Excel File with one new Sheet for each filtered typical.`,
+
+      de: 
+      `Dieses Script wurde für eine Firma entwickelt um eine spezielle Excel Arbeit zu automatisieren.
+      Es lädt zuerst die Master Instrument Excel Datei und filtert dann den Inhalt je nach User Input: P&ID und Typicals.
+      Die Daten werden für jedes angegebene Typical auf eine eigene art gefiltert und bearbeitet, je nach Typical Filter Logik.
+      Der Output wird dann in Form von einer neuen Excel Datei am Desktop gespeichert.`
+    },
+    screenshots: ['/img/projects/python-excel-2.png', '/img/projects/python-excel-3.png'],
+    spotlight: true
+  },
+  {
     id: 'react-portfolio',
     name : "React Portfolio",
     image: '/img/projects/portfolio-1.png',

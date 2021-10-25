@@ -4,13 +4,13 @@
       "greeting": "Hello ,",
       "name": "i'm Sandro",
       "quote1": "A passionate ",
-      "title": "Web Developer ",
+      "title": "Developer ",
       "quote2": "with a desire to learn."
     },
     "cardsText": [
       {
         "heading": "Frontend",
-        "body": "Primarily working on the Frontend and focusing on everything around HTML, CSS, JavaScript and React"
+        "body": "Spent some time working on the Frontend and using technologies around HTML, CSS, JavaScript and React"
       },
       {
         "heading": "Backend",
@@ -22,11 +22,11 @@
       }
     ],
     "personalText": [
-      "My name is Sandro Pernerstorfer and i'm a Web Developer from Austria, Vienna.",
+      "My name is Sandro Pernerstorfer and i'm Developer from Austria, Vienna.",
       "Curious and driven by everything logical and technical whilst appreciating creativity and freedom to create magical things.",
       "I started my journey in the Electrical Engineering field, working and solving problems in various environments and situations.",
       "Since i always enjoyed programming electrical solutions the inevitable happened and i fell in love with Software Development.",
-      "Learning the ins and outs of the web, and using modern web technologies to solve problems and create solutions."
+      "Learning the ins and outs of Software Development and using modern web technologies to solve problems and create solutions."
     ]
   },
   "de":{
@@ -34,13 +34,13 @@
       "greeting": "Hallo ,",
       "name": "ich bin Sandro",
       "quote1": "Ein neugieriger und lerneifriger ",
-      "title": "Web Entwickler ",
+      "title": "Entwickler ",
       "quote2": "aus Wien."
     },
     "cardsText": [
       {
         "heading": "Frontend",
-        "body": "Ich arbeite hauptsächlich am Frontend und fokusiere mich auf alles rund um HTML, CSS, JavaScript und React"
+        "body": "Ich habe erfahrung im Frontend und den Technologien rund um HTML, CSS, JavaScript und React"
       },
       {
         "heading": "Backend",
@@ -52,11 +52,11 @@
       }
     ],
     "personalText": [
-      "Mein Name ist Sandro Pernerstorfer und ich bin ein Web Entwickler aus Österreich, Wien.",
+      "Mein Name ist Sandro Pernerstorfer und ich bin ein Entwickler aus Österreich, Wien.",
       "Neugierig und angetrieben von Technik und Logik, mit einer starken Wertschätzung für Kreativität und der Freiheit neues zu kreieren.",
       "Ich startete meine Reise im Bereich der Elektrotechnik, und arbeitete in den verschiedensten Umgebungen und Situationen.",
       "Da mir das Programmieren von Elektrotechnischen Lösungen immer schon gefiel, brauchte es nicht lang bis ich mich in die Software Entwicklung verliebte.",
-      "Seitdem lerne und verwende ich alles bezüglich Web und moderne Web Technologien um Probleme zu lösen und Software zu erstellen."
+      "Seitdem lerne und verbessere ich meine Software Entwickler Fähigkeiten und verwende moderne Web Technologien um Probleme zu lösen und Software zu erstellen."
     ]
   }
 }

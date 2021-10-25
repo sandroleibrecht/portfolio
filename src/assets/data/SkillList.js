@@ -12,6 +12,12 @@ const skillList = [
     spotlight: true
   },
   {
+    name: 'Python',
+    image: '/img/techs/python.ico',
+    color: 'var(--css)',
+    spotlight: true
+  },
+  {
     name: 'JavaScript',
     image: '/img/techs/javascript.png',
     color: 'var(--js)',

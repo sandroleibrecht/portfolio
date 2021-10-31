@@ -9,6 +9,10 @@ import Grid from '@material-ui/core/Grid';
 
 function AboutHeader({ textContent }) {
 
+  function showImage(e){
+    e.target.classList.add('image-visible');
+  };
+
   return (
     <HeaderContainer container spacing={0} component="header">
       <InfoContainer item xs={12} sm={12} md={6} lg={6}>
@@ -21,7 +25,7 @@ function AboutHeader({ textContent }) {
         </div>
       </InfoContainer>
       <DesignContainer item xs={12} sm={12} md={6} lg={6}>
-          <img src={process.env.PUBLIC_URL+'/img/app/headerImage.svg'} alt="code window"/>
+          <img onLoad={showImage} src={process.env.PUBLIC_URL+'/img/app/headerImage.svg'} alt="code window"/>
       </DesignContainer>
     </HeaderContainer>
   );
@@ -113,8 +117,14 @@ const DesignContainer = styled(Grid)`
   align-items: center;
 
     img{
+      opacity: 0;
       width: 100%;
       height: auto;
+      transition: all 1.5s;
+    }
+
+    .image-visible{
+      opacity: 1;
     }
 
     @media (max-width: 959px){

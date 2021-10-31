@@ -10,11 +10,16 @@ import Pill from '../Pill';
 import OpenNewTab from '../../assets/util/OpenNewTab';
 
 function ProjectSection( project ) {  // name, desc, techs, image, screenshots, github, live
+
+  function showImage(e){
+    e.target.classList.add('image-visible');
+  };
+
   return (
     <MainWrapper>
       <div className="headWrapper">
         <h3>{project.name}</h3>
-        <img src={project.image} alt={project.name} className="mainImage"/>
+        <img onLoad={showImage} src={project.image} alt={project.name} className="mainImage"/>
         <div className="techsContainer">
           {project.techs.map( tech => <Pill image={tech.image} text={tech.name} color={tech.color} key={tech.name}/>)}
         </div>
@@ -48,6 +53,15 @@ const MainWrapper = styled.main`
     width: 100%;
     max-width: 600px;
     padding: 1rem;
+
+    .mainImage{
+      opacity: 0;
+      transition: all 1.5s;
+    }
+
+    .image-visible{
+      opacity: 1;     // icon bug
+    }
 
     h3{
       display: none;

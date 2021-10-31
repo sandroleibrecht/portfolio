@@ -16,6 +16,11 @@ import {setScrollPosition} from '../../state/projectsState';
 function SpotlightProject( project ) {
   const history = useHistory();
   const dispatch = useDispatch();
+
+  function showImage(e){
+    e.target.classList.add('image-visible');
+  };
+
   return (
     <ProjectContainer>
       <div className="projectHead">
@@ -29,7 +34,7 @@ function SpotlightProject( project ) {
         }
         }
         className="imageContainer">
-        <img src={process.env.PUBLIC_URL + project.image} alt={project.name + ' main image'} />
+        <img onLoad={showImage} src={process.env.PUBLIC_URL + project.image} alt={project.name + ' main image'} />
         <span><p><FontAwesomeIcon icon={faInfoCircle}/> Details</p></span>
       </div>
       <div className="techContainer">
@@ -86,6 +91,12 @@ const ProjectContainer = styled.div`
       height: auto;
       min-height: 15rem;
       object-fit: cover;
+      opacity: 0;
+      transition: all 1.5s;
+    }
+
+    .image-visible{
+      opacity: 1;
     }
 
     span{

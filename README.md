@@ -1,5 +1,5 @@
 # Personal Portfolio Page
-[sandropernerstorfer.com](https://sandropernerstorfer.com).
+[www.sandropernerstorfer.com](https://www.sandropernerstorfer.com).
 
 *_Built using React & Redux_*
 

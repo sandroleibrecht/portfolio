@@ -5,6 +5,8 @@ import { setSubmitStatus, setSubmitMessage, resetValues }  from '../../state/con
 // .env Lambda URL
 const awsLambdaURL = process.env.LAMBDA_URL;
 
+console.log(awsLambdaURL);
+
 export const validateInputs = ({ name, mail, message }) => {
   const errors = {};
   errors.name = name.trim() ? false : true;

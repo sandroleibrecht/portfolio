@@ -31,6 +31,7 @@ export const sendEmail = (formData, { errorMsg, noErrorMsg }) => {
 
   fetchPromise
     .then( res => {
+    console.log(res);
     store.dispatch(setSubmitMessage({ message: noErrorMsg, isError: false }));
     store.dispatch(resetValues());
     })

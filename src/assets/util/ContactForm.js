@@ -1,11 +1,9 @@
 // Redux
 import { store } from '../../index';
 import { setSubmitStatus, setSubmitMessage, resetValues }  from '../../state/contactState';
-// Email Service
-import emailjs, { init } from 'emailjs-com';
-init(process.env.REACT_APP_EMAIL_USERID);
-const templateID = process.env.REACT_APP_EMAIL_TEMPLATEID;
-const userID = process.env.REACT_APP_EMAIL_USERID;
+
+// .env Lambda URL
+const awsLambdaURL = process.env.LAMBDA_URL;
 
 export const validateInputs = ({ name, mail, message }) => {
   const errors = {};
@@ -17,15 +15,29 @@ export const validateInputs = ({ name, mail, message }) => {
 
 export const sendEmail = (formData, { errorMsg, noErrorMsg }) => {
   store.dispatch(setSubmitStatus(true));
-  emailjs.sendForm('default_service', templateID, formData, userID)
-  .then( res => {
+
+  const endpoint = awsLambdaURL;
+  const name    = formData.name.value;
+  const mail    = formData.mail.value;
+  const message = formData.message.value;
+  const data = { name, mail, message };
+
+  const fetchPromise = fetch(endpoint, {
+    method: 'POST',
+    mode: 'cors',
+    cache: 'no-cache',
+    body: JSON.stringify(data)
+  });
+
+  fetchPromise
+    .then( res => {
     store.dispatch(setSubmitMessage({ message: noErrorMsg, isError: false }));
     store.dispatch(resetValues());
-  })
-  .catch( err => {
-    store.dispatch(setSubmitMessage({ message: errorMsg, isError: true }));
-  })
-  .finally(() => {
-    store.dispatch(setSubmitStatus(false));
-  })
+    })
+    .catch( err => {
+      store.dispatch(setSubmitMessage({ message: errorMsg, isError: true }));
+    })
+    .finally(() => {
+      store.dispatch(setSubmitStatus(false));
+    });
 };

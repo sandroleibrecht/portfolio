@@ -32,7 +32,7 @@ const projects = [
     image: '/img/projects/ghostwriter-1.png',
     techs : [skills.HTML5, skills.SCSS, skills.JavaScript],
     github : "https://github.com/sandropernerstorfer/ghostwriter-app/tree/master",
-    live : "https://ghostwriter-js.netlify.app/",
+    live : "https://master.d1b31r1235u833.amplifyapp.com/",
     route: "/projects/ghostwriter",
     desc: {
       en: 
@@ -121,30 +121,12 @@ const projects = [
     spotlight: true
   },
   {
-    id: 'express-user-manager',
-    name : "Express User-Manager",
-    image: '/img/projects/user-manager-1.png',
-    techs : [skills.NodeJS, skills.ExpressJS],
-    github : "https://github.com/sandropernerstorfer/Node-Express-UserManager",
-    live : "https://node-express-user-manager.herokuapp.com/",
-    route: "/projects/express-user-manager",
-    desc: {
-      en: 
-      `A small local User-Managment-Tool built with NodeJS and ExpressJS. 
-      Add new users, edit user information, delete users and sort them in the list.`,
-      de: 
-      `Ein kleines User-Management-Tool erstellt mit NodeJS und ExpressJS. 
-      Füge neue User hinzu, bearbeite User Daten, lösche User und sortiere sie in der Liste.`
-    },
-    screenshots: ['/img/projects/user-manager-2.png', '/img/projects/user-manager-3.png']
-  },
-  {
     id: 'js-clocks',
     name : "JS Clocks",
     image: '/img/projects/js-clocks-1.png',
     techs : [skills.HTML5, skills.CSS3, skills.JavaScript],
     github : "https://github.com/sandropernerstorfer/JS-Clocks",
-    live : "https://js-clocks.netlify.app/",
+    live : "https://main.d1vis9yo1gcxuu.amplifyapp.com/",
     route: "/projects/js-clocks",
     desc: {
       en: 

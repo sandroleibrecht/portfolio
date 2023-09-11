@@ -2,10 +2,7 @@
 import { store } from '../../index';
 import { setSubmitStatus, setSubmitMessage, resetValues }  from '../../state/contactState';
 
-// .env Lambda URL
-const awsLambdaURL = process.env.LAMBDA_URL;
-
-console.log(awsLambdaURL);
+const awsLambdaURL = process.env.REACT_APP_LAMBDA_URL;
 
 export const validateInputs = ({ name, mail, message }) => {
   const errors = {};
@@ -33,7 +30,6 @@ export const sendEmail = (formData, { errorMsg, noErrorMsg }) => {
 
   fetchPromise
     .then( res => {
-    console.log(res);
     store.dispatch(setSubmitMessage({ message: noErrorMsg, isError: false }));
     store.dispatch(resetValues());
     })

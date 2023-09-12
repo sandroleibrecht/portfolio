@@ -21,22 +21,23 @@ export const sendEmail = (formData, { errorMsg, noErrorMsg }) => {
   const message = formData.message.value;
   const data = { name, mail, message };
 
-  const fetchPromise = fetch(endpoint, {
+  fetch(endpoint, {
     method: 'POST',
     mode: 'cors',
     cache: 'no-cache',
     body: JSON.stringify(data)
+  })
+  .then( res => {
+  if(!res.ok){
+    store.dispatch(setSubmitMessage({ message: errorMsg, isError: true }))
+  }
+  store.dispatch(setSubmitMessage({ message: noErrorMsg, isError: false }));
+  store.dispatch(resetValues());
+  })
+  .catch( err => {
+    store.dispatch(setSubmitMessage({ message: errorMsg, isError: true }));
+  })
+  .finally(() => {
+    store.dispatch(setSubmitStatus(false));
   });
-
-  fetchPromise
-    .then( res => {
-    store.dispatch(setSubmitMessage({ message: noErrorMsg, isError: false }));
-    store.dispatch(resetValues());
-    })
-    .catch( err => {
-      store.dispatch(setSubmitMessage({ message: errorMsg, isError: true }));
-    })
-    .finally(() => {
-      store.dispatch(setSubmitStatus(false));
-    });
 };

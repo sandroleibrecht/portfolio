@@ -32,7 +32,7 @@ const projects = [
     image: '/img/projects/ghostwriter-1.png',
     techs : [skills.HTML5, skills.SCSS, skills.JavaScript],
     github : "https://github.com/sandropernerstorfer/ghostwriter-app/tree/master",
-    live : "https://master.d1b31r1235u833.amplifyapp.com/",
+    live : "https://master.dbg4lzqyjx8cj.amplifyapp.com/",
     route: "/projects/ghostwriter",
     desc: {
       en: 
@@ -126,7 +126,7 @@ const projects = [
     image: '/img/projects/js-clocks-1.png',
     techs : [skills.HTML5, skills.CSS3, skills.JavaScript],
     github : "https://github.com/sandropernerstorfer/JS-Clocks",
-    live : "https://main.d1vis9yo1gcxuu.amplifyapp.com/",
+    live : "https://main.d13orxr9t3yygy.amplifyapp.com/",
     route: "/projects/js-clocks",
     desc: {
       en: 

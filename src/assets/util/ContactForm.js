@@ -3,6 +3,7 @@ import { store } from '../../index';
 import { setSubmitStatus, setSubmitMessage, resetValues }  from '../../state/contactState';
 
 const awsLambdaURL = process.env.REACT_APP_LAMBDA_URL;
+const receiver = process.env.REACT_APP_CONTACT_EMAIL;
 
 export const validateInputs = ({ name, mail, message }) => {
   const errors = {};
@@ -15,13 +16,12 @@ export const validateInputs = ({ name, mail, message }) => {
 export const sendEmail = (formData, { errorMsg, noErrorMsg }) => {
   store.dispatch(setSubmitStatus(true));
 
-  const endpoint = awsLambdaURL;
   const name    = formData.name.value;
   const mail    = formData.mail.value;
   const message = formData.message.value;
-  const data = { name, mail, message };
+  const data = { name, mail, message, receiver };
 
-  fetch(endpoint, {
+  fetch(awsLambdaURL, {
     method: 'POST',
     mode: 'cors',
     cache: 'no-cache',

@@ -76,10 +76,10 @@ const projects = [
   },
   {
     id: 'python-excel-script',
-    name : "Python Excel Script",
+    name : "HMI Data Merge",
     image: '/img/projects/python-excel-1.png',
     techs : [skills.Python],
-    github : "https://github.com/sandropernerstorfer/python-filter-excel",
+    github : "https://github.com/sandropernerstorfer/hmi-data-merge",
     live : "",
     route: "/projects/python-excel-script",
     desc: {

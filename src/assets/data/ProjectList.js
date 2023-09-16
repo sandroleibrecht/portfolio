@@ -7,7 +7,7 @@ skillList.forEach( skill => {
 const projects = [
   {
     id: 'task-manager',
-    name : "Collaborative Task Management",
+    name : "Collab Task",
     image: '/img/projects/task-manager-1.png',
     techs : [skills.HTML5, skills.SCSS, skills.JavaScript, skills.NodeJS, skills.ExpressJS, skills.MongoDB, skills.SocketIO],
     github : "https://github.com/sandropernerstorfer/task-app/tree/main",
@@ -28,11 +28,11 @@ const projects = [
   },
   {
     id: 'ghostwriter',
-    name : "Ghostwriter.js",
+    name : "Ghostwriter JS",
     image: '/img/projects/ghostwriter-1.png',
     techs : [skills.HTML5, skills.SCSS, skills.JavaScript],
-    github : "https://github.com/sandropernerstorfer/ghostwriter-app/tree/master",
-    live : "https://master.dbg4lzqyjx8cj.amplifyapp.com/",
+    github : "https://github.com/sandropernerstorfer/ghostwriter-js",
+    live : "https://main.d2krtq4ptna642.amplifyapp.com/",
     route: "/projects/ghostwriter",
     desc: {
       en: 
@@ -52,7 +52,7 @@ const projects = [
   },
   {
     id: 'equal-checker-npm',
-    name : "NPM Package: equal-checker",
+    name : "Equal Checker",
     image: '/img/projects/equal-checker-1.png',
     techs : [skills.JavaScript],
     github : "https://github.com/sandropernerstorfer/equal-checker-npm",
@@ -100,10 +100,10 @@ const projects = [
   },
   {
     id: 'react-portfolio',
-    name : "React Portfolio",
+    name : "Portfolio",
     image: '/img/projects/portfolio-1.png',
     techs : [skills.JavaScript, skills.React, skills.Redux, skills['Styled Components']],
-    github : "https://github.com/sandropernerstorfer/sandro-react-portfolio",
+    github : "https://github.com/sandropernerstorfer/personal-portfolio",
     live : "",
     route: "/projects/react-portfolio",
     desc: {
@@ -122,11 +122,11 @@ const projects = [
   },
   {
     id: 'js-clocks',
-    name : "JS Clocks",
+    name : "Clocks JS",
     image: '/img/projects/js-clocks-1.png',
     techs : [skills.HTML5, skills.CSS3, skills.JavaScript],
-    github : "https://github.com/sandropernerstorfer/JS-Clocks",
-    live : "https://main.d13orxr9t3yygy.amplifyapp.com/",
+    github : "https://github.com/sandropernerstorfer/clocks-js",
+    live : "https://main.d1ep2hyslzqu37.amplifyapp.com/",
     route: "/projects/js-clocks",
     desc: {
       en: 

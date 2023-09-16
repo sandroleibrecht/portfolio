@@ -2,31 +2,27 @@
   "en": {
     "info": {
       "heading":"Contact",
-      "info1": "Feel free to send me a message via Contact Form,",
-      "info2": "or directly to my email address.",
-      "button1": "Contact Form",
-      "button2": "Direct Email"
+      "info1": "Please feel free to send me a message.",
+      "info2": "Let's talk about ideas, projects, business, cars, ..."
     },
     "form": {
       "message": "Message",
       "submit": "Send",
       "noError": "Thank you for your message!",
-      "error": "Sorry, it seems like an error occured with the Mail Service."
+      "error": "Sorry, an error occured while sending."
     }
   },
   "de": {
     "info": {
       "heading":"Kontakt",
-      "info1": "Schick mir eine Nachricht über das Kontakt Formular,",
-      "info2": "oder direkt an meine Email Adresse.",
-      "button1": "Kontakt Form",
-      "button2": "Direkte Mail"
+      "info1": "Schick mir gerne eine Nachricht.",
+      "info2": "Sprechen wir über Ideen, Projekte, Business, Autos, ..."
     },
     "form": {
       "message": "Nachricht",
       "submit": "Senden",
       "noError": "Vielen Dank für die Nachricht!",
-      "error": "Entschuldige, es scheint ein Problem beim Mail Service zu geben."
+      "error": "Entschuldige, beim Versenden ist ein Problem aufgetreten."
     }
   }
 }

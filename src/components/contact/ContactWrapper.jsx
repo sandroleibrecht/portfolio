@@ -24,7 +24,6 @@ const ContactSection = styled.section`
   justify-content: center;
   align-items: center;
   background-color: hsl(0, 0%, 98%);
-  /* background-color: #0f0f4b; */
 
   .formWrapper{
     display: flex;

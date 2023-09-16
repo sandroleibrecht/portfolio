@@ -1,32 +1,15 @@
 import React from 'react';
 // Styling
 import styled from 'styled-components';
-// Font Awesome
-import { faEnvelope, faPenAlt } from '@fortawesome/free-solid-svg-icons';
-// Components
-import Button from '../Button';
-// Redux
-import { useDispatch } from 'react-redux';
-import { setFocus } from '../../state/contactState';
 
 function ContactInfo({ infoText }) {
-
-  const dispatch = useDispatch();
 
   return (
     <InfoWrapper>
       <div className="textSection">
         <h1>{infoText.heading}</h1>
-        <p>{infoText.info1}</p>
-        <p>{infoText.info2}</p>
-      </div>
-      <div className="buttonContainer">
-        <div onClick={ () => dispatch( setFocus(true) ) }>
-          <Button icon={faPenAlt} text={infoText.button1} />
-        </div>
-        <div onClick={ () => window.open('mailto:sandro.pernerstorfer@gmail.com') } >
-          <Button icon={faEnvelope} text={infoText.button2} />
-        </div>
+        <p id='info1'>{infoText.info1}</p>
+        <p id='info2'>{infoText.info2}</p>
       </div>
     </InfoWrapper>
   );
@@ -38,14 +21,12 @@ const InfoWrapper = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  background-color:hsl(0, 0%, 99%);
-  box-shadow: inset 0 0 5px 1px #e6e6e6;
   border-radius: 12px;
   padding: 1rem;
   padding-top: 1.5rem;
   padding-bottom: 2rem;
   margin: 0 .5rem;
-  margin-bottom: 2rem;
+  margin-bottom: .5rem;
   text-align: center;
   
   @media ( max-width: 836px){
@@ -53,31 +34,23 @@ const InfoWrapper = styled.div`
   }
 
   .textSection{
-    margin-bottom: 2rem;
     h1{
-      margin-bottom: 1.2rem;
+      margin-bottom: .6rem;
+      padding-bottom: .6rem;
       font-weight: 600;
       color: #556;
+      border-bottom: 2px solid #e4e4e4;
     }
 
-    p{
+    #info1, #info2{
       color: #706e6e;
       font-size: .95rem;
     }
-  }
 
-  .buttonContainer{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    @media ( max-width: 310px){
-      flex-direction: column;
-      button:nth-child(2){ padding-right: 14px }
+    #info2{
+      margin-top: 6px;
+      margin-bottom: 2rem;
     }
-
-    button{ margin-top: .5rem }
   }
 `;
 

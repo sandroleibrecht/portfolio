@@ -4,7 +4,7 @@ import openNewTab from '../../assets/util/OpenNewTab';
 // Styled & Animation
 import styled from 'styled-components';
 // Material UI Icons
-import { GitHub, LinkedIn, Email } from '@material-ui/icons';
+import { GitHub, Email } from '@material-ui/icons';
 // Router
 import { useHistory, useLocation } from 'react-router-dom';
 
@@ -17,11 +17,10 @@ function Footer() {
     <StyledFooter>
       <IconContainer>
         <GitHub onClick={ () => openNewTab('https://github.com/sandropernerstorfer') }/>
-        <LinkedIn onClick={ () => openNewTab('https://www.linkedin.com/in/sandro-pernerstorfer-3153b31ab/') }/>
         { pathname === '/contact' || <Email onClick={ () => history.push('/contact') } /> }
       </IconContainer>
       <TextContainer>
-        &copy; Sandro Pernerstorfer 2021 - Made with 🤍
+        &copy; Sandro Pernerstorfer
       </TextContainer>
     </StyledFooter>
   )
@@ -52,13 +51,12 @@ const IconContainer = styled.div`
 
     @media (hover: hover){
       &:hover{
-        transform: scale(1.2);
+        transform: scale(1.1);
       }
     }
 
     &:nth-child(1){ font-size: 1.5rem; color: #585454; position: relative; top: -1px;}
-    &:nth-child(2){ color: var(--blueLight) }
-    &:nth-child(3){ color: #41c520 }
+    &:nth-child(2){ color: #41c520 }
   }
 `;
 

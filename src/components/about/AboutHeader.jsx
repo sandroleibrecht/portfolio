@@ -4,7 +4,7 @@ import openNewTab from '../../assets/util/OpenNewTab';
 // Styling & Animations
 import styled from 'styled-components';
 // Material UI
-import { GitHub, LinkedIn } from '@material-ui/icons';
+import { GitHub } from '@material-ui/icons';
 import Grid from '@material-ui/core/Grid';
 
 function AboutHeader({ textContent }) {
@@ -21,7 +21,6 @@ function AboutHeader({ textContent }) {
           <h2>{textContent.name}&nbsp;!</h2>
           <h4>{textContent.quote1}<span>{textContent.title}</span>{textContent.quote2}</h4>
           <GitHub onClick={ () => openNewTab('https://github.com/sandropernerstorfer') }/>
-          <LinkedIn onClick={ () => openNewTab('https://www.linkedin.com/in/sandro-pernerstorfer-3153b31ab/') }/>
         </div>
       </InfoContainer>
       <DesignContainer item xs={12} sm={12} md={6} lg={6}>
@@ -83,7 +82,7 @@ const InfoContainer = styled(Grid)`
 
     @media (hover: hover){
       &:hover{
-        transform: scale(1.2);
+        transform: scale(1.1);
       }
     }
   }

@@ -56,7 +56,6 @@ const Container = styled.div`
     @media (hover:hover){
       & svg:hover{
         opacity: 1;
-        transform: translateY(-2px);
       }
     }
   }

@@ -103,7 +103,7 @@ const projects = [
     name : "Portfolio",
     image: '/img/projects/portfolio-1.png',
     techs : [skills.JavaScript, skills.React, skills.Redux, skills['Styled Components']],
-    github : "https://github.com/sandropernerstorfer/personal-portfolio",
+    github : "https://github.com/sandropernerstorfer/portfolio",
     live : "",
     route: "/projects/react-portfolio",
     desc: {

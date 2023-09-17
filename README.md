@@ -3,7 +3,7 @@
 
 ***
 
-Welcome and thank you for coming by.
+Welcome and thank you for stopping by.
 
 In my portfolio you will find a collection of my projects and some information about me and my tech life.
 

@@ -27,49 +27,51 @@ const projects = [
     spotlight: true
   },
   {
-    id: 'ghostwriter',
+    id: 'ghostwriter-js',
     name : "Ghostwriter JS",
-    image: '/img/projects/ghostwriter-1.png',
+    image: '/img/projects/ghostwriter-js-1.png',
     techs : [skills.HTML5, skills.SCSS, skills.JavaScript],
     github : "https://github.com/sandropernerstorfer/ghostwriter-js",
     live : "https://main.d2krtq4ptna642.amplifyapp.com/",
-    route: "/projects/ghostwriter",
+    route: "/projects/ghostwriter-js",
     desc: {
       en: 
-      `Ghostwriter is a small & fun Frontend Tool that will take two user inputs : 
-      Text and Milliseconds. In the Preview Window you will then see your text being 
-      displayed letter after letter for the wanted duration. 
-      Below you can copy the already generated code with one click to use wherever you want.`,
+      `Generate code to animate your text.
+      Just enter the following two inputs: text and duration.
+      Inside the preview box, the given text will then be displayed letter after letter.
+      The duration input controls the typing tempo.
+      Copy the generated code with one click and use it wherever you want!`,
 
       de: 
-      `Ghostwriter ist ein kleines Frontend Tool welches zwei Inputs annimmt: 
-      Text und Millisekunden. Im Vorschaufenster wird dann der Text 
-      Buchstabe für Buchstabe für die gewünschte Dauer angezeigt. 
-      Unten kann der bereits generierte Code mit einem Klick kopiert und verwendet werden.`
+      `Generiert Code der deinen Text animiert.
+      Gib einfach folgende zwei Werte an: Text und Dauer.
+      Im Vorschaufenster wird dann der Text Buchstabe für Buchstabe erscheinen.
+      Die Dauer kontrolliert das Tipp-Tempo. 
+      Der bereits generierte Code kann mit einem Klick kopiert und verwendet werden.`
     },
-    screenshots: ['/img/projects/ghostwriter-2.png', '/img/projects/ghostwriter-3.png'],
+    screenshots: ['/img/projects/ghostwriter-js-2.png', '/img/projects/ghostwriter-js-3.png'],
     spotlight: true
   },
   {
-    id: 'equal-checker-npm',
+    id: 'equal-checker',
     name : "Equal Checker",
     image: '/img/projects/equal-checker-1.png',
     techs : [skills.JavaScript],
-    github : "https://github.com/sandropernerstorfer/equal-checker-npm",
+    github : "https://github.com/sandropernerstorfer/equal-checker",
     live : "https://www.npmjs.com/package/equal-checker",
-    route: "/projects/equal-checker-npm",
+    route: "/projects/equal-checker",
     desc: {
       en: 
-      `A small and useful NPM Package written in JavaScript. Checks if two values are equal. 
-      Works on single Values, Arrays, Objects. 
-      Uses Recursion to also check any combination and level of Nesting. 
-      Optional Type-Checking, and optional returning of Error Messages.`,
+      `Lightweight npm-package written in JavaScript.
+      Checks if two objects, arrays or standalone values are equal. 
+      Utilizes recursion to check any combination and level of nesting. 
+      Optional type checking, and optional returning of error messages.`,
 
       de: 
-      `Ein kleines und nützliches NPM Package geschrieben in JavaScript. Überprüft ob zwei Werte identisch sind. 
-      Funktioniert mit einzelnen Werten, Arrays, und Objekten. 
-      Benutzt Rekursion um jede Art und Tiefe von Verschachtelungen zu überprüfen. 
-      Optionales Type-Checking, und optionale rückgabe von Fehler Meldungen.`
+      `Nützliches npm-package, geschrieben in JavaScript.
+      Überprüft ob zwei Objekte, Arrays oder einzelne Werte identisch sind.
+      Der rekursive Aufruf kümmert sich um jegliche Art und Tiefe von Verschachtelungen. 
+      Optionales Type-Checking, und optionale Fehlermeldungen.`
     },
     screenshots: ['/img/projects/equal-checker-2.png', '/img/projects/equal-checker-3.png'],
     spotlight: true
@@ -84,28 +86,28 @@ const projects = [
     route: "/projects/hmi-data-merge",
     desc: {
       en: 
-      `This Script got created for a company to automate a special kind of excel task. 
-      It will take the Master Instrument Excel File, and filter the data based on the user input: P&ID and Typicals. 
-      For each given Typical the data will be processed and saved controlled by the corresponding Typical Filter Logic. 
-      Output will then be stored on the desktop as new Excel File with one new Sheet for each filtered typical.`,
+      `This application was developed for a company working in the automation industry, and acted as a development tool.
+      Job of this tool was to update and merge giant excel files full of instruments, equipment, sensors and motors with lots of categorized sheets and special cases.
+      No manual merging and quick HMI (Human Machine Interface) data import.
+      `,
 
       de: 
-      `Dieses Script wurde für eine Firma entwickelt um eine spezielle Excel Arbeit zu automatisieren.
-      Es lädt zuerst die Master Instrument Excel Datei und filtert dann den Inhalt je nach User Input: P&ID und Typicals.
-      Die Daten werden für jedes angegebene Typical auf eine eigene art gefiltert und bearbeitet, je nach Typical Filter Logik.
-      Der Output wird dann in Form von einer neuen Excel Datei am Desktop gespeichert.`
+      `Diese Anwendung wurde für ein Unternehmen entwickelt, das in der Automatisierungsbranche tätig ist, und diente als Entwicklungswerkzeug.
+      Die Aufgabe dieses Tools bestand darin, riesige Excel-Dateien voller Instrumente, Geräte, Sensoren, Motoren usw. zu aktualisieren und zusammenzuführen.
+      Mit vielen kategorisierten Excel-Sheets und Sonderfällen.
+      Man erspart sich das manuelle Zusammenführen und erzielt einen schnellen HMI-Datenimport (Human Machine Interface).`
     },
     screenshots: ['/img/projects/hmi-data-merge-2.png', '/img/projects/hmi-data-merge-3.png'],
     spotlight: true
   },
   {
-    id: 'react-portfolio',
+    id: 'portfolio',
     name : "Portfolio",
     image: '/img/projects/portfolio-1.png',
     techs : [skills.JavaScript, skills.React, skills.Redux, skills['Styled Components']],
     github : "https://github.com/sandropernerstorfer/portfolio",
     live : "",
-    route: "/projects/react-portfolio",
+    route: "/projects/portfolio",
     desc: {
       en: 
       `My Portfolio Page built with React, Styled Components, Redux 

@@ -43,6 +43,10 @@ const List = styled.section`
   justify-content: space-evenly;
   align-items: center;
   gap: 1rem;
+  
+  img{
+    // preload todo
+  }
 
   @media (max-width: 1350px){
     flex-direction: column;

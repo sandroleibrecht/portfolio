@@ -75,13 +75,13 @@ const projects = [
     spotlight: true
   },
   {
-    id: 'python-excel-script',
+    id: 'hmi-data-merge',
     name : "HMI Data Merge",
-    image: '/img/projects/python-excel-1.png',
+    image: '/img/projects/hmi-data-merge-1.png',
     techs : [skills.Python],
     github : "https://github.com/sandropernerstorfer/hmi-data-merge",
     live : "",
-    route: "/projects/python-excel-script",
+    route: "/projects/hmi-data-merge",
     desc: {
       en: 
       `This Script got created for a company to automate a special kind of excel task. 
@@ -95,7 +95,7 @@ const projects = [
       Die Daten werden für jedes angegebene Typical auf eine eigene art gefiltert und bearbeitet, je nach Typical Filter Logik.
       Der Output wird dann in Form von einer neuen Excel Datei am Desktop gespeichert.`
     },
-    screenshots: ['/img/projects/python-excel-2.png', '/img/projects/python-excel-3.png'],
+    screenshots: ['/img/projects/hmi-data-merge-2.png', '/img/projects/hmi-data-merge-3.png'],
     spotlight: true
   },
   {
@@ -121,20 +121,20 @@ const projects = [
     spotlight: true
   },
   {
-    id: 'js-clocks',
+    id: 'clocks-js',
     name : "Clocks JS",
-    image: '/img/projects/js-clocks-1.png',
+    image: '/img/projects/clocks-js-1.png',
     techs : [skills.HTML5, skills.CSS3, skills.JavaScript],
     github : "https://github.com/sandropernerstorfer/clocks-js",
     live : "https://main.d1ep2hyslzqu37.amplifyapp.com/",
-    route: "/projects/js-clocks",
+    route: "/projects/clocks-js",
     desc: {
       en: 
-      `Fun little project containing two clocks, analgog and digital, built with HTML, CSS and JavaScript.`,
+      `Two clocks, analgog and digital, built with HTML, CSS and JavaScript.`,
       de: 
-      `Lustiges kleines Projekt mit zwei Uhren, analog und digital, erstellt mit HTML, CSS und JavaScript.`
+      `Zwei Uhren, analog und digital, erstellt mit HTML, CSS und JavaScript.`
     },
-    screenshots: ['/img/projects/js-clocks-2.png']
+    screenshots: ['/img/projects/clocks-js-2.png']
   }
 ];
 

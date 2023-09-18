@@ -6,24 +6,24 @@ skillList.forEach( skill => {
 
 const projects = [
   {
-    id: 'task-manager',
+    id: 'collab-task',
     name : "Collab Task",
-    image: '/img/projects/task-manager-1.png',
+    image: '/img/projects/collab-task-1.png',
     techs : [skills.HTML5, skills.SCSS, skills.JavaScript, skills.NodeJS, skills.ExpressJS, skills.MongoDB, skills.SocketIO],
     github : "https://github.com/sandropernerstorfer/task-app/tree/main",
     live : "https://sandi-task.herokuapp.com/",
-    route: "/projects/task-manager",
+    route: "/projects/collab-task",
     desc: {
       en: 
-      `This Collaborative Task Management Full Stack Application covers many useful features in the realm of managing tasks and working together, 
-      such as: Login/SignUp, Session Management, Profile customization, Customizable Desk & Task creation, Drag & Drop, Live Team-Chat, Websockets, 
-      and assigning Members to Tasks. Project-, Code- Documentation and general App information can be found in the DOCS Folder on Github.`,
+      `This collaborative task-management application covers many useful features in the realm of managing tasks and working together. 
+      For example: account creation, session management, profile customization, customizable desk & task creation, drag & drop, live team chat, 
+      and assigning members to tasks. Technical documentation and general app information can be found in the DOCS folder on GitHub.`,
 
-      de: `Diese Collaborative Task Management Full Stack Anwendung deckt viele nützliche Funktionen im Bereich der Aufgabenverwaltung und Zusammenarbeit ab.
-      Wie zum Beispiel: Login/SignUp, Session Management, Profilanpassung, Anpassbare Desk- und Aufgabenerstellung, Drag & Drop, Live Team-Chat, Websockets,
-      und das Zuweisen von Mitgliedern zu Aufgaben. Projekt-, Code-Dokumentation und allgemeine App-Informationen befinden sich im DOCS-Ordner auf Github.`
+      de: `Diese kollaborative Taskmanagement Anwendung deckt viele nützliche Funktionen im Bereich der Aufgabenverwaltung und Zusammenarbeit ab.
+      Zum Beispiel: Erstellung eines Accounts, Session Management, Profilanpassung, Anpassbare Desk- und Aufgabenerstellung, Drag & Drop, Live Teamchat,
+      und das Zuweisen von Mitgliedern für spezielle Aufgaben. Projekt-, Code-Dokumentation und allgemeine App-Informationen befinden sich im DOCS Ordner auf GitHub.`
     },
-    screenshots: ['/img/projects/task-manager-2.png', '/img/projects/task-manager-3.png', '/img/projects/task-manager-4.png'],
+    screenshots: ['/img/projects/collab-task-2.png', '/img/projects/collab-task-3.png', '/img/projects/collab-task-4.png'],
     spotlight: true
   },
   {
@@ -104,20 +104,20 @@ const projects = [
     id: 'portfolio',
     name : "Portfolio",
     image: '/img/projects/portfolio-1.png',
-    techs : [skills.JavaScript, skills.React, skills.Redux, skills['Styled Components']],
+    techs : [skills.React, skills.Redux, skills['Styled Components']],
     github : "https://github.com/sandropernerstorfer/portfolio",
     live : "",
     route: "/projects/portfolio",
     desc: {
       en: 
-      `My Portfolio Page built with React, Styled Components, Redux 
-      and other useful packages such as framer-motion, react-router-dom and emailjs, 
-      creating a cool overview of me and my projects, and a contact page. Looking forward to read you message !`,
+      `Inception? You're using this one right now, and I hope you enjoy the experience!
+      Tools like React, Styled Components, Redux and other useful things such as framer-motion, react-router-dom and aws-services,
+      created this overview of my projects and myself. Im looking forward to hearing from you, so feel free to check out the contact page.`,
 
       de: 
-      `Meine Portfolio Seite, erstellt mit React, Styled Components, 
-      Redux und anderen nützliche Tools wie framer-motion, react-router-dom und emailjs, 
-      um einen Überblick von mir und meiner Arbeit zu schaffen. Ich freue mich über jede Nachricht !`
+      `Inception? Du verwendest dieses Projekt in diesem Moment, und ich hoffe es gefällt dir!
+      Durch Tools wie React, Styled Components, Redux und andere nützliche Dinge wie framer-motion, react-router-dom und aws-services, 
+      entstand dieser Überblick von meinen Projekten und meiner Wenigkeit. Schau beim Kontaktformular vorbei, ich freue mich über deine Nachricht. `
     },
     screenshots: ['/img/projects/portfolio-2.png'],
     spotlight: true

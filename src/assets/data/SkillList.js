@@ -13,7 +13,7 @@ const skillList = [
   },
   {
     name: 'Python',
-    image: '/img/techs/python.ico',
+    image: '/img/techs/python.png',
     color: 'var(--css)',
     spotlight: true
   },

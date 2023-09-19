@@ -35,7 +35,7 @@ function SpotlightProject( project ) {
         }
         className="imageContainer">
         <img onLoad={showImage} src={process.env.PUBLIC_URL + project.image} alt={project.name + ' main image'} />
-        <span><p><FontAwesomeIcon icon={faInfoCircle}/> Details</p></span>
+        <span><FontAwesomeIcon icon={faInfoCircle}/></span>
       </div>
       <div className="techContainer">
           { project.techs.map( tech => <Pill key={tech.name+'_pill'} text={tech.name} color={tech.color}/>) }
@@ -101,17 +101,13 @@ const ProjectContainer = styled.div`
 
     span{
       svg{
-        margin-right: 0px;
+        font-size: 34px;
+        color: var(--blue);
+        background-color: #ffffffd1;
+        border-radius: 23px;
       }
-      p{
-        background-color: var(--blue);
-        border-radius: 8px;
-        padding:7px 10px;
-        color: #fff;
-      }
+      
       opacity: 0;
-      font-weight: 400;
-      font-size: 1.1rem;
       display: flex;
       justify-content: center;
       align-items: center;

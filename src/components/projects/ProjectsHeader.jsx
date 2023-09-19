@@ -3,15 +3,15 @@ import React from 'react';
 import styled from 'styled-components';
 // Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInfoCircle, faCode, faPlayCircle } from '@fortawesome/free-solid-svg-icons';
+import { faInfoCircle, faCodeBranch, faPlayCircle } from '@fortawesome/free-solid-svg-icons';
 
 function ProjectsHeader({ text }) {
   return (
     <HeaderSection>
       <h1>{text.heading}</h1>
       <div>
-        <span><FontAwesomeIcon icon={faInfoCircle}/> Details</span>
-        <span><FontAwesomeIcon icon={faCode}/> Codebase</span>
+        <span><FontAwesomeIcon icon={faInfoCircle}/> Info</span>
+        <span><FontAwesomeIcon icon={faCodeBranch}/> Code</span>
         <span><FontAwesomeIcon icon={faPlayCircle}/> Live</span>
       </div>
     </HeaderSection>

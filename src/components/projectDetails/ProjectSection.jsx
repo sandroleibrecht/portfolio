@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 // Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCode, faPlayCircle } from '@fortawesome/free-solid-svg-icons';
+import { faCodeBranch, faPlayCircle } from '@fortawesome/free-solid-svg-icons';
 // Components
 import Pill from '../Pill';
 // Utils
@@ -24,7 +24,7 @@ function ProjectSection( project ) {  // name, desc, techs, image, screenshots, 
           {project.techs.map( tech => <Pill image={tech.image} text={tech.name} color={tech.color} key={tech.name}/>)}
         </div>
         <div className="linksContainer">
-          <span onClick={() => OpenNewTab(project.github)}><FontAwesomeIcon icon={faCode}/> Code</span>
+          <span onClick={() => OpenNewTab(project.github)}><FontAwesomeIcon icon={faCodeBranch}/> Code</span>
           { project.live && <span onClick={() => OpenNewTab(project.live)}><FontAwesomeIcon icon={faPlayCircle}/> Live</span>}
         </div>
       </div>

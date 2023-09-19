@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 // Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInfoCircle, faCode, faPlayCircle } from '@fortawesome/free-solid-svg-icons';
+import { faInfoCircle, faCodeBranch, faPlayCircle } from '@fortawesome/free-solid-svg-icons';
 // Utils
 import OpenNewTab from '../../assets/util/OpenNewTab';
 // Router
@@ -26,7 +26,7 @@ function LinkContainer({ route, github, live }) {
         }}>
         <FontAwesomeIcon icon={faInfoCircle}/>
       </span>
-      <span onClick={() => OpenNewTab(github)} ><FontAwesomeIcon icon={faCode}/></span>
+      <span onClick={() => OpenNewTab(github)} ><FontAwesomeIcon icon={faCodeBranch}/></span>
       {live ? 
         <span onClick={() => OpenNewTab(live)} ><FontAwesomeIcon icon={faPlayCircle}/></span>
         :

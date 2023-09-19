@@ -144,7 +144,6 @@ const ProjectContainer = styled.div`
     padding: 10px 5px;
     border: 1px solid #e6e6e6;
     border-width: 1px 0;
-    background-color: hsl(0, 0%, 99%);
   }
 `;
 

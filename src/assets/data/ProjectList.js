@@ -9,7 +9,7 @@ const projects = [
     id: 'collab-task',
     name : "Collab Task",
     image: '/img/projects/collab-task-1.png',
-    techs : [skills.HTML5, skills.SCSS, skills.JavaScript, skills.NodeJS, skills.ExpressJS, skills.MongoDB, skills.SocketIO],
+    techs : [skills.HTML5, skills.SCSS, skills.JavaScript, skills.ExpressJS, skills.MongoDB, skills.SocketIO],
     github : "https://github.com/sandropernerstorfer/task-app/tree/main",
     live : "https://sandi-task.herokuapp.com/",
     route: "/projects/collab-task",

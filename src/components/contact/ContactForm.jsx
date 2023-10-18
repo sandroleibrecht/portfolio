@@ -100,10 +100,6 @@ const Form = styled.form`
   width: 100%;
   max-width: 400px;
 
-  @media ( max-width: 836px){
-    max-width: 500px;
-  }
-
   .inputWrapper{
     width: 100%;
     position: relative;

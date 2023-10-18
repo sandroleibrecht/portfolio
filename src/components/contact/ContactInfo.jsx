@@ -1,6 +1,8 @@
 import React from 'react';
 // Styling
 import styled from 'styled-components';
+// Components
+import Pill from '../Pill';
 
 function ContactInfo({ infoText }) {
 
@@ -10,6 +12,12 @@ function ContactInfo({ infoText }) {
         <h1>{infoText.heading}</h1>
         <p id='info1'>{infoText.info1}</p>
         <p id='info2'>{infoText.info2}</p>
+      </div>
+      <div className="pillSection">
+        <Pill image="/img/app/ideas.png" text={infoText.ideas} color="#F9C305" key="1" />
+        <Pill image="/img/app/projects.png" text={infoText.projects} color="#706e6e" key="2" />
+        <Pill image="/img/app/business.png" text={infoText.business} color="var(--blueLight)" key="3" />
+        <Pill image="/img/app/anything.png" text={infoText.anything} color="#0aca4d" key="4" />
       </div>
     </InfoWrapper>
   );
@@ -28,12 +36,8 @@ const InfoWrapper = styled.div`
   margin: 0 .5rem;
   margin-bottom: .5rem;
   
-  @media ( max-width: 836px){
-    align-items: center;
-  }
-
   .textSection{
-    max-width: 400px;
+    max-width: 350px;
     h1{
       margin-bottom: .6rem;
       padding-bottom: .6rem;
@@ -49,8 +53,13 @@ const InfoWrapper = styled.div`
 
     #info2{
       margin-top: 8px;
-      margin-bottom: 2rem;
+      margin-bottom: 1.3rem;
     }
+  }
+
+  .pillSection{
+    text-align: center;
+    position: relative;
   }
 `;
 

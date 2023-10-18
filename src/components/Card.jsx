@@ -29,11 +29,11 @@ const CardContainer = styled.div`
   box-shadow: 0 0 14px -5px #a39f9fa9;
 
   svg{
-    font-size: 5rem;
+    font-size: 4.5rem;
     padding: .7rem;
     border-radius: 20px;
     background-color: #f7f7f7ac;
-    box-shadow: inset -4px -5px 0 0 #00000026;
+    box-shadow: inset -4px -5px 0 0 #0000002f;
   }
 
   h4{

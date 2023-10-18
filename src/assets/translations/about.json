@@ -1,23 +1,28 @@
 {
   "en":{
     "headerText": {
-      "greeting": "Hello ,",
-      "name": "i'm Sandro",
-      "quote1": "A passionate ",
-      "title": "Developer ",
-      "quote2": "with a desire to learn."
+      "greeting": "Welcome.",
+      "quote1": "I'm Sandro, ",
+      "braceOpen":"{ ",
+      "braceClose":" }",
+      "title1": "developer",
+      "connector": " && ",
+      "title2": "tech-enthusiast",
+      "quote2": " with a desire to learn and create.",
+      "text1": "Based in Vienna, Austria, driven by anything technical, whilst appreciating creativity and freedom to tinker and build. This is an overview of my projects and myself. Feel free to check out the contact page, I appreciate it."
+    
     },
     "cardsText": [
       {
-        "heading": "Frontend",
+        "heading": "Programming",
         "body": "Spent some time working on the Frontend and using technologies around HTML, CSS, JavaScript and React"
       },
       {
-        "heading": "Backend",
+        "heading": "Tech",
         "body": "While building out Full Stack Applications i gained good knowledge of working with API's and Databases"
       },
       {
-        "heading": "Improvement",
+        "heading": "L.L.L.",
         "body": "I especially enjoy learning and improving myself, to make life easier for myself and everyone around me"
       }
     ],
@@ -31,23 +36,27 @@
   },
   "de":{
     "headerText": {
-      "greeting": "Hallo ,",
-      "name": "ich bin Sandro",
-      "quote1": "Ein neugieriger und lerneifriger ",
-      "title": "Entwickler ",
-      "quote2": "aus Wien."
+      "greeting": "Willkommen.",
+      "quote1": "Ich bin Sandro, ein neugieriger und lerneifriger ",
+      "braceOpen":"{ ",
+      "braceClose":" }",
+      "title1": "Entwickler",
+      "connector": " && ",
+      "title2": "Tech-Enthusiast",
+      "quote2": ".",
+      "text1": "Motiviert durch Technik, mit einer starken Wertschätzung für Kreativität, und der Freiheit neues zu kreieren. Dieses Portfolio soll einen Überblick meiner Projekte, und meiner Person darstellen. Schau gerne bei der Kontaktseite vorbei, let's connect!."
     },
     "cardsText": [
       {
-        "heading": "Frontend",
+        "heading": "Programmieren",
         "body": "Ich habe erfahrung im Frontend und den Technologien rund um HTML, CSS, JavaScript und React"
       },
       {
-        "heading": "Backend",
+        "heading": "Tech",
         "body": "Durch das erstellen von Full Stack Anwendungen konnte ich mir gute Kenntnisse im Umgang mit API's und Datenbanken aneignen"
       },
       {
-        "heading": "Freude am lernen",
+        "heading": "L.L.L.",
         "body": "Vor allem macht es Spaß neues zu lernen und mich selbst zu verbessern um mir und meinen Kollegen das Leben zu erleichtern"
       }
     ],

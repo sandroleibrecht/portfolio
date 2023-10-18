@@ -27,13 +27,13 @@ const InfoWrapper = styled.div`
   padding-bottom: 2rem;
   margin: 0 .5rem;
   margin-bottom: .5rem;
-  text-align: center;
   
   @media ( max-width: 836px){
     align-items: center;
   }
 
   .textSection{
+    max-width: 400px;
     h1{
       margin-bottom: .6rem;
       padding-bottom: .6rem;
@@ -48,7 +48,7 @@ const InfoWrapper = styled.div`
     }
 
     #info2{
-      margin-top: 6px;
+      margin-top: 8px;
       margin-bottom: 2rem;
     }
   }

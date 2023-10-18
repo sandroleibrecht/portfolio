@@ -2,27 +2,29 @@
   "en": {
     "info": {
       "heading":"Contact",
-      "info1": "Feel free to send me a message 🎉",
-      "info2": "Let's talk about ideas, projects, business, tabs, spaces, ..."
+      "info1": "Thank you for stopping by 🎉",
+      "info2": "I will get back to you as quickly as possible and look forward to hearing from you."
     },
     "form": {
+      "email": "Email",
       "message": "Message",
       "submit": "Send",
       "noError": "Thank you for your message!",
-      "error": "Sorry, an error occured while sending."
+      "error": "Sorry, an error occured during sending."
     }
   },
   "de": {
     "info": {
       "heading":"Kontakt",
-      "info1": "Ich freue mich auf deine Nachricht 🎉",
-      "info2": "Sprechen wir über Ideen, Projekte, Business, Tabs, Spaces, ..."
+      "info1": "Danke für's Vorbeischauen 🎉",
+      "info2": "Ich beantworte die Anfrage so schnell wie möglich und freue mich auf die Nachricht."
     },
     "form": {
+      "email": "E-Mail",
       "message": "Nachricht",
       "submit": "Senden",
       "noError": "Vielen Dank für die Nachricht!",
-      "error": "Entschuldige, beim Versenden ist ein Problem aufgetreten."
+      "error": "Entschuldigung, beim Versenden ist ein Problem aufgetreten."
     }
   }
 }

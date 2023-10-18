@@ -71,7 +71,7 @@ const Line = styled(motion.div)`
   background: var(--blueLight);
   width: 0;
   position: absolute;
-  bottom: -2px;
+  bottom: 1px;
   left: 0%;
 `;
 

@@ -55,7 +55,7 @@ function ContactForm({ formText }) {
         />
         <FontAwesomeIcon icon={faSignature} />
       </div>
-      <label htmlFor="mail" className={errors.mail ? 'error': null }>Email</label>
+      <label htmlFor="mail" className={errors.mail ? 'error': null }>{formText.email}</label>
       <div className="inputWrapper">
         <input
           onChange={ e => dispatch(setValue('mail', e.target.value))}

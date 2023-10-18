@@ -1,16 +1,16 @@
 {
   "en": {
     "links": {
-      "about": "About Me",
-      "projects": "Projects",
-      "contact": "Contact"
+      "about": "welcome.",
+      "projects": "projects.",
+      "contact": "contact."
     }
   },
   "de": {
     "links": {
-      "about": "Über Mich",
-      "projects": "Projekte",
-      "contact": "Kontakt"
+      "about": "willkommen.",
+      "projects": "projekte.",
+      "contact": "kontakt."
     }
   }
 }

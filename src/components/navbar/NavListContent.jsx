@@ -44,7 +44,9 @@ const ListItem = styled(Link)`
   position: relative;
   transition: color .25s;
   white-space: nowrap;
-  font-weight: 100;
+  font-weight: 600;
+  color: #5a5a5a;
+  font-size: .9rem;
   transform: scale(0);
   animation: ${spinInAnimation} 1.5s 1 forwards;
   animation-delay: .4s;

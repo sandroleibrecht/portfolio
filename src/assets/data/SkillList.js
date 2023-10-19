@@ -59,6 +59,12 @@ const skillList = [
     color: 'var(--css)',
     addStack: true
   },
+  {
+    name: 'Bash',
+    image: '/img/techs/bash.png',
+    color: 'var(--bash)',
+    addStack: true
+  },
   
   // Not listed in skills
   

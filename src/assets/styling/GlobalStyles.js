@@ -21,6 +21,7 @@ const GlobalStyles = createGlobalStyle`
     --node: #69B84D;
     --express: #444;
     --mongodb: #2B964C;
+    --bash: #333;
   }
 
   *{

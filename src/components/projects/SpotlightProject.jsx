@@ -85,6 +85,14 @@ const ProjectContainer = styled.div`
     position: relative;
     cursor: pointer;
 
+    width: 608px;
+    height: 308px;
+
+    @media ( max-width: 680px){
+      width: 100%;
+      height: 100%;
+    }
+
     img{
       max-width: 40rem;
       width: 100%;

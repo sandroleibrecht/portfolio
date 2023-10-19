@@ -10,6 +10,7 @@ const GlobalStyles = createGlobalStyle`
     --orange: #F4B400;
     --green: #42b426;
     // Tech Colors
+    --java: #68a0fa;
     --html: #E5622A;
     --css: #3595CF;
     --js: #F9C305;

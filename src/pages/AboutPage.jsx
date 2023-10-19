@@ -21,7 +21,7 @@ function AboutPage() {
   const dispatch = useDispatch();
 
   const { selectedLanguage } = useSelector( state => state.language );
-  const { headerText, cardsText, personalText } = pageText[selectedLanguage];
+  const { headerText, cardsText, personal } = pageText[selectedLanguage];
   
   useEffect( () => {
     dispatch(setScrollPosition(0));
@@ -32,7 +32,7 @@ function AboutPage() {
       <AboutHeader textContent={headerText} />
       <CardSection textContent={cardsText} />
       <Line/>
-      <PersonalSection textContent={personalText} />
+      <PersonalSection textContent={personal} />
       <Footer/>
       <ScrollTop/>
     </motion.div>

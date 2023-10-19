@@ -26,25 +26,30 @@
         "body": "\"Lifelong learning\" and constantly improving is something I deeply enjoy in all areas of interest"
       }
     ],
-    "personalText": [
-      "My name is Sandro Pernerstorfer and i'm a Developer from Austria, Vienna.",
-      "Curious and driven by everything logical and technical whilst appreciating creativity and freedom to create magical things.",
-      "I started my journey in the Electrical Engineering field, working and solving problems in various environments and situations.",
-      "Since i always enjoyed programming electrical solutions the inevitable happened and i fell in love with Software Development.",
-      "Learning the ins and outs of Software Development and using modern web technologies to solve problems and create solutions."
-    ]
+    "personal":{
+      "text": [
+        "I have been drawn to engineering and technology early on in my professional career.",
+        "The field I first started working in was electrical engineering, which (literally) sparked my interests.",
+        "My work included planning of complicated wiring, building IT networks, and automation engineering.",
+        "I soon noticed the innate interest in problem-solving. Especially through programming."
+      ],
+      "skills": {
+        "main": "Mainly working with:",
+        "add": "Additional tools:"
+      }
+    }
   },
   "de":{
     "headerText": {
       "greeting": "Willkommen.",
-      "quote1": "Ich bin Sandro. Ein lerneifriger ",
+      "quote1": "Ich bin Sandro. ",
       "braceOpen":"{ ",
       "braceClose":" }",
       "title1": "Entwickler",
       "connector": " && ",
       "title2": "Tech-Enthusiast",
-      "quote2": ".",
-      "text1": "Inspiriert von Technologie - Und die Wertschätzung, mit Kreativität neues zu entwickeln."
+      "quote2": " mit Freude am lernen.",
+      "text1": "Inspiriert von Technologie, mit großer Wertschätzung für Kreativität."
     },
     "cardsText": [
       {
@@ -53,19 +58,24 @@
       },
       {
         "heading": "Technologie",
-        "body": "Es ist nicht nur die Software die mich fasziniert, sondern auch die Hardware, Infrastruktur und Technologie"
+        "body": "Es ist nicht nur die Software die mich fasziniert, sondern auch Hardware, Infrastruktur und Technologie"
       },
       {
         "heading": "LLL",
         "body": "\"Lebenslanges Lernen\", und sich stetig zu verbessern, liegt mir in allen Interessenbereichen am Herzen"
       }
     ],
-    "personalText": [
-      "Mein Name ist Sandro Pernerstorfer und ich bin ein Entwickler aus Österreich, Wien.",
-      "Neugierig und angetrieben von Technik und Logik, mit einer starken Wertschätzung für Kreativität und der Freiheit neues zu kreieren.",
-      "Ich startete meine Reise im Bereich der Elektrotechnik, und arbeitete in den verschiedensten Umgebungen und Situationen.",
-      "Da mir das Programmieren von Elektrotechnischen Lösungen immer schon gefiel, brauchte es nicht lang bis ich mich in die Software Entwicklung verliebte.",
-      "Seitdem lerne und verbessere ich meine Software Entwickler Fähigkeiten und verwende moderne Web Technologien um Probleme zu lösen und Software zu erstellen."
-    ]
+    "personal":{
+      "text": [
+        "In meiner beruflichen Laufbahn fühlte ich mich schon früh zu der Arbeit mit Technik hingezogen.",
+        "Die ersten Erfahrungen durfte ich in der Elektrotechnik sammeln, die mich schwer faszinierte.",
+        "Zu meiner Arbeit gehörte z.B. das Planen von komplexen Schaltungen, Netzwerktechnik und die Automatisierungstechnik.",
+        "Ich habe dadurch mein Interesse an der Lösung von Problemen entdeckt. Speziell durch Programmierung."
+      ],
+      "skills": {
+        "main": "Hauptsächlich verwende ich:",
+        "add": "Zusätzliche Tools:"
+      }
+    }
   }
 }

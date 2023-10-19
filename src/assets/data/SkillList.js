@@ -1,87 +1,96 @@
 const skillList = [
+
+  // Main skills
+
   {
-    name: 'Git',
-    image: '/img/techs/git.png',
-    color: 'var(--git)',
-    spotlight: true
-  },
-  {
-    name: 'GitHub',
-    image: '/img/techs/github.png',
-    color: 'var(--github)',
-    spotlight: true
-  },
-  {
-    name: 'Python',
-    image: '/img/techs/python.png',
-    color: 'var(--css)',
-    spotlight: true
+    name: 'Java',
+    image: '/img/techs/java.png',
+    color: 'var(--java)',
+    mainStack: true
   },
   {
     name: 'JavaScript',
     image: '/img/techs/javascript.png',
     color: 'var(--js)',
-    spotlight: true
-  },
-  {
-    name: 'HTML5',
-    image: '/img/techs/html5.png',
-    color: 'var(--html)',
-    spotlight: true
-  },
-  {
-    name: 'CSS3',
-    image: '/img/techs/css3.png',
-    color: 'var(--css)',
-    spotlight: true
-  },
-  {
-    name: 'TypeScript',
-    image: '/img/techs/typescript.png',
-    color: '#2F74BF',
-    spotlight: true
+    mainStack: true
   },
   {
     name: 'React',
     image: '/img/techs/react.png',
     color: 'var(--react)',
-    spotlight: true
+    mainStack: true
   },
   {
-    name: 'SCSS',
-    image: '/img/techs/scss.png',
-    color: 'var(--scss)',
-    spotlight: true
+    name: 'Git',
+    image: '/img/techs/git.png',
+    color: 'var(--git)',
+    mainStack: true
+  },
+  {
+    name: 'GitHub',
+    image: '/img/techs/github.png',
+    color: 'var(--github)',
+    mainStack: true
+  },
+
+  // Additional skills
+
+  {
+    name: 'HTML5',
+    image: '/img/techs/html5.png',
+    color: 'var(--html)',
+    addStack: true
+  },
+  {
+    name: 'CSS3',
+    image: '/img/techs/css3.png',
+    color: 'var(--css)',
+    addStack: true
   },
   {
     name: 'NodeJS',
     image: '/img/techs/node.png',
     color: 'var(--node)',
-    spotlight: true
+    addStack: true
   },
   {
-    name: 'ExpressJS',
-    image: '/img/techs/express.png',
-    color: 'var(--express)',
-    spotlight: true
+    name: 'Python',
+    image: '/img/techs/python.png',
+    color: 'var(--css)',
+    addStack: true
+  },
+  
+  // Not listed in skills
+  
+  {
+    name: 'TypeScript',
+    image: '/img/techs/typescript.png',
+    color: '#2F74BF'
   },
   {
     name: 'MongoDB',
     image: '/img/techs/mongodb.png',
-    color: 'var(--mongodb)',
-    spotlight: true
+    color: 'var(--mongodb)'
   },
   {
     name: 'SocketIO',
     image: '/img/techs/socketio.png',
-    color: '#666',
-    spotlight: true
+    color: '#666'
   },
   {
     name: 'PLC',
     image: '/img/techs/plc.png',
-    color: '#1a8e88',
-    spotlight: true
+    color: '#1a8e88'
+  },
+  {
+    name: 'SCSS',
+    image: '/img/techs/scss.png',
+    color: 'var(--scss)'
+  },
+  {
+    name: 'ExpressJS',
+    image: '/img/techs/express.png',
+    color: 'var(--express)'
   },
   {
     name: 'Styled Components',

@@ -8,21 +8,26 @@ import Pill from '../Pill';
 
 function PersonalSection({ textContent }) {
 
-  const spotlightSkills = skillList.filter( skill => skill.spotlight);
+  const mainSkills = skillList.filter( skill => skill.mainStack);
+  const addSkills = skillList.filter( skill => skill.addStack);
 
   return (
     <AboutDescription>
       <div className="textContainer">
         <p>
-          {textContent[0]}<br/>
-          {textContent[1]}<br/>
-          {textContent[2]}<br/>
-          {textContent[3]}<br/>
-          {textContent[4]}
+          {textContent.text[0]}<br/>
+          {textContent.text[1]}<br/>
+          {textContent.text[2]}<br/>
+          {textContent.text[3]}<br/>
         </p>
       </div>
       <div className='skillContainer'>
-        {spotlightSkills.map(( skill, i ) => (
+        <h3 className='mainSkillsHeading'>{textContent.skills.main}</h3>
+        {mainSkills.map(( skill, i ) => (
+          <Pill image={skill.image} text={skill.name} color={skill.color} key={skill.name + i} />
+        ))}
+        <h3 className='addSkillsHeading'>{textContent.skills.add}</h3>
+        {addSkills.map(( skill, i ) => (
           <Pill image={skill.image} text={skill.name} color={skill.color} key={skill.name + i} />
         ))}
       </div>
@@ -45,7 +50,6 @@ const AboutDescription = styled.section`
       font-size: 1rem;
       line-height: 1.85rem;
       padding: 0 1rem;
-      text-align: center;
     }
   }
 
@@ -59,6 +63,14 @@ const AboutDescription = styled.section`
     opacity: .93;
     text-align: center;
     position: relative;
+
+    h3{
+      margin-bottom: 8px;
+    }
+
+    .addSkillsHeading{
+      margin-top: 2rem;
+    }
   }
 `;
 

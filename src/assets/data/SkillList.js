@@ -26,15 +26,9 @@ const skillList = [
     color: 'var(--git)',
     mainStack: true
   },
-  {
-    name: 'GitHub',
-    image: '/img/techs/github.png',
-    color: 'var(--github)',
-    mainStack: true
-  },
-
+  
   // Additional skills
-
+  
   {
     name: 'HTML5',
     image: '/img/techs/html5.png',
@@ -68,6 +62,11 @@ const skillList = [
   
   // Not listed in skills
   
+  {
+    name: 'GitHub',
+    image: '/img/techs/github.png',
+    color: 'var(--github)'
+  },
   {
     name: 'TypeScript',
     image: '/img/techs/typescript.png',

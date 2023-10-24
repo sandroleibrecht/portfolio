@@ -3,12 +3,6 @@ const skillList = [
   // Main skills
 
   {
-    name: 'Java',
-    image: '/img/techs/java.png',
-    color: 'var(--java)',
-    mainStack: true
-  },
-  {
     name: 'JavaScript',
     image: '/img/techs/javascript.png',
     color: 'var(--js)',
@@ -24,6 +18,12 @@ const skillList = [
     name: 'Git',
     image: '/img/techs/git.png',
     color: 'var(--git)',
+    mainStack: true
+  },
+  {
+    name: 'Python',
+    image: '/img/techs/python.png',
+    color: 'var(--css)',
     mainStack: true
   },
   
@@ -45,12 +45,6 @@ const skillList = [
     name: 'NodeJS',
     image: '/img/techs/node.png',
     color: 'var(--node)',
-    addStack: true
-  },
-  {
-    name: 'Python',
-    image: '/img/techs/python.png',
-    color: 'var(--css)',
     addStack: true
   },
   {

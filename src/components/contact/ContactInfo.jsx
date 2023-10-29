@@ -60,7 +60,18 @@ const InfoWrapper = styled.div`
   .pillSection{
     text-align: center;
     position: relative;
+    left: -7px;
   }
+
+  @media (max-width: 459px){
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    .pillSection{
+      left: 0;
+    }
+  }
+
 `;
 
 export default ContactInfo;

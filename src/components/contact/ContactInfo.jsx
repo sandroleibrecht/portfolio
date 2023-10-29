@@ -63,7 +63,7 @@ const InfoWrapper = styled.div`
     left: -7px;
   }
 
-  @media (max-width: 459px){
+  @media (max-width: 462px){
     text-align: center;
     justify-content: center;
     align-items: center;

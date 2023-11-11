@@ -1,15 +1,16 @@
 import React from 'react';
 // Styling
 import styled from 'styled-components';
-// Skill List
-import skillList from '../../assets/data/SkillList.js';
 // Components
-import Pill from '../Pill';
+import Button from '../Button';
+// FontAwesome
+import { faChevronCircleRight } from '@fortawesome/free-solid-svg-icons';
+// Router
+import { useHistory } from 'react-router-dom';
 
 function PersonalSection({ textContent }) {
 
-  const mainSkills = skillList.filter( skill => skill.mainStack);
-  const addSkills = skillList.filter( skill => skill.addStack);
+  const history = useHistory();
 
   return (
     <AboutDescription>
@@ -21,15 +22,8 @@ function PersonalSection({ textContent }) {
           {textContent.text[3]}<br/>
         </p>
       </div>
-      <div className='skillContainer'>
-        <h3 className='mainSkillsHeading'>{textContent.skills.main}</h3>
-        {mainSkills.map(( skill, i ) => (
-          <Pill image={skill.image} text={skill.name} color={skill.color} key={skill.name + i} />
-        ))}
-        <h3 className='addSkillsHeading'>{textContent.skills.add}</h3>
-        {addSkills.map(( skill, i ) => (
-          <Pill image={skill.image} text={skill.name} color={skill.color} key={skill.name + i} />
-        ))}
+      <div className="buttonContainer" onClick={() => history.push('/projects')}>
+        <Button text={textContent.button} icon={faChevronCircleRight} />
       </div>
     </AboutDescription>
   );
@@ -53,23 +47,14 @@ const AboutDescription = styled.section`
     }
   }
 
-  .skillContainer{
-    padding: 1rem 0;
-    border-width: 2px 0;
-    border-style: solid;
-    border-color: #e6e4e46f;
-    max-width: 700px;
-    margin: 0 auto;
-    opacity: .93;
-    text-align: center;
-    position: relative;
-
-    h3{
-      margin-bottom: 8px;
-    }
-
-    .addSkillsHeading{
-      margin-top: 2rem;
+  .buttonContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button{
+      width: 6rem;
+      height: 2rem;
     }
   }
 `;

@@ -33,10 +33,7 @@
         "My work included planning of complicated wiring, building IT networks, and automation engineering.",
         "I soon noticed the innate interest in problem-solving. Especially through programming."
       ],
-      "skills": {
-        "main": "Mainly working with:",
-        "add": "Additional tools:"
-      }
+      "button": "Projects"
     }
   },
   "de":{
@@ -72,10 +69,7 @@
         "Zu meiner Arbeit gehörte z.B. das Planen von komplexen Schaltungen, Netzwerktechnik und die Automatisierungstechnik.",
         "Ich habe dadurch mein Interesse an der Lösung von Problemen entdeckt. Speziell durch Programmierung."
       ],
-      "skills": {
-        "main": "Hauptsächlich verwende ich:",
-        "add": "Zusätzliche Tools:"
-      }
+      "button": "Projekte"
     }
   }
 }

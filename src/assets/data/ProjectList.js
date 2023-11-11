@@ -27,32 +27,6 @@ const projects = [
     spotlight: true
   },
   {
-    id: 'ghostwriter-js',
-    name : "Ghostwriter JS",
-    image: '/img/projects/ghostwriter-js-1.png',
-    techs : [skills.HTML5, skills.SCSS, skills.JavaScript],
-    github : "https://github.com/sandropernerstorfer/ghostwriter-js",
-    live : "https://main.d2krtq4ptna642.amplifyapp.com/",
-    route: "/projects/ghostwriter-js",
-    desc: {
-      en: 
-      `Generate code to animate your text.
-      Just enter the following two inputs: text and duration.
-      Inside the preview box, the given text will then be displayed letter after letter.
-      The duration input controls the typing tempo.
-      Copy the generated code with one click and use it wherever you want!`,
-
-      de: 
-      `Generiert Code der deinen Text animiert.
-      Gib einfach folgende zwei Werte an: Text und Dauer.
-      Im Vorschaufenster wird dann der Text Buchstabe für Buchstabe erscheinen.
-      Die Dauer kontrolliert das Tipp-Tempo. 
-      Der bereits generierte Code kann mit einem Klick kopiert und verwendet werden.`
-    },
-    screenshots: ['/img/projects/ghostwriter-js-2.png', '/img/projects/ghostwriter-js-3.png'],
-    spotlight: true
-  },
-  {
     id: 'equal-checker',
     name : "Equal Checker",
     image: '/img/projects/equal-checker-1.png',
@@ -123,6 +97,32 @@ const projects = [
     spotlight: true
   },
   {
+    id: 'ghostwriter-js',
+    name : "Ghostwriter JS",
+    image: '/img/projects/ghostwriter-js-1.png',
+    techs : [skills.HTML5, skills.SCSS, skills.JavaScript],
+    github : "https://github.com/sandropernerstorfer/ghostwriter-js",
+    live : "https://main.d2krtq4ptna642.amplifyapp.com/",
+    route: "/projects/ghostwriter-js",
+    desc: {
+      en: 
+      `Generate code to animate your text.
+      Just enter the following two inputs: text and duration.
+      Inside the preview box, the given text will then be displayed letter after letter.
+      The duration input controls the typing tempo.
+      Copy the generated code with one click and use it wherever you want!`,
+
+      de: 
+      `Generiert Code der deinen Text animiert.
+      Gib einfach folgende zwei Werte an: Text und Dauer.
+      Im Vorschaufenster wird dann der Text Buchstabe für Buchstabe erscheinen.
+      Die Dauer kontrolliert das Tipp-Tempo. 
+      Der bereits generierte Code kann mit einem Klick kopiert und verwendet werden.`
+    },
+    screenshots: ['/img/projects/ghostwriter-js-2.png', '/img/projects/ghostwriter-js-3.png'],
+    spotlight: false
+  },
+  {
     id: 'clocks-js',
     name : "Clocks JS",
     image: '/img/projects/clocks-js-1.png',
@@ -136,7 +136,8 @@ const projects = [
       de: 
       `Zwei Uhren, analog und digital, erstellt mit HTML, CSS und JavaScript.`
     },
-    screenshots: ['/img/projects/clocks-js-2.png']
+    screenshots: ['/img/projects/clocks-js-2.png'],
+    spotlight: false
   }
 ];
 

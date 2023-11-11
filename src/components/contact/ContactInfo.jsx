@@ -14,10 +14,10 @@ function ContactInfo({ infoText }) {
         <p id='info2'>{infoText.info2}</p>
       </div>
       <div className="pillSection">
-        <Pill image="/img/app/ideas.png" text={infoText.ideas} color="var(--blue)" key="1" />
-        <Pill image="/img/app/projects.png" text={infoText.projects} color="var(--blue)" key="2" />
-        <Pill image="/img/app/business.png" text={infoText.business} color="var(--blue)" key="3" />
-        <Pill image="/img/app/anything.png" text={infoText.anything} color="var(--blue)" key="4" />
+        <Pill image="/img/app/ideas.png" text={infoText.ideas} color="var(--blueLight)" key="1" />
+        <Pill image="/img/app/projects.png" text={infoText.projects} color="var(--blueLight)" key="2" />
+        <Pill image="/img/app/business.png" text={infoText.business} color="var(--blueLight)" key="3" />
+        <Pill image="/img/app/anything.png" text={infoText.anything} color="var(--blueLight)" key="4" />
       </div>
     </InfoWrapper>
   );

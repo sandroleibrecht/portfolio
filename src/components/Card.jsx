@@ -18,7 +18,7 @@ function Card({ icon, heading, body, iconColor }) {
 const CardContainer = styled.div`
   max-width: 20rem;
   min-width: 260px;
-  height: 290px;
+  height: 270px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -29,7 +29,7 @@ const CardContainer = styled.div`
   box-shadow: 0 0 14px -5px #a39f9fa9;
 
   svg{
-    font-size: 4.5rem;
+    font-size: 3.8rem;
     padding: .7rem;
     border-radius: 20px;
     background-color: #f7f7f7ac;
@@ -38,8 +38,8 @@ const CardContainer = styled.div`
 
   h4{
     margin: 1rem 0;
-    font-weight: 500;
-    color: var(--blue);
+    font-weight: 600;
+    color: var(--blueLight);
   }
 
   p{

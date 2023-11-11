@@ -1,7 +1,13 @@
 const skillList = [
 
   // Main skills
-
+  
+  {
+    name: 'Java',
+    image: '/img/techs/java.png',
+    color: 'var(--java)',
+    mainStack: true
+  },
   {
     name: 'JavaScript',
     image: '/img/techs/javascript.png',

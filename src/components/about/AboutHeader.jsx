@@ -26,8 +26,6 @@ function AboutHeader({ textContent }) {
             {textContent.quote2}
           </h4>
           <hr/>
-          <h4>{textContent.text1}</h4>
-          <h4>{textContent.text2}</h4>
           <GitHub onClick={ () => openNewTab('https://github.com/sandropernerstorfer') }/>
         </div>
       </InfoContainer>
@@ -41,7 +39,7 @@ export default AboutHeader;
 const HeaderContainer = styled(Grid)`
   padding: 5vw calc(9% + 1vh);
   width: 100vw;
-  background-color: #5f5fcd;
+  background-color: #3b3b3b;
 
   @media (max-width: 959px){
     padding-top: 4rem;

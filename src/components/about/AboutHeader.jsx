@@ -39,7 +39,7 @@ export default AboutHeader;
 const HeaderContainer = styled(Grid)`
   padding: 5vw calc(9% + 1vh);
   width: 100vw;
-  background-color: #3b3b3b;
+  background-color: var(--blueDark);
 
   @media (max-width: 959px){
     padding-top: 4rem;

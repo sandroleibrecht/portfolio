@@ -40,3 +40,16 @@ export const sendEmail = (formData, { errorMsg, noErrorMsg }) => {
     store.dispatch(setSubmitStatus(false));
   });
 };
+
+export const sendEmailNetlify = (event, noErrorMsg) => {
+  event.preventDefault();
+
+  const form = event.target;
+
+  store.dispatch(setSubmitStatus(true));
+  store.dispatch(setSubmitMessage({ message: noErrorMsg, isError: false }));
+  store.dispatch(resetValues());
+  store.dispatch(setSubmitStatus(false));
+
+  form.submit();
+};

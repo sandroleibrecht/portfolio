@@ -40,11 +40,13 @@ function ContactForm({ formText }) {
 
     if (Object.values(validationErrors).some( error => error === true )) return;
     
-    sendEmail(e.target, {errorMsg: formText.error, noErrorMsg: formText.noError});
+    //sendEmail(e.target, {errorMsg: formText.error, noErrorMsg: formText.noError});
+    sendEmail(e, formText.noError);
   };
 
   return (
-    <Form onSubmit={ handleSubmit }>
+    <Form onSubmit={ handleSubmit } method='POST'>
+      <input type="hidden" name="form-name" value="contact" />
       <label htmlFor="name" className={errors.name ? 'error': 'noerror' }>Name</label>
       <div className="inputWrapper">
         <input 

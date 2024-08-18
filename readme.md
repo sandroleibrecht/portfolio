@@ -1,5 +1,5 @@
 # Portfolio
-[sandropernerstorfer.com](https://sandropernerstorfer.netlify.app)
+[sandropernerstorfer.netlify.app](https://sandropernerstorfer.netlify.app)
 
 ***
 

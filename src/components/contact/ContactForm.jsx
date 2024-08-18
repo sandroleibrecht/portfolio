@@ -45,7 +45,7 @@ function ContactForm({ formText }) {
   };
 
   return (
-    <Form onSubmit={ handleSubmit } method='POST'>
+    <Form onSubmit={ handleSubmit } method='POST' action='.'>
       <input type="hidden" name="form-name" value="contact" />
       <label htmlFor="name" className={errors.name ? 'error': 'noerror' }>Name</label>
       <div className="inputWrapper">

@@ -7,7 +7,7 @@ import Button from '../Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane, faAt, faSignature, faSpinner } from '@fortawesome/free-solid-svg-icons';
 // Utils
-import { validateInputs, sendEmailNetlify } from '../../assets/util/ContactForm';
+import { validateInputs, sendEmail } from '../../assets/util/ContactForm';
 // Redux
 import { useSelector, useDispatch } from 'react-redux';
 import { setFocus, setValue, setErrors, resetForm }  from '../../state/contactState';
@@ -40,16 +40,11 @@ function ContactForm({ formText }) {
 
     if (Object.values(validationErrors).some( error => error === true )) return;
     
-    //sendEmail(e.target, {errorMsg: formText.error, noErrorMsg: formText.noError});
-    sendEmailNetlify(e, formText.noError);
+    sendEmail(e.target, {errorMsg: formText.error, noErrorMsg: formText.noError});
   };
 
   return (
-    <Form onSubmit={ handleSubmit } name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" netlify>
-      <input type="hidden" name="form-name" value="contact" />
-      <div hidden>
-        <label><input name="bot-field" /></label>
-      </div>
+    <Form onSubmit={ handleSubmit }>
       <label htmlFor="name" className={errors.name ? 'error': 'noerror' }>Name</label>
       <div className="inputWrapper">
         <input 

@@ -2,7 +2,7 @@
 import { store } from '../../index';
 import { setSubmitStatus, setSubmitMessage, resetValues }  from '../../state/contactState';
 
-//const awsLambdaURL = process.env.REACT_APP_LAMBDA_URL;
+const awsLambdaURL = process.env.REACT_APP_LAMBDA_URL;
 
 export const validateInputs = ({ name, mail, message }) => {
   const errors = {};
@@ -12,7 +12,7 @@ export const validateInputs = ({ name, mail, message }) => {
   return errors;
 };
 
-/* export const sendEmail = (formData, { errorMsg, noErrorMsg }) => {
+export const sendEmail = (formData, { errorMsg, noErrorMsg }) => {
   store.dispatch(setSubmitStatus(true));
 
   const name    = formData.name.value;
@@ -39,17 +39,4 @@ export const validateInputs = ({ name, mail, message }) => {
   .finally(() => {
     store.dispatch(setSubmitStatus(false));
   });
-}; */
-
-export const sendEmailNetlify = (event, noErrorMsg) => {
-  event.preventDefault();
-
-  const form = event.target;
-
-  store.dispatch(setSubmitStatus(true));
-  store.dispatch(setSubmitMessage({ message: noErrorMsg, isError: false }));
-  store.dispatch(resetValues());
-  store.dispatch(setSubmitStatus(false));
-
-  form.submit();
 };

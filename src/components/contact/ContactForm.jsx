@@ -7,7 +7,7 @@ import Button from '../Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane, faAt, faSignature, faSpinner } from '@fortawesome/free-solid-svg-icons';
 // Utils
-import { validateInputs, sendEmail, sendEmailNetlify } from '../../assets/util/ContactForm';
+import { validateInputs, sendEmailNetlify } from '../../assets/util/ContactForm';
 // Redux
 import { useSelector, useDispatch } from 'react-redux';
 import { setFocus, setValue, setErrors, resetForm }  from '../../state/contactState';

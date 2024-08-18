@@ -1,4 +1,3 @@
-# Portfolio
 [sandropernerstorfer.netlify.app](https://sandropernerstorfer.netlify.app)
 
 ***

@@ -11,7 +11,7 @@ const projects = [
     image: '/img/projects/collab-task-1.png',
     techs : [skills.HTML5, skills.SCSS, skills.JavaScript, skills.ExpressJS, skills.MongoDB, skills.SocketIO],
     github : "https://github.com/sandropernerstorfer/collab-task",
-    live : "https://uk7zwec3vh.eu-central-1.awsapprunner.com/",
+    live : "",
     route: "/projects/collab-task",
     desc: {
       en: 
@@ -32,7 +32,7 @@ const projects = [
     image: '/img/projects/equal-checker-1.png',
     techs : [skills.JavaScript],
     github : "https://github.com/sandropernerstorfer/equal-checker",
-    live : "https://www.npmjs.com/package/equal-checker",
+    live : "",
     route: "/projects/equal-checker",
     desc: {
       en: 
@@ -102,7 +102,7 @@ const projects = [
     image: '/img/projects/ghostwriter-js-1.png',
     techs : [skills.HTML5, skills.SCSS, skills.JavaScript],
     github : "https://github.com/sandropernerstorfer/ghostwriter-js",
-    live : "https://main.d2krtq4ptna642.amplifyapp.com/",
+    live : "",
     route: "/projects/ghostwriter-js",
     desc: {
       en: 
@@ -128,7 +128,7 @@ const projects = [
     image: '/img/projects/clocks-js-1.png',
     techs : [skills.HTML5, skills.CSS3, skills.JavaScript],
     github : "https://github.com/sandropernerstorfer/clocks-js",
-    live : "https://main.d1ep2hyslzqu37.amplifyapp.com/",
+    live : "",
     route: "/projects/clocks-js",
     desc: {
       en: 

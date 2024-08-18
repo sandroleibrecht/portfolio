@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 // Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInfoCircle, faCodeBranch, faPlayCircle } from '@fortawesome/free-solid-svg-icons';
+import { faInfoCircle, faCodeBranch } from '@fortawesome/free-solid-svg-icons';
 
 function ProjectsHeader({ text }) {
   return (
@@ -12,7 +12,6 @@ function ProjectsHeader({ text }) {
       <div>
         <span><FontAwesomeIcon icon={faInfoCircle}/> Info</span>
         <span><FontAwesomeIcon icon={faCodeBranch}/> Code</span>
-        <span><FontAwesomeIcon icon={faPlayCircle}/> Live</span>
       </div>
     </HeaderSection>
   )
@@ -53,7 +52,6 @@ const HeaderSection = styled.header`
 
   span:nth-child(1) svg{color: var(--blueLight)}
   span:nth-child(2) svg{color: var(--orange)}
-  span:nth-child(3) svg{color: var(--green)}
 `;
 
 export default ProjectsHeader;

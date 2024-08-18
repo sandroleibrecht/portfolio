@@ -45,7 +45,7 @@ function ContactForm({ formText }) {
   };
 
   return (
-    <Form onSubmit={ handleSubmit } name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+    <Form onSubmit={ handleSubmit } name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" netlify>
       <input type="hidden" name="form-name" value="contact" />
       <div hidden>
         <label><input name="bot-field" /></label>

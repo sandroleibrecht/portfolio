@@ -40,7 +40,6 @@ function ContactForm({ formText }) {
 
     if (Object.values(validationErrors).some( error => error === true )) return;
     
-    //sendEmail(e.target, {errorMsg: formText.error, noErrorMsg: formText.noError});
     sendEmail(e, formText.noError, formText.error);
   };
 

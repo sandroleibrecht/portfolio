@@ -13,8 +13,8 @@
       "email": "Email",
       "message": "Message",
       "submit": "Send",
-      "noError": "Thank you for your message!",
-      "error": "Sorry, an error occured during sending."
+      "noError": "Your message has been sent.",
+      "error": "Sorry, something went wrong."
     }
   },
   "de": {
@@ -31,8 +31,8 @@
       "email": "E-Mail",
       "message": "Nachricht",
       "submit": "Senden",
-      "noError": "Vielen Dank für die Nachricht!",
-      "error": "Entschuldigung, beim Versenden ist ein Problem aufgetreten."
+      "noError": "Die Nachricht wurde gesendet.",
+      "error": "Entschuldigung, ein Fehler ist aufgetreten."
     }
   }
 }

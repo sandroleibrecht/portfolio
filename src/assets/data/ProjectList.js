@@ -47,7 +47,7 @@ const projects = [
       Der rekursive Aufruf kümmert sich um jegliche Art und Tiefe von Verschachtelungen. 
       Optionales Type-Checking, und optionale Fehlermeldungen.`
     },
-    screenshots: ['/img/projects/equal-checker-2.png', '/img/projects/equal-checker-3.png'],
+    screenshots: ['/img/projects/equal-checker-2.png', '/img/projects/equal-checker-3.png'],
     spotlight: true
   },
   {
@@ -71,7 +71,7 @@ const projects = [
       Mit vielen kategorisierten Excel-Sheets und Sonderfällen.
       Man erspart sich das manuelle Zusammenführen und erzielt einen schnellen HMI-Datenimport (Human Machine Interface).`
     },
-    screenshots: ['/img/projects/hmi-data-merge-2.png', '/img/projects/hmi-data-merge-3.png'],
+    screenshots: ['/img/projects/hmi-data-merge-2.png', '/img/projects/hmi-data-merge-3.png'],
     spotlight: true
   },
   {

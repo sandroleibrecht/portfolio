@@ -16,20 +16,21 @@ function NavListContent() {
 
   const { selectedLanguage } = useSelector( state => state.language );
   const { pathname } = useLocation();
+  const isProjectDetailsPath = pathname.startsWith('/projects/');
 
   const { links } = navbarText[selectedLanguage];
 
   return (
     <>
-      <ListItem to='/'>
+      <ListItem to='/' tabIndex={isProjectDetailsPath ? -1 : 0}>
         {links.about}
         <Line transition={{ duration: 0.7 }} initial={{ width: 0 }} animate={{ width: pathname === '/' ? '100%' : '0' }}/>
       </ListItem>
-      <ListItem to='/projects'>
+      <ListItem to='/projects' tabIndex={isProjectDetailsPath ? -1 : 0}>
         {links.projects}
         <Line transition={{ duration: 0.7 }} initial={{ width: 0 }} animate={{ width: pathname === '/projects' ? '100%' : '0' }}/>
       </ListItem>
-      <ListItem to='/contact'>
+      <ListItem to='/contact' tabIndex={isProjectDetailsPath ? -1 : 0}>
         {links.contact}
         <Line transition={{ duration: 0.7 }} initial={{ width: 0 }} animate={{ width: pathname === '/contact' ? '100%' : '0' }}/>
       </ListItem>

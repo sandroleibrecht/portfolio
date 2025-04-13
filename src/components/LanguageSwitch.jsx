@@ -24,7 +24,15 @@ function LanguageSwitch() {
   };
 
   return (
-    <LangSwitch onClick={handleLanguageChange}>
+    <LangSwitch 
+      tabIndex={0}
+      onClick={handleLanguageChange} 
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          handleLanguageChange();
+        }
+      }}>
       <h6>DE</h6>
       <h6>EN</h6>
       <ControlSwitch language={selectedLanguage} ></ControlSwitch>

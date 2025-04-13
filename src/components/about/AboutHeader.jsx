@@ -26,7 +26,16 @@ function AboutHeader({ textContent }) {
             {textContent.quote2}
           </h4>
           <hr/>
-          <GitHub onClick={ () => openNewTab('https://github.com/sandropernerstorfer') }/>
+          <GitHub
+            tabIndex={0}
+            onClick={ () => openNewTab('https://github.com/sandropernerstorfer') }
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                openNewTab('https://github.com/sandropernerstorfer');
+              }
+            }}
+          />
         </div>
       </InfoContainer>
     </HeaderContainer>

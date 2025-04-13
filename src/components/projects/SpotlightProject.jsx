@@ -119,7 +119,7 @@ const ProjectContainer = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #ffffffd1;
+      background-color: #ffffff67;
       width: 100%;
       height: 100%;
       position: absolute;

@@ -26,7 +26,17 @@ function NavSide() {
     <MenuShadow menuOpen={menuOpen} onClick={ handleMenuClose }/>
     <MenuContainer menuOpen={menuOpen} >
       <List>
-        <CloseIcon icon={faTimes} onClick={ handleMenuClose } />
+        <CloseIcon
+          icon={faTimes}
+          tabIndex= {0}
+          onClick={ handleMenuClose }
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              handleMenuClose();
+            }
+          }}
+        />
         <NavListContent/>
       </List>
     </MenuContainer>

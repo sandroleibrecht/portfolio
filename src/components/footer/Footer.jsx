@@ -16,8 +16,28 @@ function Footer() {
   return (
     <StyledFooter>
       <IconContainer>
-        <GitHub onClick={ () => openNewTab('https://github.com/sandropernerstorfer') }/>
-        { pathname === '/contact' || <Email onClick={ () => history.push('/contact') } /> }
+        <GitHub
+          tabIndex={0}
+          onClick={ () => openNewTab('https://github.com/sandropernerstorfer')}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              openNewTab('https://github.com/sandropernerstorfer');
+            }
+          }}
+        />
+        { pathname === '/contact' 
+        || 
+        <Email 
+          tabIndex = {0}
+          onClick={ () => history.push('/contact') }
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              history.push('/contact');
+            }
+          }}
+        />}
       </IconContainer>
       <TextContainer>
         &copy; Sandro Pernerstorfer

@@ -20,15 +20,45 @@ function LinkContainer({ route, github, live }) {
   return (
     <Container>
       <span
+        tabIndex={0}
         onClick={() => {
           history.push(route);
           dispatch(setScrollPosition(window.scrollY));
+        }}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            history.push(route);
+            dispatch(setScrollPosition(window.scrollY))
+          }
         }}>
         <FontAwesomeIcon icon={faInfoCircle}/>
       </span>
-      <span onClick={() => OpenNewTab(github)} ><FontAwesomeIcon icon={faCodeBranch}/></span>
+
+      <span
+        tabIndex={0}
+        onClick={() => OpenNewTab(github)}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            OpenNewTab(github);
+          }
+        }}>
+        <FontAwesomeIcon icon={faCodeBranch}/>
+      </span>
+
       {live ? 
-        <span onClick={() => OpenNewTab(live)} ><FontAwesomeIcon icon={faPlayCircle}/></span>
+        <span
+          tabIndex={0}
+          onClick={() => OpenNewTab(live)}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              OpenNewTab(live);
+            }
+          }}>
+          <FontAwesomeIcon icon={faPlayCircle}/>
+        </span>
         :
         null
       }
@@ -51,7 +81,7 @@ const Container = styled.div`
 
     svg{
       transition: all .2s;
-      opacity: .75;
+      opacity: .8;
     }
     @media (hover:hover){
       & svg:hover{

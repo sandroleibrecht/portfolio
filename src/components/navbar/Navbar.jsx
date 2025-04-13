@@ -17,6 +17,7 @@ import { useDispatch, useSelector } from 'react-redux';
 function Navbar() {
 
   const { pathname } = useLocation();
+  const isProjectDetailsPath = pathname.startsWith('/projects/');
   const dispatch = useDispatch();
   const { menuOpen } = useSelector( state => state.navbar );
 
@@ -29,10 +30,20 @@ function Navbar() {
     <>
       <TopSpacing detailsOpen={ pathname.split('/')[2] ? true : false }/>
       <StyledNavbar detailsOpen={ pathname.split('/')[2] ? true : false }>
-        <Link to='/'>
+        <Link to='/' tabIndex={isProjectDetailsPath ? -1 : 0}>
           <Logo src={process.env.PUBLIC_URL+'/img/app/AppLogo.png'} menuOpen={menuOpen} alt="Page Logo" />
         </Link>
-        <MenuIcon icon={faBars} onClick={ handleMenuOpen }/>
+        <MenuIcon
+          tabIndex = {0}
+          icon={faBars}
+          onClick={ handleMenuOpen }
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              handleMenuOpen();
+            }
+          }}
+        />
         <NavInline/>
         <NavSide/>
       </StyledNavbar>

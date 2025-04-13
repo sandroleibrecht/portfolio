@@ -29,46 +29,41 @@ const skillList = [
 
   // backend tech
   {
-    name: 'Java',
-    image: '/img/techs/java.png',
-    color: 'var(--java)'
-  },
-  {
     name: 'Python',
     image: '/img/techs/python.png',
-    color: 'var(--css)'
+    color: 'var(--python)'
   },
   {
     name: 'NodeJS',
     image: '/img/techs/node.png',
-    color: 'var(--node)'
+    color: 'var(--nodeJs)'
   },
   {
     name: 'ExpressJS',
     image: '/img/techs/express.png',
-    color: 'var(--express)'
+    color: 'var(--expressJs)'
   },
   {
     name: 'MongoDB',
     image: '/img/techs/mongodb.png',
-    color: 'var(--mongodb)'
+    color: 'var(--mongoDb)'
   },
 
-  // tools & additionals
+  // tools & additional tech
   {
     name: 'SocketIO',
     image: '/img/techs/socketio.png',
-    color: '#666'
+    color: 'var(--socketIo)'
   },
   {
     name: 'Styled Components',
     image: '/img/techs/styled-components.png',
-    color: 'var(--scss)'
+    color: 'var(--styledComponents)'
   },
   {
     name: 'Redux',
     image: '/img/techs/redux.png',
-    color: '#7248B5'
+    color: 'var(--redux)'
   }
 ];
 

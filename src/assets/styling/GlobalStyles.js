@@ -9,19 +9,20 @@ const GlobalStyles = createGlobalStyle`
     --blueDark: #256cdd;
     --orange: #F4B400;
     --green: #42b426;
+
     // Tech Colors
-    --java: #68a0fa;
     --html: #E5622A;
     --css: #3595CF;
     --js: #F9C305;
     --react: #43C6EB;
     --scss: #CF72A1;
-    --git: #E5622A;
-    --github: #444;
-    --node: #69B84D;
-    --express: #444;
-    --mongodb: #2B964C;
-    --bash: #333;
+    --python: #3595cf;
+    --nodeJs: #69B84D;
+    --expressJs: #444;
+    --mongoDb: #2B964C;
+    --redux: #7248B5;
+    --socketIo: #666;
+    --styledComponents: #CF72A1;
   }
 
   *{

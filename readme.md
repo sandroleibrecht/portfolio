@@ -2,8 +2,6 @@
 
 ***
 
-Welcome and thank you for stopping by.
-
-In my portfolio you will find a collection of my projects and some information about me and my tech life.
-
-Please feel free to hit me up with projects, business and all kinds of ideas by using the contact form.
+Welcome to my portfolio!  
+Here you'll find a selection of my projects and a bit about who I am.  
+Feel free to reach out with any ideas or feedback using the contact form.

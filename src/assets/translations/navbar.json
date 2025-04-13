@@ -1,16 +1,16 @@
 {
   "en": {
     "links": {
-      "about": "welcome",
-      "projects": "projects",
-      "contact": "contact"
+      "about": "Welcome",
+      "projects": "Projects",
+      "contact": "Contact"
     }
   },
   "de": {
     "links": {
-      "about": "willkommen",
-      "projects": "projekte",
-      "contact": "kontakt"
+      "about": "Willkommen",
+      "projects": "Projekte",
+      "contact": "Kontakt"
     }
   }
 }

@@ -20,9 +20,7 @@ function AboutHeader({ textContent }) {
             <span>{textContent.title1}</span>
             <span className="colorBrace1">{textContent.braceClose}</span>
             <span>{textContent.connector}</span>
-            <span className="colorBrace2">{textContent.braceOpen}</span>
             <span>{textContent.title2}</span>
-            <span className="colorBrace2">{textContent.braceClose}</span>
             {textContent.quote2}
           </h4>
           <hr/>
@@ -101,12 +99,10 @@ const InfoContainer = styled(Grid)`
       color: white;
       font-weight: 500;
       font-size: 1rem;
-      font-family: monospace;
     }
     .colorBrace1{
-      color: #ff00ff;
-    }
-    .colorBrace2{
+      font-weight: 1000;
+      //color: #ff00ff;
       color: #ffe600;
     }
   }

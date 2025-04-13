@@ -2,35 +2,35 @@
   "en":{
     "headerText": {
       "greeting": "Welcome.",
-      "quote1": "I'm Sandro. ",
+      "quote1": "I'm Sandro, a ",
       "braceOpen":"{ ",
       "braceClose":" }",
-      "title1": "developer",
-      "connector": " && ",
-      "title2": "tech-enthusiast",
-      "quote2": " with a desire to learn and create."
+      "title1": "software developer",
+      "connector": "",
+      "title2": "",
+      "quote2": " with a passion for building applications that are not just functional and clean, but also user- and developer-friendly. While curiosity is my biggest motivator, I also enjoy solving real problems, building thoughtful solutions, collaborating with others, and learning something new every day."
     
     },
     "cardsText": [
       {
-        "heading": "Programming",
-        "body": "Frontend, backend, automation or desktop apps. I'm passionate about solving problems by writing organized code"
+        "heading": "Build",
+        "body": "Turning ideas into working software is what I love most – from the first line of code to the finished product"
       },
       {
-        "heading": "Technology",
-        "body": "It's not just software but also the hardware, infrastructure and technology side of things that amazes me"
+        "heading": "Explore",
+        "body": "Technology fascinates me in all its forms. Not just software, but also the systems, tools, and hardware behind it"
       },
       {
-        "heading": "LLL",
-        "body": "\"Lifelong learning\" and constantly improving is something I deeply enjoy in all areas of interest"
+        "heading": "Evolve",
+        "body": "Stagnation isn’t for me. Every project, every challenge helps me grow – both as a developer and as a person"
       }
     ],
     "personal":{
       "text": [
-        "I have been drawn to engineering and technology early on in my professional career.",
-        "The field I first started working in was electrical engineering, which (literally) sparked my interests.",
-        "My work included planning of complex wiring, building IT networks, and automation engineering.",
-        "I soon noticed the innate interest in problem-solving. Especially through programming."
+        "I realized early on that I am passionate about technology – especially when it comes to making things understandable or getting systems up and running. ",
+        "My first professional experiences were in electrical engineering: planning circuits, setting up networks, and implementing automation. ",
+        "It quickly became clear to me how much I enjoy solving complex problems – particularly through programming. ",
+        "Today, I am studying Information and Communication Systems at FH Technikum Wien – always with the goal of learning new things and applying my knowledge practically."
       ],
       "button": "Projects"
     }
@@ -38,34 +38,34 @@
   "de":{
     "headerText": {
       "greeting": "Willkommen.",
-      "quote1": "Ich bin Sandro. ",
+      "quote1": "Ich bin Sandro, ",
       "braceOpen":"{ ",
       "braceClose":" }",
-      "title1": "Entwickler",
-      "connector": " && ",
-      "title2": "Tech-Enthusiast",
-      "quote2": " mit Freude am lernen."
+      "title1": "Softwareentwickler",
+      "connector": "",
+      "title2": "",
+      "quote2": " mit Spaß daran, Anwendungen zu bauen, die nicht nur funktionieren, sondern auch gut durchdacht sowie benutzer- und entwicklerfreundlich sind. Neugier treibt mich an – ich löse gerne reale Probleme, arbeite im Team und lerne mit jeder Aufgabe dazu."
     },
     "cardsText": [
       {
-        "heading": "Programmieren",
-        "body": "Frontend, Backend, Automatisierung oder Desktop-Apps. Mir ist es wichtig, durch organisierten Code, Probleme zu lösen"
+        "heading": "Bauen",
+        "body": "Ideen in funktionierende Software zu verwandeln, begeistert mich – von der ersten Codezeile bis zum fertigen Produkt"
       },
       {
-        "heading": "Technologie",
-        "body": "Es ist nicht nur die Software die mich fasziniert, sondern auch Hardware, Infrastruktur und Technologie"
+        "heading": "Entdecken",
+        "body": "Technologie fasziniert mich in all ihren Formen – nicht nur Software, sondern auch das, was dahintersteht: Systeme, Tools und Hardware"
       },
       {
-        "heading": "LLL",
-        "body": "\"Lebenslanges Lernen\", und sich stetig zu verbessern, liegt mir in allen Interessenbereichen am Herzen"
+        "heading": "Lernen",
+        "body": "Stillstand ist nichts für mich. Mit jedem Projekt und jeder Herausforderung entwickle ich mich weiter – fachlich und persönlich."
       }
     ],
     "personal":{
       "text": [
-        "In meiner beruflichen Laufbahn fühlte ich mich schon früh zu der Arbeit mit Technik hingezogen.",
-        "Die ersten Erfahrungen durfte ich in der Elektrotechnik sammeln, die mich schwer faszinierte.",
-        "Zu meiner Arbeit gehörte z.B. das Planen von komplexen Schaltungen, Netzwerktechnik und die Automatisierungstechnik.",
-        "Ich habe dadurch mein Interesse an der Lösung von Problemen entdeckt. Speziell durch Programmierung."
+        "Schon früh habe ich gemerkt, dass mich Technik begeistert – besonders, wenn es darum geht, Dinge verständlich zu machen oder Systeme zum Laufen zu bringen. ",
+        "Meine ersten beruflichen Erfahrungen sammelte ich in der Elektrotechnik: Schaltungen planen, Netzwerke aufbauen, Automatisierung umsetzen. ",
+        "Dabei habe ich schnell gemerkt, wie sehr mich das Lösen komplexer Probleme fasziniert – besonders durch Programmierung. ",
+        "Heute studiere ich Informations- und Kommunikationssysteme an der FH Technikum in Wien – immer mit dem Ziel, Neues zu lernen und mein Wissen praktisch anzuwenden."
       ],
       "button": "Projekte"
     }

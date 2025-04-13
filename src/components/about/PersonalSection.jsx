@@ -16,10 +16,12 @@ function PersonalSection({ textContent }) {
     <AboutDescription>
       <div className="textContainer">
         <p>
-          {textContent.text[0]}<br/>
-          {textContent.text[1]}<br/>
-          {textContent.text[2]}<br/>
-          {textContent.text[3]}<br/>
+        {textContent.text.map((line, i) => (
+          <React.Fragment key={i}>
+            {line}
+            <br />
+          </React.Fragment>
+        ))}
         </p>
       </div>
       <div className="buttonContainer" onClick={() => history.push('/projects')}>

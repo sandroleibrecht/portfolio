@@ -1,9 +1,5 @@
-import React from 'react';
-// Styling
 import styled from 'styled-components';
-// Font Awesome
 import { faCompass, faProjectDiagram, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
-// Components
 import Card from '../Card';
 
 function CardSection({ textContent }) {

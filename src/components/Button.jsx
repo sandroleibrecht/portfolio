@@ -1,7 +1,4 @@
-import React from 'react';
-// Styling
 import styled from 'styled-components';
-// Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Button({ text, icon, iconSpin = false }) {

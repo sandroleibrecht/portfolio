@@ -77,13 +77,13 @@ const InfoContainer = styled(Grid)`
   }
 
   h3{
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     color: white;
   }
 
   p{
     margin: .5rem 0 1rem .25rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: white;
   }
 

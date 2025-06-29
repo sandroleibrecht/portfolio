@@ -76,12 +76,6 @@ const InfoContainer = styled(Grid)`
     border-radius: 20px;
   }
 
-  .sideBar{
-    background-color: #fff;
-    width: 10px;
-    height: 100%;
-  }
-
   h3{
     font-size: 2.2rem;
     color: white;
@@ -114,7 +108,7 @@ const InfoContainer = styled(Grid)`
   }
 
   #linkedInIcon{
-    color: #1a5fe0;
+    color: #2f70eb;
   }
 
   @media (max-width: 959px){

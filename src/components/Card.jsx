@@ -1,15 +1,19 @@
-import React from 'react';
-// Styling
 import styled from 'styled-components';
-// FontAwesome
+import Button from '../components/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronCircleRight } from '@fortawesome/free-solid-svg-icons';
+import { useHistory } from 'react-router-dom';
 
-function Card({ icon, heading, body, iconColor }) {
+function Card({ icon, buttonText, buttonLink, iconColor }) {
+
+  const history = useHistory();
+
   return (
     <CardContainer>
-      <FontAwesomeIcon icon={icon} color={iconColor}/>
-      <h4>{heading}</h4>
-      <p>{body}</p>
+      <FontAwesomeIcon className='cardIcon' icon={icon} color={iconColor}/>
+      <div className="buttonContainer" onClick={() => history.push(buttonLink)}>
+        <Button text={buttonText} icon={faChevronCircleRight} />
+      </div>
     </CardContainer>
   )
 };
@@ -17,35 +21,34 @@ function Card({ icon, heading, body, iconColor }) {
 // Styled Components
 const CardContainer = styled.div`
   max-width: 20rem;
-  min-width: 260px;
-  height: 270px;
+  min-width: 220px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   border-radius: 12px;
   text-align: center;
   padding: 2rem 1rem;
-  box-shadow: 0 0 14px -5px #a39f9fa9;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
 
-  svg{
-    font-size: 3.8rem;
+  .cardIcon{
+    font-size: 3rem;
     padding: .7rem;
-    border-radius: 20px;
-    background-color: #f7f7f7ac;
-    box-shadow: inset -4px -5px 0 0 #0000002f;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: inset 0px 0px 4px 0px #6e6e6e4a;
   }
 
-  h4{
-    margin: 1rem 0;
-    font-weight: 600;
-    color: var(--blueLight);
-  }
-
-  p{
-    line-height: 1.5rem;
-    font-weight: 400;
-    font-size: 0.9rem;
+  .buttonContainer{
+    margin-left: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button{
+      width: 6rem;
+      height: 2rem;
+    }
   }
 `;
 

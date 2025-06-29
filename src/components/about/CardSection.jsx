@@ -2,7 +2,7 @@ import React from 'react';
 // Styling
 import styled from 'styled-components';
 // Font Awesome
-import { faLaptopCode, faServer, faBook } from '@fortawesome/free-solid-svg-icons';
+import { faCompass, faProjectDiagram, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 // Components
 import Card from '../Card';
 
@@ -10,22 +10,22 @@ function CardSection({ textContent }) {
 
   const cardContent = [
     {
-      icon: faLaptopCode,
-      heading: textContent[0].heading,
-      body: textContent[0].body,
-      iconColor: 'var(--blue)'
+      icon: faCompass,
+      buttonText: textContent[0].button,
+      iconColor: '#3B82F6',
+      buttonLink: '/'
     },
     {
-      icon: faServer,
-      heading: textContent[1].heading,
-      body: textContent[1].body,
-      iconColor: 'var(--orange)'
+      icon: faProjectDiagram,
+      buttonText: textContent[1].button,
+      iconColor: '#F59E0B',
+      buttonLink: '/projects'
     },
     {
-      icon: faBook,
-      heading: textContent[2].heading,
-      body: textContent[2].body,
-      iconColor: 'var(--green)'
+      icon: faPaperPlane,
+      buttonText: textContent[2].button,
+      iconColor: '#10B981',
+      buttonLink: '/contact'
     }
   ];
 
@@ -33,7 +33,7 @@ function CardSection({ textContent }) {
     <Cards>
       {cardContent.map( (card, i) => (
         <CardContainer key={card.heading+i}>
-          <Card icon={card.icon} heading={card.heading} body={card.body} iconColor={card.iconColor} />
+          <Card icon={card.icon} buttonText={card.buttonText} buttonLink={card.buttonLink} iconColor={card.iconColor} />
         </CardContainer>
       ))}
     </Cards>
@@ -43,12 +43,14 @@ function CardSection({ textContent }) {
 // Styled Components
 const Cards = styled.section`
   width: 100%;
+  max-width: 1300px;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   padding: 5.5rem 2vw;
+  margin: 0 auto;
 `;
 
 const CardContainer = styled.div`

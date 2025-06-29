@@ -6,16 +6,13 @@
     },
     "cardsText": [
       {
-        "heading": "Build",
-        "body": "Turning ideas into working software is what I love most – from the first line of code to the finished product"
+        "button": "About"
       },
       {
-        "heading": "Explore",
-        "body": "Technology fascinates me in all its forms. Not just software, but also the systems, tools, and hardware behind it"
+        "button": "Projects"
       },
       {
-        "heading": "Evolve",
-        "body": "Stagnation isn’t for me. Every project, every challenge helps me grow – both as a developer and as a person"
+        "button": "Contact"
       }
     ],
     "personal":{
@@ -35,16 +32,13 @@
     },
     "cardsText": [
       {
-        "heading": "Bauen",
-        "body": "Ideen in funktionierende Software zu verwandeln, begeistert mich – von der ersten Codezeile bis zum fertigen Produkt"
+        "button": "Profil"
       },
       {
-        "heading": "Entdecken",
-        "body": "Technologie fasziniert mich in all ihren Formen – nicht nur Software, sondern auch das, was dahintersteht: Systeme, Tools und Hardware"
+        "button": "Projekte"
       },
       {
-        "heading": "Lernen",
-        "body": "Stillstand ist nichts für mich. Mit jedem Projekt und jeder Herausforderung entwickle ich mich weiter – fachlich und persönlich."
+        "button": "Kontakt"
       }
     ],
     "personal":{

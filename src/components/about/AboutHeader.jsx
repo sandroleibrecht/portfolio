@@ -1,10 +1,6 @@
-import React from 'react';
-// Util Functions
 import openNewTab from '../../assets/util/OpenNewTab';
-// Styling & Animations
 import styled from 'styled-components';
-// Material UI
-import { GitHub } from '@material-ui/icons';
+import { GitHub, LinkedIn } from '@material-ui/icons';
 import Grid from '@material-ui/core/Grid';
 
 function AboutHeader({ textContent }) {
@@ -13,18 +9,12 @@ function AboutHeader({ textContent }) {
     <HeaderContainer container spacing={0} component="header">
       <InfoContainer item xs={12} sm={12} md={12} lg={12}>
         <div>
-          <h2>{textContent.greeting}</h2>
-          <h4>
-            {textContent.quote1}
-            <span className="colorBrace1">{textContent.braceOpen}</span>
-            <span>{textContent.title1}</span>
-            <span className="colorBrace1">{textContent.braceClose}</span>
-            <span>{textContent.connector}</span>
-            <span>{textContent.title2}</span>
-            {textContent.quote2}
-          </h4>
+          <h3>{textContent.fullName}</h3>
           <hr/>
+          <p>{textContent.role}</p>
           <GitHub
+            id="githubIcon"
+            className="linkIcon"
             tabIndex={0}
             onClick={ () => openNewTab('https://github.com/sandropernerstorfer') }
             onKeyDown={(e) => {
@@ -32,8 +22,20 @@ function AboutHeader({ textContent }) {
                 e.preventDefault();
                 openNewTab('https://github.com/sandropernerstorfer');
               }
-            }}
-          />
+            }}>
+          </GitHub>
+          <LinkedIn
+            id="linkedInIcon"
+            className="linkIcon"
+            tabIndex={0}
+            onClick={ () => openNewTab('https://www.linkedin.com/in/sandro-pernerstorfer/') }
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                openNewTab('https://www.linkedin.com/in/sandro-pernerstorfer/');
+              }
+            }}>
+          </LinkedIn>
         </div>
       </InfoContainer>
     </HeaderContainer>
@@ -80,37 +82,21 @@ const InfoContainer = styled(Grid)`
     height: 100%;
   }
 
-  h2,h3,h4{
+  h3{
+    font-size: 2.2rem;
     color: white;
   }
 
-  h3{
-    font-size: 2.5rem;
-  }
-  h2{
-    font-size: 3.5rem;
-  }
-  h4{
-    font-weight: 400;
-    font-size: 1.1rem;
+  p{
     margin: .5rem 0 1rem .25rem;
+    font-size: 1.2rem;
     color: white;
-    span{
-      color: white;
-      font-weight: 500;
-      font-size: 1rem;
-    }
-    .colorBrace1{
-      font-weight: 1000;
-      //color: #ff00ff;
-      color: #ffe600;
-    }
   }
-  svg{
-    color: #454545;
+
+  .linkIcon{
     font-size: 2rem;
     border-radius: 15px;
-    margin: 1rem 1.5rem 1rem .2rem;
+    margin: 1rem 1rem 1rem .2rem;
     padding: 3px;
     background-color: white;
     cursor: pointer;
@@ -123,10 +109,17 @@ const InfoContainer = styled(Grid)`
     }
   }
 
+  #githubIcon{
+    color: #454545;
+  }
+
+  #linkedInIcon{
+    color: #1a5fe0;
+  }
+
   @media (max-width: 959px){
     h3  { font-size: 1.5rem;  }
-    h2  { font-size: 2.5rem;  }
-    h4  { font-size: 1rem; }
+    p  { font-size: 1rem; }
     svg { font-size: 2rem;  }
   }
 `;

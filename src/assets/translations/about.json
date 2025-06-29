@@ -1,15 +1,8 @@
 {
   "en":{
     "headerText": {
-      "greeting": "Welcome.",
-      "quote1": "I'm Sandro, a ",
-      "braceOpen":"{ ",
-      "braceClose":" }",
-      "title1": "software developer",
-      "connector": "",
-      "title2": "",
-      "quote2": " with a passion for building applications that are not just functional and clean, but also user- and developer-friendly. While curiosity is my biggest motivator, I also enjoy solving real problems, building thoughtful solutions, collaborating with others, and learning something new every day."
-    
+      "fullName": "Sandro Pernerstorfer",
+      "role": "C# Developer - ASP.NET Web APIs · Blazor · Backend Services"
     },
     "cardsText": [
       {
@@ -37,14 +30,8 @@
   },
   "de":{
     "headerText": {
-      "greeting": "Willkommen.",
-      "quote1": "Ich bin Sandro, ",
-      "braceOpen":"{ ",
-      "braceClose":" }",
-      "title1": "Softwareentwickler",
-      "connector": "",
-      "title2": "",
-      "quote2": " mit Spaß daran, Anwendungen zu bauen, die nicht nur funktionieren, sondern auch gut durchdacht sowie benutzer- und entwicklerfreundlich sind. Neugier treibt mich an – ich löse gerne reale Probleme, arbeite im Team und lerne mit jeder Aufgabe dazu."
+      "fullName": "Sandro Pernerstorfer",
+      "role": "C# Entwickler - ASP.NET Web APIs · Blazor · Backend Services"
     },
     "cardsText": [
       {

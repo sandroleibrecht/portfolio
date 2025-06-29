@@ -4,7 +4,7 @@ import openNewTab from '../../assets/util/OpenNewTab';
 // Styled & Animation
 import styled from 'styled-components';
 // Material UI Icons
-import { GitHub, Email } from '@material-ui/icons';
+import { GitHub, LinkedIn, Email } from '@material-ui/icons';
 // Router
 import { useHistory, useLocation } from 'react-router-dom';
 
@@ -17,6 +17,8 @@ function Footer() {
     <StyledFooter>
       <IconContainer>
         <GitHub
+          id='githubIcon'
+          className='linkIcon'
           tabIndex={0}
           onClick={ () => openNewTab('https://github.com/sandropernerstorfer')}
           onKeyDown={(e) => {
@@ -26,9 +28,23 @@ function Footer() {
             }
           }}
         />
+        <LinkedIn
+          id='linkedInIcon'
+          className='linkIcon'
+          tabIndex={0}
+          onClick={ () => openNewTab('https://www.linkedin.com/in/sandro-pernerstorfer/')}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              openNewTab('https://www.linkedin.com/in/sandro-pernerstorfer/');
+            }
+          }}
+        />
         { pathname === '/contact' 
         || 
-        <Email 
+        <Email
+          id='emailIcon'
+          className='linkIcon'
           tabIndex = {0}
           onClick={ () => history.push('/contact') }
           onKeyDown={(e) => {
@@ -63,7 +79,7 @@ const IconContainer = styled.div`
   align-items: center;
   margin: 0 1rem;
 
-  svg{
+  .linkIcon{
     font-size: 1.8rem;
     margin: 0 0.6rem;
     cursor: pointer;
@@ -75,8 +91,12 @@ const IconContainer = styled.div`
       }
     }
 
-    &:nth-child(1){ font-size: 1.5rem; color: #585454; position: relative; top: -1px;}
-    &:nth-child(2){ color: #41c520 }
+  }
+  
+  #githubIcon{ font-size: 1.5rem; color: #454545; position: relative; top: -1px;}
+  #emailIcon{ color: #10B981 }
+  #linkedInIcon{
+    color: #2f70eb;
   }
 `;
 

@@ -13,16 +13,32 @@ function PersonalSection({ textContent }) {
     <AboutDescription> 
 
       <h1>About Me</h1>
-      <section class="hard-facts">
+
+      <Container>
+        <Section>
+          <Heading>Current Position</Heading>
+          <Paragraph>
+            C# Developer - ASP.NET Web APIs, MSSQL and process automation
+          </Paragraph>
+        </Section>
+
+        <Section>
+          <Heading>Current Studies</Heading>
+          <Paragraph>
+            FH Technikum Wien - BSc Business Information Systems (in progress)
+          </Paragraph>
+        </Section>
+      </Container>
+
+      {/* werdegang tbd here */}
+
+      {/* <section class="hard-facts">
         <ul>
-          <li>🎓 Pursuing Bachelor in Business Information Systems at FH Technikum Wien</li>
-          <li>💼 Years of professional experience as software developer</li>
-          <li>💡 Passionate about software and clean systems</li>
-          <li>📍 Based in Vienna, Austria</li>
-          <li>🌐 Fluent in German and English</li>
-          <li>⏰ Working full-time as software developer</li>
+          <li>Passionate about software and clean systems</li>
+          <li>Based in Vienna, Austria</li>
+          <li>Fluent in German and English</li>
         </ul>
-      </section>
+      </section> */}
 
       <section class="main-skills">
       <h2>Main Skills</h2>
@@ -78,6 +94,8 @@ function PersonalSection({ textContent }) {
       </section>
       </div> */}
 
+      
+
       <div className="buttonContainer" onClick={() => history.push('/projects')}>
         <Button text={textContent.button} icon={faChevronCircleRight} />
       </div>
@@ -129,7 +147,7 @@ const AboutDescription = styled.section`
 
 
 .main-skills {
-  max-width: 1100px;
+  max-width: 700px;
   margin: 0 auto 3rem;
   padding: 1.5rem 2rem;
   background-color: #ffffff;
@@ -209,5 +227,33 @@ const AboutDescription = styled.section`
     }
   }
 `;
+
+const Container = styled.section`
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+`;
+
+const Section = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+`;
+
+const Heading = styled.h2`
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937; /* dark gray */
+`;
+
+const Paragraph = styled.p`
+  font-size: 1rem;
+  color: #374151; /* gray-700 */
+  line-height: 1.6;
+`;
+
 
 export default PersonalSection;

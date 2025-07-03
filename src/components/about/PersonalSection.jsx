@@ -9,7 +9,7 @@ function PersonalSection({ textContent }) {
   const history = useHistory();
 
   return (
-    <AboutDescription> 
+    <AboutDescription id="aboutDescription"> 
 
       <h1>{textContent.mainHeading}</h1>
 
@@ -64,17 +64,17 @@ function PersonalSection({ textContent }) {
         <Section>
           <Heading>{textContent.additionalSkills}</Heading>
           <PillContainer>
-            <Pill text={"Design Patterns"} color="var(--blue)" key="1" />
-            <Pill text={"Clean Code"} color="var(--blue)" key="2" />
-            <Pill text={"Clean Architecture"} color="var(--blue)" key="3" />
-            <Pill text={"Domain Driven Design"} color="var(--blue)" key="4" />
-            <Pill text={"Swagger"} color="var(--blue)" key="5" />
-            <Pill text={"Serilog"} color="var(--blue)" key="6" />
-            <Pill text={"Hangfire"} color="var(--blue)" key="7" />
-            <Pill text={"Azure DevOps"} color="var(--blue)" key="8" />
-            <Pill text={"Frontend"} color="var(--blue)" key="9" />
-            <Pill text={"WPF"} color="var(--blue)" key="10" />
-            <Pill text={"PLC & HMI"} color="var(--blue)" key="11" />
+            <Pill className="additional-pill" text={"Design Patterns"} color="var(--blue)" key="1" />
+            <Pill className="additional-pill" text={"Clean Code"} color="var(--blue)" key="2" />
+            <Pill className="additional-pill" text={"Clean Architecture"} color="var(--blue)" key="3" />
+            <Pill className="additional-pill" text={"Domain Driven Design"} color="var(--blue)" key="4" />
+            <Pill className="additional-pill" text={"Swagger"} color="var(--blue)" key="5" />
+            <Pill className="additional-pill" text={"Serilog"} color="var(--blue)" key="6" />
+            <Pill className="additional-pill" text={"Hangfire"} color="var(--blue)" key="7" />
+            <Pill className="additional-pill" text={"Azure DevOps"} color="var(--blue)" key="8" />
+            <Pill className="additional-pill" text={"Frontend"} color="var(--blue)" key="9" />
+            <Pill className="additional-pill" text={"WPF"} color="var(--blue)" key="10" />
+            <Pill className="additional-pill" text={"PLC & HMI"} color="var(--blue)" key="11" />
           </PillContainer>
         </Section>
 
@@ -100,6 +100,10 @@ const Divider = styled.hr`
 const AboutDescription = styled.section`
   width: 100%;
   padding: 8rem 2vw;
+
+  .additional-pill{
+    background-color: white !important;
+  }
 
   h1{
     text-align: center;

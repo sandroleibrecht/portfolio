@@ -8,10 +8,15 @@ function Card({ icon, buttonText, buttonLink, iconColor }) {
 
   const history = useHistory();
 
+  function scrollToNextH1() {
+    const el = document.getElementById('aboutDescription');
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  }
+
   return (
     <CardContainer>
       <FontAwesomeIcon className='cardIcon' icon={icon} color={iconColor}/>
-      <div className="buttonContainer" onClick={() => history.push(buttonLink)}>
+      <div className="buttonContainer" onClick={() => (buttonLink === '/') ? scrollToNextH1() : history.push(buttonLink)}>
         <Button text={buttonText} icon={faChevronCircleRight} />
       </div>
     </CardContainer>

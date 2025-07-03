@@ -48,14 +48,14 @@ function PersonalSection({ textContent }) {
         <Section>
           <Heading>{textContent.mainSkills}</Heading>
           <PillContainer>
-            <Pill image="/img/app/ideas.png" text="C#" color="#8540A1" key="1" />
-            <Pill image="/img/app/projects.png" text="ASP.NET Web API" color="#318DCE" key="2" />
-            <Pill image="/img/app/business.png" text="Entity Framework" color="#38A738" key="3" />
-            <Pill image="/img/app/anything.png" text="MSSQL" color="#D65A58" key="4" />
-            <Pill image="/img/app/anything.png" text="Blazor" color="#6C49DC" key="5" />
-            <Pill image="/img/app/anything.png" text="Visual Studio" color="#7b63c7" key="6" />
-            <Pill image="/img/app/anything.png" text="Git" color="#EF7E5B" key="7" />
-            <Pill image="/img/app/anything.png" text="xUnit" color="#6C49DC" key="8" />
+            <Pill image="/img/techs/csharp.png" text="C#" color="#8540A1" key="1" />
+            <Pill image="/img/techs/aspnet-webapi.png" text="ASP.NET Web API" color="#318DCE" key="2" />
+            <Pill image="/img/techs/entity-framework.png" text="Entity Framework" color="#2db6b6" key="3" />
+            <Pill image="/img/techs/mssql.png" text="MSSQL" color="#D65A58" key="4" />
+            <Pill image="/img/techs/blazor.png" text="Blazor" color="#6C49DC" key="5" />
+            <Pill image="/img/techs/visual-studio.png" text="Visual Studio" color="#7b63c7" key="6" />
+            <Pill image="/img/techs/git.png" text="Git" color="#EF7E5B" key="7" />
+            <Pill image="/img/techs/xunit.png" text="xUnit" color="#6C49DC" key="8" />
           </PillContainer>
         </Section>
 
@@ -64,17 +64,17 @@ function PersonalSection({ textContent }) {
         <Section>
           <Heading>{textContent.additionalSkills}</Heading>
           <PillContainer>
-            <Pill className="additional-pill" text={"Design Patterns"} color="var(--blue)" key="1" />
-            <Pill className="additional-pill" text={"Clean Code"} color="var(--blue)" key="2" />
-            <Pill className="additional-pill" text={"Clean Architecture"} color="var(--blue)" key="3" />
-            <Pill className="additional-pill" text={"Domain Driven Design"} color="var(--blue)" key="4" />
-            <Pill className="additional-pill" text={"Swagger"} color="var(--blue)" key="5" />
-            <Pill className="additional-pill" text={"Serilog"} color="var(--blue)" key="6" />
-            <Pill className="additional-pill" text={"Hangfire"} color="var(--blue)" key="7" />
-            <Pill className="additional-pill" text={"Azure DevOps"} color="var(--blue)" key="8" />
-            <Pill className="additional-pill" text={"Frontend"} color="var(--blue)" key="9" />
-            <Pill className="additional-pill" text={"WPF"} color="var(--blue)" key="10" />
-            <Pill className="additional-pill" text={"PLC & HMI"} color="var(--blue)" key="11" />
+            <Pill text={"Design Patterns"} color="var(--blue)" key="1" />
+            <Pill text={"Clean Code"} color="var(--blue)" key="2" />
+            <Pill text={"Clean Architecture"} color="var(--blue)" key="3" />
+            <Pill text={"Domain Driven Design"} color="var(--blue)" key="4" />
+            <Pill text={"Swagger"} color="var(--blue)" key="5" />
+            <Pill text={"Serilog"} color="var(--blue)" key="6" />
+            <Pill text={"Hangfire"} color="var(--blue)" key="7" />
+            <Pill text={"Azure DevOps"} color="var(--blue)" key="8" />
+            <Pill text={"Frontend"} color="var(--blue)" key="9" />
+            <Pill text={"WPF"} color="var(--blue)" key="10" />
+            <Pill text={"PLC & HMI"} color="var(--blue)" key="11" />
           </PillContainer>
         </Section>
 
@@ -100,10 +100,6 @@ const Divider = styled.hr`
 const AboutDescription = styled.section`
   width: 100%;
   padding: 8rem 2vw;
-
-  .additional-pill{
-    background-color: white !important;
-  }
 
   h1{
     text-align: center;

@@ -16,12 +16,26 @@
       }
     ],
     "personal":{
-      "text": [
-        "I realized early on that I am passionate about technology – especially when it comes to making things understandable or getting systems up and running. ",
-        "My first professional experiences were in electrical engineering: planning circuits, setting up networks, and implementing automation. ",
-        "It quickly became clear to me how much I enjoy solving complex problems – particularly through programming. ",
-        "Today, I am studying Business Informatics at FH Technikum Wien – always with the goal of learning new things and applying my knowledge practically."
-      ],
+      "mainHeading": "About",
+      "experienceHeading": "Experience",
+      "experience1": {
+        "title": "Software Developer @ FM Consulting",
+        "timespan": "2024 - Present",
+        "description": "Developing APIs, desktop applications, reports, and automation solutions in the medical sector using C# and MSSQL"
+      },
+      "experience2": {
+        "title": "Software Developer @ Synelecs",
+        "timespan": "2021 - 2024",
+        "description": "Designing and implementing APIs, automating workflows, and developing internal tools for automation engineering projects using C#, Python and TIA Portal"
+      },
+      "studiesHeading": "Current Studies",
+      "study1": {
+        "title": "B.Sc. - Business Information Systems",
+        "timespan": "In progress",
+        "description": "FH Technikum Wien"
+      },
+      "mainSkills": "Tech-Stack",
+      "additionalSkills": "Addition Concepts & Experiences",
       "button": "Projects"
     }
   },
@@ -42,12 +56,26 @@
       }
     ],
     "personal":{
-      "text": [
-        "Schon früh habe ich gemerkt, dass mich Technik begeistert – besonders, wenn es darum geht, Dinge verständlich zu machen oder Systeme zum Laufen zu bringen. ",
-        "Meine ersten beruflichen Erfahrungen sammelte ich in der Elektrotechnik: Schaltungen planen, Netzwerke aufbauen, Automatisierung umsetzen. ",
-        "Dabei habe ich schnell gemerkt, wie sehr mich das Lösen komplexer Probleme fasziniert – besonders durch Programmierung. ",
-        "Heute studiere ich Wirtschaftsinformatik an der FH Technikum in Wien – immer mit dem Ziel, Neues zu lernen und mein Wissen praktisch anzuwenden."
-      ],
+      "mainHeading": "Profil",
+      "experienceHeading": "Erfahrung",
+      "experience1": {
+        "title": "Software-Entwickler @ FM Consulting",
+        "timespan": "2024 - Jetzt",
+        "description": "Entwicklung von APIs, Desktop-Anwendungen, Reports und Automatisierungslösungen im medizinischen Umfeld mit C# und MSSQL"
+      },
+      "experience2": {
+        "title": "Software-Entwickler @ Synelecs",
+        "timespan": "2021 - 2024",
+        "description": "Entwicklung von APIs, Automatisierung von Arbeitsabläufen und internen Tools für Projekte in der Automatisierungstechnik mit C#, Python und TIA Portal"
+      },
+      "studiesHeading": "Aktuelles Studium",
+      "study1": {
+        "title": "B.Sc. - Wirtschaftsinformatik",
+        "timespan": "Laufend",
+        "description": "FH Technikum Wien"
+      },
+      "mainSkills": "Tech-Stack",
+      "additionalSkills": "Zusätzliche Konzepte & Erfahrungen",
       "button": "Projekte"
     }
   }

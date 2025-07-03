@@ -34,6 +34,10 @@ const ContactSection = styled.section`
     width: 100%;
     max-width: 900px;
     height: 100%;
+
+      @media (max-width: 800px){
+        max-width: 500px;
+      }
   }
 `;
 

@@ -28,7 +28,7 @@ function CardSection({ textContent }) {
   return (
     <Cards>
       {cardContent.map( (card, i) => (
-        <CardContainer key={card.heading+i}>
+        <CardContainer key={card.buttonText+i}>
           <Card icon={card.icon} buttonText={card.buttonText} buttonLink={card.buttonLink} iconColor={card.iconColor} />
         </CardContainer>
       ))}

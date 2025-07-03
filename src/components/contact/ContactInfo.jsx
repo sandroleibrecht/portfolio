@@ -1,8 +1,4 @@
-import React from 'react';
-// Styling
 import styled from 'styled-components';
-// Components
-import Pill from '../Pill';
 
 function ContactInfo({ infoText }) {
 
@@ -10,14 +6,6 @@ function ContactInfo({ infoText }) {
     <InfoWrapper>
       <div className="textSection">
         <h1>{infoText.heading}</h1>
-        <p id='info1'>{infoText.info1}</p>
-        <p id='info2'>{infoText.info2}</p>
-      </div>
-      <div className="pillSection">
-        <Pill image="/img/app/ideas.png" text={infoText.ideas} color="var(--blueLight)" key="1" />
-        <Pill image="/img/app/projects.png" text={infoText.projects} color="var(--blueLight)" key="2" />
-        <Pill image="/img/app/business.png" text={infoText.business} color="var(--blueLight)" key="3" />
-        <Pill image="/img/app/anything.png" text={infoText.anything} color="var(--blueLight)" key="4" />
       </div>
     </InfoWrapper>
   );
@@ -45,33 +33,7 @@ const InfoWrapper = styled.div`
       color: #556;
       border-bottom: 2px solid #e4e4e4;
     }
-
-    #info1, #info2{
-      color: #706e6e;
-      font-size: .95rem;
-    }
-
-    #info2{
-      margin-top: 8px;
-      margin-bottom: 1.3rem;
-    }
   }
-
-  .pillSection{
-    text-align: center;
-    position: relative;
-    left: -7px;
-  }
-
-  @media (max-width: 462px){
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    .pillSection{
-      left: 0;
-    }
-  }
-
 `;
 
 export default ContactInfo;

@@ -70,11 +70,13 @@ function PersonalSection({ textContent }) {
             <Pill text={"Domain Driven Design"} color="var(--blue)" key="4" />
             <Pill text={"Swagger"} color="var(--blue)" key="5" />
             <Pill text={"Serilog"} color="var(--blue)" key="6" />
-            <Pill text={"Hangfire"} color="var(--blue)" key="7" />
-            <Pill text={"Azure DevOps"} color="var(--blue)" key="8" />
-            <Pill text={"Frontend"} color="var(--blue)" key="9" />
-            <Pill text={"WPF"} color="var(--blue)" key="10" />
-            <Pill text={"PLC & HMI"} color="var(--blue)" key="11" />
+            <Pill text={"JWT Authentication"} color="var(--blue)" key="7" />
+            <Pill text={"Hangfire"} color="var(--blue)" key="8" />
+            <Pill text={"Azure DevOps"} color="var(--blue)" key="9" />
+            <Pill text={"Frontend Development"} color="var(--blue)" key="10" />
+            <Pill text={"WPF"} color="var(--blue)" key="11" />
+            <Pill text={"PLC & HMI"} color="var(--blue)" key="12" />
+            <Pill text={"Python"} color="var(--blue)" key="13" />
           </PillContainer>
         </Section>
 

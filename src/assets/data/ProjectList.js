@@ -1,7 +1,7 @@
 import skillList from './SkillList';
 const skills = {};
 skillList.forEach( skill => { 
-  skills[skill.name] = {...skill};
+  skills[skill.id] = {...skill};
 });
 
 const projects = [
@@ -9,7 +9,7 @@ const projects = [
     id: 'collab-task',
     name : "Collab Task",
     image: '/img/projects/collab-task-1.png',
-    techs : [skills.HTML5, skills.SCSS, skills.JavaScript, skills.ExpressJS, skills.MongoDB, skills.SocketIO],
+    techs : [skills.html5, skills.scss, skills.javaScript, skills.expressJs, skills.mongoDb, skills.socketIo],
     github : "https://github.com/sandropernerstorfer/collab-task",
     live : "",
     route: "/projects/collab-task",
@@ -30,7 +30,7 @@ const projects = [
     id: 'equal-checker',
     name : "Equal Checker",
     image: '/img/projects/equal-checker-1.png',
-    techs : [skills.JavaScript],
+    techs : [skills.javaScript],
     github : "https://github.com/sandropernerstorfer/equal-checker",
     live : "",
     route: "/projects/equal-checker",
@@ -54,7 +54,7 @@ const projects = [
     id: 'hmi-data-merge',
     name : "HMI Data Merge",
     image: '/img/projects/hmi-data-merge-1.png',
-    techs : [skills.Python],
+    techs : [skills.python],
     github : "https://github.com/sandropernerstorfer/hmi-data-merge",
     live : "",
     route: "/projects/hmi-data-merge",
@@ -78,7 +78,7 @@ const projects = [
     id: 'portfolio',
     name : "Portfolio",
     image: '/img/projects/portfolio-1.png',
-    techs : [skills.React, skills.Redux, skills['Styled Components']],
+    techs : [skills.react, skills.redux, skills.styledComponents],
     github : "https://github.com/sandropernerstorfer/portfolio",
     live : "",
     route: "/projects/portfolio",
@@ -100,7 +100,7 @@ const projects = [
     id: 'ghostwriter-js',
     name : "Ghostwriter JS",
     image: '/img/projects/ghostwriter-js-1.png',
-    techs : [skills.HTML5, skills.SCSS, skills.JavaScript],
+    techs : [skills.html5, skills.scss, skills.javaScript],
     github : "https://github.com/sandropernerstorfer/ghostwriter-js",
     live : "",
     route: "/projects/ghostwriter-js",
@@ -126,7 +126,7 @@ const projects = [
     id: 'clocks-js',
     name : "Clocks JS",
     image: '/img/projects/clocks-js-1.png',
-    techs : [skills.HTML5, skills.CSS3, skills.JavaScript],
+    techs : [skills.html5, skills.css3, skills.javaScript],
     github : "https://github.com/sandropernerstorfer/clocks-js",
     live : "",
     route: "/projects/clocks-js",

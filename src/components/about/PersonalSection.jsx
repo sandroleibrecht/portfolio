@@ -1,12 +1,18 @@
 import styled from 'styled-components';
 import Button from '../Button';
 import Pill from '../Pill';
+import skillList from '../../assets/data/SkillList';
 import { faChevronCircleRight } from '@fortawesome/free-solid-svg-icons';
 import { useHistory } from 'react-router-dom';
 
 function PersonalSection({ textContent }) {
 
   const history = useHistory();
+
+  const skills = {};
+  skillList.forEach( skill => { 
+    skills[skill.id] = {...skill};
+  });
 
   return (
     <AboutDescription id="aboutDescription"> 
@@ -48,14 +54,14 @@ function PersonalSection({ textContent }) {
         <Section>
           <Heading>{textContent.mainSkills}</Heading>
           <PillContainer>
-            <Pill image="/img/techs/csharp.png" text="C#" color="#8540A1" key="1" />
-            <Pill image="/img/techs/aspnet-webapi.png" text="ASP.NET Web API" color="#318DCE" key="2" />
-            <Pill image="/img/techs/entity-framework.png" text="Entity Framework" color="#2db6b6" key="3" />
-            <Pill image="/img/techs/mssql.png" text="MSSQL" color="#D65A58" key="4" />
-            <Pill image="/img/techs/blazor.png" text="Blazor" color="#6C49DC" key="5" />
-            <Pill image="/img/techs/visual-studio.png" text="Visual Studio" color="#7b63c7" key="6" />
-            <Pill image="/img/techs/git.png" text="Git" color="#EF7E5B" key="7" />
-            <Pill image="/img/techs/xunit.png" text="xUnit" color="#6C49DC" key="8" />
+            <Pill image={skills.csharp.image} text={skills.csharp.name} color={skills.csharp.color} key={skills.csharp.id} />
+            <Pill image={skills.aspnetWebApi.image} text={skills.aspnetWebApi.name} color={skills.aspnetWebApi.color} key={skills.aspnetWebApi.id} />
+            <Pill image={skills.entityFramework.image} text={skills.entityFramework.name} color={skills.entityFramework.color} key={skills.entityFramework.id} />
+            <Pill image={skills.mssql.image} text={skills.mssql.name} color={skills.mssql.color} key={skills.mssql.id} />
+            <Pill image={skills.blazor.image} text={skills.blazor.name} color={skills.blazor.color} key={skills.blazor.id} />
+            <Pill image={skills.visualStudio.image} text={skills.visualStudio.name} color={skills.visualStudio.color} key={skills.visualStudio.id} />
+            <Pill image={skills.git.image} text={skills.git.name} color={skills.git.color} key={skills.git.id} />
+            <Pill image={skills.xunit.image} text={skills.xunit.name} color={skills.xunit.color} key={skills.xunit.id} />
           </PillContainer>
         </Section>
 
@@ -149,7 +155,7 @@ const Section = styled.div`
 const Heading = styled.h2`
   font-size: 1.25rem;
   font-weight: 600;
-  color: #1f2937; /* dark gray */
+  color: #1f2937;
 `;
 
 

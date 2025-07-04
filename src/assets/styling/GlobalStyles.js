@@ -23,6 +23,15 @@ const GlobalStyles = createGlobalStyle`
     --redux: #7248B5;
     --socketIo: #666;
     --styledComponents: #CF72A1;
+    --csharp: #8540A1;
+    --aspnetWebApi: #318DCE;
+    --entityFramework: #2db6b6;
+    --mssql: #D65A58;
+    --xunit: #6C49DC;
+    --blazor: #6C49DC;
+    --visualStudio: #7b63c7;
+    --git: #EF7E5B;
+    --github: #333;
   }
 
   *{

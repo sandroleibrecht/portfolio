@@ -21,12 +21,12 @@
       "experience1": {
         "title": "Software Developer @ FM Consulting",
         "timespan": "2024 - Present",
-        "description": "Developing APIs, desktop applications, reports, and automation solutions in the medical sector using C# and MSSQL"
+        "description": "Developing APIs, desktop applications, reports, and automation solutions in the medical sector using C# and MSSQL."
       },
       "experience2": {
         "title": "Software Developer @ Synelecs",
         "timespan": "2021 - 2024",
-        "description": "Designing and implementing APIs, automating workflows, and developing internal tools for automation engineering projects using C#, Python and TIA Portal"
+        "description": "Designed and implemented APIs, internal tools and automation workflows for projects in the automation field using C#, Python and TIA Portal."
       },
       "studiesHeading": "Current Studies",
       "study1": {
@@ -34,8 +34,8 @@
         "timespan": "In progress",
         "description": "FH Technikum Wien"
       },
-      "mainSkills": "Tech-Stack",
-      "additionalSkills": "Addition Concepts & Experiences",
+      "mainSkills": "Tech Stack",
+      "additionalSkills": "Additional Concepts & Experiences",
       "button": "Projects"
     }
   },
@@ -66,7 +66,7 @@
       "experience2": {
         "title": "Software-Entwickler @ Synelecs",
         "timespan": "2021 - 2024",
-        "description": "Entwicklung von APIs, Automatisierung von Arbeitsabläufen und internen Tools für Projekte in der Automatisierungstechnik mit C#, Python und TIA Portal"
+        "description": "Entwicklung von APIs und internen Tools, sowie Automatisierung von Arbeitsabläufen für Projekte in der Automatisierungstechnik mit C#, Python und TIA Portal"
       },
       "studiesHeading": "Aktuelles Studium",
       "study1": {

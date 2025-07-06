@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Button from '../Button';
 import Pill from '../Pill';
+import Chip from '@material-ui/core/Chip';
 import skillList from '../../assets/data/SkillList';
 import { faChevronCircleRight } from '@fortawesome/free-solid-svg-icons';
 import { useHistory } from 'react-router-dom';
@@ -70,19 +71,19 @@ function PersonalSection({ textContent }) {
         <Section>
           <Heading>{textContent.additionalSkills}</Heading>
           <PillContainer>
-            <Pill text={"Design Patterns"} color="var(--blue)" key="1" />
-            <Pill text={"Clean Code"} color="var(--blue)" key="2" />
-            <Pill text={"Clean Architecture"} color="var(--blue)" key="3" />
-            <Pill text={"Domain Driven Design"} color="var(--blue)" key="4" />
-            <Pill text={"Swagger"} color="var(--blue)" key="5" />
-            <Pill text={"Serilog"} color="var(--blue)" key="6" />
-            <Pill text={"JWT Authentication"} color="var(--blue)" key="7" />
-            <Pill text={"Hangfire"} color="var(--blue)" key="8" />
-            <Pill text={"Azure DevOps"} color="var(--blue)" key="9" />
-            <Pill text={"Frontend Development"} color="var(--blue)" key="10" />
-            <Pill text={"WPF"} color="var(--blue)" key="11" />
-            <Pill text={"PLC & HMI"} color="var(--blue)" key="12" />
-            <Pill text={"Python"} color="var(--blue)" key="13" />
+            <AddPill label={"Design Patterns"} key="1" />
+            <AddPill label={"Clean Code"} key="2" />
+            <AddPill label={"Clean Architecture"} key="3" />
+            <AddPill label={"Domain Driven Design"} key="4" />
+            <AddPill label={"Swagger"} key="5" />
+            <AddPill label={"Serilog"} key="6" />
+            <AddPill label={"JWT Authentication"} key="7" />
+            <AddPill label={"Hangfire"} key="8" />
+            <AddPill label={"Azure DevOps"} key="9" />
+            <AddPill label={"Frontend Development"} key="10" />
+            <AddPill label={"WPF"} key="11" />
+            <AddPill label={"PLC & HMI"} key="12" />
+            <AddPill label={"Python"} key="13" />
           </PillContainer>
         </Section>
 
@@ -186,6 +187,14 @@ const PillContainer = styled.div`
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-top: .3rem;
+`;
+
+const AddPill = styled(Chip)`
+  background-color: white !important;
+  color: var(--blue) !important;
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+  margin: 0.25rem;
 `;
 
 export default PersonalSection;

@@ -1,6 +1,6 @@
 import openNewTab from '../../assets/util/OpenNewTab';
 import styled from 'styled-components';
-import { GitHub } from '@material-ui/icons';
+import { GitHub, LinkedIn } from '@material-ui/icons';
 import Grid from '@material-ui/core/Grid';
 
 function AboutHeader({ textContent }) {
@@ -24,6 +24,18 @@ function AboutHeader({ textContent }) {
               }
             }}>
           </GitHub>
+          <LinkedIn
+            id="linkedInIcon"
+            className="linkIcon"
+            tabIndex={0}
+            onClick={ () => openNewTab('https://www.linkedin.com/in/sandropernerstorfer/') }
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                openNewTab('https://www.linkedin.com/in/sandropernerstorfer/');
+              }
+            }}>
+          </LinkedIn>
         </div>
       </InfoContainer>
     </HeaderContainer>
@@ -93,6 +105,10 @@ const InfoContainer = styled(Grid)`
 
   #githubIcon{
     color: #454545;
+  }
+
+  #linkedInIcon{
+    color: #0A66C2;
   }
 
   @media (max-width: 959px){

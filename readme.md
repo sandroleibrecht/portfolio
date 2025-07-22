@@ -2,6 +2,4 @@
 
 ***
 
-Welcome to my portfolio!  
-Here you'll find a selection of my projects and a bit about who I am.  
-Feel free to reach out with any ideas or feedback using the contact form.
+This is an overview of my work and experience as a software developer. Here you can find information about my projects, skills, and professional background.

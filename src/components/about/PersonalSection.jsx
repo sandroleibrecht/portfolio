@@ -44,6 +44,22 @@ function PersonalSection({ textContent }) {
           <Heading>{textContent.studiesHeading}</Heading>
           <ExperienceList>
             <Role>
+              <Title>{textContent.study5.title} <Meta>· {textContent.study5.timespan}</Meta></Title>
+              <Meta>{textContent.study5.description}</Meta>
+            </Role>
+            <Role>
+              <Title>{textContent.study4.title} <Meta>· {textContent.study4.timespan}</Meta></Title>
+              <Meta>{textContent.study4.description}</Meta>
+            </Role>
+            <Role>
+              <Title>{textContent.study3.title} <Meta>· {textContent.study3.timespan}</Meta></Title>
+              <Meta>{textContent.study3.description}</Meta>
+            </Role>
+            <Role>
+              <Title>{textContent.study2.title} <Meta>· {textContent.study2.timespan}</Meta></Title>
+              <Meta>{textContent.study2.description}</Meta>
+            </Role>
+            <Role>
               <Title>{textContent.study1.title} <Meta>· {textContent.study1.timespan}</Meta></Title>
               <Meta>{textContent.study1.description}</Meta>
             </Role>
@@ -91,8 +107,8 @@ function PersonalSection({ textContent }) {
 
       </Container>
       
-      <div className="buttonContainer" onClick={() => history.push('/projects')}>
-        <Button text={textContent.button} icon={faChevronCircleRight} />
+      <div className="buttonContainer">
+        <span onClick={() => history.push('/projects')}><Button text={textContent.button} icon={faChevronCircleRight} /></span>
       </div>
     </AboutDescription>
   );

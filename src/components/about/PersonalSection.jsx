@@ -59,10 +59,10 @@ function PersonalSection({ textContent }) {
             <Pill image={skills.aspnetWebApi.image} text={skills.aspnetWebApi.name} color={skills.aspnetWebApi.color} key={skills.aspnetWebApi.id} />
             <Pill image={skills.entityFramework.image} text={skills.entityFramework.name} color={skills.entityFramework.color} key={skills.entityFramework.id} />
             <Pill image={skills.mssql.image} text={skills.mssql.name} color={skills.mssql.color} key={skills.mssql.id} />
-            <Pill image={skills.blazor.image} text={skills.blazor.name} color={skills.blazor.color} key={skills.blazor.id} />
             <Pill image={skills.visualStudio.image} text={skills.visualStudio.name} color={skills.visualStudio.color} key={skills.visualStudio.id} />
             <Pill image={skills.git.image} text={skills.git.name} color={skills.git.color} key={skills.git.id} />
-            <Pill image={skills.xunit.image} text={skills.xunit.name} color={skills.xunit.color} key={skills.xunit.id} />
+            {/* <Pill image={skills.blazor.image} text={skills.blazor.name} color={skills.blazor.color} key={skills.blazor.id} /> */}
+            {/* <Pill image={skills.xunit.image} text={skills.xunit.name} color={skills.xunit.color} key={skills.xunit.id} /> */}
           </PillContainer>
         </Section>
 

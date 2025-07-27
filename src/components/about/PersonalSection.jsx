@@ -28,11 +28,12 @@ function PersonalSection({ textContent }) {
           <Heading>{textContent.experienceHeading}</Heading>
           <ExperienceList>
             <Role>
-              <Title>{textContent.experience1.title} <Meta>· {textContent.experience1.timespan}</Meta></Title>
+              <Title>
+                {textContent.experience1.title} <Timespan>· {textContent.experience1.timespan}</Timespan></Title>
               <Meta>{textContent.experience1.description}</Meta>
             </Role>
             <Role>
-              <Title>{textContent.experience2.title} <Meta>· {textContent.experience2.timespan}</Meta></Title>
+              <Title>{textContent.experience2.title} <Timespan>· {textContent.experience2.timespan}</Timespan></Title>
               <Meta>{textContent.experience2.description}</Meta>
             </Role>
           </ExperienceList>
@@ -44,23 +45,23 @@ function PersonalSection({ textContent }) {
           <Heading>{textContent.studiesHeading}</Heading>
           <ExperienceList>
             <Role>
-              <Title>{textContent.study5.title} <Meta>· {textContent.study5.timespan}</Meta></Title>
+              <Title>{textContent.study5.title} <Timespan>· {textContent.study5.timespan}</Timespan></Title>
               <Meta>{textContent.study5.description}</Meta>
             </Role>
             <Role>
-              <Title>{textContent.study4.title} <Meta>· {textContent.study4.timespan}</Meta></Title>
+              <Title>{textContent.study4.title} <Timespan>· {textContent.study4.timespan}</Timespan></Title>
               <Meta>{textContent.study4.description}</Meta>
             </Role>
             <Role>
-              <Title>{textContent.study3.title} <Meta>· {textContent.study3.timespan}</Meta></Title>
+              <Title>{textContent.study3.title} <Timespan>· {textContent.study3.timespan}</Timespan></Title>
               <Meta>{textContent.study3.description}</Meta>
             </Role>
             <Role>
-              <Title>{textContent.study2.title} <Meta>· {textContent.study2.timespan}</Meta></Title>
+              <Title>{textContent.study2.title} <Timespan>· {textContent.study2.timespan}</Timespan></Title>
               <Meta>{textContent.study2.description}</Meta>
             </Role>
             <Role>
-              <Title>{textContent.study1.title} <Meta>· {textContent.study1.timespan}</Meta></Title>
+              <Title>{textContent.study1.title} <Timespan>· {textContent.study1.timespan}</Timespan></Title>
               <Meta>{textContent.study1.description}</Meta>
             </Role>
           </ExperienceList>
@@ -196,6 +197,13 @@ const Title = styled.h3`
 const Meta = styled.span`
   font-size: 0.85rem;
   color: #6b7280;
+`;
+
+const Timespan = styled.span`
+  font-size: 0.85rem;
+  color: #6b7280;
+  white-space: nowrap;
+  display: inline-block;
 `;
 
 const PillContainer = styled.div`

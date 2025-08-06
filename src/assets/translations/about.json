@@ -26,7 +26,7 @@
       "experience2": {
         "title": "Software Developer @ Synelecs",
         "timespan": "10.2021 - 05.2024",
-        "description": "Designed and implemented APIs, internal tools and automation workflows for projects in the automation field using C#, Python and TIA Portal"
+        "description": "Designed and implemented APIs, internal tools, and automation workflows for projects in the automation field using C#, Python and TIA Portal"
       },
       "studiesHeading": "Education",
       "study1": {
@@ -45,7 +45,7 @@
         "description": "WIFI - Vienna, Austria"
       },
       "study4": {
-        "title": "University Entrance Qualification",
+        "title": "University Entrance Certificate",
         "timespan": "01.2022 - 09.2024",
         "description": "HTL Spengergasse - Vienna, Austria"
       },
@@ -79,14 +79,14 @@
       "mainHeading": "Profil",
       "experienceHeading": "Erfahrung",
       "experience1": {
-        "title": "Software-Entwickler @ FM Consulting",
-        "timespan": "06.2024 - Jetzt",
+        "title": "Softwareentwickler @ FM Consulting",
+        "timespan": "06.2024 - heute",
         "description": "Entwicklung von APIs, Desktop-Anwendungen, Reports und Automatisierungslösungen im medizinischen Umfeld mit C# und MSSQL"
       },
       "experience2": {
-        "title": "Software-Entwickler @ Synelecs",
+        "title": "Softwareentwickler @ Synelecs",
         "timespan": "10.2021 - 05.2024",
-        "description": "Entwicklung von APIs und internen Tools, sowie Automatisierung von Arbeitsabläufen für Projekte in der Automatisierungstechnik mit C#, Python und TIA Portal"
+        "description": "Entwicklung von APIs und internen Tools sowie Automatisierung von Arbeitsabläufen für Projekte in der Automatisierungstechnik mit C#, Python und TIA Portal"
       },
       "studiesHeading": "Ausbildung",
       "study1": {
@@ -111,7 +111,7 @@
       },
       "study5": {
         "title": "B.Sc. - Informations- und Kommunikationssysteme",
-        "timespan": "09.2025 - Jetzt",
+        "timespan": "09.2025 - heute",
         "description": "FH Technikum - Wien, Österreich"
       },
       "mainSkills": "Tech-Stack",

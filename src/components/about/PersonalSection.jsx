@@ -48,18 +48,18 @@ function PersonalSection({ textContent }) {
               <Title>{textContent.study5.title} <Timespan>· {textContent.study5.timespan}</Timespan></Title>
               <Meta>{textContent.study5.description}</Meta>
             </Role>
-            <Role>
+            {<Role>
               <Title>{textContent.study4.title} <Timespan>· {textContent.study4.timespan}</Timespan></Title>
               <Meta>{textContent.study4.description}</Meta>
             </Role>
-            <Role>
+            /*<Role>
               <Title>{textContent.study3.title} <Timespan>· {textContent.study3.timespan}</Timespan></Title>
               <Meta>{textContent.study3.description}</Meta>
             </Role>
             <Role>
               <Title>{textContent.study2.title} <Timespan>· {textContent.study2.timespan}</Timespan></Title>
               <Meta>{textContent.study2.description}</Meta>
-            </Role>
+            </Role> */}
             <Role>
               <Title>{textContent.study1.title} <Timespan>· {textContent.study1.timespan}</Timespan></Title>
               <Meta>{textContent.study1.description}</Meta>

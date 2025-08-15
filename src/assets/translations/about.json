@@ -30,7 +30,7 @@
       },
       "studiesHeading": "Education",
       "study1": {
-        "title": "Apprenticeship Certificate - Electrical Engineering",
+        "title": "Electrical Engineering (Apprenticeship Certificate)",
         "timespan": "09.2011 - 06.2015",
         "description": "Vocational School for Electrical Engineering - Vienna, Austria"
       },
@@ -45,12 +45,12 @@
         "description": "WIFI - Vienna, Austria"
       },
       "study4": {
-        "title": "University Entrance Certificate",
+        "title": "University Entrance Certification",
         "timespan": "01.2022 - 09.2024",
         "description": "HTL Spengergasse - Vienna, Austria"
       },
       "study5": {
-        "title": "BSc - Information and Communication Systems",
+        "title": "Information and Communication Systems (BSc)",
         "timespan": "09.2025 - Present",
         "description": "FH Technikum - Vienna, Austria"
       },
@@ -90,7 +90,7 @@
       },
       "studiesHeading": "Ausbildung",
       "study1": {
-        "title": "Lehrabschluss - Elektrotechnik",
+        "title": "Elektrotechnik (Lehrabschluss)",
         "timespan": "09.2011 - 06.2015",
         "description": "Berufsschule für Elektrotechnik - Wien, Österreich"
       },
@@ -110,7 +110,7 @@
         "description": "HTL Spengergasse - Wien, Österreich"
       },
       "study5": {
-        "title": "BSc - Informations- und Kommunikationssysteme",
+        "title": "Informations- und Kommunikationssysteme (BSc)",
         "timespan": "09.2025 - heute",
         "description": "FH Technikum - Wien, Österreich"
       },

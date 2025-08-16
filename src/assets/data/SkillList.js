@@ -70,10 +70,10 @@ const skillList = [
     color: 'var(--csharp)'
   },
   {
-    id: 'aspnetWebApi',
-    name: 'ASP.NET Web API',
-    image: '/img/techs/aspnet-webapi.png',
-    color: 'var(--aspnetWebApi)'
+    id: 'aspNetCore',
+    name: 'ASP.NET Core',
+    image: '/img/techs/aspnetcore.png',
+    color: 'var(--aspNetCore)'
   },
   {
     id: 'entityFramework',

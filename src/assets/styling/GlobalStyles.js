@@ -24,7 +24,7 @@ const GlobalStyles = createGlobalStyle`
     --socketIo: #666;
     --styledComponents: #CF72A1;
     --csharp: #8540A1;
-    --aspnetWebApi: #318DCE;
+    --aspNetCore: #318DCE;
     --entityFramework: #2db6b6;
     --mssql: #D65A58;
     --xunit: #6C49DC;

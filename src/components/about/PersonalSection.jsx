@@ -73,7 +73,7 @@ function PersonalSection({ textContent }) {
           <Heading>{textContent.mainSkills}</Heading>
           <PillContainer>
             <Pill image={skills.csharp.image} text={skills.csharp.name} color={skills.csharp.color} key={skills.csharp.id} />
-            <Pill image={skills.aspnetWebApi.image} text={skills.aspnetWebApi.name} color={skills.aspnetWebApi.color} key={skills.aspnetWebApi.id} />
+            <Pill image={skills.aspNetCore.image} text={skills.aspNetCore.name} color={skills.aspNetCore.color} key={skills.aspNetCore.id} />
             <Pill image={skills.entityFramework.image} text={skills.entityFramework.name} color={skills.entityFramework.color} key={skills.entityFramework.id} />
             <Pill image={skills.mssql.image} text={skills.mssql.name} color={skills.mssql.color} key={skills.mssql.id} />
             <Pill image={skills.visualStudio.image} text={skills.visualStudio.name} color={skills.visualStudio.color} key={skills.visualStudio.id} />
@@ -88,19 +88,13 @@ function PersonalSection({ textContent }) {
         <Section>
           <Heading>{textContent.additionalSkills}</Heading>
           <PillContainer>
-            <AddPill label={"Design Patterns"} key="1" />
-            <AddPill label={"Clean Code"} key="2" />
-            <AddPill label={"Clean Architecture"} key="3" />
-            <AddPill label={"Domain Driven Design"} key="4" />
-            <AddPill label={"Swagger"} key="5" />
-            <AddPill label={"Serilog"} key="6" />
-            <AddPill label={"JWT Authentication"} key="7" />
-            <AddPill label={"Hangfire"} key="8" />
-            <AddPill label={"Azure DevOps"} key="9" />
-            <AddPill label={"Frontend Development"} key="10" />
-            <AddPill label={"WPF"} key="11" />
-            <AddPill label={"PLC & HMI"} key="12" />
-            <AddPill label={"Python"} key="13" />
+            <AddPill label={"Clean Code"} key="1" />
+            <AddPill label={"Clean Architecture"} key="2" />
+            <AddPill label={"Domain Driven Design"} key="3" />
+            <AddPill label={"SOLID Principles"} key="4" />
+            <AddPill label={"Azure DevOps"} key="5" />
+            <AddPill label={"Frontend Development"} key="6" />
+            <AddPill label={"PLC & HMI"} key="7" />
           </PillContainer>
         </Section>
 

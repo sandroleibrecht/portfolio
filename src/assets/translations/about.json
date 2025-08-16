@@ -19,18 +19,18 @@
       "mainHeading": "About",
       "experienceHeading": "Experience",
       "experience1": {
-        "title": "Software Developer @ FM Consulting",
+        "title": "Software Developer · FM Consulting",
         "timespan": "06.2024 - Present",
         "description": "Developing APIs, desktop applications, reports, and automation solutions in the medical sector using C# and MSSQL"
       },
       "experience2": {
-        "title": "Software Developer @ Synelecs",
+        "title": "Software Developer · Synelecs",
         "timespan": "10.2021 - 05.2024",
         "description": "Designed and implemented APIs, internal tools, and automation workflows for projects in the automation field using C#, Python and TIA Portal"
       },
       "studiesHeading": "Education",
       "study1": {
-        "title": "Electrical Engineering (Apprenticeship Certificate)",
+        "title": "Apprenticeship Certificate · Electrical Engineering",
         "timespan": "09.2011 - 06.2015",
         "description": "Vocational School for Electrical Engineering - Vienna, Austria"
       },
@@ -45,12 +45,12 @@
         "description": "WIFI - Vienna, Austria"
       },
       "study4": {
-        "title": "University Entrance Certification",
+        "title": "Matura · University Entrance Certification",
         "timespan": "01.2022 - 09.2024",
         "description": "HTL Spengergasse - Vienna, Austria"
       },
       "study5": {
-        "title": "Information and Communication Systems (BSc)",
+        "title": "BSc · Information and Communication Systems",
         "timespan": "09.2025 - Present",
         "description": "FH Technikum - Vienna, Austria"
       },
@@ -79,18 +79,18 @@
       "mainHeading": "Profil",
       "experienceHeading": "Erfahrung",
       "experience1": {
-        "title": "Softwareentwickler @ FM Consulting",
+        "title": "Softwareentwickler · FM Consulting",
         "timespan": "06.2024 - heute",
         "description": "Entwicklung von APIs, Desktop-Anwendungen, Reports und Automatisierungslösungen im medizinischen Umfeld mit C# und MSSQL"
       },
       "experience2": {
-        "title": "Softwareentwickler @ Synelecs",
+        "title": "Softwareentwickler · Synelecs",
         "timespan": "10.2021 - 05.2024",
         "description": "Entwicklung von APIs und internen Tools sowie Automatisierung von Arbeitsabläufen für Projekte in der Automatisierungstechnik mit C#, Python und TIA Portal"
       },
       "studiesHeading": "Ausbildung",
       "study1": {
-        "title": "Elektrotechnik (Lehrabschluss)",
+        "title": "Lehrabschluss · Elektrotechnik",
         "timespan": "09.2011 - 06.2015",
         "description": "Berufsschule für Elektrotechnik - Wien, Österreich"
       },
@@ -105,12 +105,12 @@
         "description": "WIFI - Wien, Österreich"
       },
       "study4": {
-        "title": "Berufsreifeprüfung",
+        "title": "Matura · Berufsreifeprüfung",
         "timespan": "01.2022 - 09.2024",
         "description": "HTL Spengergasse - Wien, Österreich"
       },
       "study5": {
-        "title": "Informations- und Kommunikationssysteme (BSc)",
+        "title": "BSc · Informations- und Kommunikationssysteme",
         "timespan": "09.2025 - heute",
         "description": "FH Technikum - Wien, Österreich"
       },

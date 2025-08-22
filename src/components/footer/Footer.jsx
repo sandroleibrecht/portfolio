@@ -27,11 +27,11 @@ function Footer() {
           id='linkedInIcon'
           className='linkIcon'
           tabIndex={0}
-          onClick={ () => openNewTab('https://www.linkedin.com/in/sandropernerstorfer/')}
+          onClick={ () => openNewTab('https://www.linkedin.com/in/sandroleibrecht/')}
           onKeyDown={(e) => {
             if (e.key === 'Enter' || e.key === ' ') {
               e.preventDefault();
-              openNewTab('https://www.linkedin.com/in/sandropernerstorfer/');
+              openNewTab('https://www.linkedin.com/in/sandroleibrecht/');
             }
           }}
         />
@@ -51,7 +51,7 @@ function Footer() {
         />}
       </IconContainer>
       <TextContainer>
-        &copy; Sandro Pernerstorfer
+        &copy; Sandro Leibrecht
       </TextContainer>
     </StyledFooter>
   )

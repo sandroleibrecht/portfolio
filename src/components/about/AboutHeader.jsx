@@ -16,11 +16,11 @@ function AboutHeader({ textContent }) {
             id="githubIcon"
             className="linkIcon"
             tabIndex={0}
-            onClick={ () => openNewTab('https://github.com/sandropernerstorfer') }
+            onClick={ () => openNewTab('https://github.com/sandroleibrecht') }
             onKeyDown={(e) => {
               if (e.key === 'Enter' || e.key === ' ') {
                 e.preventDefault();
-                openNewTab('https://github.com/sandropernerstorfer');
+                openNewTab('https://github.com/sandroleibrecht');
               }
             }}>
           </GitHub>

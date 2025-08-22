@@ -10,7 +10,7 @@ const projects = [
     name : "Collab Task",
     image: '/img/projects/collab-task-1.png',
     techs : [skills.html5, skills.scss, skills.javaScript, skills.expressJs, skills.mongoDb, skills.socketIo],
-    github : "https://github.com/sandropernerstorfer/collab-task",
+    github : "https://github.com/sandroleibrecht/collab-task",
     live : "",
     route: "/projects/collab-task",
     desc: {
@@ -31,7 +31,7 @@ const projects = [
     name : "Equal Checker",
     image: '/img/projects/equal-checker-1.png',
     techs : [skills.javaScript],
-    github : "https://github.com/sandropernerstorfer/equal-checker",
+    github : "https://github.com/sandroleibrecht/equal-checker",
     live : "",
     route: "/projects/equal-checker",
     desc: {
@@ -55,7 +55,7 @@ const projects = [
     name : "HMI Data Merge",
     image: '/img/projects/hmi-data-merge-1.png',
     techs : [skills.python],
-    github : "https://github.com/sandropernerstorfer/hmi-data-merge",
+    github : "https://github.com/sandroleibrecht/hmi-data-merge",
     live : "",
     route: "/projects/hmi-data-merge",
     desc: {
@@ -79,7 +79,7 @@ const projects = [
     name : "Portfolio",
     image: '/img/projects/portfolio-1.png',
     techs : [skills.react, skills.redux, skills.styledComponents],
-    github : "https://github.com/sandropernerstorfer/portfolio",
+    github : "https://github.com/sandroleibrecht/portfolio",
     live : "",
     route: "/projects/portfolio",
     desc: {
@@ -101,7 +101,7 @@ const projects = [
     name : "Ghostwriter JS",
     image: '/img/projects/ghostwriter-js-1.png',
     techs : [skills.html5, skills.scss, skills.javaScript],
-    github : "https://github.com/sandropernerstorfer/ghostwriter-js",
+    github : "https://github.com/sandroleibrecht/ghostwriter-js",
     live : "",
     route: "/projects/ghostwriter-js",
     desc: {
@@ -127,7 +127,7 @@ const projects = [
     name : "Clocks JS",
     image: '/img/projects/clocks-js-1.png',
     techs : [skills.html5, skills.css3, skills.javaScript],
-    github : "https://github.com/sandropernerstorfer/clocks-js",
+    github : "https://github.com/sandroleibrecht/clocks-js",
     live : "",
     route: "/projects/clocks-js",
     desc: {

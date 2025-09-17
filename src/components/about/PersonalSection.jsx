@@ -74,10 +74,9 @@ function PersonalSection({ textContent }) {
           <PillContainer>
             <Pill image={skills.csharp.image} text={skills.csharp.name} color={skills.csharp.color} key={skills.csharp.id} />
             <Pill image={skills.aspNetCore.image} text={skills.aspNetCore.name} color={skills.aspNetCore.color} key={skills.aspNetCore.id} />
-            <Pill image={skills.entityFramework.image} text={skills.entityFramework.name} color={skills.entityFramework.color} key={skills.entityFramework.id} />
-            <Pill image={skills.git.image} text={skills.git.name} color={skills.git.color} key={skills.git.id} />
-            <Pill image={skills.visualStudio.image} text={skills.visualStudio.name} color={skills.visualStudio.color} key={skills.visualStudio.id} />
             <Pill image={skills.mssql.image} text={skills.mssql.name} color={skills.mssql.color} key={skills.mssql.id} />
+            <Pill image={skills.visualStudio.image} text={skills.visualStudio.name} color={skills.visualStudio.color} key={skills.visualStudio.id} />
+            <Pill image={skills.git.image} text={skills.git.name} color={skills.git.color} key={skills.git.id} />
             {/* <Pill image={skills.blazor.image} text={skills.blazor.name} color={skills.blazor.color} key={skills.blazor.id} /> */}
             {/* <Pill image={skills.xunit.image} text={skills.xunit.name} color={skills.xunit.color} key={skills.xunit.id} /> */}
           </PillContainer>
@@ -88,11 +87,10 @@ function PersonalSection({ textContent }) {
         <Section>
           <Heading>{textContent.additionalSkills}</Heading>
           <PillContainer>
-            <AddPill label={"Clean Code"} key="1" />
-            <AddPill label={"Clean Architecture"} key="2" />
-            <AddPill label={"Azure DevOps"} key="3" />
-            <AddPill label={"Frontend Development"} key="4" />
-            <AddPill label={"Automation Engineering"} key="5" />
+            <AddPill label={"Azure DevOps"} key="1" />
+            <AddPill label={"Entity Framework"} key="2" />
+            <AddPill label={"Frontend"} key="3" />
+            <AddPill label={"Automation Engineering"} key="4" />
           </PillContainer>
         </Section>
 

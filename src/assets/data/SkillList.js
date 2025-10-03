@@ -82,10 +82,10 @@ const skillList = [
     color: 'var(--entityFramework)'
   },
   {
-    id: 'mssql',
-    name: 'MSSQL',
-    image: '/img/techs/mssql.png',
-    color: 'var(--mssql)'
+    id: 'sqlServer',
+    name: 'SQL Server',
+    image: '/img/techs/sql-server.png',
+    color: 'var(--sqlServer)'
   },
   {
     id: 'xunit',

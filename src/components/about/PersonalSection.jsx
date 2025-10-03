@@ -74,7 +74,7 @@ function PersonalSection({ textContent }) {
           <PillContainer>
             <Pill image={skills.csharp.image} text={skills.csharp.name} color={skills.csharp.color} key={skills.csharp.id} />
             <Pill image={skills.aspNetCore.image} text={skills.aspNetCore.name} color={skills.aspNetCore.color} key={skills.aspNetCore.id} />
-            <Pill image={skills.mssql.image} text={skills.mssql.name} color={skills.mssql.color} key={skills.mssql.id} />
+            <Pill image={skills.sqlServer.image} text={skills.sqlServer.name} color={skills.sqlServer.color} key={skills.sqlServer.id} />
             <Pill image={skills.visualStudio.image} text={skills.visualStudio.name} color={skills.visualStudio.color} key={skills.visualStudio.id} />
             <Pill image={skills.git.image} text={skills.git.name} color={skills.git.color} key={skills.git.id} />
             {/* <Pill image={skills.blazor.image} text={skills.blazor.name} color={skills.blazor.color} key={skills.blazor.id} /> */}

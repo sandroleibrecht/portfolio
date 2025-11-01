@@ -72,12 +72,6 @@ const skillList = [
     color: 'var(--aspNetCore)'
   },
   {
-    id: 'wpf',
-    name: 'WPF',
-    image: '/img/techs/wpf.png',
-    color: 'var(--wpf)'
-  },
-  {
     id: 'entityFramework',
     name: 'Entity Framework',
     image: '/img/techs/entity-framework.png',

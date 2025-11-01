@@ -1,6 +1,4 @@
 const skillList = [
-
-  // frontend tech
   {
     id: 'html5',
     name: 'HTML5',
@@ -37,8 +35,6 @@ const skillList = [
     image: '/img/techs/blazor.png',
     color: 'var(--blazor)'
   },
-
-  // backend tech
   {
     id: 'python',
     name: 'Python',
@@ -74,6 +70,12 @@ const skillList = [
     name: 'ASP.NET Core',
     image: '/img/techs/aspnetcore.png',
     color: 'var(--aspNetCore)'
+  },
+  {
+    id: 'wpf',
+    name: 'WPF',
+    image: '/img/techs/wpf.png',
+    color: 'var(--wpf)'
   },
   {
     id: 'entityFramework',

@@ -2,7 +2,7 @@
   "en":{
     "headerText": {
       "fullName": "Sandro Leibrecht",
-      "role": "Software Developer - ASP.NET Core · Backend Services · Automation"
+      "role": "Software Developer - API · Desktop · Backend Services · Automation"
     },
     "cardsText": [
       {
@@ -21,12 +21,12 @@
       "experience1": {
         "title": "Software Developer · FM Consulting",
         "timespan": "06.2024 - Present",
-        "description": "Developing APIs, desktop applications, reports, and automation solutions in the medical sector using C# and SQL Server"
+        "description": "Implementation of APIs, desktop applications, reports and automation solutions in the medical sector using C# and SQL Server"
       },
       "experience2": {
         "title": "Software Developer · Synelecs",
         "timespan": "10.2021 - 05.2024",
-        "description": "Designed and implemented APIs, internal tools, and automation workflows for projects in the automation field using C#, Python and TIA Portal"
+        "description": "Design and development of APIs, internal tools and automation workflows for projects in the automation field using C#, Python and TIA Portal"
       },
       "studiesHeading": "Education",
       "study1": {
@@ -62,7 +62,7 @@
   "de":{
     "headerText": {
       "fullName": "Sandro Leibrecht",
-      "role": "Softwareentwickler - ASP.NET Core · Backend Services · Automatisierung"
+      "role": "Softwareentwickler - API · Desktop · Backend Services · Automatisierung"
     },
     "cardsText": [
       {

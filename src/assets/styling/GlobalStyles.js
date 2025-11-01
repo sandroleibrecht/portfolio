@@ -25,6 +25,7 @@ const GlobalStyles = createGlobalStyle`
     --styledComponents: #CF72A1;
     --csharp: #8540A1;
     --aspNetCore: #318DCE;
+    --wpf: #318DCE;
     --entityFramework: #2db6b6;
     --sqlServer: #D65A58;
     --xunit: #6C49DC;

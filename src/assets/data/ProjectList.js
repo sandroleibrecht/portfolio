@@ -27,6 +27,29 @@ const projects = [
     spotlight: true
   },
   {
+    id: 'hmi-data-merge',
+    name : "HMI Data Merge",
+    image: '/img/projects/hmi-data-merge-1.png',
+    techs : [skills.python],
+    github : "https://github.com/sandroleibrecht/hmi-data-merge",
+    live : "",
+    route: "/projects/hmi-data-merge",
+    desc: {
+      en: 
+      `This application finds its use as a development tool in the automation industry.
+      Job of this tool is to update and merge giant excel files full of specifications (instrument, equipment, sensors, motors,...) including categorized sheets and special cases.
+      No manual merging and quick HMI data import.
+      `,
+
+      de: 
+      `Diese Anwendung findet ihren Nutzen als Entwicklungswerkzeug in der Automatisierungsbranche.
+      Die Aufgabe dieses Tools ist es, riesige Excel-Dateien befüllt mit Daten rund um Instrumente, Geräte, Sensoren und Motoren zu aktualisieren und zusammenzuführen.
+      Man erspart sich das manuelle Zusammenführen und erzielt einen schnellen HMI-Datenimport.`
+    },
+    screenshots: ['/img/projects/hmi-data-merge-2.png', '/img/projects/hmi-data-merge-3.png'],
+    spotlight: true
+  },
+  {
     id: 'equal-checker',
     name : "Equal Checker",
     image: '/img/projects/equal-checker-1.png',
@@ -48,30 +71,6 @@ const projects = [
       Optionales Type-Checking, und optionale Fehlermeldungen.`
     },
     screenshots: ['/img/projects/equal-checker-2.png', '/img/projects/equal-checker-3.png'],
-    spotlight: true
-  },
-  {
-    id: 'hmi-data-merge',
-    name : "HMI Data Merge",
-    image: '/img/projects/hmi-data-merge-1.png',
-    techs : [skills.python],
-    github : "https://github.com/sandroleibrecht/hmi-data-merge",
-    live : "",
-    route: "/projects/hmi-data-merge",
-    desc: {
-      en: 
-      `This application was developed for a company working in the automation industry, and acted as a development tool.
-      Job of this tool was to update and merge giant excel files full of instruments, equipment, sensors and motors with lots of categorized sheets and special cases.
-      No manual merging and quick HMI (Human Machine Interface) data import.
-      `,
-
-      de: 
-      `Diese Anwendung wurde für ein Unternehmen entwickelt, das in der Automatisierungsbranche tätig ist, und diente als Entwicklungswerkzeug.
-      Die Aufgabe dieses Tools bestand darin, riesige Excel-Dateien voller Instrumente, Geräte, Sensoren, Motoren usw. zu aktualisieren und zusammenzuführen.
-      Mit vielen kategorisierten Excel-Sheets und Sonderfällen.
-      Man erspart sich das manuelle Zusammenführen und erzielt einen schnellen HMI-Datenimport (Human Machine Interface).`
-    },
-    screenshots: ['/img/projects/hmi-data-merge-2.png', '/img/projects/hmi-data-merge-3.png'],
     spotlight: true
   },
   {

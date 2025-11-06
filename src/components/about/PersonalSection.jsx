@@ -67,8 +67,8 @@ function PersonalSection({ textContent }) {
             <Pill image={skills.python.image} text={skills.python.name} color={skills.python.color} key={skills.python.id} />
             <Pill image={skills.csharp.image} text={skills.csharp.name} color={skills.csharp.color} key={skills.csharp.id} />
             <Pill image={skills.sql.image} text={skills.sql.name} color={skills.sql.color} key={skills.sql.id} />
-            <Pill image={skills.visualStudio.image} text={skills.visualStudio.name} color={skills.visualStudio.color} key={skills.visualStudio.id} />
             <Pill image={skills.visualStudioCode.image} text={skills.visualStudioCode.name} color={skills.visualStudioCode.color} key={skills.visualStudioCode.id} />
+            <Pill image={skills.visualStudio.image} text={skills.visualStudio.name} color={skills.visualStudio.color} key={skills.visualStudio.id} />
             <Pill image={skills.git.image} text={skills.git.name} color={skills.git.color} key={skills.git.id} />
           </PillContainer>
         </Section>

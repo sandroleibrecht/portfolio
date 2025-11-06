@@ -102,6 +102,12 @@ const skillList = [
     color: 'var(--visualStudio)'
   },
   {
+    id: 'visualStudioCode',
+    name: 'VS Code',
+    image: '/img/techs/visual-studio-code.png',
+    color: 'var(--visualStudioCode)'
+  },
+  {
     id: 'git',
     name: 'Git',
     image: '/img/techs/git.png',

@@ -19,14 +19,14 @@
       "mainHeading": "About",
       "experienceHeading": "Experience",
       "experience1": {
-        "title": "Software Developer · FM Consulting",
-        "timespan": "06.2024 - Present",
-        "description": "Implementation of APIs, desktop applications, reports and automation solutions in the medical sector using C#, Python and SQL Server"
-      },
-      "experience2": {
         "title": "Software Developer · Synelecs",
         "timespan": "10.2021 - 05.2024",
         "description": "Design and development of APIs, internal tools and automation workflows for projects in the automation field using C#, Python and TIA Portal"
+      },
+      "experience2": {
+        "title": "Software Developer · FM Consulting",
+        "timespan": "06.2024 - Present",
+        "description": "Implementation of APIs, desktop applications, reports and automation solutions in the medical sector using C#, Python and SQL Server"
       },
       "studiesHeading": "Education",
       "study1": {
@@ -35,21 +35,11 @@
         "description": "Vocational School for Electrical Engineering - Vienna, Austria"
       },
       "study2": {
-        "title": "Certificate - Software Development",
-        "timespan": "03.2020 - 07.2020",
-        "description": "Code Factory - Vienna, Austria"
-      },
-      "study3": {
-        "title": "Certificate - Software Development",
-        "timespan": "12.2020 - 04.2021",
-        "description": "WIFI - Vienna, Austria"
-      },
-      "study4": {
         "title": "Matura · University Entrance Certification",
         "timespan": "01.2022 - 09.2024",
         "description": "HTL Spengergasse - Vienna, Austria"
       },
-      "study5": {
+      "study3": {
         "title": "BSc · Information and Communication Systems",
         "timespan": "09.2025 - Present",
         "description": "FH Technikum - Vienna, Austria"
@@ -79,14 +69,14 @@
       "mainHeading": "Profil",
       "experienceHeading": "Erfahrung",
       "experience1": {
-        "title": "Softwareentwickler · FM Consulting",
-        "timespan": "06.2024 - heute",
-        "description": "Entwicklung von APIs, Desktop-Anwendungen, Reports und Automatisierungslösungen im medizinischen Umfeld mit C#, Python und SQL Server"
-      },
-      "experience2": {
         "title": "Softwareentwickler · Synelecs",
         "timespan": "10.2021 - 05.2024",
         "description": "Entwicklung von APIs und internen Tools sowie Automatisierung von Arbeitsabläufen für Projekte in der Automatisierungstechnik mit C#, Python und TIA Portal"
+      },
+      "experience2": {
+        "title": "Softwareentwickler · FM Consulting",
+        "timespan": "06.2024 - heute",
+        "description": "Entwicklung von APIs, Desktop-Anwendungen, Reports und Automatisierungslösungen im medizinischen Umfeld mit C#, Python und SQL Server"
       },
       "studiesHeading": "Ausbildung",
       "study1": {
@@ -95,21 +85,11 @@
         "description": "Berufsschule für Elektrotechnik - Wien, Österreich"
       },
       "study2": {
-        "title": "Zertifikat - Softwareentwicklung",
-        "timespan": "03.2020 - 07.2020",
-        "description": "Code Factory - Wien, Österreich"
-      },
-      "study3": {
-        "title": "Zertifikat - Softwareentwicklung",
-        "timespan": "12.2020 - 04.2021",
-        "description": "WIFI - Wien, Österreich"
-      },
-      "study4": {
         "title": "Matura · Berufsreifeprüfung",
         "timespan": "01.2022 - 09.2024",
         "description": "HTL Spengergasse - Wien, Österreich"
       },
-      "study5": {
+      "study3": {
         "title": "BSc · Informations- und Kommunikationssysteme",
         "timespan": "09.2025 - heute",
         "description": "FH Technikum - Wien, Österreich"

@@ -29,13 +29,12 @@ function PersonalSection({ textContent }) {
           <Heading>{textContent.experienceHeading}</Heading>
           <ExperienceList>
             <Role>
-              <Title>
-                {textContent.experience1.title} <Timespan>· {textContent.experience1.timespan}</Timespan></Title>
-              <Meta>{textContent.experience1.description}</Meta>
-            </Role>
-            <Role>
               <Title>{textContent.experience2.title} <Timespan>· {textContent.experience2.timespan}</Timespan></Title>
               <Meta>{textContent.experience2.description}</Meta>
+            </Role>
+            <Role>
+              <Title>{textContent.experience1.title} <Timespan>· {textContent.experience1.timespan}</Timespan></Title>
+              <Meta>{textContent.experience1.description}</Meta>
             </Role>
           </ExperienceList>
         </Section>
@@ -46,21 +45,13 @@ function PersonalSection({ textContent }) {
           <Heading>{textContent.studiesHeading}</Heading>
           <ExperienceList>
             <Role>
-              <Title>{textContent.study5.title} <Timespan>· {textContent.study5.timespan}</Timespan></Title>
-              <Meta>{textContent.study5.description}</Meta>
-            </Role>
-            {<Role>
-              <Title>{textContent.study4.title} <Timespan>· {textContent.study4.timespan}</Timespan></Title>
-              <Meta>{textContent.study4.description}</Meta>
-            </Role>
-            /*<Role>
               <Title>{textContent.study3.title} <Timespan>· {textContent.study3.timespan}</Timespan></Title>
               <Meta>{textContent.study3.description}</Meta>
             </Role>
             <Role>
               <Title>{textContent.study2.title} <Timespan>· {textContent.study2.timespan}</Timespan></Title>
               <Meta>{textContent.study2.description}</Meta>
-            </Role> */}
+            </Role>
             <Role>
               <Title>{textContent.study1.title} <Timespan>· {textContent.study1.timespan}</Timespan></Title>
               <Meta>{textContent.study1.description}</Meta>
@@ -76,8 +67,8 @@ function PersonalSection({ textContent }) {
             <Pill image={skills.python.image} text={skills.python.name} color={skills.python.color} key={skills.python.id} />
             <Pill image={skills.csharp.image} text={skills.csharp.name} color={skills.csharp.color} key={skills.csharp.id} />
             <Pill image={skills.sql.image} text={skills.sql.name} color={skills.sql.color} key={skills.sql.id} />
-            {/* <Pill image={skills.visualStudio.image} text={"Visual Studio Code"} color={skills.visualStudio.color} key={skills.visualStudio.id} /> */}
-            {/* <Pill image={skills.visualStudio.image} text={skills.visualStudio.name} color={skills.visualStudio.color} key={skills.visualStudio.id} /> */}
+            <Pill image={skills.visualStudio.image} text={skills.visualStudio.name} color={skills.visualStudio.color} key={skills.visualStudio.id} />
+            <Pill image={skills.visualStudioCode.image} text={skills.visualStudioCode.name} color={skills.visualStudioCode.color} key={skills.visualStudioCode.id} />
             <Pill image={skills.git.image} text={skills.git.name} color={skills.git.color} key={skills.git.id} />
           </PillContainer>
         </Section>
@@ -88,8 +79,8 @@ function PersonalSection({ textContent }) {
           <Heading>{textContent.additionalSkills}</Heading>
           <PillContainer>
             <AddPill label={"Azure DevOps"} key="1" />
-            <AddPill label={"Frontend"} key="2" />
-            <AddPill label={"Automation Engineering"} key="3" />
+            <AddPill label={"Frontend Development"} key="2" />
+            <AddPill label={"PLC & HMI"} key="3" />
             <AddPill label={"TIA Portal"} key="4" />
             <AddPill label={"Desktop Software"} key="5" />
           </PillContainer>

@@ -13,7 +13,7 @@ const GlobalStyles = createGlobalStyle`
     // Tech Colors
     --html: #E5622A;
     --css: #3595CF;
-    --js: #F9C305;
+    --js: #e2b924ff;
     --react: #43C6EB;
     --scss: #CF72A1;
     --python: #3595cf;
@@ -28,6 +28,7 @@ const GlobalStyles = createGlobalStyle`
     --sqlServer: #D65A58;
     --sql: #3366CC;
     --visualStudio: #7b63c7;
+    --visualStudioCode: #007ACC;
     --git: #EF7E5B;
     --github: #333;
   }

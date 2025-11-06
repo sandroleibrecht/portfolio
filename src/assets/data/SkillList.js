@@ -36,12 +36,6 @@ const skillList = [
     color: 'var(--python)'
   },
   {
-    id: 'nodeJs',
-    name: 'NodeJS',
-    image: '/img/techs/node.png',
-    color: 'var(--nodeJs)'
-  },
-  {
     id: 'expressJs',
     name: 'ExpressJS',
     image: '/img/techs/express.png',
@@ -58,18 +52,6 @@ const skillList = [
     name: 'C#',
     image: '/img/techs/csharp.png',
     color: 'var(--csharp)'
-  },
-  {
-    id: 'aspNetCore',
-    name: 'ASP.NET Core',
-    image: '/img/techs/aspnetcore.png',
-    color: 'var(--aspNetCore)'
-  },
-  {
-    id: 'sqlServer',
-    name: 'SQL Server',
-    image: '/img/techs/sql-server.png',
-    color: 'var(--sqlServer)'
   },
   {
     id: 'sql',

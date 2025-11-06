@@ -17,20 +17,16 @@ const GlobalStyles = createGlobalStyle`
     --react: #43C6EB;
     --scss: #CF72A1;
     --python: #3595cf;
-    --nodeJs: #69B84D;
     --expressJs: #444;
     --mongoDb: #2B964C;
     --redux: #7248B5;
     --socketIo: #666;
     --styledComponents: #CF72A1;
     --csharp: #8540A1;
-    --aspNetCore: #318DCE;
-    --sqlServer: #D65A58;
     --sql: #3366CC;
     --visualStudio: #7b63c7;
     --visualStudioCode: #007ACC;
     --git: #EF7E5B;
-    --github: #333;
   }
 
   *{

@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react';
+import {useEffect} from 'react';
 import pageText from '../assets/translations/404.json';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';

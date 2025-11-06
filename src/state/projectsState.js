@@ -9,6 +9,7 @@ export const setScrollPosition = scrollY => {
 };
 
 const initialState = { projectList: projects, scrollPosition: 0 };
+
 const ProjectsReducer = ( state = initialState, action ) => {
   switch( action.type ){
     case 'SET_SCROLL':

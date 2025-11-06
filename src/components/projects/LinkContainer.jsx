@@ -1,14 +1,8 @@
-import React from 'react';
-// Styling
 import styled from 'styled-components';
-// Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInfoCircle, faCodeBranch, faPlayCircle } from '@fortawesome/free-solid-svg-icons';
-// Utils
 import OpenNewTab from '../../assets/util/OpenNewTab';
-// Router
 import { useHistory } from 'react-router-dom';
-// Redux
 import { useDispatch } from 'react-redux';
 import { setScrollPosition } from '../../state/projectsState';
 

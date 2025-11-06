@@ -1,19 +1,15 @@
-import React from 'react';
-// Styling
 import styled from 'styled-components';
-// Components
 import SpotlightProject from './SpotlightProject';
 import OtherProject from './OtherProject';
 import Line from '../Line';
-// Redux
 import { useSelector } from 'react-redux';
 
 function ProjectList({text}) {
   const {projectList} = useSelector( state => state.projects );
   
-  // Seperate Projects
   const spotlightProjects = [];
   const otherProjects = [];
+
   projectList.forEach( project => {
     project.spotlight ? spotlightProjects.push(project) : otherProjects.push(project);
   });
@@ -36,7 +32,6 @@ function ProjectList({text}) {
   )
 };
 
-// Styled Components
 const List = styled.section`
   display: flex;
   flex-wrap: wrap;

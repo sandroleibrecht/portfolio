@@ -30,12 +30,6 @@ const skillList = [
     color: 'var(--scss)'
   },
   {
-    id: 'blazor',
-    name: 'Blazor',
-    image: '/img/techs/blazor.png',
-    color: 'var(--blazor)'
-  },
-  {
     id: 'python',
     name: 'Python',
     image: '/img/techs/python.png',
@@ -72,25 +66,17 @@ const skillList = [
     color: 'var(--aspNetCore)'
   },
   {
-    id: 'entityFramework',
-    name: 'Entity Framework',
-    image: '/img/techs/entity-framework.png',
-    color: 'var(--entityFramework)'
-  },
-  {
     id: 'sqlServer',
     name: 'SQL Server',
     image: '/img/techs/sql-server.png',
     color: 'var(--sqlServer)'
   },
   {
-    id: 'xunit',
-    name: 'xUnit',
-    image: '/img/techs/xunit.png',
-    color: 'var(--xunit)'
+    id: 'sql',
+    name: 'SQL',
+    image: '/img/techs/sql.png',
+    color: 'var(--sql)'
   },
-
-  // tools & additional tech
   {
     id: 'socketIo',
     name: 'SocketIO',

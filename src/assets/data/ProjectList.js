@@ -1,8 +1,7 @@
 import skillList from './SkillList';
+
 const skills = {};
-skillList.forEach( skill => { 
-  skills[skill.id] = {...skill};
-});
+skillList.forEach( skill => skills[skill.id] = {...skill} );
 
 const projects = [
   {

@@ -11,6 +11,7 @@ function PersonalSection({ textContent }) {
   const history = useHistory();
 
   const skills = {};
+  
   skillList.forEach( skill => { 
     skills[skill.id] = {...skill};
   });
@@ -72,13 +73,12 @@ function PersonalSection({ textContent }) {
         <Section>
           <Heading>{textContent.mainSkills}</Heading>
           <PillContainer>
+            <Pill image={skills.python.image} text={skills.python.name} color={skills.python.color} key={skills.python.id} />
             <Pill image={skills.csharp.image} text={skills.csharp.name} color={skills.csharp.color} key={skills.csharp.id} />
-            <Pill image={skills.aspNetCore.image} text={skills.aspNetCore.name} color={skills.aspNetCore.color} key={skills.aspNetCore.id} />
-            <Pill image={skills.sqlServer.image} text={skills.sqlServer.name} color={skills.sqlServer.color} key={skills.sqlServer.id} />
-            <Pill image={skills.visualStudio.image} text={skills.visualStudio.name} color={skills.visualStudio.color} key={skills.visualStudio.id} />
+            <Pill image={skills.sql.image} text={skills.sql.name} color={skills.sql.color} key={skills.sql.id} />
+            {/* <Pill image={skills.visualStudio.image} text={"Visual Studio Code"} color={skills.visualStudio.color} key={skills.visualStudio.id} /> */}
+            {/* <Pill image={skills.visualStudio.image} text={skills.visualStudio.name} color={skills.visualStudio.color} key={skills.visualStudio.id} /> */}
             <Pill image={skills.git.image} text={skills.git.name} color={skills.git.color} key={skills.git.id} />
-            {/* <Pill image={skills.blazor.image} text={skills.blazor.name} color={skills.blazor.color} key={skills.blazor.id} /> */}
-            {/* <Pill image={skills.xunit.image} text={skills.xunit.name} color={skills.xunit.color} key={skills.xunit.id} /> */}
           </PillContainer>
         </Section>
 
@@ -88,9 +88,10 @@ function PersonalSection({ textContent }) {
           <Heading>{textContent.additionalSkills}</Heading>
           <PillContainer>
             <AddPill label={"Azure DevOps"} key="1" />
-            <AddPill label={"Entity Framework"} key="2" />
-            <AddPill label={"Frontend"} key="3" />
-            <AddPill label={"Automation Engineering"} key="4" />
+            <AddPill label={"Frontend"} key="2" />
+            <AddPill label={"Automation Engineering"} key="3" />
+            <AddPill label={"TIA Portal"} key="4" />
+            <AddPill label={"Desktop Software"} key="5" />
           </PillContainer>
         </Section>
 
@@ -105,7 +106,6 @@ function PersonalSection({ textContent }) {
   );
 };
 
-// Styled Components
 const Divider = styled.hr`
   width: 100%;
   border: none;

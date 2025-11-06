@@ -1,7 +1,4 @@
-import React from 'react';
-// Styling
 import styled from 'styled-components';
-// Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInfoCircle, faCodeBranch } from '@fortawesome/free-solid-svg-icons';
 
@@ -17,7 +14,6 @@ function ProjectsHeader({ text }) {
   )
 };
 
-// Styled Components
 const HeaderSection = styled.header`
   display: flex;
   flex-direction: column;

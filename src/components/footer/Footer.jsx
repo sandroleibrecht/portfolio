@@ -57,7 +57,6 @@ function Footer() {
   )
 }
 
-// Styled Components
 const StyledFooter = styled.footer`
   display: flex;
   justify-content: space-around;

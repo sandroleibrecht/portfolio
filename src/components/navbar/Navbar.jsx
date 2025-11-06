@@ -1,16 +1,10 @@
-import React from 'react';
-// Styling & Animations
 import styled from 'styled-components';
 import { fadeInRightAnimation, fadeInLeftAnimation } from '../../assets/styling/GlobalStyles';
-// Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-// Components
 import NavInline from './NavInline';
 import NavSide from './NavSide';
-// Router
 import { Link, useLocation } from 'react-router-dom';
-// Redux
 import { setNavOpen } from '../../state/navbarState';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -21,7 +15,6 @@ function Navbar() {
   const dispatch = useDispatch();
   const { menuOpen } = useSelector( state => state.navbar );
 
-  // Functions
   const handleMenuOpen = () => {
     dispatch(setNavOpen());
   };
@@ -51,7 +44,6 @@ function Navbar() {
   );
 };
 
-// Styled Components
 const TopSpacing = styled.div`
   width: 100vw;
   height: ${ props => props.detailsOpen ? '0px' : '66px'};

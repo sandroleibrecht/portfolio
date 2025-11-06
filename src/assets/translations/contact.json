@@ -20,7 +20,7 @@
       "message": "Nachricht",
       "submit": "Senden",
       "noError": "Die Nachricht wurde gesendet.",
-      "error": "Entschuldigung, ein Fehler ist aufgetreten."
+      "error": "Beim Senden ist ein Fehler aufgetreten."
     }
   }
 }

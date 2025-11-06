@@ -23,7 +23,6 @@ function Card({ icon, buttonText, buttonLink, iconColor }) {
   )
 };
 
-// Styled Components
 const CardContainer = styled.div`
   max-width: 20rem;
   min-width: 220px;

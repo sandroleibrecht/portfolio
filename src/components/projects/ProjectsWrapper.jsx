@@ -1,7 +1,4 @@
-import React from 'react';
-// Styling
 import styled from 'styled-components';
-// Components
 import ProjectsHeader from './ProjectsHeader'
 import ProjectList from './ProjectList';
 
@@ -14,7 +11,6 @@ function ProjectsWrapper({ text }) {
   )
 };
 
-// Styled Components
 const ProjectsSection = styled.section`
   display: flex;
   flex-direction: column;

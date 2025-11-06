@@ -1,15 +1,9 @@
-import React from 'react';
-// Text Content
 import navbarText from '../../assets/translations/navbar.json';
-// Styling & Animation
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { spinInAnimation } from '../../assets/styling/GlobalStyles';
-// Language Switch
 import LanguageSwitch from '../LanguageSwitch';
-// Router
 import { Link, useLocation } from 'react-router-dom';
-// Redux
 import { useSelector } from 'react-redux';
 
 function NavListContent() {

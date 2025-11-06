@@ -1,11 +1,6 @@
-import React from 'react';
-// Styling
 import styled from 'styled-components';
-// Components
 import LinkContainer from './LinkContainer';
-// Router
 import {useHistory} from 'react-router-dom';
-// Redux
 import { useDispatch } from 'react-redux';
 import { setScrollPosition } from '../../state/projectsState';
 
@@ -35,7 +30,6 @@ function OtherProject( project ) {
   )
 };
 
-// Styled Components
 const ProjectContainer = styled.div`
   box-shadow: 0 0 14px 1px #e2e2e2;
   max-width: 15rem;

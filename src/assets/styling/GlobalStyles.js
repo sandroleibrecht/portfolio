@@ -25,10 +25,8 @@ const GlobalStyles = createGlobalStyle`
     --styledComponents: #CF72A1;
     --csharp: #8540A1;
     --aspNetCore: #318DCE;
-    --entityFramework: #2db6b6;
     --sqlServer: #D65A58;
-    --xunit: #6C49DC;
-    --blazor: #6C49DC;
+    --sql: #3366CC;
     --visualStudio: #7b63c7;
     --git: #EF7E5B;
     --github: #333;
@@ -56,7 +54,6 @@ const GlobalStyles = createGlobalStyle`
 
 export default GlobalStyles;
 
-// Animations / Keyframes
 export const spinInAnimation = keyframes`
   0%    { transform: scale(0) rotate(-40deg) }
   100%  { transform: scale(1) rotate(0) }

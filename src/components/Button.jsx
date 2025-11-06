@@ -10,7 +10,6 @@ function Button({ text, icon, iconSpin = false }) {
   );
 };
 
-// Styled Components
 const StyledButton = styled.button`
   background-color: white;
   border-color: var(--blueLight);

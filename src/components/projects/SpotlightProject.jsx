@@ -1,15 +1,9 @@
-import React from 'react';
-// Styling
 import styled from 'styled-components';
-// Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
-// Components
 import LinkContainer from './LinkContainer';
 import Pill from '../Pill';
-// Router
 import {useHistory} from 'react-router-dom';
-// Redux
 import {useDispatch} from 'react-redux';
 import {setScrollPosition} from '../../state/projectsState';
 
@@ -44,7 +38,6 @@ function SpotlightProject( project ) {
   )
 }
 
-// Styled Components
 const ProjectContainer = styled.div`
   margin-bottom: 5rem;
   box-shadow: 0 0 15px 1px #e7e7e7;
@@ -135,7 +128,6 @@ const ProjectContainer = styled.div`
       }
     }
   }
-
 
   .techContainer{
     margin-top: 1rem;

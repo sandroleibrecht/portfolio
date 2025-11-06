@@ -1,27 +1,19 @@
-import React, { useRef, useEffect } from 'react';
-// Styling
+import { useRef, useEffect } from 'react';
 import styled from 'styled-components';
-// Components
 import Button from '../Button';
-// Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane, faAt, faSignature, faSpinner } from '@fortawesome/free-solid-svg-icons';
-// Utils
 import { validateInputs, sendEmail } from '../../assets/util/ContactForm';
-// Redux
 import { useSelector, useDispatch } from 'react-redux';
 import { setFocus, setValue, setErrors, resetForm }  from '../../state/contactState';
 
 function ContactForm({ formText }) {
 
-  // Redux
   const { formFocusing, values, errors, isSubmitting, submitMessage } = useSelector( state => state.contact );
   const dispatch = useDispatch();
 
-  // Name Input Reference
   const nameInput = useRef(null);
 
-  // Effects
   useEffect(() => {
     if (formFocusing) nameInput.current.focus();
     dispatch(setFocus(false));
@@ -31,7 +23,6 @@ function ContactForm({ formText }) {
     dispatch(resetForm());
   }, [dispatch]);
 
-  // Handle Submission
   const handleSubmit = e => {
     e.preventDefault();
 
@@ -86,7 +77,6 @@ function ContactForm({ formText }) {
   );
 };
 
-// Styled Components
 const Form = styled.form`
   display: flex;
   flex-direction: column;

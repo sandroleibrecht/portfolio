@@ -1,7 +1,4 @@
-import React from 'react';
-// Styling
 import styled from 'styled-components';
-// Components
 import NavListContent from './NavListContent';
 
 function NavInline() {
@@ -13,7 +10,6 @@ function NavInline() {
 };
 
 const List = styled.div`
-
   @media (max-width: 630px){
     display: none;
   }

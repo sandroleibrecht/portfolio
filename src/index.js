@@ -1,14 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-// ROUTER
 import {BrowserRouter} from 'react-router-dom';
-// REDUX
-import { createStore } from 'redux';
+import { configureStore } from '@reduxjs/toolkit'
 import { Provider } from 'react-redux';
 import rootReducer from './state/rootReducer';
 
-const store = createStore( rootReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() );
+const store = configureStore({ reducer: rootReducer, devTools: process.env.NODE_ENV !== 'production' });
 
 ReactDOM.render(
   <React.StrictMode>

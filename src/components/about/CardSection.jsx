@@ -36,7 +36,6 @@ function CardSection({ textContent }) {
   )
 }
 
-// Styled Components
 const Cards = styled.section`
   width: 100%;
   max-width: 1300px;

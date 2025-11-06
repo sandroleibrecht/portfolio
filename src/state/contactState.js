@@ -5,6 +5,7 @@ export const setFocus = ( status ) => {
     payload: { status }
   }
 };
+
 export const setValue = ( prop, value ) => {
   prop = prop.toLowerCase();
   return{
@@ -12,27 +13,32 @@ export const setValue = ( prop, value ) => {
     payload: { prop, value }
   }
 };
+
 export const setErrors = ( errors ) => {
   return{
     type: 'SET_ERRORS',
     payload: { errors }
   }
 };
+
 export const setSubmitStatus = ( status ) => {
   return{
     type: 'SET_SUBMISSION',
     payload: { status }
   }
 };
+
 export const setSubmitMessage = ( messageData ) => {
   return{
     type: 'SET_MESSAGE',
     payload: { messageData }
   }
 };
+
 export const resetValues = () => {
   return { type: 'RESET_VALUES' };
 };
+
 export const resetForm = () => {
   return { type: 'RESET_FORM' };
 };
@@ -56,6 +62,7 @@ const initialState = {
     isError: false
   }
 };
+
 const ContactReducer = ( state = initialState, action ) => {
   const data = action.payload;
   switch( action.type ){

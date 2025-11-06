@@ -1,13 +1,8 @@
-import React from 'react';
-// Style
 import styled from 'styled-components';
 import { fadeInLeftAnimation } from '../../assets/styling/GlobalStyles';
-// Components
 import LanguageSwitch from '../LanguageSwitch';
 import Button from '../Button';
-// FontAwesome
 import { faChevronCircleLeft } from '@fortawesome/free-solid-svg-icons';
-// Router
 import { useHistory } from 'react-router-dom';
 
 function TopBar({ projectName, buttonText }) {
@@ -19,8 +14,7 @@ function TopBar({ projectName, buttonText }) {
       <div className="leftBarContainer">
         <div
           onClick={() => history.push('/projects')}
-          className="buttonContainer"
-        >
+          className="buttonContainer">
           <Button text={buttonText} icon={faChevronCircleLeft} />
         </div>
         <h3>{projectName}</h3>
@@ -30,7 +24,6 @@ function TopBar({ projectName, buttonText }) {
   )
 };
 
-// Styled Components
 const NavBar = styled.nav`
   z-index: 10000;
   position: fixed;

@@ -1,22 +1,16 @@
-import React from 'react';
-// Styling
 import styled from 'styled-components';
-// Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
-// Components
 import NavListContent from './NavListContent';
-// Redux
 import { setNavClose } from '../../state/navbarState';
 import { useDispatch, useSelector } from 'react-redux';
 
 function NavSide() {
 
   const dispatch = useDispatch();
-
+  
   const { menuOpen } = useSelector( state => state.navbar);
 
-  // Functions
   const handleMenuClose = () => {
     dispatch(setNavClose());
   };

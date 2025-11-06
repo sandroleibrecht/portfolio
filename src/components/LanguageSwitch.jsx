@@ -1,8 +1,5 @@
-import React from 'react';
-// Styling & Animation
 import styled from 'styled-components';
 import { fadeInRightAnimation } from '../assets/styling/GlobalStyles';
-// Redux
 import { setLanguage } from '../state/languageState';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -11,7 +8,6 @@ function LanguageSwitch() {
   const dispatch = useDispatch();
   const { selectedLanguage } = useSelector( state => state.language );
 
-  // Functions
   const handleLanguageChange = () => {
     if( selectedLanguage === 'en' ){
       dispatch(setLanguage('de'));

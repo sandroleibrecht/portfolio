@@ -1,15 +1,10 @@
-import React from 'react';
-// Styling
 import styled from 'styled-components';
-// Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCodeBranch, faPlayCircle } from '@fortawesome/free-solid-svg-icons';
-// Components
 import Pill from '../Pill';
-// Utils
 import OpenNewTab from '../../assets/util/OpenNewTab';
 
-function ProjectSection( project ) {  // name, desc, techs, image, screenshots, github, live
+function ProjectSection( project ) {
 
   function showImage(e){
     e.target.classList.add('image-visible');
@@ -40,7 +35,6 @@ function ProjectSection( project ) {  // name, desc, techs, image, screenshots, 
   )
 };
 
-// Styled Components
 const MainWrapper = styled.main`
   padding-top: 66px;
   display: flex;
@@ -60,7 +54,7 @@ const MainWrapper = styled.main`
     }
 
     .image-visible{
-      opacity: 1;     // icon bug
+      opacity: 1;
     }
 
     h3{

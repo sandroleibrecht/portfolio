@@ -4,6 +4,7 @@ export const setNavOpen = () => {
     type: 'NAV_OPEN'
   };
 };
+
 export const setNavClose = () => {
   return{
     type: 'NAV_CLOSE'
@@ -12,6 +13,7 @@ export const setNavClose = () => {
 
 // Reducer
 const initialState = { menuOpen: false };
+
 const NavbarReducer = ( state = initialState, action ) => {
   switch( action.type ){
     case 'NAV_OPEN':

@@ -1,15 +1,10 @@
-import React, {useEffect} from 'react';
-// Text Content
+import {useEffect} from 'react';
 import pageText from '../assets/translations/contact.json';
-// Framer Motion
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../assets/styling/GlobalStyles';
-// Components
 import ContactWrapper from '../components/contact/ContactWrapper';
 import Footer from '../components/footer/Footer';
-// Scroll Top
 import ScrollTop from '../assets/util/ScrollTop';
-// Redux
 import { useSelector, useDispatch } from 'react-redux';
 import {setScrollPosition} from '../state/projectsState';
 

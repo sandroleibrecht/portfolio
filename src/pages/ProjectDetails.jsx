@@ -1,19 +1,12 @@
-import React from 'react';
-// Text Content
 import pageText from '../assets/translations/details.json';
-// Framer Motion
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../assets/styling/GlobalStyles';
-// Components
 import TopBar from '../components/projectDetails/TopBar';
 import ProjectsSection from '../components/projectDetails/ProjectSection';
 import Footer from '../components/footer/Footer';
 import PageNotFound from './404';
-// Scroll Top
 import ScrollTop from '../assets/util/ScrollTop';
-// Router
 import { useLocation } from 'react-router-dom';
-// Redux
 import { useSelector } from 'react-redux';
 
 function ProjectDetails() {

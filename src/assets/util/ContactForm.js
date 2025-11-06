@@ -1,8 +1,6 @@
-// Redux
 import { store } from '../../index';
 import { setSubmitStatus, setSubmitMessage, resetValues }  from '../../state/contactState';
 
-// Form fields validation
 export const validateInputs = ({ name, mail, message }) => {
   const errors = {};
   errors.name = name.trim() ? false : true;
@@ -12,10 +10,10 @@ export const validateInputs = ({ name, mail, message }) => {
 };
 
 // Sending form data (currently hooked up to netlify form detection)
-export const sendEmail = (event, okMsg, notOkMsg) => {
-  event.preventDefault();
+export const sendEmail = (e, okMsg, notOkMsg) => {
+  e.preventDefault();
 
-  const form = event.target;
+  const form = e.target;
   const data = new FormData(form);
 
   fetch("/", {

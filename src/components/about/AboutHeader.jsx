@@ -44,7 +44,6 @@ function AboutHeader({ textContent }) {
 
 export default AboutHeader;
 
-// Styled Components
 const HeaderContainer = styled(Grid)`
   padding: 5vw calc(9% + 1vh);
   width: 100vw;

@@ -1,18 +1,12 @@
-import React from "react";
-// Framer Motion
 import { AnimatePresence } from "framer-motion";
-// Global Styling
 import styled from "styled-components";
 import GlobalStyles from './assets/styling/GlobalStyles';
-// Pages
 import AboutPage from "./pages/AboutPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ContactPage from "./pages/ContactPage";
 import ProjectDetails from "./pages/ProjectDetails";
 import PageNotFound from './pages/404';
-// Components
 import Navbar from "./components/navbar/Navbar";
-// ROUTER
 import { Switch, Route, useLocation } from 'react-router-dom';
 
 function App() {

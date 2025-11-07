@@ -5,6 +5,50 @@ skillList.forEach( skill => skills[skill.id] = {...skill} );
 
 const projects = [
   {
+    id: 'collab-task-api',
+    name : "Collab Task - Web API",
+    image: '/img/projects/collab-task-api-1.png',
+    techs : [skills.csharp, skills.aspNetWebApi],
+    github : "https://github.com/sandroleibrecht/collab-task-api",
+    live : "",
+    route: "/projects/collab-task-api",
+    desc: {
+      en: 
+      `Prototype of an ASP.NET Core Web API for the “Collab Task” project (originally built with Node.js).
+      Implements a JWT-based authentication system with access and refresh tokens.
+      Focuses on a modular and extensible architecture.`,
+
+      de:
+      `Prototyp einer ASP.NET Core Web API für das Projekt "Collab Task" (ursprünglich in Node.js).
+      Verwendet ein JWT-basiertes Authentifizierungssystem mit Access- und Refresh-Tokens.
+      Fokus auf eine modulare und erweiterbare Architektur.`
+    },
+    screenshots: ['/img/projects/collab-task-api-2.png', '/img/projects/collab-task-api-3.png'],
+    spotlight: true
+  },
+  {
+    id: 'hmi-data-merge',
+    name : "HMI Data Merge",
+    image: '/img/projects/hmi-data-merge-1.png',
+    techs : [skills.python],
+    github : "https://github.com/sandroleibrecht/hmi-data-merge",
+    live : "",
+    route: "/projects/hmi-data-merge",
+    desc: {
+      en: 
+      `This application finds its use as a development tool in the automation industry.
+      Job of this tool is to update and merge giant excel files full of specifications (instrument, equipment, sensors, motors,...) including categorized sheets and special cases.
+      No manual merging and quick HMI data import.`,
+
+      de: 
+      `Diese Anwendung findet ihren Nutzen als Entwicklungswerkzeug in der Automatisierungsbranche.
+      Die Aufgabe dieses Tools ist es, riesige Excel-Dateien befüllt mit Daten rund um Instrumente, Geräte, Sensoren und Motoren zu aktualisieren und zusammenzuführen.
+      Man erspart sich das manuelle Zusammenführen und erzielt einen schnellen HMI-Datenimport.`
+    },
+    screenshots: ['/img/projects/hmi-data-merge-2.png', '/img/projects/hmi-data-merge-3.png'],
+    spotlight: true
+  },
+  {
     id: 'collab-task',
     name : "Collab Task",
     image: '/img/projects/collab-task-1.png',
@@ -23,29 +67,6 @@ const projects = [
       und das Zuweisen von Mitgliedern für spezielle Aufgaben. Projekt-, Code-Dokumentation und allgemeine App-Informationen befinden sich im DOCS Ordner auf GitHub.`
     },
     screenshots: ['/img/projects/collab-task-2.png', '/img/projects/collab-task-3.png', '/img/projects/collab-task-4.png'],
-    spotlight: true
-  },
-  {
-    id: 'hmi-data-merge',
-    name : "HMI Data Merge",
-    image: '/img/projects/hmi-data-merge-1.png',
-    techs : [skills.python],
-    github : "https://github.com/sandroleibrecht/hmi-data-merge",
-    live : "",
-    route: "/projects/hmi-data-merge",
-    desc: {
-      en: 
-      `This application finds its use as a development tool in the automation industry.
-      Job of this tool is to update and merge giant excel files full of specifications (instrument, equipment, sensors, motors,...) including categorized sheets and special cases.
-      No manual merging and quick HMI data import.
-      `,
-
-      de: 
-      `Diese Anwendung findet ihren Nutzen als Entwicklungswerkzeug in der Automatisierungsbranche.
-      Die Aufgabe dieses Tools ist es, riesige Excel-Dateien befüllt mit Daten rund um Instrumente, Geräte, Sensoren und Motoren zu aktualisieren und zusammenzuführen.
-      Man erspart sich das manuelle Zusammenführen und erzielt einen schnellen HMI-Datenimport.`
-    },
-    screenshots: ['/img/projects/hmi-data-merge-2.png', '/img/projects/hmi-data-merge-3.png'],
     spotlight: true
   },
   {
@@ -131,6 +152,7 @@ const projects = [
     desc: {
       en: 
       `Two clocks, analgog and digital, built with HTML, CSS and JavaScript.`,
+
       de: 
       `Zwei Uhren, analog und digital, erstellt mit HTML, CSS und JavaScript.`
     },

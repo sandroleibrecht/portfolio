@@ -54,6 +54,12 @@ const skillList = [
     color: 'var(--csharp)'
   },
   {
+    id: 'aspNetWebApi',
+    name: 'ASP.NET Web API',
+    image: '/img/techs/aspnetwebapi.png',
+    color: 'var(--aspNetWebApi)'
+  },
+  {
     id: 'sql',
     name: 'SQL',
     image: '/img/techs/sql.png',

@@ -24,9 +24,9 @@ const GlobalStyles = createGlobalStyle`
     --styledComponents: #CF72A1;
     --csharp: #8540A1;
     --aspNetWebApi: #318DCE;
+    --entityFramework: #3f89cfff;
     --sql: #3366CC;
     --visualStudio: #7b63c7;
-    --visualStudioCode: #007ACC;
     --git: #EF7E5B;
   }
 

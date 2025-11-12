@@ -64,10 +64,10 @@ function PersonalSection({ textContent }) {
         <Section>
           <Heading>{textContent.mainSkills}</Heading>
           <PillContainer>
-            <Pill image={skills.python.image} text={skills.python.name} color={skills.python.color} key={skills.python.id} />
             <Pill image={skills.csharp.image} text={skills.csharp.name} color={skills.csharp.color} key={skills.csharp.id} />
+            <Pill image={skills.aspNetWebApi.image} text={skills.aspNetWebApi.name} color={skills.aspNetWebApi.color} key={skills.aspNetWebApi.id} />
+            <Pill image={skills.entityFramework.image} text={skills.entityFramework.name} color={skills.entityFramework.color} key={skills.entityFramework.id} />
             <Pill image={skills.sql.image} text={skills.sql.name} color={skills.sql.color} key={skills.sql.id} />
-            <Pill image={skills.visualStudioCode.image} text={skills.visualStudioCode.name} color={skills.visualStudioCode.color} key={skills.visualStudioCode.id} />
             <Pill image={skills.visualStudio.image} text={skills.visualStudio.name} color={skills.visualStudio.color} key={skills.visualStudio.id} />
             <Pill image={skills.git.image} text={skills.git.name} color={skills.git.color} key={skills.git.id} />
           </PillContainer>
@@ -78,11 +78,13 @@ function PersonalSection({ textContent }) {
         <Section>
           <Heading>{textContent.additionalSkills}</Heading>
           <PillContainer>
-            <AddPill label={"Azure DevOps"} key="1" />
-            <AddPill label={"Frontend Development"} key="2" />
-            <AddPill label={"PLC & HMI"} key="3" />
-            <AddPill label={"TIA Portal"} key="4" />
-            <AddPill label={"Desktop Software"} key="5" />
+            <AddPill label={"Frontend Development"} key="1" />
+            <AddPill label={"C"} key="2" />
+            <AddPill label={"Python"} key="3" />
+            <AddPill label={"JavaScript"} key="4" />
+            <AddPill label={"Azure DevOps"} key="5" />
+            <AddPill label={"Siemens TIA Portal"} key="6" />
+            <AddPill label={"Desktop Software"} key="7" />
           </PillContainer>
         </Section>
 

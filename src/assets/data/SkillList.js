@@ -60,10 +60,28 @@ const skillList = [
     color: 'var(--aspNetWebApi)'
   },
   {
+    id: 'entityFramework',
+    name: 'Entity Framework',
+    image: '/img/techs/entity-framework.png',
+    color: 'var(--entityFramework)'
+  },
+  {
     id: 'sql',
     name: 'SQL',
     image: '/img/techs/sql.png',
     color: 'var(--sql)'
+  },
+  {
+    id: 'visualStudio',
+    name: 'Visual Studio',
+    image: '/img/techs/visual-studio.png',
+    color: 'var(--visualStudio)'
+  },
+  {
+    id: 'git',
+    name: 'Git',
+    image: '/img/techs/git.png',
+    color: 'var(--git)'
   },
   {
     id: 'socketIo',
@@ -82,24 +100,6 @@ const skillList = [
     name: 'Redux',
     image: '/img/techs/redux.png',
     color: 'var(--redux)'
-  },
-  {
-    id: 'visualStudio',
-    name: 'Visual Studio',
-    image: '/img/techs/visual-studio.png',
-    color: 'var(--visualStudio)'
-  },
-  {
-    id: 'visualStudioCode',
-    name: 'VS Code',
-    image: '/img/techs/visual-studio-code.png',
-    color: 'var(--visualStudioCode)'
-  },
-  {
-    id: 'git',
-    name: 'Git',
-    image: '/img/techs/git.png',
-    color: 'var(--git)'
   }
 ];
 

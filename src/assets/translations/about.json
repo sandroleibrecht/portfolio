@@ -2,7 +2,7 @@
   "en":{
     "headerText": {
       "fullName": "Sandro Leibrecht",
-      "role": "Software Developer - Automation · Backend Services · Frontend Solutions"
+      "role": "Software Developer · Backend Services · Automation · Web"
     },
     "cardsText": [
       {
@@ -26,7 +26,7 @@
       "experience2": {
         "title": "Software Developer · FM Consulting",
         "timespan": "06.2024 - Present",
-        "description": "Implementation of APIs, desktop applications, reports and automation solutions in the medical sector using C#, Python and SQL Server"
+        "description": "Implementation of APIs, desktop applications, reports and automation solutions in the medical sector using C# and SQL Server"
       },
       "studiesHeading": "Education",
       "study1": {
@@ -52,7 +52,7 @@
   "de":{
     "headerText": {
       "fullName": "Sandro Leibrecht",
-      "role": "Softwareentwickler - Automatisierung · Backend Services · Frontend Lösungen"
+      "role": "Softwareentwickler · Backend Services · Automatisierung · Web"
     },
     "cardsText": [
       {
@@ -76,7 +76,7 @@
       "experience2": {
         "title": "Softwareentwickler · FM Consulting",
         "timespan": "06.2024 - heute",
-        "description": "Entwicklung von APIs, Desktop-Anwendungen, Reports und Automatisierungslösungen im medizinischen Umfeld mit C#, Python und SQL Server"
+        "description": "Entwicklung von APIs, Desktop-Anwendungen, Reports und Automatisierungslösungen im medizinischen Umfeld mit C# und SQL Server"
       },
       "studiesHeading": "Ausbildung",
       "study1": {

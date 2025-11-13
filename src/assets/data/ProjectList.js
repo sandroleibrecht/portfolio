@@ -8,7 +8,7 @@ const projects = [
     id: 'collab-task-api',
     name : "Collab Task - Web API",
     image: '/img/projects/collab-task-api-1.png',
-    techs : [skills.csharp, skills.aspNetWebApi],
+    techs : [skills.csharp, skills.aspNetCoreWebApi],
     github : "https://github.com/sandroleibrecht/collab-task-api",
     live : "",
     route: "/projects/collab-task-api",

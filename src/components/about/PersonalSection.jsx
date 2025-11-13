@@ -65,7 +65,7 @@ function PersonalSection({ textContent }) {
           <Heading>{textContent.mainSkills}</Heading>
           <PillContainer>
             <Pill image={skills.csharp.image} text={skills.csharp.name} color={skills.csharp.color} key={skills.csharp.id} />
-            <Pill image={skills.aspNetWebApi.image} text={skills.aspNetWebApi.name} color={skills.aspNetWebApi.color} key={skills.aspNetWebApi.id} />
+            <Pill image={skills.aspNetCoreWebApi.image} text={skills.aspNetCoreWebApi.name} color={skills.aspNetCoreWebApi.color} key={skills.aspNetCoreWebApi.id} />
             <Pill image={skills.entityFramework.image} text={skills.entityFramework.name} color={skills.entityFramework.color} key={skills.entityFramework.id} />
             <Pill image={skills.sql.image} text={skills.sql.name} color={skills.sql.color} key={skills.sql.id} />
             <Pill image={skills.visualStudio.image} text={skills.visualStudio.name} color={skills.visualStudio.color} key={skills.visualStudio.id} />
@@ -83,8 +83,7 @@ function PersonalSection({ textContent }) {
             <AddPill label={"Python"} key="3" />
             <AddPill label={"JavaScript"} key="4" />
             <AddPill label={"Azure DevOps"} key="5" />
-            <AddPill label={"Siemens TIA Portal"} key="6" />
-            <AddPill label={"Desktop Software"} key="7" />
+            <AddPill label={"PLC & HMI"} key="6" />
           </PillContainer>
         </Section>
 

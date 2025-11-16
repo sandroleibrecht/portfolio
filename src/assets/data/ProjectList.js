@@ -103,14 +103,14 @@ const projects = [
     route: "/projects/portfolio",
     desc: {
       en: 
-      `Inception? You're using this one right now, and I hope you enjoy the experience!
-      Tools like React, Styled Components, Redux and other useful things such as framer-motion, react-router-dom and aws-services,
+      `Inception? You're using this one right now, and I hope you are enjoying the experience.
+      Tools like React, Styled Components, Redux and other useful things such as framer-motion, 
       created this overview of my projects and myself. Im looking forward to hearing from you, so feel free to check out the contact page.`,
 
       de: 
-      `Inception? Du verwendest dieses Projekt in diesem Moment, und ich hoffe es gefällt dir!
-      Durch Tools wie React, Styled Components, Redux und andere nützliche Dinge wie framer-motion, react-router-dom und aws-services, 
-      entstand dieser Überblick von meinen Projekten und meiner Wenigkeit. Schau beim Kontaktformular vorbei, ich freue mich über deine Nachricht. `
+      `Inception? Du verwendest dieses Projekt in diesem Moment, und ich hoffe es gefällt dir.
+      Durch Tools wie React, Styled Components, Redux und andere nützliche Dinge wie framer-motion, 
+      entstand dieser Überblick meiner Projekte und meiner Person. Schau beim Kontaktformular vorbei, ich freue mich über deine Nachricht.`
     },
     screenshots: ['/img/projects/portfolio-2.png'],
     spotlight: true
@@ -129,7 +129,7 @@ const projects = [
       Just enter the following two inputs: text and duration.
       Inside the preview box, the given text will then be displayed letter after letter.
       The duration input controls the typing tempo.
-      Copy the generated code with one click and use it wherever you want!`,
+      Copy the generated code with one click and use it wherever you want.`,
 
       de: 
       `Generiert Code der deinen Text animiert.

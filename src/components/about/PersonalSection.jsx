@@ -78,10 +78,10 @@ function PersonalSection({ textContent }) {
         <Section>
           <Heading>{textContent.additionalSkills}</Heading>
           <PillContainer>
-            <AddPill label={"Frontend Development"} key="1" />
-            <AddPill label={"C"} key="2" />
-            <AddPill label={"Python"} key="3" />
-            <AddPill label={"JavaScript"} key="4" />
+            <AddPill label={"C"} key="1" />
+            <AddPill label={"Python"} key="2" />
+            <AddPill label={"JavaScript"} key="3" />
+            <AddPill label={"Frontend Development"} key="4" />
             <AddPill label={"Azure DevOps"} key="5" />
             <AddPill label={"PLC & HMI"} key="6" />
           </PillContainer>

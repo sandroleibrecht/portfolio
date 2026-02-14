@@ -65,7 +65,7 @@ function PersonalSection({ textContent }) {
           <Heading>{textContent.mainSkills}</Heading>
           <PillContainer>
             <Pill image={skills.csharp.image} text={skills.csharp.name} color={skills.csharp.color} key={skills.csharp.id} />
-            <Pill image={skills.aspNetCoreWebApi.image} text={skills.aspNetCoreWebApi.name} color={skills.aspNetCoreWebApi.color} key={skills.aspNetCoreWebApi.id} />
+            <Pill image={skills.aspNetCore.image} text={skills.aspNetCore.name} color={skills.aspNetCore.color} key={skills.aspNetCore.id} />
             <Pill image={skills.entityFramework.image} text={skills.entityFramework.name} color={skills.entityFramework.color} key={skills.entityFramework.id} />
             <Pill image={skills.sql.image} text={skills.sql.name} color={skills.sql.color} key={skills.sql.id} />
             <Pill image={skills.visualStudio.image} text={skills.visualStudio.name} color={skills.visualStudio.color} key={skills.visualStudio.id} />

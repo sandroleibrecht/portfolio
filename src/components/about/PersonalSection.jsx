@@ -70,6 +70,8 @@ function PersonalSection({ textContent }) {
             <Pill image={skills.sql.image} text={skills.sql.name} color={skills.sql.color} key={skills.sql.id} />
             <Pill image={skills.visualStudio.image} text={skills.visualStudio.name} color={skills.visualStudio.color} key={skills.visualStudio.id} />
             <Pill image={skills.git.image} text={skills.git.name} color={skills.git.color} key={skills.git.id} />
+            <Pill image={skills.serilog.image} text={skills.serilog.name} color={skills.serilog.color} key={skills.serilog.id} />
+            <Pill image={skills.jwt.image} text={skills.jwt.name} color={skills.jwt.color} key={skills.jwt.id} />
           </PillContainer>
         </Section>
 

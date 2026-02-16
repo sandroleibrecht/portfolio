@@ -28,6 +28,8 @@ const GlobalStyles = createGlobalStyle`
     --sql: #3366CC;
     --visualStudio: #7b63c7;
     --git: #EF7E5B;
+    --serilog: #ce4545ea;
+    --jwt: #752de9d3;
   }
 
   *{

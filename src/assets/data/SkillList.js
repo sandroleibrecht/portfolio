@@ -84,6 +84,18 @@ const skillList = [
     color: 'var(--git)'
   },
   {
+    id: 'serilog',
+    name: 'Serilog',
+    image: '/img/techs/serilog.png',
+    color: 'var(--serilog)'
+  },
+  {
+    id: 'jwt',
+    name: 'JWT',
+    image: '/img/techs/jwt.png',
+    color: 'var(--jwt)'
+  },
+  {
     id: 'socketIo',
     name: 'SocketIO',
     image: '/img/techs/socketio.png',

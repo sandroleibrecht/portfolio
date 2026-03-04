@@ -70,8 +70,6 @@ function PersonalSection({ textContent }) {
             <Pill image={skills.sql.image} text={skills.sql.name} color={skills.sql.color} key={skills.sql.id} />
             <Pill image={skills.visualStudio.image} text={skills.visualStudio.name} color={skills.visualStudio.color} key={skills.visualStudio.id} />
             <Pill image={skills.git.image} text={skills.git.name} color={skills.git.color} key={skills.git.id} />
-            <Pill image={skills.serilog.image} text={skills.serilog.name} color={skills.serilog.color} key={skills.serilog.id} />
-            <Pill image={skills.jwt.image} text={skills.jwt.name} color={skills.jwt.color} key={skills.jwt.id} />
           </PillContainer>
         </Section>
 
@@ -80,12 +78,12 @@ function PersonalSection({ textContent }) {
         <Section>
           <Heading>{textContent.additionalSkills}</Heading>
           <PillContainer>
-            <AddPill label={"C"} key="1" />
-            <AddPill label={"Python"} key="2" />
-            <AddPill label={"JavaScript"} key="3" />
-            <AddPill label={"Frontend Development"} key="4" />
-            <AddPill label={"Azure DevOps"} key="5" />
-            <AddPill label={"PLC & HMI"} key="6" />
+            <AddPill label={"Clean Code & Architecture"} key="1" />
+            <AddPill label={"Azure DevOps"} key="2" />
+            <AddPill label={"C"} key="3" />
+            <AddPill label={"Python"} key="4" />
+            <AddPill label={"JavaScript"} key="5" />
+            <AddPill label={"React"} key="6" />
           </PillContainer>
         </Section>
 

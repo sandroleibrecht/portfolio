@@ -45,6 +45,10 @@ function PersonalSection({ textContent }) {
           <Heading>{textContent.studiesHeading}</Heading>
           <ExperienceList>
             <Role>
+              <Title>{textContent.study4.title} <Timespan>· {textContent.study4.timespan}</Timespan></Title>
+              <Meta>{textContent.study4.description}</Meta>
+            </Role>
+            <Role>
               <Title>{textContent.study3.title} <Timespan>· {textContent.study3.timespan}</Timespan></Title>
               <Meta>{textContent.study3.description}</Meta>
             </Role>

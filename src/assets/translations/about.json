@@ -2,7 +2,7 @@
   "en":{
     "headerText": {
       "fullName": "Sandro Leibrecht",
-      "role": "Software Developer · Backend Services · Automation · Web"
+      "role": "Software Engineer · Backend Services · Automation · Web"
     },
     "cardsText": [
       {
@@ -19,12 +19,12 @@
       "mainHeading": "About",
       "experienceHeading": "Experience",
       "experience1": {
-        "title": "Software Developer · Synelecs",
+        "title": "Software Engineer · Synelecs",
         "timespan": "10.2021 - 05.2024",
         "description": "Design and development of APIs, internal tools and automation workflows for projects in the automation field using C#, Python and TIA Portal"
       },
       "experience2": {
-        "title": "Software Developer · FM Consulting",
+        "title": "Software Engineer · FM Consulting",
         "timespan": "06.2024 - 12.2025",
         "description": "Implementation of APIs, desktop applications, reports and automation solutions in the medical sector using C# and SQL Server"
       },
@@ -43,6 +43,11 @@
         "title": "Semester · Information and Communication Systems",
         "timespan": "09.2025 - 03.2026",
         "description": "FH Technikum - Vienna, Austria"
+      },
+      "study4": {
+        "title": "BSc · Software Engineering",
+        "timespan": "05.2026 - present",
+        "description": "IU - Internationale Hochschule - Vienna, Austria"
       },
       "mainSkills": "Tech Stack",
       "additionalSkills": "Additional concepts and experiences",
@@ -93,6 +98,11 @@
         "title": "Semester · Informations- und Kommunikationssysteme",
         "timespan": "09.2025 - 03.2026",
         "description": "FH Technikum - Wien, Österreich"
+      },
+      "study4": {
+        "title": "BSc · Softwareentwicklung",
+        "timespan": "05.2026 - heute",
+        "description": "IU - Internationale Hochschule - Wien, Österreich"
       },
       "mainSkills": "Tech-Stack",
       "additionalSkills": "Zusätzliche Konzepte und Erfahrungen",

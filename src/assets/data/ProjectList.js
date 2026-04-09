@@ -5,25 +5,27 @@ skillList.forEach( skill => skills[skill.id] = {...skill} );
 
 const projects = [
   {
-    id: 'collab-task-api',
-    name : "Collab Task - Web API",
-    image: '/img/projects/collab-task-api-1.png',
+    id: 'collab-task-dotnet',
+    name : "Collab Task .NET",
+    image: '/img/projects/collab-task-dotnet-1.png',
     techs : [skills.csharp, skills.aspNetCore],
-    github : "https://github.com/sandroleibrecht/collab-task-api",
+    github : "https://github.com/sandroleibrecht/collab-task-dotnet",
     live : "",
-    route: "/projects/collab-task-api",
+    route: "/projects/collab-task-dotnet",
     desc: {
       en: 
-      `Prototype of an ASP.NET Core Web API for the “Collab Task” project (originally built with Node.js).
+      `Prototype of a .NET version of the Collab Task JS project.
       Implements a JWT-based authentication system with access and refresh tokens.
+      The frontend is a terminal application communicating with an ASP.NET Core Web API.
       Focuses on a modular and extensible architecture.`,
 
       de:
-      `Prototyp einer ASP.NET Core Web API für das Projekt "Collab Task" (ursprünglich in Node.js).
-      Verwendet ein JWT-basiertes Authentifizierungssystem mit Access- und Refresh-Tokens.
-      Fokus auf eine modulare und erweiterbare Architektur.`
+      `Prototyp einer .NET-Version des Projekts 'Collab Task JS'.
+      Implementiert ein JWT-basiertes Authentifizierungssystem mit Access- und Refresh-Tokens.
+      Die Bedienung erfolgt über ein Terminal, das mit einer ASP.NET Core Web API kommuniziert.
+      Der Fokus liegt auf einer modularen und erweiterbaren Architektur.`
     },
-    screenshots: ['/img/projects/collab-task-api-2.png', '/img/projects/collab-task-api-3.png'],
+    screenshots: ['/img/projects/collab-task-dotnet-2.png', '/img/projects/collab-task-dotnet-3.png'],
     spotlight: true
   },
   {
@@ -49,13 +51,13 @@ const projects = [
     spotlight: true
   },
   {
-    id: 'collab-task',
-    name : "Collab Task",
-    image: '/img/projects/collab-task-1.png',
+    id: 'collab-task-js',
+    name : "Collab Task JS",
+    image: '/img/projects/collab-task-js-1.png',
     techs : [skills.html5, skills.scss, skills.javaScript, skills.expressJs, skills.mongoDb, skills.socketIo],
-    github : "https://github.com/sandroleibrecht/collab-task",
+    github : "https://github.com/sandroleibrecht/collab-task-js",
     live : "",
-    route: "/projects/collab-task",
+    route: "/projects/collab-task-js",
     desc: {
       en: 
       `This collaborative task-management application covers many useful features in the realm of managing tasks and working together. 
@@ -66,7 +68,7 @@ const projects = [
       Zum Beispiel: Erstellung eines Accounts, Session Management, Profilanpassung, Anpassbare Desk- und Aufgabenerstellung, Drag & Drop, Live Teamchat,
       und das Zuweisen von Mitgliedern für spezielle Aufgaben. Projekt-, Code-Dokumentation und allgemeine App-Informationen befinden sich im DOCS Ordner auf GitHub.`
     },
-    screenshots: ['/img/projects/collab-task-2.png', '/img/projects/collab-task-3.png', '/img/projects/collab-task-4.png'],
+    screenshots: ['/img/projects/collab-task-js-2.png', '/img/projects/collab-task-js-3.png', '/img/projects/collab-task-js-4.png'],
     spotlight: true
   },
   {

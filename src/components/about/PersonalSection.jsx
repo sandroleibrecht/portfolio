@@ -84,10 +84,11 @@ function PersonalSection({ textContent }) {
           <PillContainer>
             <AddPill label={"Clean Code & Architecture"} key="1" />
             <AddPill label={"Azure DevOps"} key="2" />
-            <AddPill label={"C"} key="3" />
-            <AddPill label={"Python"} key="4" />
-            <AddPill label={"JavaScript"} key="5" />
-            <AddPill label={"React"} key="6" />
+            <AddPill label={"Linux"} key="3" />
+            <AddPill label={"C"} key="4" />
+            <AddPill label={"Python"} key="5" />
+            <AddPill label={"JavaScript"} key="6" />
+            <AddPill label={"React"} key="7" />
           </PillContainer>
         </Section>
 

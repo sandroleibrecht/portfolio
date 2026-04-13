@@ -10,12 +10,6 @@ function PersonalSection({ textContent }) {
 
   const history = useHistory();
 
-  const skills = {};
-  
-  skillList.forEach( skill => { 
-    skills[skill.id] = {...skill};
-  });
-
   return (
     <AboutDescription id="aboutDescription"> 
 
@@ -68,12 +62,11 @@ function PersonalSection({ textContent }) {
         <Section>
           <Heading>{textContent.mainSkills}</Heading>
           <PillContainer>
-            <Pill image={skills.csharp.image} text={skills.csharp.name} color={skills.csharp.color} key={skills.csharp.id} />
-            <Pill image={skills.aspNetCore.image} text={skills.aspNetCore.name} color={skills.aspNetCore.color} key={skills.aspNetCore.id} />
-            <Pill image={skills.entityFramework.image} text={skills.entityFramework.name} color={skills.entityFramework.color} key={skills.entityFramework.id} />
-            <Pill image={skills.sql.image} text={skills.sql.name} color={skills.sql.color} key={skills.sql.id} />
-            <Pill image={skills.visualStudio.image} text={skills.visualStudio.name} color={skills.visualStudio.color} key={skills.visualStudio.id} />
-            <Pill image={skills.git.image} text={skills.git.name} color={skills.git.color} key={skills.git.id} />
+            {
+              skillList
+                .filter(skill => skill.ranking === 1)
+                .map(skill => <Pill image={skill.image} text={skill.name} color={skill.color} key={skill.id} />)
+            }
           </PillContainer>
         </Section>
 
@@ -82,13 +75,11 @@ function PersonalSection({ textContent }) {
         <Section>
           <Heading>{textContent.additionalSkills}</Heading>
           <PillContainer>
-            <AddPill label={"Clean Code & Architecture"} key="1" />
-            <AddPill label={"Azure DevOps"} key="2" />
-            <AddPill label={"Linux"} key="3" />
-            <AddPill label={"C"} key="4" />
-            <AddPill label={"Python"} key="5" />
-            <AddPill label={"JavaScript"} key="6" />
-            <AddPill label={"React"} key="7" />
+            {
+              skillList
+                .filter(skill => skill.ranking === 2)
+                .map(skill => <AddPill label={skill.name} key={skill.id} />)
+            }
           </PillContainer>
         </Section>
 

@@ -87,9 +87,10 @@ const ProjectContainer = styled.div`
     }
 
     img{
-      max-width: 40rem;
       width: 100%;
       height: auto;
+      max-width: 680px;
+      max-height: 340px;
       min-height: 15rem;
       object-fit: cover;
       opacity: 0;

@@ -2,7 +2,7 @@
   "en":{
     "headerText": {
       "fullName": "Sandro Leibrecht",
-      "role": "Software Engineer · Backend Services · Automation · Web"
+      "role": "Software Engineer – Backend Services · Automation · Web"
     },
     "cardsText": [
       {
@@ -20,33 +20,38 @@
       "experienceHeading": "Experience",
       "experience1": {
         "title": "Software Engineer · Synelecs",
-        "timespan": "10.2021 - 05.2024",
+        "timespan": "10.2021 – 05.2024",
         "description": "Design and development of APIs, internal tools and automation workflows for projects in the automation field using C#, Python and TIA Portal"
       },
       "experience2": {
         "title": "Software Engineer · FM Consulting",
-        "timespan": "06.2024 - 12.2025",
+        "timespan": "06.2024 – 12.2025",
         "description": "Implementation of APIs, desktop applications, reports and automation solutions in the medical sector using C# and SQL Server"
+      },
+      "experience3": {
+        "title": "Software Engineer · Hitachi Energy",
+        "timespan": "05.2026 – Present",
+        "description": "Full Stack C# .NET development in the energy network control sector"
       },
       "studiesHeading": "Education",
       "study1": {
         "title": "Apprenticeship Certificate · Electrical Engineering",
-        "timespan": "09.2011 - 06.2015",
+        "timespan": "09.2011 – 06.2015",
         "description": "Vocational School for Electrical Engineering - Vienna, Austria"
       },
       "study2": {
         "title": "Matura · University Entrance Certification",
-        "timespan": "01.2022 - 09.2024",
+        "timespan": "01.2022 – 09.2024",
         "description": "Exam Center: HTL Spengergasse - Vienna, Austria"
       },
       "study3": {
         "title": "Semester · Information and Communication Systems",
-        "timespan": "09.2025 - 04.2026",
+        "timespan": "09.2025 – 04.2026",
         "description": "FH Technikum - Vienna, Austria"
       },
       "study4": {
         "title": "BSc · Software Engineering",
-        "timespan": "05.2026 - present",
+        "timespan": "05.2026 – Present",
         "description": "IU - International University of Applied Sciences - Vienna, Austria"
       },
       "mainSkills": "Tech Stack",
@@ -57,7 +62,7 @@
   "de":{
     "headerText": {
       "fullName": "Sandro Leibrecht",
-      "role": "Softwareentwickler · Backend Services · Automatisierung · Web"
+      "role": "Softwareentwickler – Backend Services · Automatisierung · Web"
     },
     "cardsText": [
       {
@@ -75,33 +80,38 @@
       "experienceHeading": "Erfahrung",
       "experience1": {
         "title": "Softwareentwickler · Synelecs",
-        "timespan": "10.2021 - 05.2024",
+        "timespan": "10.2021 – 05.2024",
         "description": "Entwicklung von APIs und internen Tools sowie Automatisierung von Arbeitsabläufen für Projekte in der Automatisierungstechnik mit C#, Python und TIA Portal"
       },
       "experience2": {
         "title": "Softwareentwickler · FM Consulting",
-        "timespan": "06.2024 - 12.2025",
+        "timespan": "06.2024 – 12.2025",
         "description": "Entwicklung von APIs, Desktop-Anwendungen, Reports und Automatisierungslösungen im medizinischen Umfeld mit C# und SQL Server"
+      },
+      "experience3": {
+        "title": "Softwareentwickler · Hitachi Energy",
+        "timespan": "05.2026 – heute",
+        "description": "Full Stack C# .NET Entwicklung im Bereich der Netzleittechnik"
       },
       "studiesHeading": "Ausbildung",
       "study1": {
         "title": "Lehrabschluss · Elektrotechnik",
-        "timespan": "09.2011 - 06.2015",
+        "timespan": "09.2011 – 06.2015",
         "description": "Berufsschule für Elektrotechnik - Wien, Österreich"
       },
       "study2": {
         "title": "Matura · Berufsreifeprüfung",
-        "timespan": "01.2022 - 09.2024",
+        "timespan": "01.2022 – 09.2024",
         "description": "Prüfungsstandort: HTL Spengergasse - Wien, Österreich"
       },
       "study3": {
         "title": "Semester · Informations- und Kommunikationssysteme",
-        "timespan": "09.2025 - 04.2026",
+        "timespan": "09.2025 – 04.2026",
         "description": "FH Technikum - Wien, Österreich"
       },
       "study4": {
-        "title": "BSc · Software Engineering",
-        "timespan": "05.2026 - heute",
+        "title": "BSc · Softwareentwicklung",
+        "timespan": "05.2026 – heute",
         "description": "IU - Internationale Hochschule - Wien, Österreich"
       },
       "mainSkills": "Tech-Stack",

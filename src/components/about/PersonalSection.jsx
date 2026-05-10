@@ -22,10 +22,10 @@ function PersonalSection({ textContent }) {
         <Section>
           <Heading>{textContent.experienceHeading}</Heading>
           <ExperienceList>
-            {/* <Role>
+            <Role>
               <Title>{textContent.experience3.title} <Timespan>· {textContent.experience3.timespan}</Timespan></Title>
               <Meta>{textContent.experience3.description}</Meta>
-            </Role> */}
+            </Role>
             <Role>
               <Title>{textContent.experience2.title} <Timespan>· {textContent.experience2.timespan}</Timespan></Title>
               <Meta>{textContent.experience2.description}</Meta>

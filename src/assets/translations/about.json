@@ -2,7 +2,7 @@
   "en":{
     "headerText": {
       "fullName": "Sandro Leibrecht",
-      "role": "Software Engineer – Backend Services · Automation · Web"
+      "role": "Software Developer – Backend Services · Automation · Web"
     },
     "cardsText": [
       {
@@ -19,17 +19,17 @@
       "mainHeading": "About",
       "experienceHeading": "Experience",
       "experience1": {
-        "title": "Software Engineer · Synelecs",
+        "title": "Software Developer · Synelecs",
         "timespan": "10.2021 – 05.2024",
         "description": "Design and development of APIs, internal tools and automation workflows for projects in the automation field using C#, Python and TIA Portal"
       },
       "experience2": {
-        "title": "Software Engineer · FM Consulting",
+        "title": "Software Developer · FM Consulting",
         "timespan": "06.2024 – 12.2025",
         "description": "Implementation of APIs, desktop applications, reports and automation solutions in the medical sector using C# and SQL Server"
       },
       "experience3": {
-        "title": "Software Engineer · Hitachi Energy",
+        "title": "Software Developer · Hitachi Energy",
         "timespan": "05.2026 – Present",
         "description": "Full Stack C# .NET development in the energy network control sector"
       },
